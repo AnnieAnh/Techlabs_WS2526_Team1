@@ -1,0 +1,117 @@
+2026-01-29 09:10:25 | INFO     | ================================================================================
+2026-01-29 09:10:25 | INFO     | 🚀 BILINGUAL GERMAN JOB SCRAPER (EN + DE)
+2026-01-29 09:10:25 | INFO     | ================================================================================
+2026-01-29 09:10:25 | INFO     | 🌐 Job Boards: linkedin
+2026-01-29 09:10:25 | INFO     | 📍 Cities: 1
+2026-01-29 09:10:25 | INFO     | 🔑 Keywords: 38 (English + German)
+2026-01-29 09:10:25 | INFO     | 📅 Date Range: Last 120 days
+2026-01-29 09:10:25 | INFO     | 🎯 Total searches: 38
+2026-01-29 09:10:25 | INFO     | ================================================================================
+2026-01-29 09:10:25 | INFO     | 
+================================================================================
+2026-01-29 09:10:25 | INFO     | 🌐 Starting scrape from: LINKEDIN
+2026-01-29 09:10:26 | INFO     | ================================================================================
+2026-01-29 09:10:26 | INFO     | 🔎 [1/38] LINKEDIN 🇬🇧 EN: 'software engineer' in München
+2026-01-29 09:11:27 | INFO     |    ✓ Found 100 jobs
+2026-01-29 09:11:33 | INFO     | 🔎 [2/38] LINKEDIN 🇬🇧 EN: 'software architect' in München
+2026-01-29 09:12:06 | INFO     |    ✓ Found 56 jobs
+2026-01-29 09:12:12 | INFO     | 🔎 [3/38] LINKEDIN 🇬🇧 EN: 'software developer' in München
+2026-01-29 09:13:10 | INFO     |    ✓ Found 95 jobs
+2026-01-29 09:13:16 | INFO     | 🔎 [4/38] LINKEDIN 🇬🇧 EN: 'data engineer' in München
+2026-01-29 09:13:57 | INFO     |    ✓ Found 69 jobs
+2026-01-29 09:14:03 | INFO     | 🔎 [5/38] LINKEDIN 🇬🇧 EN: 'Data analyst' in München
+2026-01-29 09:14:53 | INFO     |    ✓ Found 100 jobs
+2026-01-29 09:14:59 | INFO     | 🔎 [6/38] LINKEDIN 🇬🇧 EN: 'data scientist' in München
+2026-01-29 09:15:57 | INFO     |    ✓ Found 100 jobs
+2026-01-29 09:16:03 | INFO     | 🔎 [7/38] LINKEDIN 🇬🇧 EN: 'BI developer' in München
+2026-01-29 09:16:07 | INFO     |    ✓ Found 5 jobs
+2026-01-29 09:16:13 | INFO     | 🔎 [8/38] LINKEDIN 🇬🇧 EN: 'Cloud Engineer' in München
+2026-01-29 09:16:56 | INFO     |    ✓ Found 70 jobs
+2026-01-29 09:17:02 | INFO     | 🔎 [9/38] LINKEDIN 🇬🇧 EN: 'Cloud architect' in München
+2026-01-29 09:17:20 | INFO     |    ✓ Found 40 jobs
+2026-01-29 09:17:26 | INFO     | 🔎 [10/38] LINKEDIN 🇬🇧 EN: 'DevOps engineer' in München
+2026-01-29 09:17:49 | INFO     |    ✓ Found 40 jobs
+2026-01-29 09:17:55 | INFO     | 🔎 [11/38] LINKEDIN 🇩🇪 DE: 'IT administrator' in München
+2026-01-29 09:18:20 | INFO     |    ✓ Found 50 jobs
+2026-01-29 09:18:26 | INFO     | 🔎 [12/38] LINKEDIN 🇬🇧 EN: 'backend developer' in München
+2026-01-29 09:18:48 | INFO     |    ✓ Found 34 jobs
+2026-01-29 09:18:54 | INFO     | 🔎 [13/38] LINKEDIN 🇬🇧 EN: 'frontend developer' in München
+2026-01-29 09:19:05 | INFO     |    ✓ Found 20 jobs
+2026-01-29 09:19:11 | INFO     | 🔎 [14/38] LINKEDIN 🇬🇧 EN: 'full stack developer' in München
+2026-01-29 09:19:27 | INFO     |    ✓ Found 30 jobs
+2026-01-29 09:19:33 | INFO     | 🔎 [15/38] LINKEDIN 🇬🇧 EN: 'Apps developer' in München
+2026-01-29 09:19:58 | INFO     |    ✓ Found 36 jobs
+2026-01-29 09:20:04 | INFO     | 🔎 [16/38] LINKEDIN 🇬🇧 EN: 'SAP developer' in München
+2026-01-29 09:20:42 | INFO     |    ✓ Found 70 jobs
+2026-01-29 09:20:48 | INFO     | 🔎 [17/38] LINKEDIN 🇬🇧 EN: 'machine learning engineer' in München
+2026-01-29 09:21:20 | INFO     |    ✓ Found 54 jobs
+2026-01-29 09:21:26 | INFO     | 🔎 [18/38] LINKEDIN 🇬🇧 EN: 'AI engineer' in München
+2026-01-29 09:21:35 | INFO     |    ✓ Found 20 jobs
+2026-01-29 09:21:41 | INFO     | 🔎 [19/38] LINKEDIN 🇬🇧 EN: 'cybersecurity engineer' in München
+2026-01-29 09:22:01 | INFO     |    ✓ Found 30 jobs
+2026-01-29 09:22:07 | INFO     | 🔎 [20/38] LINKEDIN 🇩🇪 DE: 'Softwareentwickler' in München
+2026-01-29 09:23:09 | INFO     |    ✓ Found 100 jobs
+2026-01-29 09:23:15 | INFO     | 🔎 [21/38] LINKEDIN 🇬🇧 EN: 'Softwarearchitekt' in München
+2026-01-29 09:23:36 | INFO     |    ✓ Found 30 jobs
+2026-01-29 09:23:42 | INFO     | 🔎 [22/38] LINKEDIN 🇩🇪 DE: 'Softwareentwickler' in München
+2026-01-29 09:24:33 | INFO     |    ✓ Found 100 jobs
+2026-01-29 09:24:39 | INFO     | 🔎 [23/38] LINKEDIN 🇬🇧 EN: 'Data Engineer' in München
+2026-01-29 09:25:27 | INFO     |    ✓ Found 69 jobs
+2026-01-29 09:25:33 | INFO     | 🔎 [24/38] LINKEDIN 🇬🇧 EN: 'Datenanalyst' in München
+2026-01-29 09:26:33 | INFO     |    ✓ Found 97 jobs
+2026-01-29 09:26:39 | INFO     | 🔎 [25/38] LINKEDIN 🇬🇧 EN: 'Data Scientist' in München
+2026-01-29 09:27:37 | INFO     |    ✓ Found 100 jobs
+2026-01-29 09:27:43 | INFO     | 🔎 [26/38] LINKEDIN 🇩🇪 DE: 'BI-Entwickler' in München
+2026-01-29 09:27:50 | INFO     |    ✓ Found 4 jobs
+2026-01-29 09:27:56 | INFO     | 🔎 [27/38] LINKEDIN 🇬🇧 EN: 'Cloud Engineer' in München
+2026-01-29 09:28:31 | INFO     |    ✓ Found 70 jobs
+2026-01-29 09:28:37 | INFO     | 🔎 [28/38] LINKEDIN 🇬🇧 EN: 'Cloud-Architekt' in München
+2026-01-29 09:28:58 | INFO     |    ✓ Found 30 jobs
+2026-01-29 09:29:04 | INFO     | 🔎 [29/38] LINKEDIN 🇬🇧 EN: 'DevOps Engineer' in München
+2026-01-29 09:29:20 | INFO     |    ✓ Found 40 jobs
+2026-01-29 09:29:26 | INFO     | 🔎 [30/38] LINKEDIN 🇩🇪 DE: 'IT-Administrator' in München
+2026-01-29 09:29:57 | INFO     |    ✓ Found 50 jobs
+2026-01-29 09:30:03 | INFO     | 🔎 [31/38] LINKEDIN 🇩🇪 DE: 'Backend Entwickler' in München
+2026-01-29 09:30:26 | INFO     |    ✓ Found 34 jobs
+2026-01-29 09:30:32 | INFO     | 🔎 [32/38] LINKEDIN 🇩🇪 DE: 'Frontend Entwickler' in München
+2026-01-29 09:30:44 | INFO     |    ✓ Found 20 jobs
+2026-01-29 09:30:50 | INFO     | 🔎 [33/38] LINKEDIN 🇩🇪 DE: 'FullStack Entwickler' in München
+2026-01-29 09:31:08 | INFO     |    ✓ Found 30 jobs
+2026-01-29 09:31:14 | INFO     | 🔎 [34/38] LINKEDIN 🇩🇪 DE: 'Apps Entwickler' in München
+2026-01-29 09:31:34 | INFO     |    ✓ Found 35 jobs
+2026-01-29 09:31:40 | INFO     | 🔎 [35/38] LINKEDIN 🇩🇪 DE: 'SAP Entwickler' in München
+2026-01-29 09:32:11 | INFO     |    ✓ Found 60 jobs
+2026-01-29 09:32:17 | INFO     | 🔎 [36/38] LINKEDIN 🇬🇧 EN: 'Machine Learning Engineer' in München
+2026-01-29 09:32:51 | INFO     |    ✓ Found 54 jobs
+2026-01-29 09:32:57 | INFO     | 🔎 [37/38] LINKEDIN 🇩🇪 DE: 'KI-Ingenieur' in München
+2026-01-29 09:33:01 | INFO     |    ✓ Found 1 jobs
+2026-01-29 09:33:07 | INFO     | 🔎 [38/38] LINKEDIN 🇬🇧 EN: 'IT-Security Engineer' in München
+2026-01-29 09:33:17 | INFO     |    ✓ Found 13 jobs
+2026-01-29 09:33:23 | INFO     | 
+🧹 LINKEDIN: Removed 1152 duplicates (1956 → 804)
+2026-01-29 09:33:23 | INFO     | 
+💾 Saving LINKEDIN data...
+2026-01-29 09:33:23 | INFO     |    ✓ CSV saved: Raw_Jobs_LINKEDIN_2026-01-29_09-33-23.csv (804 jobs)
+2026-01-29 09:33:23 | INFO     |    ✓ JSON saved: Raw_Jobs_LINKEDIN_2026-01-29_09-33-23.json
+2026-01-29 09:33:23 | INFO     | 
+================================================================================
+2026-01-29 09:33:23 | INFO     | ✅ SCRAPING COMPLETE!
+2026-01-29 09:33:23 | INFO     | ================================================================================
+2026-01-29 09:33:23 | INFO     | ⏱️  Duration: 23.0m
+2026-01-29 09:33:23 | INFO     | 
+📊 LINKEDIN:
+2026-01-29 09:33:23 | INFO     |    ✓ Successful searches: 38
+2026-01-29 09:33:23 | INFO     |    ✗ Failed searches: 0
+2026-01-29 09:33:23 | INFO     |    📦 Jobs collected: 1956 raw → 804 unique
+2026-01-29 09:33:23 | INFO     | 
+📦 TOTAL UNIQUE JOBS: 804
+2026-01-29 09:33:23 | INFO     | 
+📁 SAVED FILES:
+2026-01-29 09:33:23 | INFO     | 
+LINKEDIN:
+2026-01-29 09:33:23 | INFO     |    📄 Raw_Jobs_LINKEDIN_2026-01-29_09-33-23.csv
+2026-01-29 09:33:23 | INFO     |    📄 Raw_Jobs_LINKEDIN_2026-01-29_09-33-23.json
+2026-01-29 09:33:23 | INFO     | 
+📂 Location: /content/job_data
+2026-01-29 09:33:23 | INFO     | ================================================================================
+2026-01-29 09:33:23 | INFO     | 📋 Metadata saved: Metadata_2026-01-29_09-33-23.json

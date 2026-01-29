@@ -1,0 +1,64 @@
+{
+  "scrape_date": "2026-01-29T09:33:23.576242",
+  "job_boards": [
+    "linkedin"
+  ],
+  "cities": [
+    "M\u00fcnchen"
+  ],
+  "keywords": [
+    "software engineer",
+    "software architect",
+    "software developer",
+    "data engineer",
+    "Data analyst",
+    "data scientist",
+    "BI developer",
+    "Cloud Engineer",
+    "Cloud architect",
+    "DevOps engineer",
+    "IT administrator",
+    "backend developer",
+    "frontend developer",
+    "full stack developer",
+    "Apps developer",
+    "SAP developer",
+    "machine learning engineer",
+    "AI engineer",
+    "cybersecurity engineer",
+    "Softwareentwickler",
+    "Softwarearchitekt",
+    "Softwareentwickler",
+    "Data Engineer",
+    "Datenanalyst",
+    "Data Scientist",
+    "BI-Entwickler",
+    "Cloud Engineer",
+    "Cloud-Architekt",
+    "DevOps Engineer",
+    "IT-Administrator",
+    "Backend Entwickler",
+    "Frontend Entwickler",
+    "FullStack Entwickler",
+    "Apps Entwickler",
+    "SAP Entwickler",
+    "Machine Learning Engineer",
+    "KI-Ingenieur",
+    "IT-Security Engineer"
+  ],
+  "total_unique_jobs": 804,
+  "bilingual": true,
+  "stats": {
+    "start_time": "2026-01-29 09:10:25.969484",
+    "end_time": "2026-01-29 09:33:23.536808",
+    "total_searches": 38,
+    "by_board": {
+      "linkedin": {
+        "successful": 38,
+        "failed": 0,
+        "jobs_raw": 1956,
+        "jobs_deduped": 804
+      }
+    }
+  }
+}
