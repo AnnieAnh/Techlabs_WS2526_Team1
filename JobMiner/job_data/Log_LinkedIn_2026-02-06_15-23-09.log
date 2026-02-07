@@ -1,0 +1,2614 @@
+2026-02-06 15:23:09 | INFO     | ================================================================================
+2026-02-06 15:23:09 | INFO     | 🚀 LINKEDIN JOB SCRAPER - BILINGUAL (EN + DE)
+2026-02-06 15:23:09 | INFO     | 🐢 SAFE MODE - Human-like behavior (No multi-threading)
+2026-02-06 15:23:09 | INFO     | ================================================================================
+2026-02-06 15:23:09 | INFO     | 📍 Cities: 34 (ALL)
+2026-02-06 15:23:09 | INFO     | 🔑 Job Titles: 37 (ALL)
+2026-02-06 15:23:09 | INFO     | 📝 Log File: e:\DS\Project-Group-1\Techlabs_WS2526_Team1\JobMiner\Log_LinkedIn_2026-02-06_15-23-09.log
+2026-02-06 15:23:09 | INFO     | 📅 Time Range: Last 120 days
+2026-02-06 15:23:09 | INFO     | ⏱️  Pages per search: 2 (=50 jobs max)
+2026-02-06 15:23:09 | INFO     | 🐢 Delay: 0.8s + random(0-0.5s) - HUMAN-LIKE
+2026-02-06 15:23:09 | INFO     | 🔄 Sequential scraping: 1 request at a time (safest)
+2026-02-06 15:23:09 | INFO     | 🎯 Total searches: 1258
+2026-02-06 15:23:09 | INFO     | 🕒 Est. time: 12.2h (734 min)
+2026-02-06 15:23:09 | INFO     | 📊 Expected new jobs: ~31,450 (before dedup)
+2026-02-06 15:23:09 | INFO     | ✅ Safest mode - mimics human browsing behavior
+2026-02-06 15:23:09 | INFO     | ================================================================================
+2026-02-06 15:23:09 | INFO     | 
+🚀 Starting multi-threaded scraping with 1 workers...
+
+2026-02-06 15:23:09 | INFO     | 🔎 [1/1258] 🇬🇧 EN: 'software engineer' in Stuttgart
+2026-02-06 15:23:46 | INFO     |    ✓ Found 16 jobs
+2026-02-06 15:23:46 | INFO     | 🔎 [2/1258] 🇬🇧 EN: 'software engineer' in Munich
+2026-02-06 15:24:22 | INFO     |    ✓ Found 17 jobs
+2026-02-06 15:24:22 | INFO     | 🔎 [3/1258] 🇬🇧 EN: 'software engineer' in Berlin
+2026-02-06 15:24:58 | INFO     |    ✓ Found 19 jobs
+2026-02-06 15:24:58 | INFO     | 🔎 [4/1258] 🇬🇧 EN: 'software engineer' in Potsdam
+2026-02-06 15:25:32 | INFO     |    ✓ Found 17 jobs
+2026-02-06 15:25:32 | INFO     | 🔎 [5/1258] 🇬🇧 EN: 'software engineer' in Bremen
+2026-02-06 15:26:07 | INFO     |    ✓ Found 15 jobs
+2026-02-06 15:26:07 | INFO     | 🔎 [6/1258] 🇬🇧 EN: 'software engineer' in Hamburg
+2026-02-06 15:26:41 | INFO     |    ✓ Found 16 jobs
+2026-02-06 15:26:41 | INFO     | 🔎 [7/1258] 🇬🇧 EN: 'software engineer' in Frankfurt
+2026-02-06 15:27:16 | INFO     |    ✓ Found 14 jobs
+2026-02-06 15:27:16 | INFO     | 🔎 [8/1258] 🇬🇧 EN: 'software engineer' in Hanover
+2026-02-06 15:27:51 | INFO     |    ✓ Found 18 jobs
+2026-02-06 15:27:51 | INFO     | 🔎 [9/1258] 🇬🇧 EN: 'software engineer' in Rostock
+2026-02-06 15:28:24 | INFO     |    ✓ Found 19 jobs
+2026-02-06 15:28:24 | INFO     | 🔎 [10/1258] 🇬🇧 EN: 'software engineer' in Cologne
+2026-02-06 15:28:59 | INFO     |    ✓ Found 18 jobs
+2026-02-06 15:28:59 | INFO     | 🔎 [11/1258] 🇬🇧 EN: 'software engineer' in Mainz
+2026-02-06 15:29:35 | INFO     |    ✓ Found 13 jobs
+2026-02-06 15:29:35 | INFO     | 🔎 [12/1258] 🇬🇧 EN: 'software engineer' in Saarbrücken
+2026-02-06 15:30:08 | INFO     |    ✓ Found 16 jobs
+2026-02-06 15:30:08 | INFO     | 🔎 [13/1258] 🇬🇧 EN: 'software engineer' in Dresden
+2026-02-06 15:30:43 | INFO     |    ✓ Found 16 jobs
+2026-02-06 15:30:43 | INFO     | 🔎 [14/1258] 🇬🇧 EN: 'software engineer' in Magdeburg
+2026-02-06 15:31:17 | INFO     |    ✓ Found 14 jobs
+2026-02-06 15:31:17 | INFO     | 🔎 [15/1258] 🇬🇧 EN: 'software engineer' in Kiel
+2026-02-06 15:31:51 | INFO     |    ✓ Found 14 jobs
+2026-02-06 15:31:51 | INFO     | 🔎 [16/1258] 🇬🇧 EN: 'software engineer' in Erfurt
+2026-02-06 15:32:25 | INFO     |    ✓ Found 17 jobs
+2026-02-06 15:32:25 | INFO     | 🔎 [17/1258] 🇬🇧 EN: 'software engineer' in Düsseldorf
+2026-02-06 15:33:00 | INFO     |    ✓ Found 17 jobs
+2026-02-06 15:33:00 | INFO     | 🔎 [18/1258] 🇬🇧 EN: 'software engineer' in Dortmund
+2026-02-06 15:33:34 | INFO     |    ✓ Found 15 jobs
+2026-02-06 15:33:34 | INFO     | 🔎 [19/1258] 🇬🇧 EN: 'software engineer' in Essen
+2026-02-06 15:34:09 | INFO     |    ✓ Found 13 jobs
+2026-02-06 15:34:09 | INFO     | 🔎 [20/1258] 🇬🇧 EN: 'software engineer' in Leipzig
+2026-02-06 15:34:43 | INFO     |    ✓ Found 12 jobs
+2026-02-06 15:34:43 | INFO     | 🔎 [21/1258] 🇬🇧 EN: 'software engineer' in Nürnberg
+2026-02-06 15:35:18 | INFO     |    ✓ Found 14 jobs
+2026-02-06 15:35:18 | INFO     | 🔎 [22/1258] 🇬🇧 EN: 'software engineer' in Karlsruhe
+2026-02-06 15:35:54 | INFO     |    ✓ Found 15 jobs
+2026-02-06 15:35:54 | INFO     | 🔎 [23/1258] 🇬🇧 EN: 'software engineer' in Mannheim
+2026-02-06 15:36:28 | INFO     |    ✓ Found 14 jobs
+2026-02-06 15:36:28 | INFO     | 🔎 [24/1258] 🇬🇧 EN: 'software engineer' in Augsburg
+2026-02-06 15:37:03 | INFO     |    ✓ Found 18 jobs
+2026-02-06 15:37:03 | INFO     | 🔎 [25/1258] 🇬🇧 EN: 'software engineer' in Wiesbaden
+2026-02-06 15:37:38 | INFO     |    ✓ Found 13 jobs
+2026-02-06 15:37:38 | INFO     | 🔎 [26/1258] 🇬🇧 EN: 'software engineer' in Münster
+2026-02-06 15:38:12 | INFO     |    ✓ Found 15 jobs
+2026-02-06 15:38:12 | INFO     | 🔎 [27/1258] 🇬🇧 EN: 'software engineer' in Bonn
+2026-02-06 15:38:47 | INFO     |    ✓ Found 16 jobs
+2026-02-06 15:38:47 | INFO     | 🔎 [28/1258] 🇬🇧 EN: 'software engineer' in Freiburg
+2026-02-06 15:39:21 | INFO     |    ✓ Found 17 jobs
+2026-02-06 15:39:21 | INFO     | 🔎 [29/1258] 🇬🇧 EN: 'software engineer' in Aachen
+2026-02-06 15:39:59 | INFO     |    ✓ Found 18 jobs
+2026-02-06 15:39:59 | INFO     | 🔎 [30/1258] 🇬🇧 EN: 'software engineer' in Heidelberg
+2026-02-06 15:40:34 | INFO     |    ✓ Found 16 jobs
+2026-02-06 15:40:34 | INFO     | 🔎 [31/1258] 🇬🇧 EN: 'software engineer' in Ulm
+2026-02-06 15:41:09 | INFO     |    ✓ Found 16 jobs
+2026-02-06 15:41:09 | INFO     | 🔎 [32/1258] 🇬🇧 EN: 'software engineer' in Darmstadt
+2026-02-06 15:41:44 | INFO     |    ✓ Found 9 jobs
+2026-02-06 15:41:44 | INFO     | 🔎 [33/1258] 🇬🇧 EN: 'software engineer' in Regensburg
+2026-02-06 15:42:18 | INFO     |    ✓ Found 18 jobs
+2026-02-06 15:42:18 | INFO     | 🔎 [34/1258] 🇬🇧 EN: 'software engineer' in Bielefeld
+2026-02-06 15:42:52 | INFO     |    ✓ Found 15 jobs
+2026-02-06 15:42:52 | INFO     | 🔎 [35/1258] 🇬🇧 EN: 'software architect' in Stuttgart
+2026-02-06 15:43:27 | INFO     |    ✓ Found 20 jobs
+2026-02-06 15:43:27 | INFO     | 🔎 [36/1258] 🇬🇧 EN: 'software architect' in Munich
+2026-02-06 15:44:03 | INFO     |    ✓ Found 17 jobs
+2026-02-06 15:44:03 | INFO     | 🔎 [37/1258] 🇬🇧 EN: 'software architect' in Berlin
+2026-02-06 15:44:39 | INFO     |    ✓ Found 20 jobs
+2026-02-06 15:44:39 | INFO     | 🔎 [38/1258] 🇬🇧 EN: 'software architect' in Potsdam
+2026-02-06 15:45:15 | INFO     |    ✓ Found 19 jobs
+2026-02-06 15:45:15 | INFO     | 🔎 [39/1258] 🇬🇧 EN: 'software architect' in Bremen
+2026-02-06 15:45:49 | INFO     |    ✓ Found 20 jobs
+2026-02-06 15:45:49 | INFO     | 🔎 [40/1258] 🇬🇧 EN: 'software architect' in Hamburg
+2026-02-06 15:46:25 | INFO     |    ✓ Found 18 jobs
+2026-02-06 15:46:25 | INFO     | 🔎 [41/1258] 🇬🇧 EN: 'software architect' in Frankfurt
+2026-02-06 15:47:00 | INFO     |    ✓ Found 18 jobs
+2026-02-06 15:47:00 | INFO     | 🔎 [42/1258] 🇬🇧 EN: 'software architect' in Hanover
+2026-02-06 15:47:34 | INFO     |    ✓ Found 20 jobs
+2026-02-06 15:47:34 | INFO     | 🔎 [43/1258] 🇬🇧 EN: 'software architect' in Rostock
+2026-02-06 15:48:08 | INFO     |    ✓ Found 20 jobs
+2026-02-06 15:48:08 | INFO     | 🔎 [44/1258] 🇬🇧 EN: 'software architect' in Cologne
+2026-02-06 15:48:44 | INFO     |    ✓ Found 19 jobs
+2026-02-06 15:48:44 | INFO     | 🔎 [45/1258] 🇬🇧 EN: 'software architect' in Mainz
+2026-02-06 15:49:20 | INFO     |    ✓ Found 19 jobs
+2026-02-06 15:49:20 | INFO     | 🔎 [46/1258] 🇬🇧 EN: 'software architect' in Saarbrücken
+2026-02-06 15:49:54 | INFO     |    ✓ Found 20 jobs
+2026-02-06 15:49:54 | INFO     | 🔎 [47/1258] 🇬🇧 EN: 'software architect' in Dresden
+2026-02-06 15:50:29 | INFO     |    ✓ Found 16 jobs
+2026-02-06 15:50:29 | INFO     | 🔎 [48/1258] 🇬🇧 EN: 'software architect' in Magdeburg
+2026-02-06 15:50:40 | INFO     |    ✓ Found 6 jobs
+2026-02-06 15:50:40 | INFO     | 🔎 [49/1258] 🇬🇧 EN: 'software architect' in Kiel
+2026-02-06 15:51:14 | INFO     |    ✓ Found 19 jobs
+2026-02-06 15:51:14 | INFO     | 🔎 [50/1258] 🇬🇧 EN: 'software architect' in Erfurt
+2026-02-06 15:51:48 | INFO     |    ✓ Found 20 jobs
+2026-02-06 15:51:48 | INFO     | 🔎 [51/1258] 🇬🇧 EN: 'software architect' in Düsseldorf
+2026-02-06 15:52:23 | INFO     |    ✓ Found 19 jobs
+2026-02-06 15:52:23 | INFO     | 🔎 [52/1258] 🇬🇧 EN: 'software architect' in Dortmund
+2026-02-06 15:52:59 | INFO     |    ✓ Found 19 jobs
+2026-02-06 15:52:59 | INFO     | 🔎 [53/1258] 🇬🇧 EN: 'software architect' in Essen
+2026-02-06 15:53:35 | INFO     |    ✓ Found 19 jobs
+2026-02-06 15:53:35 | INFO     | 🔎 [54/1258] 🇬🇧 EN: 'software architect' in Leipzig
+2026-02-06 15:54:09 | INFO     |    ✓ Found 18 jobs
+2026-02-06 15:54:09 | INFO     | 🔎 [55/1258] 🇬🇧 EN: 'software architect' in Nürnberg
+2026-02-06 15:54:44 | INFO     |    ✓ Found 20 jobs
+2026-02-06 15:54:44 | INFO     | 🔎 [56/1258] 🇬🇧 EN: 'software architect' in Karlsruhe
+2026-02-06 15:55:19 | INFO     |    ✓ Found 19 jobs
+2026-02-06 15:55:19 | INFO     | 🔎 [57/1258] 🇬🇧 EN: 'software architect' in Mannheim
+2026-02-06 15:55:53 | INFO     |    ✓ Found 20 jobs
+2026-02-06 15:55:53 | INFO     | 🔎 [58/1258] 🇬🇧 EN: 'software architect' in Augsburg
+2026-02-06 15:56:27 | INFO     |    ✓ Found 20 jobs
+2026-02-06 15:56:27 | INFO     | 🔎 [59/1258] 🇬🇧 EN: 'software architect' in Wiesbaden
+2026-02-06 15:57:04 | INFO     |    ✓ Found 19 jobs
+2026-02-06 15:57:04 | INFO     | 🔎 [60/1258] 🇬🇧 EN: 'software architect' in Münster
+2026-02-06 15:57:38 | INFO     |    ✓ Found 20 jobs
+2026-02-06 15:57:38 | INFO     | 🔎 [61/1258] 🇬🇧 EN: 'software architect' in Bonn
+2026-02-06 15:58:14 | INFO     |    ✓ Found 19 jobs
+2026-02-06 15:58:14 | INFO     | 🔎 [62/1258] 🇬🇧 EN: 'software architect' in Freiburg
+2026-02-06 15:58:31 | INFO     |    ✓ Found 9 jobs
+2026-02-06 15:58:31 | INFO     | 🔎 [63/1258] 🇬🇧 EN: 'software architect' in Aachen
+2026-02-06 15:59:08 | INFO     |    ✓ Found 18 jobs
+2026-02-06 15:59:08 | INFO     | 🔎 [64/1258] 🇬🇧 EN: 'software architect' in Heidelberg
+2026-02-06 15:59:43 | INFO     |    ✓ Found 20 jobs
+2026-02-06 15:59:43 | INFO     | 🔎 [65/1258] 🇬🇧 EN: 'software architect' in Ulm
+2026-02-06 16:00:18 | INFO     |    ✓ Found 20 jobs
+2026-02-06 16:00:18 | INFO     | 🔎 [66/1258] 🇬🇧 EN: 'software architect' in Darmstadt
+2026-02-06 16:00:55 | INFO     |    ✓ Found 19 jobs
+2026-02-06 16:00:55 | INFO     | 🔎 [67/1258] 🇬🇧 EN: 'software architect' in Regensburg
+2026-02-06 16:01:12 | INFO     |    ✓ Found 8 jobs
+2026-02-06 16:01:12 | INFO     | 🔎 [68/1258] 🇬🇧 EN: 'software architect' in Bielefeld
+2026-02-06 16:01:47 | INFO     |    ✓ Found 19 jobs
+2026-02-06 16:01:47 | INFO     | 🔎 [69/1258] 🇬🇧 EN: 'software developer' in Stuttgart
+2026-02-06 16:02:23 | INFO     |    ✓ Found 14 jobs
+2026-02-06 16:02:23 | INFO     | 🔎 [70/1258] 🇬🇧 EN: 'software developer' in Munich
+2026-02-06 16:02:59 | INFO     |    ✓ Found 16 jobs
+2026-02-06 16:02:59 | INFO     | 🔎 [71/1258] 🇬🇧 EN: 'software developer' in Berlin
+2026-02-06 16:03:35 | INFO     |    ✓ Found 19 jobs
+2026-02-06 16:03:35 | INFO     | 🔎 [72/1258] 🇬🇧 EN: 'software developer' in Potsdam
+2026-02-06 16:04:11 | INFO     |    ✓ Found 19 jobs
+2026-02-06 16:04:11 | INFO     | 🔎 [73/1258] 🇬🇧 EN: 'software developer' in Bremen
+2026-02-06 16:04:45 | INFO     |    ✓ Found 14 jobs
+2026-02-06 16:04:45 | INFO     | 🔎 [74/1258] 🇬🇧 EN: 'software developer' in Hamburg
+2026-02-06 16:05:21 | INFO     |    ✓ Found 17 jobs
+2026-02-06 16:05:21 | INFO     | 🔎 [75/1258] 🇬🇧 EN: 'software developer' in Frankfurt
+2026-02-06 16:05:56 | INFO     |    ✓ Found 13 jobs
+2026-02-06 16:05:56 | INFO     | 🔎 [76/1258] 🇬🇧 EN: 'software developer' in Hanover
+2026-02-06 16:06:31 | INFO     |    ✓ Found 18 jobs
+2026-02-06 16:06:31 | INFO     | 🔎 [77/1258] 🇬🇧 EN: 'software developer' in Rostock
+2026-02-06 16:07:05 | INFO     |    ✓ Found 19 jobs
+2026-02-06 16:07:05 | INFO     | 🔎 [78/1258] 🇬🇧 EN: 'software developer' in Cologne
+2026-02-06 16:07:40 | INFO     |    ✓ Found 16 jobs
+2026-02-06 16:07:40 | INFO     | 🔎 [79/1258] 🇬🇧 EN: 'software developer' in Mainz
+2026-02-06 16:08:15 | INFO     |    ✓ Found 11 jobs
+2026-02-06 16:08:15 | INFO     | 🔎 [80/1258] 🇬🇧 EN: 'software developer' in Saarbrücken
+2026-02-06 16:08:50 | INFO     |    ✓ Found 16 jobs
+2026-02-06 16:08:50 | INFO     | 🔎 [81/1258] 🇬🇧 EN: 'software developer' in Dresden
+2026-02-06 16:09:25 | INFO     |    ✓ Found 14 jobs
+2026-02-06 16:09:25 | INFO     | 🔎 [82/1258] 🇬🇧 EN: 'software developer' in Magdeburg
+2026-02-06 16:09:58 | INFO     |    ✓ Found 13 jobs
+2026-02-06 16:09:58 | INFO     | 🔎 [83/1258] 🇬🇧 EN: 'software developer' in Kiel
+2026-02-06 16:10:32 | INFO     |    ✓ Found 13 jobs
+2026-02-06 16:10:32 | INFO     | 🔎 [84/1258] 🇬🇧 EN: 'software developer' in Erfurt
+2026-02-06 16:11:07 | INFO     |    ✓ Found 17 jobs
+2026-02-06 16:11:07 | INFO     | 🔎 [85/1258] 🇬🇧 EN: 'software developer' in Düsseldorf
+2026-02-06 16:11:42 | INFO     |    ✓ Found 17 jobs
+2026-02-06 16:11:42 | INFO     | 🔎 [86/1258] 🇬🇧 EN: 'software developer' in Dortmund
+2026-02-06 16:12:17 | INFO     |    ✓ Found 15 jobs
+2026-02-06 16:12:17 | INFO     | 🔎 [87/1258] 🇬🇧 EN: 'software developer' in Essen
+2026-02-06 16:12:52 | INFO     |    ✓ Found 11 jobs
+2026-02-06 16:12:52 | INFO     | 🔎 [88/1258] 🇬🇧 EN: 'software developer' in Leipzig
+2026-02-06 16:13:27 | INFO     |    ✓ Found 12 jobs
+2026-02-06 16:13:27 | INFO     | 🔎 [89/1258] 🇬🇧 EN: 'software developer' in Nürnberg
+2026-02-06 16:14:02 | INFO     |    ✓ Found 14 jobs
+2026-02-06 16:14:02 | INFO     | 🔎 [90/1258] 🇬🇧 EN: 'software developer' in Karlsruhe
+2026-02-06 16:14:37 | INFO     |    ✓ Found 15 jobs
+2026-02-06 16:14:37 | INFO     | 🔎 [91/1258] 🇬🇧 EN: 'software developer' in Mannheim
+2026-02-06 16:15:12 | INFO     |    ✓ Found 14 jobs
+2026-02-06 16:15:12 | INFO     | 🔎 [92/1258] 🇬🇧 EN: 'software developer' in Augsburg
+2026-02-06 16:15:47 | INFO     |    ✓ Found 19 jobs
+2026-02-06 16:15:47 | INFO     | 🔎 [93/1258] 🇬🇧 EN: 'software developer' in Wiesbaden
+2026-02-06 16:16:22 | INFO     |    ✓ Found 12 jobs
+2026-02-06 16:16:22 | INFO     | 🔎 [94/1258] 🇬🇧 EN: 'software developer' in Münster
+2026-02-06 16:16:56 | INFO     |    ✓ Found 14 jobs
+2026-02-06 16:16:56 | INFO     | 🔎 [95/1258] 🇬🇧 EN: 'software developer' in Bonn
+2026-02-06 16:17:33 | INFO     |    ✓ Found 16 jobs
+2026-02-06 16:17:33 | INFO     | 🔎 [96/1258] 🇬🇧 EN: 'software developer' in Freiburg
+2026-02-06 16:18:06 | INFO     |    ✓ Found 16 jobs
+2026-02-06 16:18:06 | INFO     | 🔎 [97/1258] 🇬🇧 EN: 'software developer' in Aachen
+2026-02-06 16:18:44 | INFO     |    ✓ Found 18 jobs
+2026-02-06 16:18:44 | INFO     | 🔎 [98/1258] 🇬🇧 EN: 'software developer' in Heidelberg
+2026-02-06 16:19:19 | INFO     |    ✓ Found 17 jobs
+2026-02-06 16:19:19 | INFO     | 🔎 [99/1258] 🇬🇧 EN: 'software developer' in Ulm
+2026-02-06 16:19:53 | INFO     |    ✓ Found 14 jobs
+2026-02-06 16:19:53 | INFO     | 🔎 [100/1258] 🇬🇧 EN: 'software developer' in Darmstadt
+2026-02-06 16:20:29 | INFO     |    ✓ Found 10 jobs
+2026-02-06 16:20:29 | INFO     | 
+💾 CHECKPOINT: Saving progress at 100/1258...
+2026-02-06 16:20:29 | INFO     |    ✓ Checkpoint saved: 1091 unique jobs so far
+
+2026-02-06 16:20:29 | INFO     | 🔎 [101/1258] 🇬🇧 EN: 'software developer' in Regensburg
+2026-02-06 16:21:03 | INFO     |    ✓ Found 17 jobs
+2026-02-06 16:21:03 | INFO     | 🔎 [102/1258] 🇬🇧 EN: 'software developer' in Bielefeld
+2026-02-06 16:21:39 | INFO     |    ✓ Found 16 jobs
+2026-02-06 16:21:39 | INFO     | 🔎 [103/1258] 🇬🇧 EN: 'data engineer' in Stuttgart
+2026-02-06 16:22:15 | INFO     |    ✓ Found 20 jobs
+2026-02-06 16:22:15 | INFO     | 🔎 [104/1258] 🇬🇧 EN: 'data engineer' in Munich
+2026-02-06 16:22:50 | INFO     |    ✓ Found 18 jobs
+2026-02-06 16:22:50 | INFO     | 🔎 [105/1258] 🇬🇧 EN: 'data engineer' in Berlin
+2026-02-06 16:23:26 | INFO     |    ✓ Found 20 jobs
+2026-02-06 16:23:26 | INFO     | 🔎 [106/1258] 🇬🇧 EN: 'data engineer' in Potsdam
+2026-02-06 16:24:02 | INFO     |    ✓ Found 19 jobs
+2026-02-06 16:24:02 | INFO     | 🔎 [107/1258] 🇬🇧 EN: 'data engineer' in Bremen
+2026-02-06 16:24:36 | INFO     |    ✓ Found 17 jobs
+2026-02-06 16:24:36 | INFO     | 🔎 [108/1258] 🇬🇧 EN: 'data engineer' in Hamburg
+2026-02-06 16:25:12 | INFO     |    ✓ Found 20 jobs
+2026-02-06 16:25:12 | INFO     | 🔎 [109/1258] 🇬🇧 EN: 'data engineer' in Frankfurt
+2026-02-06 16:25:49 | INFO     |    ✓ Found 15 jobs
+2026-02-06 16:25:49 | INFO     | 🔎 [110/1258] 🇬🇧 EN: 'data engineer' in Hanover
+2026-02-06 16:26:22 | INFO     |    ✓ Found 17 jobs
+2026-02-06 16:26:22 | INFO     | 🔎 [111/1258] 🇬🇧 EN: 'data engineer' in Rostock
+2026-02-06 16:26:55 | INFO     |    ✓ Found 20 jobs
+2026-02-06 16:26:55 | INFO     | 🔎 [112/1258] 🇬🇧 EN: 'data engineer' in Cologne
+2026-02-06 16:27:31 | INFO     |    ✓ Found 18 jobs
+2026-02-06 16:27:31 | INFO     | 🔎 [113/1258] 🇬🇧 EN: 'data engineer' in Mainz
+2026-02-06 16:28:05 | INFO     |    ✓ Found 18 jobs
+2026-02-06 16:28:05 | INFO     | 🔎 [114/1258] 🇬🇧 EN: 'data engineer' in Saarbrücken
+2026-02-06 16:28:39 | INFO     |    ✓ Found 20 jobs
+2026-02-06 16:28:39 | INFO     | 🔎 [115/1258] 🇬🇧 EN: 'data engineer' in Dresden
+2026-02-06 16:29:13 | INFO     |    ✓ Found 16 jobs
+2026-02-06 16:29:13 | INFO     | 🔎 [116/1258] 🇬🇧 EN: 'data engineer' in Magdeburg
+2026-02-06 16:29:32 | INFO     |    ✓ Found 9 jobs
+2026-02-06 16:29:32 | INFO     | 🔎 [117/1258] 🇬🇧 EN: 'data engineer' in Kiel
+2026-02-06 16:30:07 | INFO     |    ✓ Found 20 jobs
+2026-02-06 16:30:07 | INFO     | 🔎 [118/1258] 🇬🇧 EN: 'data engineer' in Erfurt
+2026-02-06 16:30:42 | INFO     |    ✓ Found 20 jobs
+2026-02-06 16:30:42 | INFO     | 🔎 [119/1258] 🇬🇧 EN: 'data engineer' in Düsseldorf
+2026-02-06 16:31:18 | INFO     |    ✓ Found 18 jobs
+2026-02-06 16:31:18 | INFO     | 🔎 [120/1258] 🇬🇧 EN: 'data engineer' in Dortmund
+2026-02-06 16:31:53 | INFO     |    ✓ Found 20 jobs
+2026-02-06 16:31:53 | INFO     | 🔎 [121/1258] 🇬🇧 EN: 'data engineer' in Essen
+2026-02-06 16:32:29 | INFO     |    ✓ Found 19 jobs
+2026-02-06 16:32:29 | INFO     | 🔎 [122/1258] 🇬🇧 EN: 'data engineer' in Leipzig
+2026-02-06 16:33:04 | INFO     |    ✓ Found 18 jobs
+2026-02-06 16:33:04 | INFO     | 🔎 [123/1258] 🇬🇧 EN: 'data engineer' in Nürnberg
+2026-02-06 16:33:41 | INFO     |    ✓ Found 17 jobs
+2026-02-06 16:33:41 | INFO     | 🔎 [124/1258] 🇬🇧 EN: 'data engineer' in Karlsruhe
+2026-02-06 16:34:16 | INFO     |    ✓ Found 18 jobs
+2026-02-06 16:34:16 | INFO     | 🔎 [125/1258] 🇬🇧 EN: 'data engineer' in Mannheim
+2026-02-06 16:34:51 | INFO     |    ✓ Found 20 jobs
+2026-02-06 16:34:51 | INFO     | 🔎 [126/1258] 🇬🇧 EN: 'data engineer' in Augsburg
+2026-02-06 16:35:26 | INFO     |    ✓ Found 18 jobs
+2026-02-06 16:35:26 | INFO     | 🔎 [127/1258] 🇬🇧 EN: 'data engineer' in Wiesbaden
+2026-02-06 16:36:01 | INFO     |    ✓ Found 19 jobs
+2026-02-06 16:36:01 | INFO     | 🔎 [128/1258] 🇬🇧 EN: 'data engineer' in Münster
+2026-02-06 16:36:36 | INFO     |    ✓ Found 19 jobs
+2026-02-06 16:36:36 | INFO     | 🔎 [129/1258] 🇬🇧 EN: 'data engineer' in Bonn
+2026-02-06 16:37:12 | INFO     |    ✓ Found 17 jobs
+2026-02-06 16:37:12 | INFO     | 🔎 [130/1258] 🇬🇧 EN: 'data engineer' in Freiburg
+2026-02-06 16:37:43 | INFO     |    ✓ Found 16 jobs
+2026-02-06 16:37:43 | INFO     | 🔎 [131/1258] 🇬🇧 EN: 'data engineer' in Aachen
+2026-02-06 16:38:21 | INFO     |    ✓ Found 20 jobs
+2026-02-06 16:38:21 | INFO     | 🔎 [132/1258] 🇬🇧 EN: 'data engineer' in Heidelberg
+2026-02-06 16:38:56 | INFO     |    ✓ Found 20 jobs
+2026-02-06 16:38:56 | INFO     | 🔎 [133/1258] 🇬🇧 EN: 'data engineer' in Ulm
+2026-02-06 16:39:31 | INFO     |    ✓ Found 16 jobs
+2026-02-06 16:39:31 | INFO     | 🔎 [134/1258] 🇬🇧 EN: 'data engineer' in Darmstadt
+2026-02-06 16:40:06 | INFO     |    ✓ Found 20 jobs
+2026-02-06 16:40:06 | INFO     | 🔎 [135/1258] 🇬🇧 EN: 'data engineer' in Regensburg
+2026-02-06 16:40:26 | INFO     |    ✓ Found 9 jobs
+2026-02-06 16:40:26 | INFO     | 🔎 [136/1258] 🇬🇧 EN: 'data engineer' in Bielefeld
+2026-02-06 16:41:01 | INFO     |    ✓ Found 19 jobs
+2026-02-06 16:41:01 | INFO     | 🔎 [137/1258] 🇩🇪 DE: 'data analyst' in Stuttgart
+2026-02-06 16:41:37 | INFO     |    ✓ Found 18 jobs
+2026-02-06 16:41:37 | INFO     | 🔎 [138/1258] 🇩🇪 DE: 'data analyst' in Munich
+2026-02-06 16:42:12 | INFO     |    ✓ Found 17 jobs
+2026-02-06 16:42:12 | INFO     | 🔎 [139/1258] 🇩🇪 DE: 'data analyst' in Berlin
+2026-02-06 16:42:46 | INFO     |    ✓ Found 19 jobs
+2026-02-06 16:42:46 | INFO     | 🔎 [140/1258] 🇩🇪 DE: 'data analyst' in Potsdam
+2026-02-06 16:43:20 | INFO     |    ✓ Found 19 jobs
+2026-02-06 16:43:20 | INFO     | 🔎 [141/1258] 🇩🇪 DE: 'data analyst' in Bremen
+2026-02-06 16:43:54 | INFO     |    ✓ Found 19 jobs
+2026-02-06 16:43:54 | INFO     | 🔎 [142/1258] 🇩🇪 DE: 'data analyst' in Hamburg
+2026-02-06 16:44:28 | INFO     |    ✓ Found 19 jobs
+2026-02-06 16:44:28 | INFO     | 🔎 [143/1258] 🇩🇪 DE: 'data analyst' in Frankfurt
+2026-02-06 16:45:03 | INFO     |    ✓ Found 20 jobs
+2026-02-06 16:45:03 | INFO     | 🔎 [144/1258] 🇩🇪 DE: 'data analyst' in Hanover
+2026-02-06 16:45:39 | INFO     |    ✓ Found 18 jobs
+2026-02-06 16:45:39 | INFO     | 🔎 [145/1258] 🇩🇪 DE: 'data analyst' in Rostock
+2026-02-06 16:46:13 | INFO     |    ✓ Found 19 jobs
+2026-02-06 16:46:13 | INFO     | 🔎 [146/1258] 🇩🇪 DE: 'data analyst' in Cologne
+2026-02-06 16:46:49 | INFO     |    ✓ Found 19 jobs
+2026-02-06 16:46:49 | INFO     | 🔎 [147/1258] 🇩🇪 DE: 'data analyst' in Mainz
+2026-02-06 16:47:26 | INFO     |    ✓ Found 20 jobs
+2026-02-06 16:47:26 | INFO     | 🔎 [148/1258] 🇩🇪 DE: 'data analyst' in Saarbrücken
+2026-02-06 16:48:00 | INFO     |    ✓ Found 20 jobs
+2026-02-06 16:48:00 | INFO     | 🔎 [149/1258] 🇩🇪 DE: 'data analyst' in Dresden
+2026-02-06 16:48:34 | INFO     |    ✓ Found 18 jobs
+2026-02-06 16:48:34 | INFO     | 🔎 [150/1258] 🇩🇪 DE: 'data analyst' in Magdeburg
+2026-02-06 16:49:08 | INFO     |    ✓ Found 15 jobs
+2026-02-06 16:49:08 | INFO     | 🔎 [151/1258] 🇩🇪 DE: 'data analyst' in Kiel
+2026-02-06 16:49:43 | INFO     |    ✓ Found 19 jobs
+2026-02-06 16:49:43 | INFO     | 🔎 [152/1258] 🇩🇪 DE: 'data analyst' in Erfurt
+2026-02-06 16:50:17 | INFO     |    ✓ Found 18 jobs
+2026-02-06 16:50:17 | INFO     | 🔎 [153/1258] 🇩🇪 DE: 'data analyst' in Düsseldorf
+2026-02-06 16:50:53 | INFO     |    ✓ Found 18 jobs
+2026-02-06 16:50:53 | INFO     | 🔎 [154/1258] 🇩🇪 DE: 'data analyst' in Dortmund
+2026-02-06 16:51:29 | INFO     |    ✓ Found 19 jobs
+2026-02-06 16:51:29 | INFO     | 🔎 [155/1258] 🇩🇪 DE: 'data analyst' in Essen
+2026-02-06 16:52:05 | INFO     |    ✓ Found 19 jobs
+2026-02-06 16:52:05 | INFO     | 🔎 [156/1258] 🇩🇪 DE: 'data analyst' in Leipzig
+2026-02-06 16:52:39 | INFO     |    ✓ Found 20 jobs
+2026-02-06 16:52:39 | INFO     | 🔎 [157/1258] 🇩🇪 DE: 'data analyst' in Nürnberg
+2026-02-06 16:53:15 | INFO     |    ✓ Found 17 jobs
+2026-02-06 16:53:15 | INFO     | 🔎 [158/1258] 🇩🇪 DE: 'data analyst' in Karlsruhe
+2026-02-06 16:53:50 | INFO     |    ✓ Found 18 jobs
+2026-02-06 16:53:50 | INFO     | 🔎 [159/1258] 🇩🇪 DE: 'data analyst' in Mannheim
+2026-02-06 16:54:25 | INFO     |    ✓ Found 20 jobs
+2026-02-06 16:54:25 | INFO     | 🔎 [160/1258] 🇩🇪 DE: 'data analyst' in Augsburg
+2026-02-06 16:54:59 | INFO     |    ✓ Found 17 jobs
+2026-02-06 16:54:59 | INFO     | 🔎 [161/1258] 🇩🇪 DE: 'data analyst' in Wiesbaden
+2026-02-06 16:55:34 | INFO     |    ✓ Found 20 jobs
+2026-02-06 16:55:34 | INFO     | 🔎 [162/1258] 🇩🇪 DE: 'data analyst' in Münster
+2026-02-06 16:56:09 | INFO     |    ✓ Found 19 jobs
+2026-02-06 16:56:09 | INFO     | 🔎 [163/1258] 🇩🇪 DE: 'data analyst' in Bonn
+2026-02-06 16:56:44 | INFO     |    ✓ Found 18 jobs
+2026-02-06 16:56:44 | INFO     | 🔎 [164/1258] 🇩🇪 DE: 'data analyst' in Freiburg
+2026-02-06 16:57:19 | INFO     |    ✓ Found 18 jobs
+2026-02-06 16:57:19 | INFO     | 🔎 [165/1258] 🇩🇪 DE: 'data analyst' in Aachen
+2026-02-06 16:57:57 | INFO     |    ✓ Found 18 jobs
+2026-02-06 16:57:57 | INFO     | 🔎 [166/1258] 🇩🇪 DE: 'data analyst' in Heidelberg
+2026-02-06 16:58:32 | INFO     |    ✓ Found 20 jobs
+2026-02-06 16:58:32 | INFO     | 🔎 [167/1258] 🇩🇪 DE: 'data analyst' in Ulm
+2026-02-06 16:59:06 | INFO     |    ✓ Found 18 jobs
+2026-02-06 16:59:06 | INFO     | 🔎 [168/1258] 🇩🇪 DE: 'data analyst' in Darmstadt
+2026-02-06 16:59:41 | INFO     |    ✓ Found 20 jobs
+2026-02-06 16:59:41 | INFO     | 🔎 [169/1258] 🇩🇪 DE: 'data analyst' in Regensburg
+2026-02-06 17:00:15 | INFO     |    ✓ Found 18 jobs
+2026-02-06 17:00:15 | INFO     | 🔎 [170/1258] 🇩🇪 DE: 'data analyst' in Bielefeld
+2026-02-06 17:00:50 | INFO     |    ✓ Found 19 jobs
+2026-02-06 17:00:50 | INFO     | 🔎 [171/1258] 🇬🇧 EN: 'data scientist' in Stuttgart
+2026-02-06 17:01:25 | INFO     |    ✓ Found 18 jobs
+2026-02-06 17:01:25 | INFO     | 🔎 [172/1258] 🇬🇧 EN: 'data scientist' in Munich
+2026-02-06 17:02:02 | INFO     |    ✓ Found 19 jobs
+2026-02-06 17:02:02 | INFO     | 🔎 [173/1258] 🇬🇧 EN: 'data scientist' in Berlin
+2026-02-06 17:02:36 | INFO     |    ✓ Found 17 jobs
+2026-02-06 17:02:36 | INFO     | 🔎 [174/1258] 🇬🇧 EN: 'data scientist' in Potsdam
+2026-02-06 17:03:10 | INFO     |    ✓ Found 17 jobs
+2026-02-06 17:03:10 | INFO     | 🔎 [175/1258] 🇬🇧 EN: 'data scientist' in Bremen
+2026-02-06 17:03:44 | INFO     |    ✓ Found 16 jobs
+2026-02-06 17:03:44 | INFO     | 🔎 [176/1258] 🇬🇧 EN: 'data scientist' in Hamburg
+2026-02-06 17:04:19 | INFO     |    ✓ Found 20 jobs
+2026-02-06 17:04:19 | INFO     | 🔎 [177/1258] 🇬🇧 EN: 'data scientist' in Frankfurt
+2026-02-06 17:04:55 | INFO     |    ✓ Found 20 jobs
+2026-02-06 17:04:55 | INFO     | 🔎 [178/1258] 🇬🇧 EN: 'data scientist' in Hanover
+2026-02-06 17:05:31 | INFO     |    ✓ Found 16 jobs
+2026-02-06 17:05:31 | INFO     | 🔎 [179/1258] 🇬🇧 EN: 'data scientist' in Rostock
+2026-02-06 17:06:06 | INFO     |    ✓ Found 19 jobs
+2026-02-06 17:06:06 | INFO     | 🔎 [180/1258] 🇬🇧 EN: 'data scientist' in Cologne
+2026-02-06 17:06:43 | INFO     |    ✓ Found 20 jobs
+2026-02-06 17:06:43 | INFO     | 🔎 [181/1258] 🇬🇧 EN: 'data scientist' in Mainz
+2026-02-06 17:07:19 | INFO     |    ✓ Found 19 jobs
+2026-02-06 17:07:19 | INFO     | 🔎 [182/1258] 🇬🇧 EN: 'data scientist' in Saarbrücken
+2026-02-06 17:07:53 | INFO     |    ✓ Found 18 jobs
+2026-02-06 17:07:53 | INFO     | 🔎 [183/1258] 🇬🇧 EN: 'data scientist' in Dresden
+2026-02-06 17:08:26 | INFO     |    ✓ Found 19 jobs
+2026-02-06 17:08:26 | INFO     | 🔎 [184/1258] 🇬🇧 EN: 'data scientist' in Magdeburg
+2026-02-06 17:09:00 | INFO     |    ✓ Found 16 jobs
+2026-02-06 17:09:00 | INFO     | 🔎 [185/1258] 🇬🇧 EN: 'data scientist' in Kiel
+2026-02-06 17:09:34 | INFO     |    ✓ Found 20 jobs
+2026-02-06 17:09:34 | INFO     | 🔎 [186/1258] 🇬🇧 EN: 'data scientist' in Erfurt
+2026-02-06 17:10:10 | INFO     |    ✓ Found 18 jobs
+2026-02-06 17:10:10 | INFO     | 🔎 [187/1258] 🇬🇧 EN: 'data scientist' in Düsseldorf
+2026-02-06 17:10:46 | INFO     |    ✓ Found 19 jobs
+2026-02-06 17:10:46 | INFO     | 🔎 [188/1258] 🇬🇧 EN: 'data scientist' in Dortmund
+2026-02-06 17:11:21 | INFO     |    ✓ Found 18 jobs
+2026-02-06 17:11:21 | INFO     | 🔎 [189/1258] 🇬🇧 EN: 'data scientist' in Essen
+2026-02-06 17:11:56 | INFO     |    ✓ Found 19 jobs
+2026-02-06 17:11:56 | INFO     | 🔎 [190/1258] 🇬🇧 EN: 'data scientist' in Leipzig
+2026-02-06 17:12:32 | INFO     |    ✓ Found 17 jobs
+2026-02-06 17:12:32 | INFO     | 🔎 [191/1258] 🇬🇧 EN: 'data scientist' in Nürnberg
+2026-02-06 17:13:07 | INFO     |    ✓ Found 17 jobs
+2026-02-06 17:13:07 | INFO     | 🔎 [192/1258] 🇬🇧 EN: 'data scientist' in Karlsruhe
+2026-02-06 17:13:41 | INFO     |    ✓ Found 18 jobs
+2026-02-06 17:13:41 | INFO     | 🔎 [193/1258] 🇬🇧 EN: 'data scientist' in Mannheim
+2026-02-06 17:14:16 | INFO     |    ✓ Found 17 jobs
+2026-02-06 17:14:16 | INFO     | 🔎 [194/1258] 🇬🇧 EN: 'data scientist' in Augsburg
+2026-02-06 17:14:51 | INFO     |    ✓ Found 18 jobs
+2026-02-06 17:14:51 | INFO     | 🔎 [195/1258] 🇬🇧 EN: 'data scientist' in Wiesbaden
+2026-02-06 17:15:27 | INFO     |    ✓ Found 19 jobs
+2026-02-06 17:15:27 | INFO     | 🔎 [196/1258] 🇬🇧 EN: 'data scientist' in Münster
+2026-02-06 17:16:04 | INFO     |    ✓ Found 19 jobs
+2026-02-06 17:16:04 | INFO     | 🔎 [197/1258] 🇬🇧 EN: 'data scientist' in Bonn
+2026-02-06 17:16:41 | INFO     |    ✓ Found 20 jobs
+2026-02-06 17:16:41 | INFO     | 🔎 [198/1258] 🇬🇧 EN: 'data scientist' in Freiburg
+2026-02-06 17:17:16 | INFO     |    ✓ Found 17 jobs
+2026-02-06 17:17:16 | INFO     | 🔎 [199/1258] 🇬🇧 EN: 'data scientist' in Aachen
+2026-02-06 17:17:53 | INFO     |    ✓ Found 20 jobs
+2026-02-06 17:17:53 | INFO     | 🔎 [200/1258] 🇬🇧 EN: 'data scientist' in Heidelberg
+2026-02-06 17:18:29 | INFO     |    ✓ Found 19 jobs
+2026-02-06 17:18:29 | INFO     | 
+💾 CHECKPOINT: Saving progress at 200/1258...
+2026-02-06 17:18:29 | INFO     |    ✓ Checkpoint saved: 2282 unique jobs so far
+
+2026-02-06 17:18:29 | INFO     | 🔎 [201/1258] 🇬🇧 EN: 'data scientist' in Ulm
+2026-02-06 17:19:03 | INFO     |    ✓ Found 14 jobs
+2026-02-06 17:19:03 | INFO     | 🔎 [202/1258] 🇬🇧 EN: 'data scientist' in Darmstadt
+2026-02-06 17:19:38 | INFO     |    ✓ Found 20 jobs
+2026-02-06 17:19:38 | INFO     | 🔎 [203/1258] 🇬🇧 EN: 'data scientist' in Regensburg
+2026-02-06 17:20:12 | INFO     |    ✓ Found 17 jobs
+2026-02-06 17:20:12 | INFO     | 🔎 [204/1258] 🇬🇧 EN: 'data scientist' in Bielefeld
+2026-02-06 17:20:46 | INFO     |    ✓ Found 19 jobs
+2026-02-06 17:20:46 | INFO     | 🔎 [205/1258] 🇬🇧 EN: 'BI developer' in Stuttgart
+2026-02-06 17:21:00 | INFO     |    ✓ Found 7 jobs
+2026-02-06 17:21:00 | INFO     | 🔎 [206/1258] 🇬🇧 EN: 'BI developer' in Munich
+2026-02-06 17:21:19 | INFO     |    ✓ Found 9 jobs
+2026-02-06 17:21:19 | INFO     | 🔎 [207/1258] 🇬🇧 EN: 'BI developer' in Berlin
+2026-02-06 17:21:37 | INFO     |    ✓ Found 8 jobs
+2026-02-06 17:21:37 | INFO     | 🔎 [208/1258] 🇬🇧 EN: 'BI developer' in Potsdam
+2026-02-06 17:21:56 | INFO     |    ✓ Found 8 jobs
+2026-02-06 17:21:56 | INFO     | 🔎 [209/1258] 🇬🇧 EN: 'BI developer' in Bremen
+2026-02-06 17:22:11 | INFO     |    ✓ Found 6 jobs
+2026-02-06 17:22:11 | INFO     | 🔎 [210/1258] 🇬🇧 EN: 'BI developer' in Hamburg
+2026-02-06 17:22:30 | INFO     |    ✓ Found 9 jobs
+2026-02-06 17:22:30 | INFO     | 🔎 [211/1258] 🇬🇧 EN: 'BI developer' in Frankfurt
+2026-02-06 17:22:48 | INFO     |    ✓ Found 10 jobs
+2026-02-06 17:22:48 | INFO     | 🔎 [212/1258] 🇬🇧 EN: 'BI developer' in Hanover
+2026-02-06 17:22:59 | INFO     |    ✓ Found 5 jobs
+2026-02-06 17:22:59 | INFO     | 🔎 [213/1258] 🇬🇧 EN: 'BI developer' in Rostock
+2026-02-06 17:23:00 | WARNING  |    ✗ No jobs found
+2026-02-06 17:23:00 | INFO     | 🔎 [214/1258] 🇬🇧 EN: 'BI developer' in Cologne
+2026-02-06 17:23:18 | INFO     |    ✓ Found 8 jobs
+2026-02-06 17:23:18 | INFO     | 🔎 [215/1258] 🇬🇧 EN: 'BI developer' in Mainz
+2026-02-06 17:23:37 | INFO     |    ✓ Found 10 jobs
+2026-02-06 17:23:37 | INFO     | 🔎 [216/1258] 🇬🇧 EN: 'BI developer' in Saarbrücken
+2026-02-06 17:23:38 | WARNING  |    ✗ No jobs found
+2026-02-06 17:23:38 | INFO     | 🔎 [217/1258] 🇬🇧 EN: 'BI developer' in Dresden
+2026-02-06 17:23:42 | INFO     |    ✓ Found 1 jobs
+2026-02-06 17:23:42 | INFO     | 🔎 [218/1258] 🇬🇧 EN: 'BI developer' in Magdeburg
+2026-02-06 17:23:43 | WARNING  |    ✗ No jobs found
+2026-02-06 17:23:43 | INFO     | 🔎 [219/1258] 🇬🇧 EN: 'BI developer' in Kiel
+2026-02-06 17:23:45 | WARNING  |    ✗ No jobs found
+2026-02-06 17:23:45 | INFO     | 🔎 [220/1258] 🇬🇧 EN: 'BI developer' in Erfurt
+2026-02-06 17:23:52 | INFO     |    ✓ Found 3 jobs
+2026-02-06 17:23:52 | INFO     | 🔎 [221/1258] 🇬🇧 EN: 'BI developer' in Düsseldorf
+2026-02-06 17:24:10 | INFO     |    ✓ Found 9 jobs
+2026-02-06 17:24:10 | INFO     | 🔎 [222/1258] 🇬🇧 EN: 'BI developer' in Dortmund
+2026-02-06 17:24:21 | INFO     |    ✓ Found 5 jobs
+2026-02-06 17:24:21 | INFO     | 🔎 [223/1258] 🇬🇧 EN: 'BI developer' in Essen
+2026-02-06 17:24:40 | INFO     |    ✓ Found 10 jobs
+2026-02-06 17:24:40 | INFO     | 🔎 [224/1258] 🇬🇧 EN: 'BI developer' in Leipzig
+2026-02-06 17:24:47 | INFO     |    ✓ Found 3 jobs
+2026-02-06 17:24:47 | INFO     | 🔎 [225/1258] 🇬🇧 EN: 'BI developer' in Nürnberg
+2026-02-06 17:24:57 | INFO     |    ✓ Found 3 jobs
+2026-02-06 17:24:57 | INFO     | 🔎 [226/1258] 🇬🇧 EN: 'BI developer' in Karlsruhe
+2026-02-06 17:25:06 | INFO     |    ✓ Found 4 jobs
+2026-02-06 17:25:06 | INFO     | 🔎 [227/1258] 🇬🇧 EN: 'BI developer' in Mannheim
+2026-02-06 17:25:17 | INFO     |    ✓ Found 4 jobs
+2026-02-06 17:25:17 | INFO     | 🔎 [228/1258] 🇬🇧 EN: 'BI developer' in Augsburg
+2026-02-06 17:25:20 | INFO     |    ✓ Found 1 jobs
+2026-02-06 17:25:20 | INFO     | 🔎 [229/1258] 🇬🇧 EN: 'BI developer' in Wiesbaden
+2026-02-06 17:25:39 | INFO     |    ✓ Found 10 jobs
+2026-02-06 17:25:39 | INFO     | 🔎 [230/1258] 🇬🇧 EN: 'BI developer' in Münster
+2026-02-06 17:25:50 | INFO     |    ✓ Found 5 jobs
+2026-02-06 17:25:50 | INFO     | 🔎 [231/1258] 🇬🇧 EN: 'BI developer' in Bonn
+2026-02-06 17:26:07 | INFO     |    ✓ Found 7 jobs
+2026-02-06 17:26:07 | INFO     | 🔎 [232/1258] 🇬🇧 EN: 'BI developer' in Freiburg
+2026-02-06 17:26:08 | WARNING  |    ✗ No jobs found
+2026-02-06 17:26:08 | INFO     | 🔎 [233/1258] 🇬🇧 EN: 'BI developer' in Aachen
+2026-02-06 17:26:17 | INFO     |    ✓ Found 3 jobs
+2026-02-06 17:26:17 | INFO     | 🔎 [234/1258] 🇬🇧 EN: 'BI developer' in Heidelberg
+2026-02-06 17:26:25 | INFO     |    ✓ Found 4 jobs
+2026-02-06 17:26:25 | INFO     | 🔎 [235/1258] 🇬🇧 EN: 'BI developer' in Ulm
+2026-02-06 17:26:31 | INFO     |    ✓ Found 2 jobs
+2026-02-06 17:26:31 | INFO     | 🔎 [236/1258] 🇬🇧 EN: 'BI developer' in Darmstadt
+2026-02-06 17:26:49 | INFO     |    ✓ Found 10 jobs
+2026-02-06 17:26:49 | INFO     | 🔎 [237/1258] 🇬🇧 EN: 'BI developer' in Regensburg
+2026-02-06 17:26:51 | WARNING  |    ✗ No jobs found
+2026-02-06 17:26:51 | INFO     | 🔎 [238/1258] 🇬🇧 EN: 'BI developer' in Bielefeld
+2026-02-06 17:26:59 | INFO     |    ✓ Found 3 jobs
+2026-02-06 17:26:59 | INFO     | 🔎 [239/1258] 🇬🇧 EN: 'Cloud Engineer' in Stuttgart
+2026-02-06 17:27:34 | INFO     |    ✓ Found 18 jobs
+2026-02-06 17:27:34 | INFO     | 🔎 [240/1258] 🇬🇧 EN: 'Cloud Engineer' in Munich
+2026-02-06 17:28:08 | INFO     |    ✓ Found 17 jobs
+2026-02-06 17:28:08 | INFO     | 🔎 [241/1258] 🇬🇧 EN: 'Cloud Engineer' in Berlin
+2026-02-06 17:28:43 | INFO     |    ✓ Found 19 jobs
+2026-02-06 17:28:43 | INFO     | 🔎 [242/1258] 🇬🇧 EN: 'Cloud Engineer' in Potsdam
+2026-02-06 17:29:18 | INFO     |    ✓ Found 19 jobs
+2026-02-06 17:29:18 | INFO     | 🔎 [243/1258] 🇬🇧 EN: 'Cloud Engineer' in Bremen
+2026-02-06 17:29:52 | INFO     |    ✓ Found 16 jobs
+2026-02-06 17:29:52 | INFO     | 🔎 [244/1258] 🇬🇧 EN: 'Cloud Engineer' in Hamburg
+2026-02-06 17:30:26 | INFO     |    ✓ Found 16 jobs
+2026-02-06 17:30:26 | INFO     | 🔎 [245/1258] 🇬🇧 EN: 'Cloud Engineer' in Frankfurt
+2026-02-06 17:31:00 | INFO     |    ✓ Found 17 jobs
+2026-02-06 17:31:00 | INFO     | 🔎 [246/1258] 🇬🇧 EN: 'Cloud Engineer' in Hanover
+2026-02-06 17:31:35 | INFO     |    ✓ Found 18 jobs
+2026-02-06 17:31:35 | INFO     | 🔎 [247/1258] 🇬🇧 EN: 'Cloud Engineer' in Rostock
+2026-02-06 17:32:08 | INFO     |    ✓ Found 20 jobs
+2026-02-06 17:32:08 | INFO     | 🔎 [248/1258] 🇬🇧 EN: 'Cloud Engineer' in Cologne
+2026-02-06 17:32:42 | INFO     |    ✓ Found 14 jobs
+2026-02-06 17:32:42 | INFO     | 🔎 [249/1258] 🇬🇧 EN: 'Cloud Engineer' in Mainz
+2026-02-06 17:33:17 | INFO     |    ✓ Found 15 jobs
+2026-02-06 17:33:17 | INFO     | 🔎 [250/1258] 🇬🇧 EN: 'Cloud Engineer' in Saarbrücken
+2026-02-06 17:33:51 | INFO     |    ✓ Found 20 jobs
+2026-02-06 17:33:51 | INFO     | 🔎 [251/1258] 🇬🇧 EN: 'Cloud Engineer' in Dresden
+2026-02-06 17:34:26 | INFO     |    ✓ Found 20 jobs
+2026-02-06 17:34:26 | INFO     | 🔎 [252/1258] 🇬🇧 EN: 'Cloud Engineer' in Magdeburg
+2026-02-06 17:34:43 | INFO     |    ✓ Found 10 jobs
+2026-02-06 17:34:43 | INFO     | 🔎 [253/1258] 🇬🇧 EN: 'Cloud Engineer' in Kiel
+2026-02-06 17:35:16 | INFO     |    ✓ Found 19 jobs
+2026-02-06 17:35:16 | INFO     | 🔎 [254/1258] 🇬🇧 EN: 'Cloud Engineer' in Erfurt
+2026-02-06 17:35:50 | INFO     |    ✓ Found 18 jobs
+2026-02-06 17:35:50 | INFO     | 🔎 [255/1258] 🇬🇧 EN: 'Cloud Engineer' in Düsseldorf
+2026-02-06 17:36:24 | INFO     |    ✓ Found 16 jobs
+2026-02-06 17:36:24 | INFO     | 🔎 [256/1258] 🇬🇧 EN: 'Cloud Engineer' in Dortmund
+2026-02-06 17:36:58 | INFO     |    ✓ Found 18 jobs
+2026-02-06 17:36:58 | INFO     | 🔎 [257/1258] 🇬🇧 EN: 'Cloud Engineer' in Essen
+2026-02-06 17:37:34 | INFO     |    ✓ Found 17 jobs
+2026-02-06 17:37:34 | INFO     | 🔎 [258/1258] 🇬🇧 EN: 'Cloud Engineer' in Leipzig
+2026-02-06 17:38:08 | INFO     |    ✓ Found 19 jobs
+2026-02-06 17:38:08 | INFO     | 🔎 [259/1258] 🇬🇧 EN: 'Cloud Engineer' in Nürnberg
+2026-02-06 17:38:42 | INFO     |    ✓ Found 18 jobs
+2026-02-06 17:38:42 | INFO     | 🔎 [260/1258] 🇬🇧 EN: 'Cloud Engineer' in Karlsruhe
+2026-02-06 17:39:17 | INFO     |    ✓ Found 17 jobs
+2026-02-06 17:39:17 | INFO     | 🔎 [261/1258] 🇬🇧 EN: 'Cloud Engineer' in Mannheim
+2026-02-06 17:39:51 | INFO     |    ✓ Found 18 jobs
+2026-02-06 17:39:51 | INFO     | 🔎 [262/1258] 🇬🇧 EN: 'Cloud Engineer' in Augsburg
+2026-02-06 17:40:24 | INFO     |    ✓ Found 19 jobs
+2026-02-06 17:40:24 | INFO     | 🔎 [263/1258] 🇬🇧 EN: 'Cloud Engineer' in Wiesbaden
+2026-02-06 17:40:58 | INFO     |    ✓ Found 15 jobs
+2026-02-06 17:40:58 | INFO     | 🔎 [264/1258] 🇬🇧 EN: 'Cloud Engineer' in Münster
+2026-02-06 17:41:32 | INFO     |    ✓ Found 19 jobs
+2026-02-06 17:41:32 | INFO     | 🔎 [265/1258] 🇬🇧 EN: 'Cloud Engineer' in Bonn
+2026-02-06 17:42:07 | INFO     |    ✓ Found 17 jobs
+2026-02-06 17:42:07 | INFO     | 🔎 [266/1258] 🇬🇧 EN: 'Cloud Engineer' in Freiburg
+2026-02-06 17:42:28 | INFO     |    ✓ Found 10 jobs
+2026-02-06 17:42:28 | INFO     | 🔎 [267/1258] 🇬🇧 EN: 'Cloud Engineer' in Aachen
+2026-02-06 17:43:03 | INFO     |    ✓ Found 19 jobs
+2026-02-06 17:43:03 | INFO     | 🔎 [268/1258] 🇬🇧 EN: 'Cloud Engineer' in Heidelberg
+2026-02-06 17:43:37 | INFO     |    ✓ Found 18 jobs
+2026-02-06 17:43:37 | INFO     | 🔎 [269/1258] 🇬🇧 EN: 'Cloud Engineer' in Ulm
+2026-02-06 17:44:11 | INFO     |    ✓ Found 19 jobs
+2026-02-06 17:44:11 | INFO     | 🔎 [270/1258] 🇬🇧 EN: 'Cloud Engineer' in Darmstadt
+2026-02-06 17:44:47 | INFO     |    ✓ Found 15 jobs
+2026-02-06 17:44:47 | INFO     | 🔎 [271/1258] 🇬🇧 EN: 'Cloud Engineer' in Regensburg
+2026-02-06 17:45:05 | INFO     |    ✓ Found 9 jobs
+2026-02-06 17:45:05 | INFO     | 🔎 [272/1258] 🇬🇧 EN: 'Cloud Engineer' in Bielefeld
+2026-02-06 17:45:42 | INFO     |    ✓ Found 19 jobs
+2026-02-06 17:45:42 | INFO     | 🔎 [273/1258] 🇬🇧 EN: 'Cloud architect' in Stuttgart
+2026-02-06 17:46:19 | INFO     |    ✓ Found 20 jobs
+2026-02-06 17:46:19 | INFO     | 🔎 [274/1258] 🇬🇧 EN: 'Cloud architect' in Munich
+2026-02-06 17:46:56 | INFO     |    ✓ Found 17 jobs
+2026-02-06 17:46:56 | INFO     | 🔎 [275/1258] 🇬🇧 EN: 'Cloud architect' in Berlin
+2026-02-06 17:47:33 | INFO     |    ✓ Found 19 jobs
+2026-02-06 17:47:33 | INFO     | 🔎 [276/1258] 🇬🇧 EN: 'Cloud architect' in Potsdam
+2026-02-06 17:48:09 | INFO     |    ✓ Found 19 jobs
+2026-02-06 17:48:09 | INFO     | 🔎 [277/1258] 🇬🇧 EN: 'Cloud architect' in Bremen
+2026-02-06 17:48:43 | INFO     |    ✓ Found 17 jobs
+2026-02-06 17:48:43 | INFO     | 🔎 [278/1258] 🇬🇧 EN: 'Cloud architect' in Hamburg
+2026-02-06 17:49:19 | INFO     |    ✓ Found 16 jobs
+2026-02-06 17:49:19 | INFO     | 🔎 [279/1258] 🇬🇧 EN: 'Cloud architect' in Frankfurt
+2026-02-06 17:49:57 | INFO     |    ✓ Found 18 jobs
+2026-02-06 17:49:57 | INFO     | 🔎 [280/1258] 🇬🇧 EN: 'Cloud architect' in Hanover
+2026-02-06 17:50:33 | INFO     |    ✓ Found 20 jobs
+2026-02-06 17:50:33 | INFO     | 🔎 [281/1258] 🇬🇧 EN: 'Cloud architect' in Rostock
+2026-02-06 17:51:07 | INFO     |    ✓ Found 20 jobs
+2026-02-06 17:51:07 | INFO     | 🔎 [282/1258] 🇬🇧 EN: 'Cloud architect' in Cologne
+2026-02-06 17:51:43 | INFO     |    ✓ Found 18 jobs
+2026-02-06 17:51:43 | INFO     | 🔎 [283/1258] 🇬🇧 EN: 'Cloud architect' in Mainz
+2026-02-06 17:52:19 | INFO     |    ✓ Found 19 jobs
+2026-02-06 17:52:19 | INFO     | 🔎 [284/1258] 🇬🇧 EN: 'Cloud architect' in Saarbrücken
+2026-02-06 17:52:53 | INFO     |    ✓ Found 20 jobs
+2026-02-06 17:52:53 | INFO     | 🔎 [285/1258] 🇬🇧 EN: 'Cloud architect' in Dresden
+2026-02-06 17:53:29 | INFO     |    ✓ Found 17 jobs
+2026-02-06 17:53:29 | INFO     | 🔎 [286/1258] 🇬🇧 EN: 'Cloud architect' in Magdeburg
+2026-02-06 17:53:45 | INFO     |    ✓ Found 9 jobs
+2026-02-06 17:53:45 | INFO     | 🔎 [287/1258] 🇬🇧 EN: 'Cloud architect' in Kiel
+2026-02-06 17:54:19 | INFO     |    ✓ Found 20 jobs
+2026-02-06 17:54:19 | INFO     | 🔎 [288/1258] 🇬🇧 EN: 'Cloud architect' in Erfurt
+2026-02-06 17:54:53 | INFO     |    ✓ Found 19 jobs
+2026-02-06 17:54:53 | INFO     | 🔎 [289/1258] 🇬🇧 EN: 'Cloud architect' in Düsseldorf
+2026-02-06 17:55:29 | INFO     |    ✓ Found 17 jobs
+2026-02-06 17:55:29 | INFO     | 🔎 [290/1258] 🇬🇧 EN: 'Cloud architect' in Dortmund
+2026-02-06 17:56:04 | INFO     |    ✓ Found 20 jobs
+2026-02-06 17:56:04 | INFO     | 🔎 [291/1258] 🇬🇧 EN: 'Cloud architect' in Essen
+2026-02-06 17:56:39 | INFO     |    ✓ Found 19 jobs
+2026-02-06 17:56:39 | INFO     | 🔎 [292/1258] 🇬🇧 EN: 'Cloud architect' in Leipzig
+2026-02-06 17:57:14 | INFO     |    ✓ Found 20 jobs
+2026-02-06 17:57:14 | INFO     | 🔎 [293/1258] 🇬🇧 EN: 'Cloud architect' in Nürnberg
+2026-02-06 17:57:50 | INFO     |    ✓ Found 20 jobs
+2026-02-06 17:57:50 | INFO     | 🔎 [294/1258] 🇬🇧 EN: 'Cloud architect' in Karlsruhe
+2026-02-06 17:58:25 | INFO     |    ✓ Found 20 jobs
+2026-02-06 17:58:25 | INFO     | 🔎 [295/1258] 🇬🇧 EN: 'Cloud architect' in Mannheim
+2026-02-06 17:59:00 | INFO     |    ✓ Found 19 jobs
+2026-02-06 17:59:00 | INFO     | 🔎 [296/1258] 🇬🇧 EN: 'Cloud architect' in Augsburg
+2026-02-06 17:59:35 | INFO     |    ✓ Found 20 jobs
+2026-02-06 17:59:35 | INFO     | 🔎 [297/1258] 🇬🇧 EN: 'Cloud architect' in Wiesbaden
+2026-02-06 18:00:11 | INFO     |    ✓ Found 19 jobs
+2026-02-06 18:00:11 | INFO     | 🔎 [298/1258] 🇬🇧 EN: 'Cloud architect' in Münster
+2026-02-06 18:00:45 | INFO     |    ✓ Found 19 jobs
+2026-02-06 18:00:45 | INFO     | 🔎 [299/1258] 🇬🇧 EN: 'Cloud architect' in Bonn
+2026-02-06 18:01:21 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:01:21 | INFO     | 🔎 [300/1258] 🇬🇧 EN: 'Cloud architect' in Freiburg
+2026-02-06 18:01:35 | INFO     |    ✓ Found 7 jobs
+2026-02-06 18:01:35 | INFO     | 
+💾 CHECKPOINT: Saving progress at 300/1258...
+2026-02-06 18:01:35 | INFO     |    ✓ Checkpoint saved: 3181 unique jobs so far
+
+2026-02-06 18:01:35 | INFO     | 🔎 [301/1258] 🇬🇧 EN: 'Cloud architect' in Aachen
+2026-02-06 18:02:11 | INFO     |    ✓ Found 19 jobs
+2026-02-06 18:02:11 | INFO     | 🔎 [302/1258] 🇬🇧 EN: 'Cloud architect' in Heidelberg
+2026-02-06 18:02:46 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:02:46 | INFO     | 🔎 [303/1258] 🇬🇧 EN: 'Cloud architect' in Ulm
+2026-02-06 18:03:21 | INFO     |    ✓ Found 20 jobs
+2026-02-06 18:03:21 | INFO     | 🔎 [304/1258] 🇬🇧 EN: 'Cloud architect' in Darmstadt
+2026-02-06 18:03:57 | INFO     |    ✓ Found 17 jobs
+2026-02-06 18:03:57 | INFO     | 🔎 [305/1258] 🇬🇧 EN: 'Cloud architect' in Regensburg
+2026-02-06 18:04:05 | INFO     |    ✓ Found 3 jobs
+2026-02-06 18:04:05 | INFO     | 🔎 [306/1258] 🇬🇧 EN: 'Cloud architect' in Bielefeld
+2026-02-06 18:04:40 | INFO     |    ✓ Found 20 jobs
+2026-02-06 18:04:40 | INFO     | 🔎 [307/1258] 🇬🇧 EN: 'DevOps engineer' in Stuttgart
+2026-02-06 18:05:15 | INFO     |    ✓ Found 19 jobs
+2026-02-06 18:05:15 | INFO     | 🔎 [308/1258] 🇬🇧 EN: 'DevOps engineer' in Munich
+2026-02-06 18:05:51 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:05:51 | INFO     | 🔎 [309/1258] 🇬🇧 EN: 'DevOps engineer' in Berlin
+2026-02-06 18:06:26 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:06:26 | INFO     | 🔎 [310/1258] 🇬🇧 EN: 'DevOps engineer' in Potsdam
+2026-02-06 18:07:01 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:07:01 | INFO     | 🔎 [311/1258] 🇬🇧 EN: 'DevOps engineer' in Bremen
+2026-02-06 18:07:35 | INFO     |    ✓ Found 17 jobs
+2026-02-06 18:07:35 | INFO     | 🔎 [312/1258] 🇬🇧 EN: 'DevOps engineer' in Hamburg
+2026-02-06 18:08:09 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:08:09 | INFO     | 🔎 [313/1258] 🇬🇧 EN: 'DevOps engineer' in Frankfurt
+2026-02-06 18:08:43 | INFO     |    ✓ Found 17 jobs
+2026-02-06 18:08:43 | INFO     | 🔎 [314/1258] 🇬🇧 EN: 'DevOps engineer' in Hanover
+2026-02-06 18:09:18 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:09:18 | INFO     | 🔎 [315/1258] 🇬🇧 EN: 'DevOps engineer' in Rostock
+2026-02-06 18:09:35 | INFO     |    ✓ Found 10 jobs
+2026-02-06 18:09:35 | INFO     | 🔎 [316/1258] 🇬🇧 EN: 'DevOps engineer' in Cologne
+2026-02-06 18:10:11 | INFO     |    ✓ Found 15 jobs
+2026-02-06 18:10:11 | INFO     | 🔎 [317/1258] 🇬🇧 EN: 'DevOps engineer' in Mainz
+2026-02-06 18:10:45 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:10:45 | INFO     | 🔎 [318/1258] 🇬🇧 EN: 'DevOps engineer' in Saarbrücken
+2026-02-06 18:11:06 | INFO     |    ✓ Found 12 jobs
+2026-02-06 18:11:06 | INFO     | 🔎 [319/1258] 🇬🇧 EN: 'DevOps engineer' in Dresden
+2026-02-06 18:11:40 | INFO     |    ✓ Found 20 jobs
+2026-02-06 18:11:40 | INFO     | 🔎 [320/1258] 🇬🇧 EN: 'DevOps engineer' in Magdeburg
+2026-02-06 18:11:50 | INFO     |    ✓ Found 5 jobs
+2026-02-06 18:11:50 | INFO     | 🔎 [321/1258] 🇬🇧 EN: 'DevOps engineer' in Kiel
+2026-02-06 18:12:23 | INFO     |    ✓ Found 20 jobs
+2026-02-06 18:12:23 | INFO     | 🔎 [322/1258] 🇬🇧 EN: 'DevOps engineer' in Erfurt
+2026-02-06 18:12:47 | INFO     |    ✓ Found 12 jobs
+2026-02-06 18:12:47 | INFO     | 🔎 [323/1258] 🇬🇧 EN: 'DevOps engineer' in Düsseldorf
+2026-02-06 18:13:22 | INFO     |    ✓ Found 17 jobs
+2026-02-06 18:13:22 | INFO     | 🔎 [324/1258] 🇬🇧 EN: 'DevOps engineer' in Dortmund
+2026-02-06 18:13:57 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:13:57 | INFO     | 🔎 [325/1258] 🇬🇧 EN: 'DevOps engineer' in Essen
+2026-02-06 18:14:31 | INFO     |    ✓ Found 19 jobs
+2026-02-06 18:14:31 | INFO     | 🔎 [326/1258] 🇬🇧 EN: 'DevOps engineer' in Leipzig
+2026-02-06 18:15:04 | INFO     |    ✓ Found 19 jobs
+2026-02-06 18:15:04 | INFO     | 🔎 [327/1258] 🇬🇧 EN: 'DevOps engineer' in Nürnberg
+2026-02-06 18:15:39 | INFO     |    ✓ Found 19 jobs
+2026-02-06 18:15:39 | INFO     | 🔎 [328/1258] 🇬🇧 EN: 'DevOps engineer' in Karlsruhe
+2026-02-06 18:16:13 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:16:13 | INFO     | 🔎 [329/1258] 🇬🇧 EN: 'DevOps engineer' in Mannheim
+2026-02-06 18:16:47 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:16:47 | INFO     | 🔎 [330/1258] 🇬🇧 EN: 'DevOps engineer' in Augsburg
+2026-02-06 18:17:13 | INFO     |    ✓ Found 15 jobs
+2026-02-06 18:17:13 | INFO     | 🔎 [331/1258] 🇬🇧 EN: 'DevOps engineer' in Wiesbaden
+2026-02-06 18:17:49 | INFO     |    ✓ Found 19 jobs
+2026-02-06 18:17:49 | INFO     | 🔎 [332/1258] 🇬🇧 EN: 'DevOps engineer' in Münster
+2026-02-06 18:18:22 | INFO     |    ✓ Found 19 jobs
+2026-02-06 18:18:22 | INFO     | 🔎 [333/1258] 🇬🇧 EN: 'DevOps engineer' in Bonn
+2026-02-06 18:18:56 | INFO     |    ✓ Found 16 jobs
+2026-02-06 18:18:56 | INFO     | 🔎 [334/1258] 🇬🇧 EN: 'DevOps engineer' in Freiburg
+2026-02-06 18:19:02 | INFO     |    ✓ Found 2 jobs
+2026-02-06 18:19:02 | INFO     | 🔎 [335/1258] 🇬🇧 EN: 'DevOps engineer' in Aachen
+2026-02-06 18:19:38 | INFO     |    ✓ Found 20 jobs
+2026-02-06 18:19:38 | INFO     | 🔎 [336/1258] 🇬🇧 EN: 'DevOps engineer' in Heidelberg
+2026-02-06 18:20:11 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:20:11 | INFO     | 🔎 [337/1258] 🇬🇧 EN: 'DevOps engineer' in Ulm
+2026-02-06 18:20:45 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:20:45 | INFO     | 🔎 [338/1258] 🇬🇧 EN: 'DevOps engineer' in Darmstadt
+2026-02-06 18:21:18 | INFO     |    ✓ Found 16 jobs
+2026-02-06 18:21:18 | INFO     | 🔎 [339/1258] 🇬🇧 EN: 'DevOps engineer' in Regensburg
+2026-02-06 18:21:34 | INFO     |    ✓ Found 8 jobs
+2026-02-06 18:21:34 | INFO     | 🔎 [340/1258] 🇬🇧 EN: 'DevOps engineer' in Bielefeld
+2026-02-06 18:22:09 | INFO     |    ✓ Found 20 jobs
+2026-02-06 18:22:09 | INFO     | 🔎 [341/1258] 🇩🇪 DE: 'IT administrator' in Stuttgart
+2026-02-06 18:22:43 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:22:43 | INFO     | 🔎 [342/1258] 🇩🇪 DE: 'IT administrator' in Munich
+2026-02-06 18:23:17 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:23:17 | INFO     | 🔎 [343/1258] 🇩🇪 DE: 'IT administrator' in Berlin
+2026-02-06 18:23:51 | INFO     |    ✓ Found 19 jobs
+2026-02-06 18:23:51 | INFO     | 🔎 [344/1258] 🇩🇪 DE: 'IT administrator' in Potsdam
+2026-02-06 18:24:25 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:24:25 | INFO     | 🔎 [345/1258] 🇩🇪 DE: 'IT administrator' in Bremen
+2026-02-06 18:24:59 | INFO     |    ✓ Found 19 jobs
+2026-02-06 18:24:59 | INFO     | 🔎 [346/1258] 🇩🇪 DE: 'IT administrator' in Hamburg
+2026-02-06 18:25:33 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:25:33 | INFO     | 🔎 [347/1258] 🇩🇪 DE: 'IT administrator' in Frankfurt
+2026-02-06 18:26:09 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:26:09 | INFO     | 🔎 [348/1258] 🇩🇪 DE: 'IT administrator' in Hanover
+2026-02-06 18:26:43 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:26:43 | INFO     | 🔎 [349/1258] 🇩🇪 DE: 'IT administrator' in Rostock
+2026-02-06 18:27:16 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:27:16 | INFO     | 🔎 [350/1258] 🇩🇪 DE: 'IT administrator' in Cologne
+2026-02-06 18:27:50 | INFO     |    ✓ Found 19 jobs
+2026-02-06 18:27:50 | INFO     | 🔎 [351/1258] 🇩🇪 DE: 'IT administrator' in Mainz
+2026-02-06 18:28:24 | INFO     |    ✓ Found 19 jobs
+2026-02-06 18:28:24 | INFO     | 🔎 [352/1258] 🇩🇪 DE: 'IT administrator' in Saarbrücken
+2026-02-06 18:28:44 | INFO     |    ✓ Found 10 jobs
+2026-02-06 18:28:44 | INFO     | 🔎 [353/1258] 🇩🇪 DE: 'IT administrator' in Dresden
+2026-02-06 18:29:18 | INFO     |    ✓ Found 19 jobs
+2026-02-06 18:29:18 | INFO     | 🔎 [354/1258] 🇩🇪 DE: 'IT administrator' in Magdeburg
+2026-02-06 18:29:37 | INFO     |    ✓ Found 10 jobs
+2026-02-06 18:29:37 | INFO     | 🔎 [355/1258] 🇩🇪 DE: 'IT administrator' in Kiel
+2026-02-06 18:30:12 | INFO     |    ✓ Found 16 jobs
+2026-02-06 18:30:12 | INFO     | 🔎 [356/1258] 🇩🇪 DE: 'IT administrator' in Erfurt
+2026-02-06 18:30:35 | INFO     |    ✓ Found 11 jobs
+2026-02-06 18:30:35 | INFO     | 🔎 [357/1258] 🇩🇪 DE: 'IT administrator' in Düsseldorf
+2026-02-06 18:31:09 | INFO     |    ✓ Found 19 jobs
+2026-02-06 18:31:09 | INFO     | 🔎 [358/1258] 🇩🇪 DE: 'IT administrator' in Dortmund
+2026-02-06 18:31:43 | INFO     |    ✓ Found 15 jobs
+2026-02-06 18:31:43 | INFO     | 🔎 [359/1258] 🇩🇪 DE: 'IT administrator' in Essen
+2026-02-06 18:32:17 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:32:17 | INFO     | 🔎 [360/1258] 🇩🇪 DE: 'IT administrator' in Leipzig
+2026-02-06 18:32:51 | INFO     |    ✓ Found 19 jobs
+2026-02-06 18:32:51 | INFO     | 🔎 [361/1258] 🇩🇪 DE: 'IT administrator' in Nürnberg
+2026-02-06 18:33:24 | INFO     |    ✓ Found 17 jobs
+2026-02-06 18:33:24 | INFO     | 🔎 [362/1258] 🇩🇪 DE: 'IT administrator' in Karlsruhe
+2026-02-06 18:34:00 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:34:00 | INFO     | 🔎 [363/1258] 🇩🇪 DE: 'IT administrator' in Mannheim
+2026-02-06 18:34:34 | INFO     |    ✓ Found 19 jobs
+2026-02-06 18:34:34 | INFO     | 🔎 [364/1258] 🇩🇪 DE: 'IT administrator' in Augsburg
+2026-02-06 18:35:08 | INFO     |    ✓ Found 19 jobs
+2026-02-06 18:35:08 | INFO     | 🔎 [365/1258] 🇩🇪 DE: 'IT administrator' in Wiesbaden
+2026-02-06 18:35:42 | INFO     |    ✓ Found 19 jobs
+2026-02-06 18:35:42 | INFO     | 🔎 [366/1258] 🇩🇪 DE: 'IT administrator' in Münster
+2026-02-06 18:36:17 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:36:17 | INFO     | 🔎 [367/1258] 🇩🇪 DE: 'IT administrator' in Bonn
+2026-02-06 18:36:51 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:36:51 | INFO     | 🔎 [368/1258] 🇩🇪 DE: 'IT administrator' in Freiburg
+2026-02-06 18:37:25 | INFO     |    ✓ Found 17 jobs
+2026-02-06 18:37:25 | INFO     | 🔎 [369/1258] 🇩🇪 DE: 'IT administrator' in Aachen
+2026-02-06 18:38:00 | INFO     |    ✓ Found 20 jobs
+2026-02-06 18:38:00 | INFO     | 🔎 [370/1258] 🇩🇪 DE: 'IT administrator' in Heidelberg
+2026-02-06 18:38:35 | INFO     |    ✓ Found 16 jobs
+2026-02-06 18:38:35 | INFO     | 🔎 [371/1258] 🇩🇪 DE: 'IT administrator' in Ulm
+2026-02-06 18:39:09 | INFO     |    ✓ Found 20 jobs
+2026-02-06 18:39:09 | INFO     | 🔎 [372/1258] 🇩🇪 DE: 'IT administrator' in Darmstadt
+2026-02-06 18:39:43 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:39:43 | INFO     | 🔎 [373/1258] 🇩🇪 DE: 'IT administrator' in Regensburg
+2026-02-06 18:40:01 | INFO     |    ✓ Found 9 jobs
+2026-02-06 18:40:01 | INFO     | 🔎 [374/1258] 🇩🇪 DE: 'IT administrator' in Bielefeld
+2026-02-06 18:40:34 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:40:34 | INFO     | 🔎 [375/1258] 🇬🇧 EN: 'backend developer' in Stuttgart
+2026-02-06 18:41:09 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:41:09 | INFO     | 🔎 [376/1258] 🇬🇧 EN: 'backend developer' in Munich
+2026-02-06 18:41:44 | INFO     |    ✓ Found 19 jobs
+2026-02-06 18:41:44 | INFO     | 🔎 [377/1258] 🇬🇧 EN: 'backend developer' in Berlin
+2026-02-06 18:42:21 | INFO     |    ✓ Found 17 jobs
+2026-02-06 18:42:21 | INFO     | 🔎 [378/1258] 🇬🇧 EN: 'backend developer' in Potsdam
+2026-02-06 18:42:56 | INFO     |    ✓ Found 15 jobs
+2026-02-06 18:42:56 | INFO     | 🔎 [379/1258] 🇬🇧 EN: 'backend developer' in Bremen
+2026-02-06 18:43:29 | INFO     |    ✓ Found 16 jobs
+2026-02-06 18:43:29 | INFO     | 🔎 [380/1258] 🇬🇧 EN: 'backend developer' in Hamburg
+2026-02-06 18:44:03 | INFO     |    ✓ Found 16 jobs
+2026-02-06 18:44:03 | INFO     | 🔎 [381/1258] 🇬🇧 EN: 'backend developer' in Frankfurt
+2026-02-06 18:44:38 | INFO     |    ✓ Found 15 jobs
+2026-02-06 18:44:38 | INFO     | 🔎 [382/1258] 🇬🇧 EN: 'backend developer' in Hanover
+2026-02-06 18:45:13 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:45:13 | INFO     | 🔎 [383/1258] 🇬🇧 EN: 'backend developer' in Rostock
+2026-02-06 18:45:31 | INFO     |    ✓ Found 10 jobs
+2026-02-06 18:45:31 | INFO     | 🔎 [384/1258] 🇬🇧 EN: 'backend developer' in Cologne
+2026-02-06 18:46:06 | INFO     |    ✓ Found 20 jobs
+2026-02-06 18:46:06 | INFO     | 🔎 [385/1258] 🇬🇧 EN: 'backend developer' in Mainz
+2026-02-06 18:46:41 | INFO     |    ✓ Found 16 jobs
+2026-02-06 18:46:41 | INFO     | 🔎 [386/1258] 🇬🇧 EN: 'backend developer' in Saarbrücken
+2026-02-06 18:46:58 | INFO     |    ✓ Found 8 jobs
+2026-02-06 18:46:58 | INFO     | 🔎 [387/1258] 🇬🇧 EN: 'backend developer' in Dresden
+2026-02-06 18:47:33 | INFO     |    ✓ Found 19 jobs
+2026-02-06 18:47:33 | INFO     | 🔎 [388/1258] 🇬🇧 EN: 'backend developer' in Magdeburg
+2026-02-06 18:47:45 | INFO     |    ✓ Found 4 jobs
+2026-02-06 18:47:45 | INFO     | 🔎 [389/1258] 🇬🇧 EN: 'backend developer' in Kiel
+2026-02-06 18:48:03 | INFO     |    ✓ Found 9 jobs
+2026-02-06 18:48:03 | INFO     | 🔎 [390/1258] 🇬🇧 EN: 'backend developer' in Erfurt
+2026-02-06 18:48:21 | INFO     |    ✓ Found 10 jobs
+2026-02-06 18:48:21 | INFO     | 🔎 [391/1258] 🇬🇧 EN: 'backend developer' in Düsseldorf
+2026-02-06 18:48:56 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:48:56 | INFO     | 🔎 [392/1258] 🇬🇧 EN: 'backend developer' in Dortmund
+2026-02-06 18:49:31 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:49:31 | INFO     | 🔎 [393/1258] 🇬🇧 EN: 'backend developer' in Essen
+2026-02-06 18:50:06 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:50:06 | INFO     | 🔎 [394/1258] 🇬🇧 EN: 'backend developer' in Leipzig
+2026-02-06 18:50:41 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:50:41 | INFO     | 🔎 [395/1258] 🇬🇧 EN: 'backend developer' in Nürnberg
+2026-02-06 18:51:15 | INFO     |    ✓ Found 17 jobs
+2026-02-06 18:51:15 | INFO     | 🔎 [396/1258] 🇬🇧 EN: 'backend developer' in Karlsruhe
+2026-02-06 18:51:50 | INFO     |    ✓ Found 16 jobs
+2026-02-06 18:51:50 | INFO     | 🔎 [397/1258] 🇬🇧 EN: 'backend developer' in Mannheim
+2026-02-06 18:52:24 | INFO     |    ✓ Found 19 jobs
+2026-02-06 18:52:24 | INFO     | 🔎 [398/1258] 🇬🇧 EN: 'backend developer' in Augsburg
+2026-02-06 18:52:42 | INFO     |    ✓ Found 9 jobs
+2026-02-06 18:52:42 | INFO     | 🔎 [399/1258] 🇬🇧 EN: 'backend developer' in Wiesbaden
+2026-02-06 18:53:17 | INFO     |    ✓ Found 16 jobs
+2026-02-06 18:53:17 | INFO     | 🔎 [400/1258] 🇬🇧 EN: 'backend developer' in Münster
+2026-02-06 18:53:51 | INFO     |    ✓ Found 20 jobs
+2026-02-06 18:53:51 | INFO     | 
+💾 CHECKPOINT: Saving progress at 400/1258...
+2026-02-06 18:53:52 | INFO     |    ✓ Checkpoint saved: 4202 unique jobs so far
+
+2026-02-06 18:53:52 | INFO     | 🔎 [401/1258] 🇬🇧 EN: 'backend developer' in Bonn
+2026-02-06 18:54:28 | INFO     |    ✓ Found 19 jobs
+2026-02-06 18:54:28 | INFO     | 🔎 [402/1258] 🇬🇧 EN: 'backend developer' in Freiburg
+2026-02-06 18:54:46 | INFO     |    ✓ Found 10 jobs
+2026-02-06 18:54:46 | INFO     | 🔎 [403/1258] 🇬🇧 EN: 'backend developer' in Aachen
+2026-02-06 18:55:22 | INFO     |    ✓ Found 20 jobs
+2026-02-06 18:55:22 | INFO     | 🔎 [404/1258] 🇬🇧 EN: 'backend developer' in Heidelberg
+2026-02-06 18:55:57 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:55:57 | INFO     | 🔎 [405/1258] 🇬🇧 EN: 'backend developer' in Ulm
+2026-02-06 18:56:15 | INFO     |    ✓ Found 10 jobs
+2026-02-06 18:56:15 | INFO     | 🔎 [406/1258] 🇬🇧 EN: 'backend developer' in Darmstadt
+2026-02-06 18:56:50 | INFO     |    ✓ Found 16 jobs
+2026-02-06 18:56:50 | INFO     | 🔎 [407/1258] 🇬🇧 EN: 'backend developer' in Regensburg
+2026-02-06 18:57:05 | INFO     |    ✓ Found 8 jobs
+2026-02-06 18:57:05 | INFO     | 🔎 [408/1258] 🇬🇧 EN: 'backend developer' in Bielefeld
+2026-02-06 18:57:40 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:57:40 | INFO     | 🔎 [409/1258] 🇬🇧 EN: 'frontend developer' in Stuttgart
+2026-02-06 18:58:15 | INFO     |    ✓ Found 18 jobs
+2026-02-06 18:58:15 | INFO     | 🔎 [410/1258] 🇬🇧 EN: 'frontend developer' in Munich
+2026-02-06 18:58:51 | INFO     |    ✓ Found 17 jobs
+2026-02-06 18:58:51 | INFO     | 🔎 [411/1258] 🇬🇧 EN: 'frontend developer' in Berlin
+2026-02-06 18:59:26 | INFO     |    ✓ Found 17 jobs
+2026-02-06 18:59:26 | INFO     | 🔎 [412/1258] 🇬🇧 EN: 'frontend developer' in Potsdam
+2026-02-06 19:00:01 | INFO     |    ✓ Found 20 jobs
+2026-02-06 19:00:01 | INFO     | 🔎 [413/1258] 🇬🇧 EN: 'frontend developer' in Bremen
+2026-02-06 19:00:18 | INFO     |    ✓ Found 9 jobs
+2026-02-06 19:00:18 | INFO     | 🔎 [414/1258] 🇬🇧 EN: 'frontend developer' in Hamburg
+2026-02-06 19:00:53 | INFO     |    ✓ Found 16 jobs
+2026-02-06 19:00:53 | INFO     | 🔎 [415/1258] 🇬🇧 EN: 'frontend developer' in Frankfurt
+2026-02-06 19:01:28 | INFO     |    ✓ Found 17 jobs
+2026-02-06 19:01:28 | INFO     | 🔎 [416/1258] 🇬🇧 EN: 'frontend developer' in Hanover
+2026-02-06 19:01:45 | INFO     |    ✓ Found 8 jobs
+2026-02-06 19:01:45 | INFO     | 🔎 [417/1258] 🇬🇧 EN: 'frontend developer' in Rostock
+2026-02-06 19:01:57 | INFO     |    ✓ Found 6 jobs
+2026-02-06 19:01:57 | INFO     | 🔎 [418/1258] 🇬🇧 EN: 'frontend developer' in Cologne
+2026-02-06 19:02:33 | INFO     |    ✓ Found 20 jobs
+2026-02-06 19:02:33 | INFO     | 🔎 [419/1258] 🇬🇧 EN: 'frontend developer' in Mainz
+2026-02-06 19:03:07 | INFO     |    ✓ Found 15 jobs
+2026-02-06 19:03:07 | INFO     | 🔎 [420/1258] 🇬🇧 EN: 'frontend developer' in Saarbrücken
+2026-02-06 19:03:21 | INFO     |    ✓ Found 7 jobs
+2026-02-06 19:03:21 | INFO     | 🔎 [421/1258] 🇬🇧 EN: 'frontend developer' in Dresden
+2026-02-06 19:03:39 | INFO     |    ✓ Found 7 jobs
+2026-02-06 19:03:39 | INFO     | 🔎 [422/1258] 🇬🇧 EN: 'frontend developer' in Magdeburg
+2026-02-06 19:03:49 | INFO     |    ✓ Found 3 jobs
+2026-02-06 19:03:49 | INFO     | 🔎 [423/1258] 🇬🇧 EN: 'frontend developer' in Kiel
+2026-02-06 19:04:07 | INFO     |    ✓ Found 9 jobs
+2026-02-06 19:04:07 | INFO     | 🔎 [424/1258] 🇬🇧 EN: 'frontend developer' in Erfurt
+2026-02-06 19:04:15 | INFO     |    ✓ Found 4 jobs
+2026-02-06 19:04:15 | INFO     | 🔎 [425/1258] 🇬🇧 EN: 'frontend developer' in Düsseldorf
+2026-02-06 19:04:50 | INFO     |    ✓ Found 17 jobs
+2026-02-06 19:04:50 | INFO     | 🔎 [426/1258] 🇬🇧 EN: 'frontend developer' in Dortmund
+2026-02-06 19:05:16 | INFO     |    ✓ Found 13 jobs
+2026-02-06 19:05:16 | INFO     | 🔎 [427/1258] 🇬🇧 EN: 'frontend developer' in Essen
+2026-02-06 19:05:51 | INFO     |    ✓ Found 17 jobs
+2026-02-06 19:05:51 | INFO     | 🔎 [428/1258] 🇬🇧 EN: 'frontend developer' in Leipzig
+2026-02-06 19:06:09 | INFO     |    ✓ Found 5 jobs
+2026-02-06 19:06:09 | INFO     | 🔎 [429/1258] 🇬🇧 EN: 'frontend developer' in Nürnberg
+2026-02-06 19:06:28 | INFO     |    ✓ Found 8 jobs
+2026-02-06 19:06:28 | INFO     | 🔎 [430/1258] 🇬🇧 EN: 'frontend developer' in Karlsruhe
+2026-02-06 19:06:47 | INFO     |    ✓ Found 8 jobs
+2026-02-06 19:06:47 | INFO     | 🔎 [431/1258] 🇬🇧 EN: 'frontend developer' in Mannheim
+2026-02-06 19:07:05 | INFO     |    ✓ Found 10 jobs
+2026-02-06 19:07:05 | INFO     | 🔎 [432/1258] 🇬🇧 EN: 'frontend developer' in Augsburg
+2026-02-06 19:07:23 | INFO     |    ✓ Found 8 jobs
+2026-02-06 19:07:23 | INFO     | 🔎 [433/1258] 🇬🇧 EN: 'frontend developer' in Wiesbaden
+2026-02-06 19:07:57 | INFO     |    ✓ Found 15 jobs
+2026-02-06 19:07:57 | INFO     | 🔎 [434/1258] 🇬🇧 EN: 'frontend developer' in Münster
+2026-02-06 19:08:20 | INFO     |    ✓ Found 11 jobs
+2026-02-06 19:08:20 | INFO     | 🔎 [435/1258] 🇬🇧 EN: 'frontend developer' in Bonn
+2026-02-06 19:08:56 | INFO     |    ✓ Found 20 jobs
+2026-02-06 19:08:56 | INFO     | 🔎 [436/1258] 🇬🇧 EN: 'frontend developer' in Freiburg
+2026-02-06 19:09:03 | INFO     |    ✓ Found 3 jobs
+2026-02-06 19:09:03 | INFO     | 🔎 [437/1258] 🇬🇧 EN: 'frontend developer' in Aachen
+2026-02-06 19:09:22 | INFO     |    ✓ Found 10 jobs
+2026-02-06 19:09:22 | INFO     | 🔎 [438/1258] 🇬🇧 EN: 'frontend developer' in Heidelberg
+2026-02-06 19:09:40 | INFO     |    ✓ Found 10 jobs
+2026-02-06 19:09:40 | INFO     | 🔎 [439/1258] 🇬🇧 EN: 'frontend developer' in Ulm
+2026-02-06 19:09:51 | INFO     |    ✓ Found 5 jobs
+2026-02-06 19:09:51 | INFO     | 🔎 [440/1258] 🇬🇧 EN: 'frontend developer' in Darmstadt
+2026-02-06 19:10:26 | INFO     |    ✓ Found 15 jobs
+2026-02-06 19:10:26 | INFO     | 🔎 [441/1258] 🇬🇧 EN: 'frontend developer' in Regensburg
+2026-02-06 19:10:39 | INFO     |    ✓ Found 5 jobs
+2026-02-06 19:10:39 | INFO     | 🔎 [442/1258] 🇬🇧 EN: 'frontend developer' in Bielefeld
+2026-02-06 19:10:58 | INFO     |    ✓ Found 8 jobs
+2026-02-06 19:10:58 | INFO     | 🔎 [443/1258] 🇬🇧 EN: 'full stack developer' in Stuttgart
+2026-02-06 19:11:32 | INFO     |    ✓ Found 17 jobs
+2026-02-06 19:11:32 | INFO     | 🔎 [444/1258] 🇬🇧 EN: 'full stack developer' in Munich
+2026-02-06 19:12:08 | INFO     |    ✓ Found 16 jobs
+2026-02-06 19:12:08 | INFO     | 🔎 [445/1258] 🇬🇧 EN: 'full stack developer' in Berlin
+2026-02-06 19:12:43 | INFO     |    ✓ Found 18 jobs
+2026-02-06 19:12:43 | INFO     | 🔎 [446/1258] 🇬🇧 EN: 'full stack developer' in Potsdam
+2026-02-06 19:13:19 | INFO     |    ✓ Found 18 jobs
+2026-02-06 19:13:19 | INFO     | 🔎 [447/1258] 🇬🇧 EN: 'full stack developer' in Bremen
+2026-02-06 19:13:47 | INFO     |    ✓ Found 13 jobs
+2026-02-06 19:13:47 | INFO     | 🔎 [448/1258] 🇬🇧 EN: 'full stack developer' in Hamburg
+2026-02-06 19:14:22 | INFO     |    ✓ Found 17 jobs
+2026-02-06 19:14:22 | INFO     | 🔎 [449/1258] 🇬🇧 EN: 'full stack developer' in Frankfurt
+2026-02-06 19:14:57 | INFO     |    ✓ Found 11 jobs
+2026-02-06 19:14:57 | INFO     | 🔎 [450/1258] 🇬🇧 EN: 'full stack developer' in Hanover
+2026-02-06 19:15:32 | INFO     |    ✓ Found 15 jobs
+2026-02-06 19:15:32 | INFO     | 🔎 [451/1258] 🇬🇧 EN: 'full stack developer' in Rostock
+2026-02-06 19:15:46 | INFO     |    ✓ Found 8 jobs
+2026-02-06 19:15:46 | INFO     | 🔎 [452/1258] 🇬🇧 EN: 'full stack developer' in Cologne
+2026-02-06 19:16:21 | INFO     |    ✓ Found 20 jobs
+2026-02-06 19:16:21 | INFO     | 🔎 [453/1258] 🇬🇧 EN: 'full stack developer' in Mainz
+2026-02-06 19:16:56 | INFO     |    ✓ Found 13 jobs
+2026-02-06 19:16:56 | INFO     | 🔎 [454/1258] 🇬🇧 EN: 'full stack developer' in Saarbrücken
+2026-02-06 19:17:14 | INFO     |    ✓ Found 8 jobs
+2026-02-06 19:17:14 | INFO     | 🔎 [455/1258] 🇬🇧 EN: 'full stack developer' in Dresden
+2026-02-06 19:17:49 | INFO     |    ✓ Found 17 jobs
+2026-02-06 19:17:49 | INFO     | 🔎 [456/1258] 🇬🇧 EN: 'full stack developer' in Magdeburg
+2026-02-06 19:18:02 | INFO     |    ✓ Found 5 jobs
+2026-02-06 19:18:02 | INFO     | 🔎 [457/1258] 🇬🇧 EN: 'full stack developer' in Kiel
+2026-02-06 19:18:20 | INFO     |    ✓ Found 9 jobs
+2026-02-06 19:18:20 | INFO     | 🔎 [458/1258] 🇬🇧 EN: 'full stack developer' in Erfurt
+2026-02-06 19:18:39 | INFO     |    ✓ Found 10 jobs
+2026-02-06 19:18:39 | INFO     | 🔎 [459/1258] 🇬🇧 EN: 'full stack developer' in Düsseldorf
+2026-02-06 19:19:14 | INFO     |    ✓ Found 17 jobs
+2026-02-06 19:19:14 | INFO     | 🔎 [460/1258] 🇬🇧 EN: 'full stack developer' in Dortmund
+2026-02-06 19:19:49 | INFO     |    ✓ Found 17 jobs
+2026-02-06 19:19:49 | INFO     | 🔎 [461/1258] 🇬🇧 EN: 'full stack developer' in Essen
+2026-02-06 19:20:23 | INFO     |    ✓ Found 17 jobs
+2026-02-06 19:20:23 | INFO     | 🔎 [462/1258] 🇬🇧 EN: 'full stack developer' in Leipzig
+2026-02-06 19:20:57 | INFO     |    ✓ Found 16 jobs
+2026-02-06 19:20:57 | INFO     | 🔎 [463/1258] 🇬🇧 EN: 'full stack developer' in Nürnberg
+2026-02-06 19:21:31 | INFO     |    ✓ Found 18 jobs
+2026-02-06 19:21:31 | INFO     | 🔎 [464/1258] 🇬🇧 EN: 'full stack developer' in Karlsruhe
+2026-02-06 19:22:05 | INFO     |    ✓ Found 17 jobs
+2026-02-06 19:22:05 | INFO     | 🔎 [465/1258] 🇬🇧 EN: 'full stack developer' in Mannheim
+2026-02-06 19:22:36 | INFO     |    ✓ Found 17 jobs
+2026-02-06 19:22:36 | INFO     | 🔎 [466/1258] 🇬🇧 EN: 'full stack developer' in Augsburg
+2026-02-06 19:22:56 | INFO     |    ✓ Found 9 jobs
+2026-02-06 19:22:56 | INFO     | 🔎 [467/1258] 🇬🇧 EN: 'full stack developer' in Wiesbaden
+2026-02-06 19:23:34 | INFO     |    ✓ Found 13 jobs
+2026-02-06 19:23:34 | INFO     | 🔎 [468/1258] 🇬🇧 EN: 'full stack developer' in Münster
+2026-02-06 19:24:08 | INFO     |    ✓ Found 15 jobs
+2026-02-06 19:24:08 | INFO     | 🔎 [469/1258] 🇬🇧 EN: 'full stack developer' in Bonn
+2026-02-06 19:24:42 | INFO     |    ✓ Found 19 jobs
+2026-02-06 19:24:42 | INFO     | 🔎 [470/1258] 🇬🇧 EN: 'full stack developer' in Freiburg
+2026-02-06 19:25:00 | INFO     |    ✓ Found 10 jobs
+2026-02-06 19:25:00 | INFO     | 🔎 [471/1258] 🇬🇧 EN: 'full stack developer' in Aachen
+2026-02-06 19:25:33 | INFO     |    ✓ Found 19 jobs
+2026-02-06 19:25:33 | INFO     | 🔎 [472/1258] 🇬🇧 EN: 'full stack developer' in Heidelberg
+2026-02-06 19:26:08 | INFO     |    ✓ Found 19 jobs
+2026-02-06 19:26:08 | INFO     | 🔎 [473/1258] 🇬🇧 EN: 'full stack developer' in Ulm
+2026-02-06 19:26:26 | INFO     |    ✓ Found 10 jobs
+2026-02-06 19:26:26 | INFO     | 🔎 [474/1258] 🇬🇧 EN: 'full stack developer' in Darmstadt
+2026-02-06 19:27:01 | INFO     |    ✓ Found 12 jobs
+2026-02-06 19:27:01 | INFO     | 🔎 [475/1258] 🇬🇧 EN: 'full stack developer' in Regensburg
+2026-02-06 19:27:19 | INFO     |    ✓ Found 8 jobs
+2026-02-06 19:27:19 | INFO     | 🔎 [476/1258] 🇬🇧 EN: 'full stack developer' in Bielefeld
+2026-02-06 19:27:37 | INFO     |    ✓ Found 9 jobs
+2026-02-06 19:27:37 | INFO     | 🔎 [477/1258] 🇬🇧 EN: 'Apps developer' in Stuttgart
+2026-02-06 19:28:11 | INFO     |    ✓ Found 19 jobs
+2026-02-06 19:28:11 | INFO     | 🔎 [478/1258] 🇬🇧 EN: 'Apps developer' in Munich
+2026-02-06 19:28:46 | INFO     |    ✓ Found 18 jobs
+2026-02-06 19:28:46 | INFO     | 🔎 [479/1258] 🇬🇧 EN: 'Apps developer' in Berlin
+2026-02-06 19:29:23 | INFO     |    ✓ Found 19 jobs
+2026-02-06 19:29:23 | INFO     | 🔎 [480/1258] 🇬🇧 EN: 'Apps developer' in Potsdam
+2026-02-06 19:29:58 | INFO     |    ✓ Found 19 jobs
+2026-02-06 19:29:58 | INFO     | 🔎 [481/1258] 🇬🇧 EN: 'Apps developer' in Bremen
+2026-02-06 19:30:33 | INFO     |    ✓ Found 16 jobs
+2026-02-06 19:30:33 | INFO     | 🔎 [482/1258] 🇬🇧 EN: 'Apps developer' in Hamburg
+2026-02-06 19:31:10 | INFO     |    ✓ Found 17 jobs
+2026-02-06 19:31:10 | INFO     | 🔎 [483/1258] 🇬🇧 EN: 'Apps developer' in Frankfurt
+2026-02-06 19:31:45 | INFO     |    ✓ Found 14 jobs
+2026-02-06 19:31:45 | INFO     | 🔎 [484/1258] 🇬🇧 EN: 'Apps developer' in Hanover
+2026-02-06 19:32:20 | INFO     |    ✓ Found 18 jobs
+2026-02-06 19:32:20 | INFO     | 🔎 [485/1258] 🇬🇧 EN: 'Apps developer' in Rostock
+2026-02-06 19:32:37 | INFO     |    ✓ Found 10 jobs
+2026-02-06 19:32:37 | INFO     | 🔎 [486/1258] 🇬🇧 EN: 'Apps developer' in Cologne
+2026-02-06 19:33:13 | INFO     |    ✓ Found 20 jobs
+2026-02-06 19:33:13 | INFO     | 🔎 [487/1258] 🇬🇧 EN: 'Apps developer' in Mainz
+2026-02-06 19:33:47 | INFO     |    ✓ Found 14 jobs
+2026-02-06 19:33:47 | INFO     | 🔎 [488/1258] 🇬🇧 EN: 'Apps developer' in Saarbrücken
+2026-02-06 19:34:05 | INFO     |    ✓ Found 9 jobs
+2026-02-06 19:34:05 | INFO     | 🔎 [489/1258] 🇬🇧 EN: 'Apps developer' in Dresden
+2026-02-06 19:34:40 | INFO     |    ✓ Found 19 jobs
+2026-02-06 19:34:40 | INFO     | 🔎 [490/1258] 🇬🇧 EN: 'Apps developer' in Magdeburg
+2026-02-06 19:34:56 | INFO     |    ✓ Found 6 jobs
+2026-02-06 19:34:56 | INFO     | 🔎 [491/1258] 🇬🇧 EN: 'Apps developer' in Kiel
+2026-02-06 19:35:14 | INFO     |    ✓ Found 9 jobs
+2026-02-06 19:35:14 | INFO     | 🔎 [492/1258] 🇬🇧 EN: 'Apps developer' in Erfurt
+2026-02-06 19:35:32 | INFO     |    ✓ Found 8 jobs
+2026-02-06 19:35:32 | INFO     | 🔎 [493/1258] 🇬🇧 EN: 'Apps developer' in Düsseldorf
+2026-02-06 19:36:07 | INFO     |    ✓ Found 19 jobs
+2026-02-06 19:36:07 | INFO     | 🔎 [494/1258] 🇬🇧 EN: 'Apps developer' in Dortmund
+2026-02-06 19:36:42 | INFO     |    ✓ Found 16 jobs
+2026-02-06 19:36:42 | INFO     | 🔎 [495/1258] 🇬🇧 EN: 'Apps developer' in Essen
+2026-02-06 19:37:16 | INFO     |    ✓ Found 17 jobs
+2026-02-06 19:37:16 | INFO     | 🔎 [496/1258] 🇬🇧 EN: 'Apps developer' in Leipzig
+2026-02-06 19:37:51 | INFO     |    ✓ Found 20 jobs
+2026-02-06 19:37:51 | INFO     | 🔎 [497/1258] 🇬🇧 EN: 'Apps developer' in Nürnberg
+2026-02-06 19:38:25 | INFO     |    ✓ Found 16 jobs
+2026-02-06 19:38:25 | INFO     | 🔎 [498/1258] 🇬🇧 EN: 'Apps developer' in Karlsruhe
+2026-02-06 19:39:01 | INFO     |    ✓ Found 16 jobs
+2026-02-06 19:39:01 | INFO     | 🔎 [499/1258] 🇬🇧 EN: 'Apps developer' in Mannheim
+2026-02-06 19:39:35 | INFO     |    ✓ Found 16 jobs
+2026-02-06 19:39:35 | INFO     | 🔎 [500/1258] 🇬🇧 EN: 'Apps developer' in Augsburg
+2026-02-06 19:39:54 | INFO     |    ✓ Found 10 jobs
+2026-02-06 19:39:54 | INFO     | 
+💾 CHECKPOINT: Saving progress at 500/1258...
+2026-02-06 19:39:54 | INFO     |    ✓ Checkpoint saved: 4684 unique jobs so far
+
+2026-02-06 19:39:54 | INFO     | 🔎 [501/1258] 🇬🇧 EN: 'Apps developer' in Wiesbaden
+2026-02-06 19:40:29 | INFO     |    ✓ Found 14 jobs
+2026-02-06 19:40:29 | INFO     | 🔎 [502/1258] 🇬🇧 EN: 'Apps developer' in Münster
+2026-02-06 19:41:04 | INFO     |    ✓ Found 17 jobs
+2026-02-06 19:41:04 | INFO     | 🔎 [503/1258] 🇬🇧 EN: 'Apps developer' in Bonn
+2026-02-06 19:41:38 | INFO     |    ✓ Found 18 jobs
+2026-02-06 19:41:38 | INFO     | 🔎 [504/1258] 🇬🇧 EN: 'Apps developer' in Freiburg
+2026-02-06 19:42:06 | INFO     |    ✓ Found 16 jobs
+2026-02-06 19:42:06 | INFO     | 🔎 [505/1258] 🇬🇧 EN: 'Apps developer' in Aachen
+2026-02-06 19:42:43 | INFO     |    ✓ Found 20 jobs
+2026-02-06 19:42:43 | INFO     | 🔎 [506/1258] 🇬🇧 EN: 'Apps developer' in Heidelberg
+2026-02-06 19:43:18 | INFO     |    ✓ Found 17 jobs
+2026-02-06 19:43:18 | INFO     | 🔎 [507/1258] 🇬🇧 EN: 'Apps developer' in Ulm
+2026-02-06 19:43:38 | INFO     |    ✓ Found 9 jobs
+2026-02-06 19:43:38 | INFO     | 🔎 [508/1258] 🇬🇧 EN: 'Apps developer' in Darmstadt
+2026-02-06 19:44:13 | INFO     |    ✓ Found 13 jobs
+2026-02-06 19:44:13 | INFO     | 🔎 [509/1258] 🇬🇧 EN: 'Apps developer' in Regensburg
+2026-02-06 19:44:29 | INFO     |    ✓ Found 8 jobs
+2026-02-06 19:44:29 | INFO     | 🔎 [510/1258] 🇬🇧 EN: 'Apps developer' in Bielefeld
+2026-02-06 19:45:04 | INFO     |    ✓ Found 18 jobs
+2026-02-06 19:45:04 | INFO     | 🔎 [511/1258] 🇬🇧 EN: 'SAP developer' in Stuttgart
+2026-02-06 19:45:39 | INFO     |    ✓ Found 18 jobs
+2026-02-06 19:45:39 | INFO     | 🔎 [512/1258] 🇬🇧 EN: 'SAP developer' in Munich
+2026-02-06 19:46:14 | INFO     |    ✓ Found 15 jobs
+2026-02-06 19:46:14 | INFO     | 🔎 [513/1258] 🇬🇧 EN: 'SAP developer' in Berlin
+2026-02-06 19:46:48 | INFO     |    ✓ Found 15 jobs
+2026-02-06 19:46:48 | INFO     | 🔎 [514/1258] 🇬🇧 EN: 'SAP developer' in Potsdam
+2026-02-06 19:47:26 | INFO     |    ✓ Found 17 jobs
+2026-02-06 19:47:26 | INFO     | 🔎 [515/1258] 🇬🇧 EN: 'SAP developer' in Bremen
+2026-02-06 19:48:00 | INFO     |    ✓ Found 18 jobs
+2026-02-06 19:48:00 | INFO     | 🔎 [516/1258] 🇬🇧 EN: 'SAP developer' in Hamburg
+2026-02-06 19:48:35 | INFO     |    ✓ Found 17 jobs
+2026-02-06 19:48:35 | INFO     | 🔎 [517/1258] 🇬🇧 EN: 'SAP developer' in Frankfurt
+2026-02-06 19:49:11 | INFO     |    ✓ Found 15 jobs
+2026-02-06 19:49:11 | INFO     | 🔎 [518/1258] 🇬🇧 EN: 'SAP developer' in Hanover
+2026-02-06 19:49:45 | INFO     |    ✓ Found 18 jobs
+2026-02-06 19:49:45 | INFO     | 🔎 [519/1258] 🇬🇧 EN: 'SAP developer' in Rostock
+2026-02-06 19:50:18 | INFO     |    ✓ Found 19 jobs
+2026-02-06 19:50:18 | INFO     | 🔎 [520/1258] 🇬🇧 EN: 'SAP developer' in Cologne
+2026-02-06 19:50:53 | INFO     |    ✓ Found 15 jobs
+2026-02-06 19:50:53 | INFO     | 🔎 [521/1258] 🇬🇧 EN: 'SAP developer' in Mainz
+2026-02-06 19:51:30 | INFO     |    ✓ Found 19 jobs
+2026-02-06 19:51:30 | INFO     | 🔎 [522/1258] 🇬🇧 EN: 'SAP developer' in Saarbrücken
+2026-02-06 19:52:03 | INFO     |    ✓ Found 15 jobs
+2026-02-06 19:52:03 | INFO     | 🔎 [523/1258] 🇬🇧 EN: 'SAP developer' in Dresden
+2026-02-06 19:52:37 | INFO     |    ✓ Found 18 jobs
+2026-02-06 19:52:37 | INFO     | 🔎 [524/1258] 🇬🇧 EN: 'SAP developer' in Magdeburg
+2026-02-06 19:53:07 | INFO     |    ✓ Found 17 jobs
+2026-02-06 19:53:07 | INFO     | 🔎 [525/1258] 🇬🇧 EN: 'SAP developer' in Kiel
+2026-02-06 19:53:41 | INFO     |    ✓ Found 20 jobs
+2026-02-06 19:53:41 | INFO     | 🔎 [526/1258] 🇬🇧 EN: 'SAP developer' in Erfurt
+2026-02-06 19:54:15 | INFO     |    ✓ Found 19 jobs
+2026-02-06 19:54:15 | INFO     | 🔎 [527/1258] 🇬🇧 EN: 'SAP developer' in Düsseldorf
+2026-02-06 19:54:50 | INFO     |    ✓ Found 15 jobs
+2026-02-06 19:54:50 | INFO     | 🔎 [528/1258] 🇬🇧 EN: 'SAP developer' in Dortmund
+2026-02-06 19:55:25 | INFO     |    ✓ Found 19 jobs
+2026-02-06 19:55:25 | INFO     | 🔎 [529/1258] 🇬🇧 EN: 'SAP developer' in Essen
+2026-02-06 19:56:00 | INFO     |    ✓ Found 18 jobs
+2026-02-06 19:56:00 | INFO     | 🔎 [530/1258] 🇬🇧 EN: 'SAP developer' in Leipzig
+2026-02-06 19:56:34 | INFO     |    ✓ Found 19 jobs
+2026-02-06 19:56:34 | INFO     | 🔎 [531/1258] 🇬🇧 EN: 'SAP developer' in Nürnberg
+2026-02-06 19:57:08 | INFO     |    ✓ Found 14 jobs
+2026-02-06 19:57:08 | INFO     | 🔎 [532/1258] 🇬🇧 EN: 'SAP developer' in Karlsruhe
+2026-02-06 19:57:43 | INFO     |    ✓ Found 11 jobs
+2026-02-06 19:57:43 | INFO     | 🔎 [533/1258] 🇬🇧 EN: 'SAP developer' in Mannheim
+2026-02-06 19:58:18 | INFO     |    ✓ Found 15 jobs
+2026-02-06 19:58:18 | INFO     | 🔎 [534/1258] 🇬🇧 EN: 'SAP developer' in Augsburg
+2026-02-06 19:58:51 | INFO     |    ✓ Found 17 jobs
+2026-02-06 19:58:51 | INFO     | 🔎 [535/1258] 🇬🇧 EN: 'SAP developer' in Wiesbaden
+2026-02-06 19:59:28 | INFO     |    ✓ Found 20 jobs
+2026-02-06 19:59:28 | INFO     | 🔎 [536/1258] 🇬🇧 EN: 'SAP developer' in Münster
+2026-02-06 20:00:01 | INFO     |    ✓ Found 19 jobs
+2026-02-06 20:00:01 | INFO     | 🔎 [537/1258] 🇬🇧 EN: 'SAP developer' in Bonn
+2026-02-06 20:00:36 | INFO     |    ✓ Found 16 jobs
+2026-02-06 20:00:36 | INFO     | 🔎 [538/1258] 🇬🇧 EN: 'SAP developer' in Freiburg
+2026-02-06 20:00:54 | INFO     |    ✓ Found 10 jobs
+2026-02-06 20:00:54 | INFO     | 🔎 [539/1258] 🇬🇧 EN: 'SAP developer' in Aachen
+2026-02-06 20:01:28 | INFO     |    ✓ Found 20 jobs
+2026-02-06 20:01:28 | INFO     | 🔎 [540/1258] 🇬🇧 EN: 'SAP developer' in Heidelberg
+2026-02-06 20:02:04 | INFO     |    ✓ Found 12 jobs
+2026-02-06 20:02:04 | INFO     | 🔎 [541/1258] 🇬🇧 EN: 'SAP developer' in Ulm
+2026-02-06 20:02:39 | INFO     |    ✓ Found 20 jobs
+2026-02-06 20:02:39 | INFO     | 🔎 [542/1258] 🇬🇧 EN: 'SAP developer' in Darmstadt
+2026-02-06 20:03:15 | INFO     |    ✓ Found 17 jobs
+2026-02-06 20:03:15 | INFO     | 🔎 [543/1258] 🇬🇧 EN: 'SAP developer' in Regensburg
+2026-02-06 20:03:39 | INFO     |    ✓ Found 10 jobs
+2026-02-06 20:03:39 | INFO     | 🔎 [544/1258] 🇬🇧 EN: 'SAP developer' in Bielefeld
+2026-02-06 20:04:12 | INFO     |    ✓ Found 17 jobs
+2026-02-06 20:04:12 | INFO     | 🔎 [545/1258] 🇬🇧 EN: 'machine learning engineer' in Stuttgart
+2026-02-06 20:04:47 | INFO     |    ✓ Found 19 jobs
+2026-02-06 20:04:47 | INFO     | 🔎 [546/1258] 🇬🇧 EN: 'machine learning engineer' in Munich
+2026-02-06 20:05:24 | INFO     |    ✓ Found 20 jobs
+2026-02-06 20:05:24 | INFO     | 🔎 [547/1258] 🇬🇧 EN: 'machine learning engineer' in Berlin
+2026-02-06 20:05:58 | INFO     |    ✓ Found 18 jobs
+2026-02-06 20:05:58 | INFO     | 🔎 [548/1258] 🇬🇧 EN: 'machine learning engineer' in Potsdam
+2026-02-06 20:06:16 | INFO     |    ✓ Found 10 jobs
+2026-02-06 20:06:16 | INFO     | 🔎 [549/1258] 🇬🇧 EN: 'machine learning engineer' in Bremen
+2026-02-06 20:06:50 | INFO     |    ✓ Found 20 jobs
+2026-02-06 20:06:50 | INFO     | 🔎 [550/1258] 🇬🇧 EN: 'machine learning engineer' in Hamburg
+2026-02-06 20:07:27 | INFO     |    ✓ Found 19 jobs
+2026-02-06 20:07:27 | INFO     | 🔎 [551/1258] 🇬🇧 EN: 'machine learning engineer' in Frankfurt
+2026-02-06 20:08:02 | INFO     |    ✓ Found 16 jobs
+2026-02-06 20:08:02 | INFO     | 🔎 [552/1258] 🇬🇧 EN: 'machine learning engineer' in Hanover
+2026-02-06 20:08:36 | INFO     |    ✓ Found 19 jobs
+2026-02-06 20:08:36 | INFO     | 🔎 [553/1258] 🇬🇧 EN: 'machine learning engineer' in Rostock
+2026-02-06 20:09:10 | INFO     |    ✓ Found 20 jobs
+2026-02-06 20:09:10 | INFO     | 🔎 [554/1258] 🇬🇧 EN: 'machine learning engineer' in Cologne
+2026-02-06 20:09:45 | INFO     |    ✓ Found 20 jobs
+2026-02-06 20:09:45 | INFO     | 🔎 [555/1258] 🇬🇧 EN: 'machine learning engineer' in Mainz
+2026-02-06 20:10:21 | INFO     |    ✓ Found 16 jobs
+2026-02-06 20:10:21 | INFO     | 🔎 [556/1258] 🇬🇧 EN: 'machine learning engineer' in Saarbrücken
+2026-02-06 20:10:55 | INFO     |    ✓ Found 20 jobs
+2026-02-06 20:10:55 | INFO     | 🔎 [557/1258] 🇬🇧 EN: 'machine learning engineer' in Dresden
+2026-02-06 20:11:31 | INFO     |    ✓ Found 18 jobs
+2026-02-06 20:11:31 | INFO     | 🔎 [558/1258] 🇬🇧 EN: 'machine learning engineer' in Magdeburg
+2026-02-06 20:11:42 | INFO     |    ✓ Found 6 jobs
+2026-02-06 20:11:42 | INFO     | 🔎 [559/1258] 🇬🇧 EN: 'machine learning engineer' in Kiel
+2026-02-06 20:12:16 | INFO     |    ✓ Found 20 jobs
+2026-02-06 20:12:16 | INFO     | 🔎 [560/1258] 🇬🇧 EN: 'machine learning engineer' in Erfurt
+2026-02-06 20:12:50 | INFO     |    ✓ Found 20 jobs
+2026-02-06 20:12:50 | INFO     | 🔎 [561/1258] 🇬🇧 EN: 'machine learning engineer' in Düsseldorf
+2026-02-06 20:13:25 | INFO     |    ✓ Found 20 jobs
+2026-02-06 20:13:25 | INFO     | 🔎 [562/1258] 🇬🇧 EN: 'machine learning engineer' in Dortmund
+2026-02-06 20:14:01 | INFO     |    ✓ Found 18 jobs
+2026-02-06 20:14:01 | INFO     | 🔎 [563/1258] 🇬🇧 EN: 'machine learning engineer' in Essen
+2026-02-06 20:14:37 | INFO     |    ✓ Found 19 jobs
+2026-02-06 20:14:37 | INFO     | 🔎 [564/1258] 🇬🇧 EN: 'machine learning engineer' in Leipzig
+2026-02-06 20:15:11 | INFO     |    ✓ Found 18 jobs
+2026-02-06 20:15:11 | INFO     | 🔎 [565/1258] 🇬🇧 EN: 'machine learning engineer' in Nürnberg
+2026-02-06 20:15:47 | INFO     |    ✓ Found 15 jobs
+2026-02-06 20:15:47 | INFO     | 🔎 [566/1258] 🇬🇧 EN: 'machine learning engineer' in Karlsruhe
+2026-02-06 20:16:22 | INFO     |    ✓ Found 18 jobs
+2026-02-06 20:16:22 | INFO     | 🔎 [567/1258] 🇬🇧 EN: 'machine learning engineer' in Mannheim
+2026-02-06 20:16:57 | INFO     |    ✓ Found 20 jobs
+2026-02-06 20:16:57 | INFO     | 🔎 [568/1258] 🇬🇧 EN: 'machine learning engineer' in Augsburg
+2026-02-06 20:17:31 | INFO     |    ✓ Found 19 jobs
+2026-02-06 20:17:31 | INFO     | 🔎 [569/1258] 🇬🇧 EN: 'machine learning engineer' in Wiesbaden
+2026-02-06 20:18:06 | INFO     |    ✓ Found 16 jobs
+2026-02-06 20:18:06 | INFO     | 🔎 [570/1258] 🇬🇧 EN: 'machine learning engineer' in Münster
+2026-02-06 20:18:41 | INFO     |    ✓ Found 19 jobs
+2026-02-06 20:18:41 | INFO     | 🔎 [571/1258] 🇬🇧 EN: 'machine learning engineer' in Bonn
+2026-02-06 20:19:17 | INFO     |    ✓ Found 19 jobs
+2026-02-06 20:19:17 | INFO     | 🔎 [572/1258] 🇬🇧 EN: 'machine learning engineer' in Freiburg
+2026-02-06 20:19:36 | INFO     |    ✓ Found 10 jobs
+2026-02-06 20:19:36 | INFO     | 🔎 [573/1258] 🇬🇧 EN: 'machine learning engineer' in Aachen
+2026-02-06 20:20:12 | INFO     |    ✓ Found 20 jobs
+2026-02-06 20:20:12 | INFO     | 🔎 [574/1258] 🇬🇧 EN: 'machine learning engineer' in Heidelberg
+2026-02-06 20:20:47 | INFO     |    ✓ Found 20 jobs
+2026-02-06 20:20:47 | INFO     | 🔎 [575/1258] 🇬🇧 EN: 'machine learning engineer' in Ulm
+2026-02-06 20:21:21 | INFO     |    ✓ Found 14 jobs
+2026-02-06 20:21:21 | INFO     | 🔎 [576/1258] 🇬🇧 EN: 'machine learning engineer' in Darmstadt
+2026-02-06 20:21:56 | INFO     |    ✓ Found 14 jobs
+2026-02-06 20:21:56 | INFO     | 🔎 [577/1258] 🇬🇧 EN: 'machine learning engineer' in Regensburg
+2026-02-06 20:22:05 | INFO     |    ✓ Found 4 jobs
+2026-02-06 20:22:05 | INFO     | 🔎 [578/1258] 🇬🇧 EN: 'machine learning engineer' in Bielefeld
+2026-02-06 20:22:39 | INFO     |    ✓ Found 16 jobs
+2026-02-06 20:22:39 | INFO     | 🔎 [579/1258] 🇬🇧 EN: 'AI engineer' in Stuttgart
+2026-02-06 20:23:14 | INFO     |    ✓ Found 19 jobs
+2026-02-06 20:23:14 | INFO     | 🔎 [580/1258] 🇬🇧 EN: 'AI engineer' in Munich
+2026-02-06 20:23:51 | INFO     |    ✓ Found 19 jobs
+2026-02-06 20:23:51 | INFO     | 🔎 [581/1258] 🇬🇧 EN: 'AI engineer' in Berlin
+2026-02-06 20:24:25 | INFO     |    ✓ Found 19 jobs
+2026-02-06 20:24:25 | INFO     | 🔎 [582/1258] 🇬🇧 EN: 'AI engineer' in Potsdam
+2026-02-06 20:25:01 | INFO     |    ✓ Found 19 jobs
+2026-02-06 20:25:01 | INFO     | 🔎 [583/1258] 🇬🇧 EN: 'AI engineer' in Bremen
+2026-02-06 20:25:18 | INFO     |    ✓ Found 8 jobs
+2026-02-06 20:25:18 | INFO     | 🔎 [584/1258] 🇬🇧 EN: 'AI engineer' in Hamburg
+2026-02-06 20:25:53 | INFO     |    ✓ Found 19 jobs
+2026-02-06 20:25:53 | INFO     | 🔎 [585/1258] 🇬🇧 EN: 'AI engineer' in Frankfurt
+2026-02-06 20:26:28 | INFO     |    ✓ Found 19 jobs
+2026-02-06 20:26:28 | INFO     | 🔎 [586/1258] 🇬🇧 EN: 'AI engineer' in Hanover
+2026-02-06 20:26:47 | INFO     |    ✓ Found 9 jobs
+2026-02-06 20:26:47 | INFO     | 🔎 [587/1258] 🇬🇧 EN: 'AI engineer' in Rostock
+2026-02-06 20:27:00 | INFO     |    ✓ Found 7 jobs
+2026-02-06 20:27:00 | INFO     | 🔎 [588/1258] 🇬🇧 EN: 'AI engineer' in Cologne
+2026-02-06 20:27:36 | INFO     |    ✓ Found 17 jobs
+2026-02-06 20:27:36 | INFO     | 🔎 [589/1258] 🇬🇧 EN: 'AI engineer' in Mainz
+2026-02-06 20:28:13 | INFO     |    ✓ Found 19 jobs
+2026-02-06 20:28:13 | INFO     | 🔎 [590/1258] 🇬🇧 EN: 'AI engineer' in Saarbrücken
+2026-02-06 20:28:29 | INFO     |    ✓ Found 9 jobs
+2026-02-06 20:28:29 | INFO     | 🔎 [591/1258] 🇬🇧 EN: 'AI engineer' in Dresden
+2026-02-06 20:28:47 | INFO     |    ✓ Found 9 jobs
+2026-02-06 20:28:47 | INFO     | 🔎 [592/1258] 🇬🇧 EN: 'AI engineer' in Magdeburg
+2026-02-06 20:28:57 | INFO     |    ✓ Found 4 jobs
+2026-02-06 20:28:57 | INFO     | 🔎 [593/1258] 🇬🇧 EN: 'AI engineer' in Kiel
+2026-02-06 20:29:12 | INFO     |    ✓ Found 8 jobs
+2026-02-06 20:29:12 | INFO     | 🔎 [594/1258] 🇬🇧 EN: 'AI engineer' in Erfurt
+2026-02-06 20:29:30 | INFO     |    ✓ Found 10 jobs
+2026-02-06 20:29:30 | INFO     | 🔎 [595/1258] 🇬🇧 EN: 'AI engineer' in Düsseldorf
+2026-02-06 20:30:05 | INFO     |    ✓ Found 17 jobs
+2026-02-06 20:30:05 | INFO     | 🔎 [596/1258] 🇬🇧 EN: 'AI engineer' in Dortmund
+2026-02-06 20:30:40 | INFO     |    ✓ Found 20 jobs
+2026-02-06 20:30:40 | INFO     | 🔎 [597/1258] 🇬🇧 EN: 'AI engineer' in Essen
+2026-02-06 20:31:15 | INFO     |    ✓ Found 19 jobs
+2026-02-06 20:31:15 | INFO     | 🔎 [598/1258] 🇬🇧 EN: 'AI engineer' in Leipzig
+2026-02-06 20:31:35 | INFO     |    ✓ Found 9 jobs
+2026-02-06 20:31:35 | INFO     | 🔎 [599/1258] 🇬🇧 EN: 'AI engineer' in Nürnberg
+2026-02-06 20:32:04 | INFO     |    ✓ Found 14 jobs
+2026-02-06 20:32:04 | INFO     | 🔎 [600/1258] 🇬🇧 EN: 'AI engineer' in Karlsruhe
+2026-02-06 20:32:37 | INFO     |    ✓ Found 19 jobs
+2026-02-06 20:32:37 | INFO     | 
+💾 CHECKPOINT: Saving progress at 600/1258...
+2026-02-06 20:32:38 | INFO     |    ✓ Checkpoint saved: 5510 unique jobs so far
+
+2026-02-06 20:32:38 | INFO     | 🔎 [601/1258] 🇬🇧 EN: 'AI engineer' in Mannheim
+2026-02-06 20:32:57 | INFO     |    ✓ Found 10 jobs
+2026-02-06 20:32:57 | INFO     | 🔎 [602/1258] 🇬🇧 EN: 'AI engineer' in Augsburg
+2026-02-06 20:33:16 | INFO     |    ✓ Found 10 jobs
+2026-02-06 20:33:16 | INFO     | 🔎 [603/1258] 🇬🇧 EN: 'AI engineer' in Wiesbaden
+2026-02-06 20:33:51 | INFO     |    ✓ Found 19 jobs
+2026-02-06 20:33:51 | INFO     | 🔎 [604/1258] 🇬🇧 EN: 'AI engineer' in Münster
+2026-02-06 20:34:05 | INFO     |    ✓ Found 6 jobs
+2026-02-06 20:34:05 | INFO     | 🔎 [605/1258] 🇬🇧 EN: 'AI engineer' in Bonn
+2026-02-06 20:34:39 | INFO     |    ✓ Found 18 jobs
+2026-02-06 20:34:39 | INFO     | 🔎 [606/1258] 🇬🇧 EN: 'AI engineer' in Freiburg
+2026-02-06 20:34:48 | INFO     |    ✓ Found 4 jobs
+2026-02-06 20:34:48 | INFO     | 🔎 [607/1258] 🇬🇧 EN: 'AI engineer' in Aachen
+2026-02-06 20:35:08 | INFO     |    ✓ Found 10 jobs
+2026-02-06 20:35:08 | INFO     | 🔎 [608/1258] 🇬🇧 EN: 'AI engineer' in Heidelberg
+2026-02-06 20:35:27 | INFO     |    ✓ Found 10 jobs
+2026-02-06 20:35:27 | INFO     | 🔎 [609/1258] 🇬🇧 EN: 'AI engineer' in Ulm
+2026-02-06 20:35:47 | INFO     |    ✓ Found 8 jobs
+2026-02-06 20:35:47 | INFO     | 🔎 [610/1258] 🇬🇧 EN: 'AI engineer' in Darmstadt
+2026-02-06 20:36:22 | INFO     |    ✓ Found 19 jobs
+2026-02-06 20:36:22 | INFO     | 🔎 [611/1258] 🇬🇧 EN: 'AI engineer' in Regensburg
+2026-02-06 20:36:27 | INFO     |    ✓ Found 2 jobs
+2026-02-06 20:36:27 | INFO     | 🔎 [612/1258] 🇬🇧 EN: 'AI engineer' in Bielefeld
+2026-02-06 20:36:45 | INFO     |    ✓ Found 9 jobs
+2026-02-06 20:36:45 | INFO     | 🔎 [613/1258] 🇬🇧 EN: 'cybersecurity engineer' in Stuttgart
+2026-02-06 20:37:21 | INFO     |    ✓ Found 18 jobs
+2026-02-06 20:37:21 | INFO     | 🔎 [614/1258] 🇬🇧 EN: 'cybersecurity engineer' in Munich
+2026-02-06 20:37:56 | INFO     |    ✓ Found 19 jobs
+2026-02-06 20:37:56 | INFO     | 🔎 [615/1258] 🇬🇧 EN: 'cybersecurity engineer' in Berlin
+2026-02-06 20:38:31 | INFO     |    ✓ Found 18 jobs
+2026-02-06 20:38:31 | INFO     | 🔎 [616/1258] 🇬🇧 EN: 'cybersecurity engineer' in Potsdam
+2026-02-06 20:39:06 | INFO     |    ✓ Found 19 jobs
+2026-02-06 20:39:06 | INFO     | 🔎 [617/1258] 🇬🇧 EN: 'cybersecurity engineer' in Bremen
+2026-02-06 20:39:25 | INFO     |    ✓ Found 8 jobs
+2026-02-06 20:39:25 | INFO     | 🔎 [618/1258] 🇬🇧 EN: 'cybersecurity engineer' in Hamburg
+2026-02-06 20:40:01 | INFO     |    ✓ Found 18 jobs
+2026-02-06 20:40:01 | INFO     | 🔎 [619/1258] 🇬🇧 EN: 'cybersecurity engineer' in Frankfurt
+2026-02-06 20:40:36 | INFO     |    ✓ Found 18 jobs
+2026-02-06 20:40:36 | INFO     | 🔎 [620/1258] 🇬🇧 EN: 'cybersecurity engineer' in Hanover
+2026-02-06 20:41:11 | INFO     |    ✓ Found 17 jobs
+2026-02-06 20:41:11 | INFO     | 🔎 [621/1258] 🇬🇧 EN: 'cybersecurity engineer' in Rostock
+2026-02-06 20:41:18 | INFO     |    ✓ Found 3 jobs
+2026-02-06 20:41:18 | INFO     | 🔎 [622/1258] 🇬🇧 EN: 'cybersecurity engineer' in Cologne
+2026-02-06 20:41:52 | INFO     |    ✓ Found 19 jobs
+2026-02-06 20:41:52 | INFO     | 🔎 [623/1258] 🇬🇧 EN: 'cybersecurity engineer' in Mainz
+2026-02-06 20:42:27 | INFO     |    ✓ Found 18 jobs
+2026-02-06 20:42:27 | INFO     | 🔎 [624/1258] 🇬🇧 EN: 'cybersecurity engineer' in Saarbrücken
+2026-02-06 20:42:46 | INFO     |    ✓ Found 9 jobs
+2026-02-06 20:42:46 | INFO     | 🔎 [625/1258] 🇬🇧 EN: 'cybersecurity engineer' in Dresden
+2026-02-06 20:43:04 | INFO     |    ✓ Found 8 jobs
+2026-02-06 20:43:04 | INFO     | 🔎 [626/1258] 🇬🇧 EN: 'cybersecurity engineer' in Magdeburg
+2026-02-06 20:43:12 | INFO     |    ✓ Found 4 jobs
+2026-02-06 20:43:12 | INFO     | 🔎 [627/1258] 🇬🇧 EN: 'cybersecurity engineer' in Kiel
+2026-02-06 20:43:30 | INFO     |    ✓ Found 10 jobs
+2026-02-06 20:43:30 | INFO     | 🔎 [628/1258] 🇬🇧 EN: 'cybersecurity engineer' in Erfurt
+2026-02-06 20:43:46 | INFO     |    ✓ Found 8 jobs
+2026-02-06 20:43:46 | INFO     | 🔎 [629/1258] 🇬🇧 EN: 'cybersecurity engineer' in Düsseldorf
+2026-02-06 20:44:20 | INFO     |    ✓ Found 19 jobs
+2026-02-06 20:44:20 | INFO     | 🔎 [630/1258] 🇬🇧 EN: 'cybersecurity engineer' in Dortmund
+2026-02-06 20:44:54 | INFO     |    ✓ Found 18 jobs
+2026-02-06 20:44:54 | INFO     | 🔎 [631/1258] 🇬🇧 EN: 'cybersecurity engineer' in Essen
+2026-02-06 20:45:30 | INFO     |    ✓ Found 18 jobs
+2026-02-06 20:45:30 | INFO     | 🔎 [632/1258] 🇬🇧 EN: 'cybersecurity engineer' in Leipzig
+2026-02-06 20:45:54 | INFO     |    ✓ Found 14 jobs
+2026-02-06 20:45:54 | INFO     | 🔎 [633/1258] 🇬🇧 EN: 'cybersecurity engineer' in Nürnberg
+2026-02-06 20:46:27 | INFO     |    ✓ Found 18 jobs
+2026-02-06 20:46:27 | INFO     | 🔎 [634/1258] 🇬🇧 EN: 'cybersecurity engineer' in Karlsruhe
+2026-02-06 20:47:01 | INFO     |    ✓ Found 18 jobs
+2026-02-06 20:47:01 | INFO     | 🔎 [635/1258] 🇬🇧 EN: 'cybersecurity engineer' in Mannheim
+2026-02-06 20:47:36 | INFO     |    ✓ Found 18 jobs
+2026-02-06 20:47:36 | INFO     | 🔎 [636/1258] 🇬🇧 EN: 'cybersecurity engineer' in Augsburg
+2026-02-06 20:47:55 | INFO     |    ✓ Found 8 jobs
+2026-02-06 20:47:55 | INFO     | 🔎 [637/1258] 🇬🇧 EN: 'cybersecurity engineer' in Wiesbaden
+2026-02-06 20:48:30 | INFO     |    ✓ Found 18 jobs
+2026-02-06 20:48:30 | INFO     | 🔎 [638/1258] 🇬🇧 EN: 'cybersecurity engineer' in Münster
+2026-02-06 20:48:47 | INFO     |    ✓ Found 9 jobs
+2026-02-06 20:48:47 | INFO     | 🔎 [639/1258] 🇬🇧 EN: 'cybersecurity engineer' in Bonn
+2026-02-06 20:49:22 | INFO     |    ✓ Found 18 jobs
+2026-02-06 20:49:22 | INFO     | 🔎 [640/1258] 🇬🇧 EN: 'cybersecurity engineer' in Freiburg
+2026-02-06 20:49:39 | INFO     |    ✓ Found 10 jobs
+2026-02-06 20:49:39 | INFO     | 🔎 [641/1258] 🇬🇧 EN: 'cybersecurity engineer' in Aachen
+2026-02-06 20:49:59 | INFO     |    ✓ Found 10 jobs
+2026-02-06 20:49:59 | INFO     | 🔎 [642/1258] 🇬🇧 EN: 'cybersecurity engineer' in Heidelberg
+2026-02-06 20:50:33 | INFO     |    ✓ Found 17 jobs
+2026-02-06 20:50:33 | INFO     | 🔎 [643/1258] 🇬🇧 EN: 'cybersecurity engineer' in Ulm
+2026-02-06 20:50:51 | INFO     |    ✓ Found 10 jobs
+2026-02-06 20:50:51 | INFO     | 🔎 [644/1258] 🇬🇧 EN: 'cybersecurity engineer' in Darmstadt
+2026-02-06 20:51:25 | INFO     |    ✓ Found 19 jobs
+2026-02-06 20:51:25 | INFO     | 🔎 [645/1258] 🇬🇧 EN: 'cybersecurity engineer' in Regensburg
+2026-02-06 20:51:39 | INFO     |    ✓ Found 7 jobs
+2026-02-06 20:51:39 | INFO     | 🔎 [646/1258] 🇬🇧 EN: 'cybersecurity engineer' in Bielefeld
+2026-02-06 20:51:57 | INFO     |    ✓ Found 9 jobs
+2026-02-06 20:51:57 | INFO     | 🔎 [647/1258] 🇩🇪 DE: 'Softwareentwickler' in Stuttgart
+2026-02-06 20:52:32 | INFO     |    ✓ Found 16 jobs
+2026-02-06 20:52:32 | INFO     | 🔎 [648/1258] 🇩🇪 DE: 'Softwareentwickler' in Munich
+2026-02-06 20:53:07 | INFO     |    ✓ Found 13 jobs
+2026-02-06 20:53:07 | INFO     | 🔎 [649/1258] 🇩🇪 DE: 'Softwareentwickler' in Berlin
+2026-02-06 20:53:41 | INFO     |    ✓ Found 17 jobs
+2026-02-06 20:53:41 | INFO     | 🔎 [650/1258] 🇩🇪 DE: 'Softwareentwickler' in Potsdam
+2026-02-06 20:54:17 | INFO     |    ✓ Found 19 jobs
+2026-02-06 20:54:17 | INFO     | 🔎 [651/1258] 🇩🇪 DE: 'Softwareentwickler' in Bremen
+2026-02-06 20:54:52 | INFO     |    ✓ Found 16 jobs
+2026-02-06 20:54:52 | INFO     | 🔎 [652/1258] 🇩🇪 DE: 'Softwareentwickler' in Hamburg
+2026-02-06 20:55:26 | INFO     |    ✓ Found 18 jobs
+2026-02-06 20:55:26 | INFO     | 🔎 [653/1258] 🇩🇪 DE: 'Softwareentwickler' in Frankfurt
+2026-02-06 20:56:02 | INFO     |    ✓ Found 10 jobs
+2026-02-06 20:56:02 | INFO     | 🔎 [654/1258] 🇩🇪 DE: 'Softwareentwickler' in Hanover
+2026-02-06 20:56:37 | INFO     |    ✓ Found 18 jobs
+2026-02-06 20:56:37 | INFO     | 🔎 [655/1258] 🇩🇪 DE: 'Softwareentwickler' in Rostock
+2026-02-06 20:57:11 | INFO     |    ✓ Found 19 jobs
+2026-02-06 20:57:11 | INFO     | 🔎 [656/1258] 🇩🇪 DE: 'Softwareentwickler' in Cologne
+2026-02-06 20:57:46 | INFO     |    ✓ Found 17 jobs
+2026-02-06 20:57:46 | INFO     | 🔎 [657/1258] 🇩🇪 DE: 'Softwareentwickler' in Mainz
+2026-02-06 20:58:21 | INFO     |    ✓ Found 13 jobs
+2026-02-06 20:58:21 | INFO     | 🔎 [658/1258] 🇩🇪 DE: 'Softwareentwickler' in Saarbrücken
+2026-02-06 20:58:56 | INFO     |    ✓ Found 15 jobs
+2026-02-06 20:58:56 | INFO     | 🔎 [659/1258] 🇩🇪 DE: 'Softwareentwickler' in Dresden
+2026-02-06 20:59:30 | INFO     |    ✓ Found 15 jobs
+2026-02-06 20:59:30 | INFO     | 🔎 [660/1258] 🇩🇪 DE: 'Softwareentwickler' in Magdeburg
+2026-02-06 21:00:05 | INFO     |    ✓ Found 14 jobs
+2026-02-06 21:00:05 | INFO     | 🔎 [661/1258] 🇩🇪 DE: 'Softwareentwickler' in Kiel
+2026-02-06 21:00:39 | INFO     |    ✓ Found 16 jobs
+2026-02-06 21:00:39 | INFO     | 🔎 [662/1258] 🇩🇪 DE: 'Softwareentwickler' in Erfurt
+2026-02-06 21:01:13 | INFO     |    ✓ Found 17 jobs
+2026-02-06 21:01:13 | INFO     | 🔎 [663/1258] 🇩🇪 DE: 'Softwareentwickler' in Düsseldorf
+2026-02-06 21:01:49 | INFO     |    ✓ Found 17 jobs
+2026-02-06 21:01:49 | INFO     | 🔎 [664/1258] 🇩🇪 DE: 'Softwareentwickler' in Dortmund
+2026-02-06 21:02:26 | INFO     |    ✓ Found 15 jobs
+2026-02-06 21:02:26 | INFO     | 🔎 [665/1258] 🇩🇪 DE: 'Softwareentwickler' in Essen
+2026-02-06 21:03:03 | INFO     |    ✓ Found 15 jobs
+2026-02-06 21:03:03 | INFO     | 🔎 [666/1258] 🇩🇪 DE: 'Softwareentwickler' in Leipzig
+2026-02-06 21:03:38 | INFO     |    ✓ Found 15 jobs
+2026-02-06 21:03:38 | INFO     | 🔎 [667/1258] 🇩🇪 DE: 'Softwareentwickler' in Nürnberg
+2026-02-06 21:04:13 | INFO     |    ✓ Found 13 jobs
+2026-02-06 21:04:13 | INFO     | 🔎 [668/1258] 🇩🇪 DE: 'Softwareentwickler' in Karlsruhe
+2026-02-06 21:04:48 | INFO     |    ✓ Found 18 jobs
+2026-02-06 21:04:48 | INFO     | 🔎 [669/1258] 🇩🇪 DE: 'Softwareentwickler' in Mannheim
+2026-02-06 21:05:24 | INFO     |    ✓ Found 13 jobs
+2026-02-06 21:05:24 | INFO     | 🔎 [670/1258] 🇩🇪 DE: 'Softwareentwickler' in Augsburg
+2026-02-06 21:05:58 | INFO     |    ✓ Found 19 jobs
+2026-02-06 21:05:58 | INFO     | 🔎 [671/1258] 🇩🇪 DE: 'Softwareentwickler' in Wiesbaden
+2026-02-06 21:06:33 | INFO     |    ✓ Found 14 jobs
+2026-02-06 21:06:33 | INFO     | 🔎 [672/1258] 🇩🇪 DE: 'Softwareentwickler' in Münster
+2026-02-06 21:07:08 | INFO     |    ✓ Found 15 jobs
+2026-02-06 21:07:08 | INFO     | 🔎 [673/1258] 🇩🇪 DE: 'Softwareentwickler' in Bonn
+2026-02-06 21:07:43 | INFO     |    ✓ Found 18 jobs
+2026-02-06 21:07:43 | INFO     | 🔎 [674/1258] 🇩🇪 DE: 'Softwareentwickler' in Freiburg
+2026-02-06 21:08:20 | INFO     |    ✓ Found 17 jobs
+2026-02-06 21:08:20 | INFO     | 🔎 [675/1258] 🇩🇪 DE: 'Softwareentwickler' in Aachen
+2026-02-06 21:09:00 | INFO     |    ✓ Found 18 jobs
+2026-02-06 21:09:00 | INFO     | 🔎 [676/1258] 🇩🇪 DE: 'Softwareentwickler' in Heidelberg
+2026-02-06 21:09:34 | INFO     |    ✓ Found 15 jobs
+2026-02-06 21:09:34 | INFO     | 🔎 [677/1258] 🇩🇪 DE: 'Softwareentwickler' in Ulm
+2026-02-06 21:10:09 | INFO     |    ✓ Found 17 jobs
+2026-02-06 21:10:09 | INFO     | 🔎 [678/1258] 🇩🇪 DE: 'Softwareentwickler' in Darmstadt
+2026-02-06 21:10:43 | INFO     |    ✓ Found 12 jobs
+2026-02-06 21:10:43 | INFO     | 🔎 [679/1258] 🇩🇪 DE: 'Softwareentwickler' in Regensburg
+2026-02-06 21:11:17 | INFO     |    ✓ Found 17 jobs
+2026-02-06 21:11:17 | INFO     | 🔎 [680/1258] 🇩🇪 DE: 'Softwareentwickler' in Bielefeld
+2026-02-06 21:11:51 | INFO     |    ✓ Found 15 jobs
+2026-02-06 21:11:51 | INFO     | 🔎 [681/1258] 🇩🇪 DE: 'Softwarearchitekt' in Stuttgart
+2026-02-06 21:12:27 | INFO     |    ✓ Found 19 jobs
+2026-02-06 21:12:27 | INFO     | 🔎 [682/1258] 🇩🇪 DE: 'Softwarearchitekt' in Munich
+2026-02-06 21:13:02 | INFO     |    ✓ Found 19 jobs
+2026-02-06 21:13:02 | INFO     | 🔎 [683/1258] 🇩🇪 DE: 'Softwarearchitekt' in Berlin
+2026-02-06 21:13:38 | INFO     |    ✓ Found 19 jobs
+2026-02-06 21:13:38 | INFO     | 🔎 [684/1258] 🇩🇪 DE: 'Softwarearchitekt' in Potsdam
+2026-02-06 21:14:14 | INFO     |    ✓ Found 19 jobs
+2026-02-06 21:14:14 | INFO     | 🔎 [685/1258] 🇩🇪 DE: 'Softwarearchitekt' in Bremen
+2026-02-06 21:14:48 | INFO     |    ✓ Found 20 jobs
+2026-02-06 21:14:48 | INFO     | 🔎 [686/1258] 🇩🇪 DE: 'Softwarearchitekt' in Hamburg
+2026-02-06 21:15:24 | INFO     |    ✓ Found 20 jobs
+2026-02-06 21:15:24 | INFO     | 🔎 [687/1258] 🇩🇪 DE: 'Softwarearchitekt' in Frankfurt
+2026-02-06 21:15:58 | INFO     |    ✓ Found 17 jobs
+2026-02-06 21:15:58 | INFO     | 🔎 [688/1258] 🇩🇪 DE: 'Softwarearchitekt' in Hanover
+2026-02-06 21:16:34 | INFO     |    ✓ Found 20 jobs
+2026-02-06 21:16:34 | INFO     | 🔎 [689/1258] 🇩🇪 DE: 'Softwarearchitekt' in Rostock
+2026-02-06 21:16:52 | INFO     |    ✓ Found 10 jobs
+2026-02-06 21:16:52 | INFO     | 🔎 [690/1258] 🇩🇪 DE: 'Softwarearchitekt' in Cologne
+2026-02-06 21:17:27 | INFO     |    ✓ Found 19 jobs
+2026-02-06 21:17:27 | INFO     | 🔎 [691/1258] 🇩🇪 DE: 'Softwarearchitekt' in Mainz
+2026-02-06 21:18:02 | INFO     |    ✓ Found 18 jobs
+2026-02-06 21:18:02 | INFO     | 🔎 [692/1258] 🇩🇪 DE: 'Softwarearchitekt' in Saarbrücken
+2026-02-06 21:18:22 | INFO     |    ✓ Found 11 jobs
+2026-02-06 21:18:22 | INFO     | 🔎 [693/1258] 🇩🇪 DE: 'Softwarearchitekt' in Dresden
+2026-02-06 21:18:57 | INFO     |    ✓ Found 17 jobs
+2026-02-06 21:18:57 | INFO     | 🔎 [694/1258] 🇩🇪 DE: 'Softwarearchitekt' in Magdeburg
+2026-02-06 21:19:02 | INFO     |    ✓ Found 2 jobs
+2026-02-06 21:19:02 | INFO     | 🔎 [695/1258] 🇩🇪 DE: 'Softwarearchitekt' in Kiel
+2026-02-06 21:19:36 | INFO     |    ✓ Found 19 jobs
+2026-02-06 21:19:36 | INFO     | 🔎 [696/1258] 🇩🇪 DE: 'Softwarearchitekt' in Erfurt
+2026-02-06 21:20:11 | INFO     |    ✓ Found 20 jobs
+2026-02-06 21:20:11 | INFO     | 🔎 [697/1258] 🇩🇪 DE: 'Softwarearchitekt' in Düsseldorf
+2026-02-06 21:20:46 | INFO     |    ✓ Found 19 jobs
+2026-02-06 21:20:46 | INFO     | 🔎 [698/1258] 🇩🇪 DE: 'Softwarearchitekt' in Dortmund
+2026-02-06 21:21:20 | INFO     |    ✓ Found 19 jobs
+2026-02-06 21:21:20 | INFO     | 🔎 [699/1258] 🇩🇪 DE: 'Softwarearchitekt' in Essen
+2026-02-06 21:21:56 | INFO     |    ✓ Found 20 jobs
+2026-02-06 21:21:56 | INFO     | 🔎 [700/1258] 🇩🇪 DE: 'Softwarearchitekt' in Leipzig
+2026-02-06 21:22:32 | INFO     |    ✓ Found 19 jobs
+2026-02-06 21:22:32 | INFO     | 
+💾 CHECKPOINT: Saving progress at 700/1258...
+2026-02-06 21:22:32 | INFO     |    ✓ Checkpoint saved: 6246 unique jobs so far
+
+2026-02-06 21:22:32 | INFO     | 🔎 [701/1258] 🇩🇪 DE: 'Softwarearchitekt' in Nürnberg
+2026-02-06 21:23:06 | INFO     |    ✓ Found 19 jobs
+2026-02-06 21:23:06 | INFO     | 🔎 [702/1258] 🇩🇪 DE: 'Softwarearchitekt' in Karlsruhe
+2026-02-06 21:23:41 | INFO     |    ✓ Found 18 jobs
+2026-02-06 21:23:41 | INFO     | 🔎 [703/1258] 🇩🇪 DE: 'Softwarearchitekt' in Mannheim
+2026-02-06 21:24:10 | INFO     |    ✓ Found 16 jobs
+2026-02-06 21:24:10 | INFO     | 🔎 [704/1258] 🇩🇪 DE: 'Softwarearchitekt' in Augsburg
+2026-02-06 21:24:32 | INFO     |    ✓ Found 12 jobs
+2026-02-06 21:24:32 | INFO     | 🔎 [705/1258] 🇩🇪 DE: 'Softwarearchitekt' in Wiesbaden
+2026-02-06 21:25:07 | INFO     |    ✓ Found 17 jobs
+2026-02-06 21:25:07 | INFO     | 🔎 [706/1258] 🇩🇪 DE: 'Softwarearchitekt' in Münster
+2026-02-06 21:25:41 | INFO     |    ✓ Found 20 jobs
+2026-02-06 21:25:41 | INFO     | 🔎 [707/1258] 🇩🇪 DE: 'Softwarearchitekt' in Bonn
+2026-02-06 21:26:16 | INFO     |    ✓ Found 19 jobs
+2026-02-06 21:26:16 | INFO     | 🔎 [708/1258] 🇩🇪 DE: 'Softwarearchitekt' in Freiburg
+2026-02-06 21:26:29 | INFO     |    ✓ Found 5 jobs
+2026-02-06 21:26:29 | INFO     | 🔎 [709/1258] 🇩🇪 DE: 'Softwarearchitekt' in Aachen
+2026-02-06 21:27:05 | INFO     |    ✓ Found 18 jobs
+2026-02-06 21:27:05 | INFO     | 🔎 [710/1258] 🇩🇪 DE: 'Softwarearchitekt' in Heidelberg
+2026-02-06 21:27:40 | INFO     |    ✓ Found 19 jobs
+2026-02-06 21:27:40 | INFO     | 🔎 [711/1258] 🇩🇪 DE: 'Softwarearchitekt' in Ulm
+2026-02-06 21:28:14 | INFO     |    ✓ Found 20 jobs
+2026-02-06 21:28:14 | INFO     | 🔎 [712/1258] 🇩🇪 DE: 'Softwarearchitekt' in Darmstadt
+2026-02-06 21:28:49 | INFO     |    ✓ Found 17 jobs
+2026-02-06 21:28:49 | INFO     | 🔎 [713/1258] 🇩🇪 DE: 'Softwarearchitekt' in Regensburg
+2026-02-06 21:29:00 | INFO     |    ✓ Found 4 jobs
+2026-02-06 21:29:00 | INFO     | 🔎 [714/1258] 🇩🇪 DE: 'Softwarearchitekt' in Bielefeld
+2026-02-06 21:29:31 | INFO     |    ✓ Found 16 jobs
+2026-02-06 21:29:31 | INFO     | 🔎 [715/1258] 🇬🇧 EN: 'Data Engineer' in Stuttgart
+2026-02-06 21:30:07 | INFO     |    ✓ Found 20 jobs
+2026-02-06 21:30:07 | INFO     | 🔎 [716/1258] 🇬🇧 EN: 'Data Engineer' in Munich
+2026-02-06 21:30:42 | INFO     |    ✓ Found 17 jobs
+2026-02-06 21:30:42 | INFO     | 🔎 [717/1258] 🇬🇧 EN: 'Data Engineer' in Berlin
+2026-02-06 21:31:19 | INFO     |    ✓ Found 20 jobs
+2026-02-06 21:31:19 | INFO     | 🔎 [718/1258] 🇬🇧 EN: 'Data Engineer' in Potsdam
+2026-02-06 21:31:54 | INFO     |    ✓ Found 19 jobs
+2026-02-06 21:31:54 | INFO     | 🔎 [719/1258] 🇬🇧 EN: 'Data Engineer' in Bremen
+2026-02-06 21:32:28 | INFO     |    ✓ Found 17 jobs
+2026-02-06 21:32:28 | INFO     | 🔎 [720/1258] 🇬🇧 EN: 'Data Engineer' in Hamburg
+2026-02-06 21:33:05 | INFO     |    ✓ Found 20 jobs
+2026-02-06 21:33:05 | INFO     | 🔎 [721/1258] 🇬🇧 EN: 'Data Engineer' in Frankfurt
+2026-02-06 21:33:40 | INFO     |    ✓ Found 16 jobs
+2026-02-06 21:33:40 | INFO     | 🔎 [722/1258] 🇬🇧 EN: 'Data Engineer' in Hanover
+2026-02-06 21:34:14 | INFO     |    ✓ Found 18 jobs
+2026-02-06 21:34:14 | INFO     | 🔎 [723/1258] 🇬🇧 EN: 'Data Engineer' in Rostock
+2026-02-06 21:34:47 | INFO     |    ✓ Found 20 jobs
+2026-02-06 21:34:47 | INFO     | 🔎 [724/1258] 🇬🇧 EN: 'Data Engineer' in Cologne
+2026-02-06 21:35:23 | INFO     |    ✓ Found 18 jobs
+2026-02-06 21:35:23 | INFO     | 🔎 [725/1258] 🇬🇧 EN: 'Data Engineer' in Mainz
+2026-02-06 21:35:58 | INFO     |    ✓ Found 19 jobs
+2026-02-06 21:35:58 | INFO     | 🔎 [726/1258] 🇬🇧 EN: 'Data Engineer' in Saarbrücken
+2026-02-06 21:36:31 | INFO     |    ✓ Found 20 jobs
+2026-02-06 21:36:31 | INFO     | 🔎 [727/1258] 🇬🇧 EN: 'Data Engineer' in Dresden
+2026-02-06 21:37:07 | INFO     |    ✓ Found 16 jobs
+2026-02-06 21:37:07 | INFO     | 🔎 [728/1258] 🇬🇧 EN: 'Data Engineer' in Magdeburg
+2026-02-06 21:37:24 | INFO     |    ✓ Found 9 jobs
+2026-02-06 21:37:24 | INFO     | 🔎 [729/1258] 🇬🇧 EN: 'Data Engineer' in Kiel
+2026-02-06 21:37:58 | INFO     |    ✓ Found 20 jobs
+2026-02-06 21:37:58 | INFO     | 🔎 [730/1258] 🇬🇧 EN: 'Data Engineer' in Erfurt
+2026-02-06 21:38:32 | INFO     |    ✓ Found 20 jobs
+2026-02-06 21:38:32 | INFO     | 🔎 [731/1258] 🇬🇧 EN: 'Data Engineer' in Düsseldorf
+2026-02-06 21:39:08 | INFO     |    ✓ Found 18 jobs
+2026-02-06 21:39:08 | INFO     | 🔎 [732/1258] 🇬🇧 EN: 'Data Engineer' in Dortmund
+2026-02-06 21:39:43 | INFO     |    ✓ Found 20 jobs
+2026-02-06 21:39:43 | INFO     | 🔎 [733/1258] 🇬🇧 EN: 'Data Engineer' in Essen
+2026-02-06 21:40:18 | INFO     |    ✓ Found 19 jobs
+2026-02-06 21:40:18 | INFO     | 🔎 [734/1258] 🇬🇧 EN: 'Data Engineer' in Leipzig
+2026-02-06 21:40:54 | INFO     |    ✓ Found 18 jobs
+2026-02-06 21:40:54 | INFO     | 🔎 [735/1258] 🇬🇧 EN: 'Data Engineer' in Nürnberg
+2026-02-06 21:41:29 | INFO     |    ✓ Found 16 jobs
+2026-02-06 21:41:29 | INFO     | 🔎 [736/1258] 🇬🇧 EN: 'Data Engineer' in Karlsruhe
+2026-02-06 21:42:04 | INFO     |    ✓ Found 18 jobs
+2026-02-06 21:42:04 | INFO     | 🔎 [737/1258] 🇬🇧 EN: 'Data Engineer' in Mannheim
+2026-02-06 21:42:38 | INFO     |    ✓ Found 20 jobs
+2026-02-06 21:42:38 | INFO     | 🔎 [738/1258] 🇬🇧 EN: 'Data Engineer' in Augsburg
+2026-02-06 21:43:12 | INFO     |    ✓ Found 18 jobs
+2026-02-06 21:43:12 | INFO     | 🔎 [739/1258] 🇬🇧 EN: 'Data Engineer' in Wiesbaden
+2026-02-06 21:43:47 | INFO     |    ✓ Found 20 jobs
+2026-02-06 21:43:47 | INFO     | 🔎 [740/1258] 🇬🇧 EN: 'Data Engineer' in Münster
+2026-02-06 21:44:21 | INFO     |    ✓ Found 19 jobs
+2026-02-06 21:44:21 | INFO     | 🔎 [741/1258] 🇬🇧 EN: 'Data Engineer' in Bonn
+2026-02-06 21:44:56 | INFO     |    ✓ Found 17 jobs
+2026-02-06 21:44:56 | INFO     | 🔎 [742/1258] 🇬🇧 EN: 'Data Engineer' in Freiburg
+2026-02-06 21:45:28 | INFO     |    ✓ Found 16 jobs
+2026-02-06 21:45:28 | INFO     | 🔎 [743/1258] 🇬🇧 EN: 'Data Engineer' in Aachen
+2026-02-06 21:46:03 | INFO     |    ✓ Found 20 jobs
+2026-02-06 21:46:03 | INFO     | 🔎 [744/1258] 🇬🇧 EN: 'Data Engineer' in Heidelberg
+2026-02-06 21:46:38 | INFO     |    ✓ Found 19 jobs
+2026-02-06 21:46:38 | INFO     | 🔎 [745/1258] 🇬🇧 EN: 'Data Engineer' in Ulm
+2026-02-06 21:47:12 | INFO     |    ✓ Found 16 jobs
+2026-02-06 21:47:12 | INFO     | 🔎 [746/1258] 🇬🇧 EN: 'Data Engineer' in Darmstadt
+2026-02-06 21:47:47 | INFO     |    ✓ Found 20 jobs
+2026-02-06 21:47:47 | INFO     | 🔎 [747/1258] 🇬🇧 EN: 'Data Engineer' in Regensburg
+2026-02-06 21:48:07 | INFO     |    ✓ Found 9 jobs
+2026-02-06 21:48:07 | INFO     | 🔎 [748/1258] 🇬🇧 EN: 'Data Engineer' in Bielefeld
+2026-02-06 21:48:41 | INFO     |    ✓ Found 19 jobs
+2026-02-06 21:48:41 | INFO     | 🔎 [749/1258] 🇩🇪 DE: 'Datenanalyst' in Stuttgart
+2026-02-06 21:49:16 | INFO     |    ✓ Found 18 jobs
+2026-02-06 21:49:16 | INFO     | 🔎 [750/1258] 🇩🇪 DE: 'Datenanalyst' in Munich
+2026-02-06 21:49:51 | INFO     |    ✓ Found 16 jobs
+2026-02-06 21:49:51 | INFO     | 🔎 [751/1258] 🇩🇪 DE: 'Datenanalyst' in Berlin
+2026-02-06 21:50:27 | INFO     |    ✓ Found 19 jobs
+2026-02-06 21:50:27 | INFO     | 🔎 [752/1258] 🇩🇪 DE: 'Datenanalyst' in Potsdam
+2026-02-06 21:51:03 | INFO     |    ✓ Found 20 jobs
+2026-02-06 21:51:03 | INFO     | 🔎 [753/1258] 🇩🇪 DE: 'Datenanalyst' in Bremen
+2026-02-06 21:51:37 | INFO     |    ✓ Found 17 jobs
+2026-02-06 21:51:37 | INFO     | 🔎 [754/1258] 🇩🇪 DE: 'Datenanalyst' in Hamburg
+2026-02-06 21:52:12 | INFO     |    ✓ Found 17 jobs
+2026-02-06 21:52:12 | INFO     | 🔎 [755/1258] 🇩🇪 DE: 'Datenanalyst' in Frankfurt
+2026-02-06 21:52:47 | INFO     |    ✓ Found 20 jobs
+2026-02-06 21:52:47 | INFO     | 🔎 [756/1258] 🇩🇪 DE: 'Datenanalyst' in Hanover
+2026-02-06 21:53:23 | INFO     |    ✓ Found 17 jobs
+2026-02-06 21:53:23 | INFO     | 🔎 [757/1258] 🇩🇪 DE: 'Datenanalyst' in Rostock
+2026-02-06 21:53:56 | INFO     |    ✓ Found 19 jobs
+2026-02-06 21:53:56 | INFO     | 🔎 [758/1258] 🇩🇪 DE: 'Datenanalyst' in Cologne
+2026-02-06 21:54:31 | INFO     |    ✓ Found 19 jobs
+2026-02-06 21:54:31 | INFO     | 🔎 [759/1258] 🇩🇪 DE: 'Datenanalyst' in Mainz
+2026-02-06 21:55:06 | INFO     |    ✓ Found 20 jobs
+2026-02-06 21:55:06 | INFO     | 🔎 [760/1258] 🇩🇪 DE: 'Datenanalyst' in Saarbrücken
+2026-02-06 21:55:41 | INFO     |    ✓ Found 16 jobs
+2026-02-06 21:55:41 | INFO     | 🔎 [761/1258] 🇩🇪 DE: 'Datenanalyst' in Dresden
+2026-02-06 21:56:15 | INFO     |    ✓ Found 18 jobs
+2026-02-06 21:56:15 | INFO     | 🔎 [762/1258] 🇩🇪 DE: 'Datenanalyst' in Magdeburg
+2026-02-06 21:56:49 | INFO     |    ✓ Found 15 jobs
+2026-02-06 21:56:49 | INFO     | 🔎 [763/1258] 🇩🇪 DE: 'Datenanalyst' in Kiel
+2026-02-06 21:57:24 | INFO     |    ✓ Found 19 jobs
+2026-02-06 21:57:24 | INFO     | 🔎 [764/1258] 🇩🇪 DE: 'Datenanalyst' in Erfurt
+2026-02-06 21:57:58 | INFO     |    ✓ Found 17 jobs
+2026-02-06 21:57:58 | INFO     | 🔎 [765/1258] 🇩🇪 DE: 'Datenanalyst' in Düsseldorf
+2026-02-06 21:58:33 | INFO     |    ✓ Found 19 jobs
+2026-02-06 21:58:33 | INFO     | 🔎 [766/1258] 🇩🇪 DE: 'Datenanalyst' in Dortmund
+2026-02-06 21:59:08 | INFO     |    ✓ Found 15 jobs
+2026-02-06 21:59:08 | INFO     | 🔎 [767/1258] 🇩🇪 DE: 'Datenanalyst' in Essen
+2026-02-06 21:59:43 | INFO     |    ✓ Found 18 jobs
+2026-02-06 21:59:43 | INFO     | 🔎 [768/1258] 🇩🇪 DE: 'Datenanalyst' in Leipzig
+2026-02-06 22:00:17 | INFO     |    ✓ Found 17 jobs
+2026-02-06 22:00:17 | INFO     | 🔎 [769/1258] 🇩🇪 DE: 'Datenanalyst' in Nürnberg
+2026-02-06 22:00:52 | INFO     |    ✓ Found 18 jobs
+2026-02-06 22:00:52 | INFO     | 🔎 [770/1258] 🇩🇪 DE: 'Datenanalyst' in Karlsruhe
+2026-02-06 22:01:28 | INFO     |    ✓ Found 16 jobs
+2026-02-06 22:01:28 | INFO     | 🔎 [771/1258] 🇩🇪 DE: 'Datenanalyst' in Mannheim
+2026-02-06 22:02:02 | INFO     |    ✓ Found 17 jobs
+2026-02-06 22:02:02 | INFO     | 🔎 [772/1258] 🇩🇪 DE: 'Datenanalyst' in Augsburg
+2026-02-06 22:02:37 | INFO     |    ✓ Found 18 jobs
+2026-02-06 22:02:37 | INFO     | 🔎 [773/1258] 🇩🇪 DE: 'Datenanalyst' in Wiesbaden
+2026-02-06 22:03:12 | INFO     |    ✓ Found 20 jobs
+2026-02-06 22:03:12 | INFO     | 🔎 [774/1258] 🇩🇪 DE: 'Datenanalyst' in Münster
+2026-02-06 22:03:46 | INFO     |    ✓ Found 17 jobs
+2026-02-06 22:03:46 | INFO     | 🔎 [775/1258] 🇩🇪 DE: 'Datenanalyst' in Bonn
+2026-02-06 22:04:22 | INFO     |    ✓ Found 20 jobs
+2026-02-06 22:04:22 | INFO     | 🔎 [776/1258] 🇩🇪 DE: 'Datenanalyst' in Freiburg
+2026-02-06 22:04:56 | INFO     |    ✓ Found 16 jobs
+2026-02-06 22:04:56 | INFO     | 🔎 [777/1258] 🇩🇪 DE: 'Datenanalyst' in Aachen
+2026-02-06 22:05:34 | INFO     |    ✓ Found 19 jobs
+2026-02-06 22:05:34 | INFO     | 🔎 [778/1258] 🇩🇪 DE: 'Datenanalyst' in Heidelberg
+2026-02-06 22:06:08 | INFO     |    ✓ Found 17 jobs
+2026-02-06 22:06:08 | INFO     | 🔎 [779/1258] 🇩🇪 DE: 'Datenanalyst' in Ulm
+2026-02-06 22:06:42 | INFO     |    ✓ Found 14 jobs
+2026-02-06 22:06:42 | INFO     | 🔎 [780/1258] 🇩🇪 DE: 'Datenanalyst' in Darmstadt
+2026-02-06 22:07:17 | INFO     |    ✓ Found 20 jobs
+2026-02-06 22:07:17 | INFO     | 🔎 [781/1258] 🇩🇪 DE: 'Datenanalyst' in Regensburg
+2026-02-06 22:07:52 | INFO     |    ✓ Found 17 jobs
+2026-02-06 22:07:52 | INFO     | 🔎 [782/1258] 🇩🇪 DE: 'Datenanalyst' in Bielefeld
+2026-02-06 22:08:26 | INFO     |    ✓ Found 20 jobs
+2026-02-06 22:08:26 | INFO     | 🔎 [783/1258] 🇬🇧 EN: 'Data Scientist' in Stuttgart
+2026-02-06 22:09:01 | INFO     |    ✓ Found 18 jobs
+2026-02-06 22:09:01 | INFO     | 🔎 [784/1258] 🇬🇧 EN: 'Data Scientist' in Munich
+2026-02-06 22:09:37 | INFO     |    ✓ Found 19 jobs
+2026-02-06 22:09:37 | INFO     | 🔎 [785/1258] 🇬🇧 EN: 'Data Scientist' in Berlin
+2026-02-06 22:10:11 | INFO     |    ✓ Found 17 jobs
+2026-02-06 22:10:11 | INFO     | 🔎 [786/1258] 🇬🇧 EN: 'Data Scientist' in Potsdam
+2026-02-06 22:10:44 | INFO     |    ✓ Found 17 jobs
+2026-02-06 22:10:44 | INFO     | 🔎 [787/1258] 🇬🇧 EN: 'Data Scientist' in Bremen
+2026-02-06 22:11:17 | INFO     |    ✓ Found 17 jobs
+2026-02-06 22:11:17 | INFO     | 🔎 [788/1258] 🇬🇧 EN: 'Data Scientist' in Hamburg
+2026-02-06 22:11:52 | INFO     |    ✓ Found 20 jobs
+2026-02-06 22:11:52 | INFO     | 🔎 [789/1258] 🇬🇧 EN: 'Data Scientist' in Frankfurt
+2026-02-06 22:12:27 | INFO     |    ✓ Found 20 jobs
+2026-02-06 22:12:27 | INFO     | 🔎 [790/1258] 🇬🇧 EN: 'Data Scientist' in Hanover
+2026-02-06 22:13:01 | INFO     |    ✓ Found 16 jobs
+2026-02-06 22:13:01 | INFO     | 🔎 [791/1258] 🇬🇧 EN: 'Data Scientist' in Rostock
+2026-02-06 22:13:35 | INFO     |    ✓ Found 19 jobs
+2026-02-06 22:13:35 | INFO     | 🔎 [792/1258] 🇬🇧 EN: 'Data Scientist' in Cologne
+2026-02-06 22:14:10 | INFO     |    ✓ Found 20 jobs
+2026-02-06 22:14:10 | INFO     | 🔎 [793/1258] 🇬🇧 EN: 'Data Scientist' in Mainz
+2026-02-06 22:14:45 | INFO     |    ✓ Found 19 jobs
+2026-02-06 22:14:45 | INFO     | 🔎 [794/1258] 🇬🇧 EN: 'Data Scientist' in Saarbrücken
+2026-02-06 22:15:19 | INFO     |    ✓ Found 19 jobs
+2026-02-06 22:15:19 | INFO     | 🔎 [795/1258] 🇬🇧 EN: 'Data Scientist' in Dresden
+2026-02-06 22:15:54 | INFO     |    ✓ Found 19 jobs
+2026-02-06 22:15:54 | INFO     | 🔎 [796/1258] 🇬🇧 EN: 'Data Scientist' in Magdeburg
+2026-02-06 22:16:27 | INFO     |    ✓ Found 16 jobs
+2026-02-06 22:16:27 | INFO     | 🔎 [797/1258] 🇬🇧 EN: 'Data Scientist' in Kiel
+2026-02-06 22:17:01 | INFO     |    ✓ Found 20 jobs
+2026-02-06 22:17:01 | INFO     | 🔎 [798/1258] 🇬🇧 EN: 'Data Scientist' in Erfurt
+2026-02-06 22:17:36 | INFO     |    ✓ Found 18 jobs
+2026-02-06 22:17:36 | INFO     | 🔎 [799/1258] 🇬🇧 EN: 'Data Scientist' in Düsseldorf
+2026-02-06 22:18:11 | INFO     |    ✓ Found 19 jobs
+2026-02-06 22:18:11 | INFO     | 🔎 [800/1258] 🇬🇧 EN: 'Data Scientist' in Dortmund
+2026-02-06 22:18:46 | INFO     |    ✓ Found 19 jobs
+2026-02-06 22:18:46 | INFO     | 
+💾 CHECKPOINT: Saving progress at 800/1258...
+2026-02-06 22:18:46 | INFO     |    ✓ Checkpoint saved: 6528 unique jobs so far
+
+2026-02-06 22:18:46 | INFO     | 🔎 [801/1258] 🇬🇧 EN: 'Data Scientist' in Essen
+2026-02-06 22:19:21 | INFO     |    ✓ Found 19 jobs
+2026-02-06 22:19:21 | INFO     | 🔎 [802/1258] 🇬🇧 EN: 'Data Scientist' in Leipzig
+2026-02-06 22:19:56 | INFO     |    ✓ Found 17 jobs
+2026-02-06 22:19:56 | INFO     | 🔎 [803/1258] 🇬🇧 EN: 'Data Scientist' in Nürnberg
+2026-02-06 22:20:30 | INFO     |    ✓ Found 16 jobs
+2026-02-06 22:20:30 | INFO     | 🔎 [804/1258] 🇬🇧 EN: 'Data Scientist' in Karlsruhe
+2026-02-06 22:21:05 | INFO     |    ✓ Found 19 jobs
+2026-02-06 22:21:05 | INFO     | 🔎 [805/1258] 🇬🇧 EN: 'Data Scientist' in Mannheim
+2026-02-06 22:21:40 | INFO     |    ✓ Found 17 jobs
+2026-02-06 22:21:40 | INFO     | 🔎 [806/1258] 🇬🇧 EN: 'Data Scientist' in Augsburg
+2026-02-06 22:22:15 | INFO     |    ✓ Found 18 jobs
+2026-02-06 22:22:15 | INFO     | 🔎 [807/1258] 🇬🇧 EN: 'Data Scientist' in Wiesbaden
+2026-02-06 22:22:50 | INFO     |    ✓ Found 20 jobs
+2026-02-06 22:22:50 | INFO     | 🔎 [808/1258] 🇬🇧 EN: 'Data Scientist' in Münster
+2026-02-06 22:23:24 | INFO     |    ✓ Found 19 jobs
+2026-02-06 22:23:24 | INFO     | 🔎 [809/1258] 🇬🇧 EN: 'Data Scientist' in Bonn
+2026-02-06 22:23:59 | INFO     |    ✓ Found 20 jobs
+2026-02-06 22:23:59 | INFO     | 🔎 [810/1258] 🇬🇧 EN: 'Data Scientist' in Freiburg
+2026-02-06 22:24:35 | INFO     |    ✓ Found 17 jobs
+2026-02-06 22:24:35 | INFO     | 🔎 [811/1258] 🇬🇧 EN: 'Data Scientist' in Aachen
+2026-02-06 22:25:11 | INFO     |    ✓ Found 20 jobs
+2026-02-06 22:25:11 | INFO     | 🔎 [812/1258] 🇬🇧 EN: 'Data Scientist' in Heidelberg
+2026-02-06 22:25:47 | INFO     |    ✓ Found 19 jobs
+2026-02-06 22:25:47 | INFO     | 🔎 [813/1258] 🇬🇧 EN: 'Data Scientist' in Ulm
+2026-02-06 22:26:20 | INFO     |    ✓ Found 14 jobs
+2026-02-06 22:26:20 | INFO     | 🔎 [814/1258] 🇬🇧 EN: 'Data Scientist' in Darmstadt
+2026-02-06 22:26:55 | INFO     |    ✓ Found 20 jobs
+2026-02-06 22:26:55 | INFO     | 🔎 [815/1258] 🇬🇧 EN: 'Data Scientist' in Regensburg
+2026-02-06 22:27:29 | INFO     |    ✓ Found 17 jobs
+2026-02-06 22:27:29 | INFO     | 🔎 [816/1258] 🇬🇧 EN: 'Data Scientist' in Bielefeld
+2026-02-06 22:28:03 | INFO     |    ✓ Found 19 jobs
+2026-02-06 22:28:03 | INFO     | 🔎 [817/1258] 🇩🇪 DE: 'BI-Entwickler' in Stuttgart
+2026-02-06 22:28:21 | INFO     |    ✓ Found 10 jobs
+2026-02-06 22:28:21 | INFO     | 🔎 [818/1258] 🇩🇪 DE: 'BI-Entwickler' in Munich
+2026-02-06 22:28:38 | INFO     |    ✓ Found 7 jobs
+2026-02-06 22:28:38 | INFO     | 🔎 [819/1258] 🇩🇪 DE: 'BI-Entwickler' in Berlin
+2026-02-06 22:28:57 | INFO     |    ✓ Found 7 jobs
+2026-02-06 22:28:57 | INFO     | 🔎 [820/1258] 🇩🇪 DE: 'BI-Entwickler' in Potsdam
+2026-02-06 22:29:16 | INFO     |    ✓ Found 8 jobs
+2026-02-06 22:29:16 | INFO     | 🔎 [821/1258] 🇩🇪 DE: 'BI-Entwickler' in Bremen
+2026-02-06 22:29:34 | INFO     |    ✓ Found 9 jobs
+2026-02-06 22:29:34 | INFO     | 🔎 [822/1258] 🇩🇪 DE: 'BI-Entwickler' in Hamburg
+2026-02-06 22:29:53 | INFO     |    ✓ Found 9 jobs
+2026-02-06 22:29:53 | INFO     | 🔎 [823/1258] 🇩🇪 DE: 'BI-Entwickler' in Frankfurt
+2026-02-06 22:30:11 | INFO     |    ✓ Found 10 jobs
+2026-02-06 22:30:11 | INFO     | 🔎 [824/1258] 🇩🇪 DE: 'BI-Entwickler' in Hanover
+2026-02-06 22:30:30 | INFO     |    ✓ Found 10 jobs
+2026-02-06 22:30:30 | INFO     | 🔎 [825/1258] 🇩🇪 DE: 'BI-Entwickler' in Rostock
+2026-02-06 22:30:31 | WARNING  |    ✗ No jobs found
+2026-02-06 22:30:31 | INFO     | 🔎 [826/1258] 🇩🇪 DE: 'BI-Entwickler' in Cologne
+2026-02-06 22:30:50 | INFO     |    ✓ Found 8 jobs
+2026-02-06 22:30:50 | INFO     | 🔎 [827/1258] 🇩🇪 DE: 'BI-Entwickler' in Mainz
+2026-02-06 22:31:09 | INFO     |    ✓ Found 10 jobs
+2026-02-06 22:31:09 | INFO     | 🔎 [828/1258] 🇩🇪 DE: 'BI-Entwickler' in Saarbrücken
+2026-02-06 22:31:10 | WARNING  |    ✗ No jobs found
+2026-02-06 22:31:10 | INFO     | 🔎 [829/1258] 🇩🇪 DE: 'BI-Entwickler' in Dresden
+2026-02-06 22:31:14 | INFO     |    ✓ Found 1 jobs
+2026-02-06 22:31:14 | INFO     | 🔎 [830/1258] 🇩🇪 DE: 'BI-Entwickler' in Magdeburg
+2026-02-06 22:31:15 | WARNING  |    ✗ No jobs found
+2026-02-06 22:31:15 | INFO     | 🔎 [831/1258] 🇩🇪 DE: 'BI-Entwickler' in Kiel
+2026-02-06 22:31:20 | INFO     |    ✓ Found 2 jobs
+2026-02-06 22:31:20 | INFO     | 🔎 [832/1258] 🇩🇪 DE: 'BI-Entwickler' in Erfurt
+2026-02-06 22:31:27 | INFO     |    ✓ Found 3 jobs
+2026-02-06 22:31:27 | INFO     | 🔎 [833/1258] 🇩🇪 DE: 'BI-Entwickler' in Düsseldorf
+2026-02-06 22:31:45 | INFO     |    ✓ Found 9 jobs
+2026-02-06 22:31:45 | INFO     | 🔎 [834/1258] 🇩🇪 DE: 'BI-Entwickler' in Dortmund
+2026-02-06 22:31:58 | INFO     |    ✓ Found 6 jobs
+2026-02-06 22:31:58 | INFO     | 🔎 [835/1258] 🇩🇪 DE: 'BI-Entwickler' in Essen
+2026-02-06 22:32:16 | INFO     |    ✓ Found 10 jobs
+2026-02-06 22:32:16 | INFO     | 🔎 [836/1258] 🇩🇪 DE: 'BI-Entwickler' in Leipzig
+2026-02-06 22:32:21 | INFO     |    ✓ Found 2 jobs
+2026-02-06 22:32:21 | INFO     | 🔎 [837/1258] 🇩🇪 DE: 'BI-Entwickler' in Nürnberg
+2026-02-06 22:32:32 | INFO     |    ✓ Found 3 jobs
+2026-02-06 22:32:32 | INFO     | 🔎 [838/1258] 🇩🇪 DE: 'BI-Entwickler' in Karlsruhe
+2026-02-06 22:32:45 | INFO     |    ✓ Found 7 jobs
+2026-02-06 22:32:45 | INFO     | 🔎 [839/1258] 🇩🇪 DE: 'BI-Entwickler' in Mannheim
+2026-02-06 22:32:54 | INFO     |    ✓ Found 4 jobs
+2026-02-06 22:32:54 | INFO     | 🔎 [840/1258] 🇩🇪 DE: 'BI-Entwickler' in Augsburg
+2026-02-06 22:32:58 | INFO     |    ✓ Found 1 jobs
+2026-02-06 22:32:58 | INFO     | 🔎 [841/1258] 🇩🇪 DE: 'BI-Entwickler' in Wiesbaden
+2026-02-06 22:33:17 | INFO     |    ✓ Found 10 jobs
+2026-02-06 22:33:17 | INFO     | 🔎 [842/1258] 🇩🇪 DE: 'BI-Entwickler' in Münster
+2026-02-06 22:33:28 | INFO     |    ✓ Found 6 jobs
+2026-02-06 22:33:28 | INFO     | 🔎 [843/1258] 🇩🇪 DE: 'BI-Entwickler' in Bonn
+2026-02-06 22:33:46 | INFO     |    ✓ Found 7 jobs
+2026-02-06 22:33:46 | INFO     | 🔎 [844/1258] 🇩🇪 DE: 'BI-Entwickler' in Freiburg
+2026-02-06 22:33:48 | WARNING  |    ✗ No jobs found
+2026-02-06 22:33:48 | INFO     | 🔎 [845/1258] 🇩🇪 DE: 'BI-Entwickler' in Aachen
+2026-02-06 22:33:57 | INFO     |    ✓ Found 3 jobs
+2026-02-06 22:33:57 | INFO     | 🔎 [846/1258] 🇩🇪 DE: 'BI-Entwickler' in Heidelberg
+2026-02-06 22:34:05 | INFO     |    ✓ Found 4 jobs
+2026-02-06 22:34:05 | INFO     | 🔎 [847/1258] 🇩🇪 DE: 'BI-Entwickler' in Ulm
+2026-02-06 22:34:14 | INFO     |    ✓ Found 4 jobs
+2026-02-06 22:34:14 | INFO     | 🔎 [848/1258] 🇩🇪 DE: 'BI-Entwickler' in Darmstadt
+2026-02-06 22:34:33 | INFO     |    ✓ Found 10 jobs
+2026-02-06 22:34:33 | INFO     | 🔎 [849/1258] 🇩🇪 DE: 'BI-Entwickler' in Regensburg
+2026-02-06 22:34:34 | WARNING  |    ✗ No jobs found
+2026-02-06 22:34:34 | INFO     | 🔎 [850/1258] 🇩🇪 DE: 'BI-Entwickler' in Bielefeld
+2026-02-06 22:34:44 | INFO     |    ✓ Found 4 jobs
+2026-02-06 22:34:44 | INFO     | 🔎 [851/1258] 🇬🇧 EN: 'Cloud Engineer' in Stuttgart
+2026-02-06 22:35:18 | INFO     |    ✓ Found 18 jobs
+2026-02-06 22:35:18 | INFO     | 🔎 [852/1258] 🇬🇧 EN: 'Cloud Engineer' in Munich
+2026-02-06 22:35:53 | INFO     |    ✓ Found 17 jobs
+2026-02-06 22:35:53 | INFO     | 🔎 [853/1258] 🇬🇧 EN: 'Cloud Engineer' in Berlin
+2026-02-06 22:36:27 | INFO     |    ✓ Found 19 jobs
+2026-02-06 22:36:27 | INFO     | 🔎 [854/1258] 🇬🇧 EN: 'Cloud Engineer' in Potsdam
+2026-02-06 22:37:01 | INFO     |    ✓ Found 19 jobs
+2026-02-06 22:37:01 | INFO     | 🔎 [855/1258] 🇬🇧 EN: 'Cloud Engineer' in Bremen
+2026-02-06 22:37:35 | INFO     |    ✓ Found 17 jobs
+2026-02-06 22:37:35 | INFO     | 🔎 [856/1258] 🇬🇧 EN: 'Cloud Engineer' in Hamburg
+2026-02-06 22:38:11 | INFO     |    ✓ Found 16 jobs
+2026-02-06 22:38:11 | INFO     | 🔎 [857/1258] 🇬🇧 EN: 'Cloud Engineer' in Frankfurt
+2026-02-06 22:38:45 | INFO     |    ✓ Found 17 jobs
+2026-02-06 22:38:45 | INFO     | 🔎 [858/1258] 🇬🇧 EN: 'Cloud Engineer' in Hanover
+2026-02-06 22:39:19 | INFO     |    ✓ Found 17 jobs
+2026-02-06 22:39:19 | INFO     | 🔎 [859/1258] 🇬🇧 EN: 'Cloud Engineer' in Rostock
+2026-02-06 22:39:52 | INFO     |    ✓ Found 20 jobs
+2026-02-06 22:39:52 | INFO     | 🔎 [860/1258] 🇬🇧 EN: 'Cloud Engineer' in Cologne
+2026-02-06 22:40:26 | INFO     |    ✓ Found 14 jobs
+2026-02-06 22:40:26 | INFO     | 🔎 [861/1258] 🇬🇧 EN: 'Cloud Engineer' in Mainz
+2026-02-06 22:41:00 | INFO     |    ✓ Found 15 jobs
+2026-02-06 22:41:00 | INFO     | 🔎 [862/1258] 🇬🇧 EN: 'Cloud Engineer' in Saarbrücken
+2026-02-06 22:41:34 | INFO     |    ✓ Found 20 jobs
+2026-02-06 22:41:34 | INFO     | 🔎 [863/1258] 🇬🇧 EN: 'Cloud Engineer' in Dresden
+2026-02-06 22:42:10 | INFO     |    ✓ Found 20 jobs
+2026-02-06 22:42:10 | INFO     | 🔎 [864/1258] 🇬🇧 EN: 'Cloud Engineer' in Magdeburg
+2026-02-06 22:42:27 | INFO     |    ✓ Found 10 jobs
+2026-02-06 22:42:27 | INFO     | 🔎 [865/1258] 🇬🇧 EN: 'Cloud Engineer' in Kiel
+2026-02-06 22:43:00 | INFO     |    ✓ Found 19 jobs
+2026-02-06 22:43:00 | INFO     | 🔎 [866/1258] 🇬🇧 EN: 'Cloud Engineer' in Erfurt
+2026-02-06 22:43:34 | INFO     |    ✓ Found 18 jobs
+2026-02-06 22:43:34 | INFO     | 🔎 [867/1258] 🇬🇧 EN: 'Cloud Engineer' in Düsseldorf
+2026-02-06 22:44:08 | INFO     |    ✓ Found 16 jobs
+2026-02-06 22:44:08 | INFO     | 🔎 [868/1258] 🇬🇧 EN: 'Cloud Engineer' in Dortmund
+2026-02-06 22:44:42 | INFO     |    ✓ Found 18 jobs
+2026-02-06 22:44:42 | INFO     | 🔎 [869/1258] 🇬🇧 EN: 'Cloud Engineer' in Essen
+2026-02-06 22:45:17 | INFO     |    ✓ Found 17 jobs
+2026-02-06 22:45:17 | INFO     | 🔎 [870/1258] 🇬🇧 EN: 'Cloud Engineer' in Leipzig
+2026-02-06 22:45:51 | INFO     |    ✓ Found 19 jobs
+2026-02-06 22:45:51 | INFO     | 🔎 [871/1258] 🇬🇧 EN: 'Cloud Engineer' in Nürnberg
+2026-02-06 22:46:26 | INFO     |    ✓ Found 18 jobs
+2026-02-06 22:46:26 | INFO     | 🔎 [872/1258] 🇬🇧 EN: 'Cloud Engineer' in Karlsruhe
+2026-02-06 22:47:00 | INFO     |    ✓ Found 18 jobs
+2026-02-06 22:47:00 | INFO     | 🔎 [873/1258] 🇬🇧 EN: 'Cloud Engineer' in Mannheim
+2026-02-06 22:47:34 | INFO     |    ✓ Found 18 jobs
+2026-02-06 22:47:34 | INFO     | 🔎 [874/1258] 🇬🇧 EN: 'Cloud Engineer' in Augsburg
+2026-02-06 22:48:08 | INFO     |    ✓ Found 19 jobs
+2026-02-06 22:48:08 | INFO     | 🔎 [875/1258] 🇬🇧 EN: 'Cloud Engineer' in Wiesbaden
+2026-02-06 22:48:42 | INFO     |    ✓ Found 15 jobs
+2026-02-06 22:48:42 | INFO     | 🔎 [876/1258] 🇬🇧 EN: 'Cloud Engineer' in Münster
+2026-02-06 22:49:16 | INFO     |    ✓ Found 20 jobs
+2026-02-06 22:49:16 | INFO     | 🔎 [877/1258] 🇬🇧 EN: 'Cloud Engineer' in Bonn
+2026-02-06 22:49:51 | INFO     |    ✓ Found 17 jobs
+2026-02-06 22:49:51 | INFO     | 🔎 [878/1258] 🇬🇧 EN: 'Cloud Engineer' in Freiburg
+2026-02-06 22:50:12 | INFO     |    ✓ Found 10 jobs
+2026-02-06 22:50:12 | INFO     | 🔎 [879/1258] 🇬🇧 EN: 'Cloud Engineer' in Aachen
+2026-02-06 22:50:47 | INFO     |    ✓ Found 19 jobs
+2026-02-06 22:50:47 | INFO     | 🔎 [880/1258] 🇬🇧 EN: 'Cloud Engineer' in Heidelberg
+2026-02-06 22:51:20 | INFO     |    ✓ Found 18 jobs
+2026-02-06 22:51:20 | INFO     | 🔎 [881/1258] 🇬🇧 EN: 'Cloud Engineer' in Ulm
+2026-02-06 22:51:53 | INFO     |    ✓ Found 19 jobs
+2026-02-06 22:51:53 | INFO     | 🔎 [882/1258] 🇬🇧 EN: 'Cloud Engineer' in Darmstadt
+2026-02-06 22:52:27 | INFO     |    ✓ Found 15 jobs
+2026-02-06 22:52:27 | INFO     | 🔎 [883/1258] 🇬🇧 EN: 'Cloud Engineer' in Regensburg
+2026-02-06 22:52:45 | INFO     |    ✓ Found 9 jobs
+2026-02-06 22:52:45 | INFO     | 🔎 [884/1258] 🇬🇧 EN: 'Cloud Engineer' in Bielefeld
+2026-02-06 22:53:18 | INFO     |    ✓ Found 20 jobs
+2026-02-06 22:53:18 | INFO     | 🔎 [885/1258] 🇩🇪 DE: 'Cloud-Architekt' in Stuttgart
+2026-02-06 22:53:55 | INFO     |    ✓ Found 20 jobs
+2026-02-06 22:53:55 | INFO     | 🔎 [886/1258] 🇩🇪 DE: 'Cloud-Architekt' in Munich
+2026-02-06 22:54:30 | INFO     |    ✓ Found 17 jobs
+2026-02-06 22:54:30 | INFO     | 🔎 [887/1258] 🇩🇪 DE: 'Cloud-Architekt' in Berlin
+2026-02-06 22:55:06 | INFO     |    ✓ Found 19 jobs
+2026-02-06 22:55:06 | INFO     | 🔎 [888/1258] 🇩🇪 DE: 'Cloud-Architekt' in Potsdam
+2026-02-06 22:55:41 | INFO     |    ✓ Found 19 jobs
+2026-02-06 22:55:41 | INFO     | 🔎 [889/1258] 🇩🇪 DE: 'Cloud-Architekt' in Bremen
+2026-02-06 22:56:09 | INFO     |    ✓ Found 15 jobs
+2026-02-06 22:56:09 | INFO     | 🔎 [890/1258] 🇩🇪 DE: 'Cloud-Architekt' in Hamburg
+2026-02-06 22:56:44 | INFO     |    ✓ Found 18 jobs
+2026-02-06 22:56:44 | INFO     | 🔎 [891/1258] 🇩🇪 DE: 'Cloud-Architekt' in Frankfurt
+2026-02-06 22:57:19 | INFO     |    ✓ Found 18 jobs
+2026-02-06 22:57:19 | INFO     | 🔎 [892/1258] 🇩🇪 DE: 'Cloud-Architekt' in Hanover
+2026-02-06 22:57:55 | INFO     |    ✓ Found 20 jobs
+2026-02-06 22:57:55 | INFO     | 🔎 [893/1258] 🇩🇪 DE: 'Cloud-Architekt' in Rostock
+2026-02-06 22:58:19 | INFO     |    ✓ Found 14 jobs
+2026-02-06 22:58:19 | INFO     | 🔎 [894/1258] 🇩🇪 DE: 'Cloud-Architekt' in Cologne
+2026-02-06 22:58:54 | INFO     |    ✓ Found 19 jobs
+2026-02-06 22:58:54 | INFO     | 🔎 [895/1258] 🇩🇪 DE: 'Cloud-Architekt' in Mainz
+2026-02-06 22:59:29 | INFO     |    ✓ Found 19 jobs
+2026-02-06 22:59:29 | INFO     | 🔎 [896/1258] 🇩🇪 DE: 'Cloud-Architekt' in Saarbrücken
+2026-02-06 22:59:58 | INFO     |    ✓ Found 17 jobs
+2026-02-06 22:59:58 | INFO     | 🔎 [897/1258] 🇩🇪 DE: 'Cloud-Architekt' in Dresden
+2026-02-06 23:00:32 | INFO     |    ✓ Found 19 jobs
+2026-02-06 23:00:32 | INFO     | 🔎 [898/1258] 🇩🇪 DE: 'Cloud-Architekt' in Magdeburg
+2026-02-06 23:00:42 | INFO     |    ✓ Found 5 jobs
+2026-02-06 23:00:42 | INFO     | 🔎 [899/1258] 🇩🇪 DE: 'Cloud-Architekt' in Kiel
+2026-02-06 23:01:15 | INFO     |    ✓ Found 20 jobs
+2026-02-06 23:01:15 | INFO     | 🔎 [900/1258] 🇩🇪 DE: 'Cloud-Architekt' in Erfurt
+2026-02-06 23:01:49 | INFO     |    ✓ Found 19 jobs
+2026-02-06 23:01:49 | INFO     | 
+💾 CHECKPOINT: Saving progress at 900/1258...
+2026-02-06 23:01:49 | INFO     |    ✓ Checkpoint saved: 6684 unique jobs so far
+
+2026-02-06 23:01:49 | INFO     | 🔎 [901/1258] 🇩🇪 DE: 'Cloud-Architekt' in Düsseldorf
+2026-02-06 23:02:27 | INFO     |    ✓ Found 19 jobs
+2026-02-06 23:02:27 | INFO     | 🔎 [902/1258] 🇩🇪 DE: 'Cloud-Architekt' in Dortmund
+2026-02-06 23:03:01 | INFO     |    ✓ Found 19 jobs
+2026-02-06 23:03:01 | INFO     | 🔎 [903/1258] 🇩🇪 DE: 'Cloud-Architekt' in Essen
+2026-02-06 23:03:37 | INFO     |    ✓ Found 20 jobs
+2026-02-06 23:03:37 | INFO     | 🔎 [904/1258] 🇩🇪 DE: 'Cloud-Architekt' in Leipzig
+2026-02-06 23:04:11 | INFO     |    ✓ Found 19 jobs
+2026-02-06 23:04:11 | INFO     | 🔎 [905/1258] 🇩🇪 DE: 'Cloud-Architekt' in Nürnberg
+2026-02-06 23:04:45 | INFO     |    ✓ Found 20 jobs
+2026-02-06 23:04:45 | INFO     | 🔎 [906/1258] 🇩🇪 DE: 'Cloud-Architekt' in Karlsruhe
+2026-02-06 23:05:20 | INFO     |    ✓ Found 20 jobs
+2026-02-06 23:05:20 | INFO     | 🔎 [907/1258] 🇩🇪 DE: 'Cloud-Architekt' in Mannheim
+2026-02-06 23:05:55 | INFO     |    ✓ Found 17 jobs
+2026-02-06 23:05:55 | INFO     | 🔎 [908/1258] 🇩🇪 DE: 'Cloud-Architekt' in Augsburg
+2026-02-06 23:06:30 | INFO     |    ✓ Found 20 jobs
+2026-02-06 23:06:30 | INFO     | 🔎 [909/1258] 🇩🇪 DE: 'Cloud-Architekt' in Wiesbaden
+2026-02-06 23:07:05 | INFO     |    ✓ Found 19 jobs
+2026-02-06 23:07:05 | INFO     | 🔎 [910/1258] 🇩🇪 DE: 'Cloud-Architekt' in Münster
+2026-02-06 23:07:37 | INFO     |    ✓ Found 18 jobs
+2026-02-06 23:07:37 | INFO     | 🔎 [911/1258] 🇩🇪 DE: 'Cloud-Architekt' in Bonn
+2026-02-06 23:08:13 | INFO     |    ✓ Found 18 jobs
+2026-02-06 23:08:13 | INFO     | 🔎 [912/1258] 🇩🇪 DE: 'Cloud-Architekt' in Freiburg
+2026-02-06 23:08:23 | INFO     |    ✓ Found 5 jobs
+2026-02-06 23:08:23 | INFO     | 🔎 [913/1258] 🇩🇪 DE: 'Cloud-Architekt' in Aachen
+2026-02-06 23:08:53 | INFO     |    ✓ Found 17 jobs
+2026-02-06 23:08:53 | INFO     | 🔎 [914/1258] 🇩🇪 DE: 'Cloud-Architekt' in Heidelberg
+2026-02-06 23:09:27 | INFO     |    ✓ Found 17 jobs
+2026-02-06 23:09:27 | INFO     | 🔎 [915/1258] 🇩🇪 DE: 'Cloud-Architekt' in Ulm
+2026-02-06 23:10:01 | INFO     |    ✓ Found 20 jobs
+2026-02-06 23:10:01 | INFO     | 🔎 [916/1258] 🇩🇪 DE: 'Cloud-Architekt' in Darmstadt
+2026-02-06 23:10:38 | INFO     |    ✓ Found 19 jobs
+2026-02-06 23:10:38 | INFO     | 🔎 [917/1258] 🇩🇪 DE: 'Cloud-Architekt' in Regensburg
+2026-02-06 23:10:42 | INFO     |    ✓ Found 1 jobs
+2026-02-06 23:10:42 | INFO     | 🔎 [918/1258] 🇩🇪 DE: 'Cloud-Architekt' in Bielefeld
+2026-02-06 23:11:16 | INFO     |    ✓ Found 18 jobs
+2026-02-06 23:11:16 | INFO     | 🔎 [919/1258] 🇬🇧 EN: 'DevOps Engineer' in Stuttgart
+2026-02-06 23:11:50 | INFO     |    ✓ Found 19 jobs
+2026-02-06 23:11:50 | INFO     | 🔎 [920/1258] 🇬🇧 EN: 'DevOps Engineer' in Munich
+2026-02-06 23:12:24 | INFO     |    ✓ Found 18 jobs
+2026-02-06 23:12:24 | INFO     | 🔎 [921/1258] 🇬🇧 EN: 'DevOps Engineer' in Berlin
+2026-02-06 23:12:59 | INFO     |    ✓ Found 18 jobs
+2026-02-06 23:12:59 | INFO     | 🔎 [922/1258] 🇬🇧 EN: 'DevOps Engineer' in Potsdam
+2026-02-06 23:13:33 | INFO     |    ✓ Found 18 jobs
+2026-02-06 23:13:33 | INFO     | 🔎 [923/1258] 🇬🇧 EN: 'DevOps Engineer' in Bremen
+2026-02-06 23:14:06 | INFO     |    ✓ Found 17 jobs
+2026-02-06 23:14:06 | INFO     | 🔎 [924/1258] 🇬🇧 EN: 'DevOps Engineer' in Hamburg
+2026-02-06 23:14:41 | INFO     |    ✓ Found 19 jobs
+2026-02-06 23:14:41 | INFO     | 🔎 [925/1258] 🇬🇧 EN: 'DevOps Engineer' in Frankfurt
+2026-02-06 23:15:15 | INFO     |    ✓ Found 17 jobs
+2026-02-06 23:15:15 | INFO     | 🔎 [926/1258] 🇬🇧 EN: 'DevOps Engineer' in Hanover
+2026-02-06 23:15:48 | INFO     |    ✓ Found 17 jobs
+2026-02-06 23:15:48 | INFO     | 🔎 [927/1258] 🇬🇧 EN: 'DevOps Engineer' in Rostock
+2026-02-06 23:16:05 | INFO     |    ✓ Found 10 jobs
+2026-02-06 23:16:05 | INFO     | 🔎 [928/1258] 🇬🇧 EN: 'DevOps Engineer' in Cologne
+2026-02-06 23:16:39 | INFO     |    ✓ Found 15 jobs
+2026-02-06 23:16:39 | INFO     | 🔎 [929/1258] 🇬🇧 EN: 'DevOps Engineer' in Mainz
+2026-02-06 23:17:13 | INFO     |    ✓ Found 18 jobs
+2026-02-06 23:17:13 | INFO     | 🔎 [930/1258] 🇬🇧 EN: 'DevOps Engineer' in Saarbrücken
+2026-02-06 23:17:33 | INFO     |    ✓ Found 12 jobs
+2026-02-06 23:17:33 | INFO     | 🔎 [931/1258] 🇬🇧 EN: 'DevOps Engineer' in Dresden
+2026-02-06 23:18:07 | INFO     |    ✓ Found 20 jobs
+2026-02-06 23:18:07 | INFO     | 🔎 [932/1258] 🇬🇧 EN: 'DevOps Engineer' in Magdeburg
+2026-02-06 23:18:18 | INFO     |    ✓ Found 5 jobs
+2026-02-06 23:18:18 | INFO     | 🔎 [933/1258] 🇬🇧 EN: 'DevOps Engineer' in Kiel
+2026-02-06 23:18:52 | INFO     |    ✓ Found 20 jobs
+2026-02-06 23:18:52 | INFO     | 🔎 [934/1258] 🇬🇧 EN: 'DevOps Engineer' in Erfurt
+2026-02-06 23:19:15 | INFO     |    ✓ Found 12 jobs
+2026-02-06 23:19:15 | INFO     | 🔎 [935/1258] 🇬🇧 EN: 'DevOps Engineer' in Düsseldorf
+2026-02-06 23:19:49 | INFO     |    ✓ Found 17 jobs
+2026-02-06 23:19:49 | INFO     | 🔎 [936/1258] 🇬🇧 EN: 'DevOps Engineer' in Dortmund
+2026-02-06 23:20:23 | INFO     |    ✓ Found 18 jobs
+2026-02-06 23:20:23 | INFO     | 🔎 [937/1258] 🇬🇧 EN: 'DevOps Engineer' in Essen
+2026-02-06 23:20:57 | INFO     |    ✓ Found 19 jobs
+2026-02-06 23:20:57 | INFO     | 🔎 [938/1258] 🇬🇧 EN: 'DevOps Engineer' in Leipzig
+2026-02-06 23:21:31 | INFO     |    ✓ Found 19 jobs
+2026-02-06 23:21:31 | INFO     | 🔎 [939/1258] 🇬🇧 EN: 'DevOps Engineer' in Nürnberg
+2026-02-06 23:22:05 | INFO     |    ✓ Found 19 jobs
+2026-02-06 23:22:05 | INFO     | 🔎 [940/1258] 🇬🇧 EN: 'DevOps Engineer' in Karlsruhe
+2026-02-06 23:22:40 | INFO     |    ✓ Found 17 jobs
+2026-02-06 23:22:40 | INFO     | 🔎 [941/1258] 🇬🇧 EN: 'DevOps Engineer' in Mannheim
+2026-02-06 23:23:13 | INFO     |    ✓ Found 18 jobs
+2026-02-06 23:23:13 | INFO     | 🔎 [942/1258] 🇬🇧 EN: 'DevOps Engineer' in Augsburg
+2026-02-06 23:23:40 | INFO     |    ✓ Found 15 jobs
+2026-02-06 23:23:40 | INFO     | 🔎 [943/1258] 🇬🇧 EN: 'DevOps Engineer' in Wiesbaden
+2026-02-06 23:24:14 | INFO     |    ✓ Found 18 jobs
+2026-02-06 23:24:14 | INFO     | 🔎 [944/1258] 🇬🇧 EN: 'DevOps Engineer' in Münster
+2026-02-06 23:24:48 | INFO     |    ✓ Found 20 jobs
+2026-02-06 23:24:48 | INFO     | 🔎 [945/1258] 🇬🇧 EN: 'DevOps Engineer' in Bonn
+2026-02-06 23:25:22 | INFO     |    ✓ Found 17 jobs
+2026-02-06 23:25:22 | INFO     | 🔎 [946/1258] 🇬🇧 EN: 'DevOps Engineer' in Freiburg
+2026-02-06 23:25:27 | INFO     |    ✓ Found 2 jobs
+2026-02-06 23:25:27 | INFO     | 🔎 [947/1258] 🇬🇧 EN: 'DevOps Engineer' in Aachen
+2026-02-06 23:26:03 | INFO     |    ✓ Found 20 jobs
+2026-02-06 23:26:03 | INFO     | 🔎 [948/1258] 🇬🇧 EN: 'DevOps Engineer' in Heidelberg
+2026-02-06 23:26:37 | INFO     |    ✓ Found 18 jobs
+2026-02-06 23:26:37 | INFO     | 🔎 [949/1258] 🇬🇧 EN: 'DevOps Engineer' in Ulm
+2026-02-06 23:27:11 | INFO     |    ✓ Found 18 jobs
+2026-02-06 23:27:11 | INFO     | 🔎 [950/1258] 🇬🇧 EN: 'DevOps Engineer' in Darmstadt
+2026-02-06 23:27:44 | INFO     |    ✓ Found 16 jobs
+2026-02-06 23:27:44 | INFO     | 🔎 [951/1258] 🇬🇧 EN: 'DevOps Engineer' in Regensburg
+2026-02-06 23:28:00 | INFO     |    ✓ Found 8 jobs
+2026-02-06 23:28:00 | INFO     | 🔎 [952/1258] 🇬🇧 EN: 'DevOps Engineer' in Bielefeld
+2026-02-06 23:28:33 | INFO     |    ✓ Found 20 jobs
+2026-02-06 23:28:33 | INFO     | 🔎 [953/1258] 🇩🇪 DE: 'IT-Administrator' in Stuttgart
+2026-02-06 23:29:07 | INFO     |    ✓ Found 18 jobs
+2026-02-06 23:29:07 | INFO     | 🔎 [954/1258] 🇩🇪 DE: 'IT-Administrator' in Munich
+2026-02-06 23:29:41 | INFO     |    ✓ Found 16 jobs
+2026-02-06 23:29:41 | INFO     | 🔎 [955/1258] 🇩🇪 DE: 'IT-Administrator' in Berlin
+2026-02-06 23:30:15 | INFO     |    ✓ Found 18 jobs
+2026-02-06 23:30:15 | INFO     | 🔎 [956/1258] 🇩🇪 DE: 'IT-Administrator' in Potsdam
+2026-02-06 23:30:50 | INFO     |    ✓ Found 17 jobs
+2026-02-06 23:30:50 | INFO     | 🔎 [957/1258] 🇩🇪 DE: 'IT-Administrator' in Bremen
+2026-02-06 23:31:22 | INFO     |    ✓ Found 18 jobs
+2026-02-06 23:31:22 | INFO     | 🔎 [958/1258] 🇩🇪 DE: 'IT-Administrator' in Hamburg
+2026-02-06 23:31:56 | INFO     |    ✓ Found 19 jobs
+2026-02-06 23:31:56 | INFO     | 🔎 [959/1258] 🇩🇪 DE: 'IT-Administrator' in Frankfurt
+2026-02-06 23:32:30 | INFO     |    ✓ Found 18 jobs
+2026-02-06 23:32:30 | INFO     | 🔎 [960/1258] 🇩🇪 DE: 'IT-Administrator' in Hanover
+2026-02-06 23:33:04 | INFO     |    ✓ Found 16 jobs
+2026-02-06 23:33:04 | INFO     | 🔎 [961/1258] 🇩🇪 DE: 'IT-Administrator' in Rostock
+2026-02-06 23:33:36 | INFO     |    ✓ Found 18 jobs
+2026-02-06 23:33:36 | INFO     | 🔎 [962/1258] 🇩🇪 DE: 'IT-Administrator' in Cologne
+2026-02-06 23:34:10 | INFO     |    ✓ Found 17 jobs
+2026-02-06 23:34:10 | INFO     | 🔎 [963/1258] 🇩🇪 DE: 'IT-Administrator' in Mainz
+2026-02-06 23:34:45 | INFO     |    ✓ Found 19 jobs
+2026-02-06 23:34:45 | INFO     | 🔎 [964/1258] 🇩🇪 DE: 'IT-Administrator' in Saarbrücken
+2026-02-06 23:35:07 | INFO     |    ✓ Found 11 jobs
+2026-02-06 23:35:07 | INFO     | 🔎 [965/1258] 🇩🇪 DE: 'IT-Administrator' in Dresden
+2026-02-06 23:35:41 | INFO     |    ✓ Found 20 jobs
+2026-02-06 23:35:41 | INFO     | 🔎 [966/1258] 🇩🇪 DE: 'IT-Administrator' in Magdeburg
+2026-02-06 23:36:01 | INFO     |    ✓ Found 11 jobs
+2026-02-06 23:36:01 | INFO     | 🔎 [967/1258] 🇩🇪 DE: 'IT-Administrator' in Kiel
+2026-02-06 23:36:35 | INFO     |    ✓ Found 17 jobs
+2026-02-06 23:36:35 | INFO     | 🔎 [968/1258] 🇩🇪 DE: 'IT-Administrator' in Erfurt
+2026-02-06 23:37:02 | INFO     |    ✓ Found 13 jobs
+2026-02-06 23:37:02 | INFO     | 🔎 [969/1258] 🇩🇪 DE: 'IT-Administrator' in Düsseldorf
+2026-02-06 23:37:36 | INFO     |    ✓ Found 19 jobs
+2026-02-06 23:37:36 | INFO     | 🔎 [970/1258] 🇩🇪 DE: 'IT-Administrator' in Dortmund
+2026-02-06 23:38:10 | INFO     |    ✓ Found 15 jobs
+2026-02-06 23:38:10 | INFO     | 🔎 [971/1258] 🇩🇪 DE: 'IT-Administrator' in Essen
+2026-02-06 23:38:45 | INFO     |    ✓ Found 19 jobs
+2026-02-06 23:38:45 | INFO     | 🔎 [972/1258] 🇩🇪 DE: 'IT-Administrator' in Leipzig
+2026-02-06 23:39:19 | INFO     |    ✓ Found 19 jobs
+2026-02-06 23:39:19 | INFO     | 🔎 [973/1258] 🇩🇪 DE: 'IT-Administrator' in Nürnberg
+2026-02-06 23:39:53 | INFO     |    ✓ Found 17 jobs
+2026-02-06 23:39:53 | INFO     | 🔎 [974/1258] 🇩🇪 DE: 'IT-Administrator' in Karlsruhe
+2026-02-06 23:40:27 | INFO     |    ✓ Found 18 jobs
+2026-02-06 23:40:27 | INFO     | 🔎 [975/1258] 🇩🇪 DE: 'IT-Administrator' in Mannheim
+2026-02-06 23:41:01 | INFO     |    ✓ Found 20 jobs
+2026-02-06 23:41:01 | INFO     | 🔎 [976/1258] 🇩🇪 DE: 'IT-Administrator' in Augsburg
+2026-02-06 23:41:34 | INFO     |    ✓ Found 19 jobs
+2026-02-06 23:41:34 | INFO     | 🔎 [977/1258] 🇩🇪 DE: 'IT-Administrator' in Wiesbaden
+2026-02-06 23:42:08 | INFO     |    ✓ Found 19 jobs
+2026-02-06 23:42:08 | INFO     | 🔎 [978/1258] 🇩🇪 DE: 'IT-Administrator' in Münster
+2026-02-06 23:42:42 | INFO     |    ✓ Found 19 jobs
+2026-02-06 23:42:42 | INFO     | 🔎 [979/1258] 🇩🇪 DE: 'IT-Administrator' in Bonn
+2026-02-06 23:43:16 | INFO     |    ✓ Found 18 jobs
+2026-02-06 23:43:16 | INFO     | 🔎 [980/1258] 🇩🇪 DE: 'IT-Administrator' in Freiburg
+2026-02-06 23:43:49 | INFO     |    ✓ Found 17 jobs
+2026-02-06 23:43:49 | INFO     | 🔎 [981/1258] 🇩🇪 DE: 'IT-Administrator' in Aachen
+2026-02-06 23:44:24 | INFO     |    ✓ Found 20 jobs
+2026-02-06 23:44:24 | INFO     | 🔎 [982/1258] 🇩🇪 DE: 'IT-Administrator' in Heidelberg
+2026-02-06 23:44:58 | INFO     |    ✓ Found 17 jobs
+2026-02-06 23:44:58 | INFO     | 🔎 [983/1258] 🇩🇪 DE: 'IT-Administrator' in Ulm
+2026-02-06 23:45:31 | INFO     |    ✓ Found 20 jobs
+2026-02-06 23:45:31 | INFO     | 🔎 [984/1258] 🇩🇪 DE: 'IT-Administrator' in Darmstadt
+2026-02-06 23:46:06 | INFO     |    ✓ Found 19 jobs
+2026-02-06 23:46:06 | INFO     | 🔎 [985/1258] 🇩🇪 DE: 'IT-Administrator' in Regensburg
+2026-02-06 23:46:23 | INFO     |    ✓ Found 9 jobs
+2026-02-06 23:46:23 | INFO     | 🔎 [986/1258] 🇩🇪 DE: 'IT-Administrator' in Bielefeld
+2026-02-06 23:46:57 | INFO     |    ✓ Found 18 jobs
+2026-02-06 23:46:57 | INFO     | 🔎 [987/1258] 🇩🇪 DE: 'Backend Entwickler' in Stuttgart
+2026-02-06 23:47:32 | INFO     |    ✓ Found 17 jobs
+2026-02-06 23:47:32 | INFO     | 🔎 [988/1258] 🇩🇪 DE: 'Backend Entwickler' in Munich
+2026-02-06 23:48:06 | INFO     |    ✓ Found 15 jobs
+2026-02-06 23:48:06 | INFO     | 🔎 [989/1258] 🇩🇪 DE: 'Backend Entwickler' in Berlin
+2026-02-06 23:48:41 | INFO     |    ✓ Found 15 jobs
+2026-02-06 23:48:41 | INFO     | 🔎 [990/1258] 🇩🇪 DE: 'Backend Entwickler' in Potsdam
+2026-02-06 23:49:16 | INFO     |    ✓ Found 18 jobs
+2026-02-06 23:49:16 | INFO     | 🔎 [991/1258] 🇩🇪 DE: 'Backend Entwickler' in Bremen
+2026-02-06 23:49:50 | INFO     |    ✓ Found 16 jobs
+2026-02-06 23:49:50 | INFO     | 🔎 [992/1258] 🇩🇪 DE: 'Backend Entwickler' in Hamburg
+2026-02-06 23:50:24 | INFO     |    ✓ Found 18 jobs
+2026-02-06 23:50:24 | INFO     | 🔎 [993/1258] 🇩🇪 DE: 'Backend Entwickler' in Frankfurt
+2026-02-06 23:50:59 | INFO     |    ✓ Found 14 jobs
+2026-02-06 23:50:59 | INFO     | 🔎 [994/1258] 🇩🇪 DE: 'Backend Entwickler' in Hanover
+2026-02-06 23:51:33 | INFO     |    ✓ Found 18 jobs
+2026-02-06 23:51:33 | INFO     | 🔎 [995/1258] 🇩🇪 DE: 'Backend Entwickler' in Rostock
+2026-02-06 23:51:51 | INFO     |    ✓ Found 10 jobs
+2026-02-06 23:51:51 | INFO     | 🔎 [996/1258] 🇩🇪 DE: 'Backend Entwickler' in Cologne
+2026-02-06 23:52:26 | INFO     |    ✓ Found 16 jobs
+2026-02-06 23:52:26 | INFO     | 🔎 [997/1258] 🇩🇪 DE: 'Backend Entwickler' in Mainz
+2026-02-06 23:53:00 | INFO     |    ✓ Found 12 jobs
+2026-02-06 23:53:00 | INFO     | 🔎 [998/1258] 🇩🇪 DE: 'Backend Entwickler' in Saarbrücken
+2026-02-06 23:53:17 | INFO     |    ✓ Found 9 jobs
+2026-02-06 23:53:17 | INFO     | 🔎 [999/1258] 🇩🇪 DE: 'Backend Entwickler' in Dresden
+2026-02-06 23:53:52 | INFO     |    ✓ Found 19 jobs
+2026-02-06 23:53:52 | INFO     | 🔎 [1000/1258] 🇩🇪 DE: 'Backend Entwickler' in Magdeburg
+2026-02-06 23:54:03 | INFO     |    ✓ Found 4 jobs
+2026-02-06 23:54:03 | INFO     | 
+💾 CHECKPOINT: Saving progress at 1000/1258...
+2026-02-06 23:54:04 | INFO     |    ✓ Checkpoint saved: 6929 unique jobs so far
+
+2026-02-06 23:54:04 | INFO     | 🔎 [1001/1258] 🇩🇪 DE: 'Backend Entwickler' in Kiel
+2026-02-06 23:54:23 | INFO     |    ✓ Found 9 jobs
+2026-02-06 23:54:23 | INFO     | 🔎 [1002/1258] 🇩🇪 DE: 'Backend Entwickler' in Erfurt
+2026-02-06 23:54:40 | INFO     |    ✓ Found 10 jobs
+2026-02-06 23:54:40 | INFO     | 🔎 [1003/1258] 🇩🇪 DE: 'Backend Entwickler' in Düsseldorf
+2026-02-06 23:55:15 | INFO     |    ✓ Found 16 jobs
+2026-02-06 23:55:15 | INFO     | 🔎 [1004/1258] 🇩🇪 DE: 'Backend Entwickler' in Dortmund
+2026-02-06 23:55:49 | INFO     |    ✓ Found 16 jobs
+2026-02-06 23:55:49 | INFO     | 🔎 [1005/1258] 🇩🇪 DE: 'Backend Entwickler' in Essen
+2026-02-06 23:56:24 | INFO     |    ✓ Found 18 jobs
+2026-02-06 23:56:24 | INFO     | 🔎 [1006/1258] 🇩🇪 DE: 'Backend Entwickler' in Leipzig
+2026-02-06 23:56:58 | INFO     |    ✓ Found 17 jobs
+2026-02-06 23:56:58 | INFO     | 🔎 [1007/1258] 🇩🇪 DE: 'Backend Entwickler' in Nürnberg
+2026-02-06 23:57:32 | INFO     |    ✓ Found 18 jobs
+2026-02-06 23:57:32 | INFO     | 🔎 [1008/1258] 🇩🇪 DE: 'Backend Entwickler' in Karlsruhe
+2026-02-06 23:58:06 | INFO     |    ✓ Found 15 jobs
+2026-02-06 23:58:06 | INFO     | 🔎 [1009/1258] 🇩🇪 DE: 'Backend Entwickler' in Mannheim
+2026-02-06 23:58:41 | INFO     |    ✓ Found 19 jobs
+2026-02-06 23:58:41 | INFO     | 🔎 [1010/1258] 🇩🇪 DE: 'Backend Entwickler' in Augsburg
+2026-02-06 23:59:00 | INFO     |    ✓ Found 9 jobs
+2026-02-06 23:59:00 | INFO     | 🔎 [1011/1258] 🇩🇪 DE: 'Backend Entwickler' in Wiesbaden
+2026-02-06 23:59:35 | INFO     |    ✓ Found 12 jobs
+2026-02-06 23:59:35 | INFO     | 🔎 [1012/1258] 🇩🇪 DE: 'Backend Entwickler' in Münster
+2026-02-07 00:00:09 | INFO     |    ✓ Found 18 jobs
+2026-02-07 00:00:09 | INFO     | 🔎 [1013/1258] 🇩🇪 DE: 'Backend Entwickler' in Bonn
+2026-02-07 00:00:44 | INFO     |    ✓ Found 17 jobs
+2026-02-07 00:00:44 | INFO     | 🔎 [1014/1258] 🇩🇪 DE: 'Backend Entwickler' in Freiburg
+2026-02-07 00:01:12 | INFO     |    ✓ Found 16 jobs
+2026-02-07 00:01:12 | INFO     | 🔎 [1015/1258] 🇩🇪 DE: 'Backend Entwickler' in Aachen
+2026-02-07 00:01:45 | INFO     |    ✓ Found 18 jobs
+2026-02-07 00:01:45 | INFO     | 🔎 [1016/1258] 🇩🇪 DE: 'Backend Entwickler' in Heidelberg
+2026-02-07 00:02:20 | INFO     |    ✓ Found 18 jobs
+2026-02-07 00:02:20 | INFO     | 🔎 [1017/1258] 🇩🇪 DE: 'Backend Entwickler' in Ulm
+2026-02-07 00:02:38 | INFO     |    ✓ Found 10 jobs
+2026-02-07 00:02:38 | INFO     | 🔎 [1018/1258] 🇩🇪 DE: 'Backend Entwickler' in Darmstadt
+2026-02-07 00:03:12 | INFO     |    ✓ Found 13 jobs
+2026-02-07 00:03:12 | INFO     | 🔎 [1019/1258] 🇩🇪 DE: 'Backend Entwickler' in Regensburg
+2026-02-07 00:03:26 | INFO     |    ✓ Found 8 jobs
+2026-02-07 00:03:26 | INFO     | 🔎 [1020/1258] 🇩🇪 DE: 'Backend Entwickler' in Bielefeld
+2026-02-07 00:04:00 | INFO     |    ✓ Found 16 jobs
+2026-02-07 00:04:00 | INFO     | 🔎 [1021/1258] 🇩🇪 DE: 'Frontend Entwickler' in Stuttgart
+2026-02-07 00:04:35 | INFO     |    ✓ Found 18 jobs
+2026-02-07 00:04:35 | INFO     | 🔎 [1022/1258] 🇩🇪 DE: 'Frontend Entwickler' in Munich
+2026-02-07 00:05:10 | INFO     |    ✓ Found 16 jobs
+2026-02-07 00:05:10 | INFO     | 🔎 [1023/1258] 🇩🇪 DE: 'Frontend Entwickler' in Berlin
+2026-02-07 00:05:44 | INFO     |    ✓ Found 18 jobs
+2026-02-07 00:05:44 | INFO     | 🔎 [1024/1258] 🇩🇪 DE: 'Frontend Entwickler' in Potsdam
+2026-02-07 00:06:19 | INFO     |    ✓ Found 19 jobs
+2026-02-07 00:06:19 | INFO     | 🔎 [1025/1258] 🇩🇪 DE: 'Frontend Entwickler' in Bremen
+2026-02-07 00:06:36 | INFO     |    ✓ Found 9 jobs
+2026-02-07 00:06:36 | INFO     | 🔎 [1026/1258] 🇩🇪 DE: 'Frontend Entwickler' in Hamburg
+2026-02-07 00:07:11 | INFO     |    ✓ Found 17 jobs
+2026-02-07 00:07:11 | INFO     | 🔎 [1027/1258] 🇩🇪 DE: 'Frontend Entwickler' in Frankfurt
+2026-02-07 00:07:45 | INFO     |    ✓ Found 15 jobs
+2026-02-07 00:07:45 | INFO     | 🔎 [1028/1258] 🇩🇪 DE: 'Frontend Entwickler' in Hanover
+2026-02-07 00:08:02 | INFO     |    ✓ Found 8 jobs
+2026-02-07 00:08:02 | INFO     | 🔎 [1029/1258] 🇩🇪 DE: 'Frontend Entwickler' in Rostock
+2026-02-07 00:08:10 | INFO     |    ✓ Found 4 jobs
+2026-02-07 00:08:10 | INFO     | 🔎 [1030/1258] 🇩🇪 DE: 'Frontend Entwickler' in Cologne
+2026-02-07 00:08:45 | INFO     |    ✓ Found 18 jobs
+2026-02-07 00:08:45 | INFO     | 🔎 [1031/1258] 🇩🇪 DE: 'Frontend Entwickler' in Mainz
+2026-02-07 00:09:19 | INFO     |    ✓ Found 16 jobs
+2026-02-07 00:09:19 | INFO     | 🔎 [1032/1258] 🇩🇪 DE: 'Frontend Entwickler' in Saarbrücken
+2026-02-07 00:09:29 | INFO     |    ✓ Found 5 jobs
+2026-02-07 00:09:29 | INFO     | 🔎 [1033/1258] 🇩🇪 DE: 'Frontend Entwickler' in Dresden
+2026-02-07 00:09:47 | INFO     |    ✓ Found 9 jobs
+2026-02-07 00:09:47 | INFO     | 🔎 [1034/1258] 🇩🇪 DE: 'Frontend Entwickler' in Magdeburg
+2026-02-07 00:09:55 | INFO     |    ✓ Found 3 jobs
+2026-02-07 00:09:55 | INFO     | 🔎 [1035/1258] 🇩🇪 DE: 'Frontend Entwickler' in Kiel
+2026-02-07 00:10:09 | INFO     |    ✓ Found 7 jobs
+2026-02-07 00:10:09 | INFO     | 🔎 [1036/1258] 🇩🇪 DE: 'Frontend Entwickler' in Erfurt
+2026-02-07 00:10:16 | INFO     |    ✓ Found 3 jobs
+2026-02-07 00:10:16 | INFO     | 🔎 [1037/1258] 🇩🇪 DE: 'Frontend Entwickler' in Düsseldorf
+2026-02-07 00:10:50 | INFO     |    ✓ Found 18 jobs
+2026-02-07 00:10:50 | INFO     | 🔎 [1038/1258] 🇩🇪 DE: 'Frontend Entwickler' in Dortmund
+2026-02-07 00:11:08 | INFO     |    ✓ Found 9 jobs
+2026-02-07 00:11:08 | INFO     | 🔎 [1039/1258] 🇩🇪 DE: 'Frontend Entwickler' in Essen
+2026-02-07 00:11:42 | INFO     |    ✓ Found 18 jobs
+2026-02-07 00:11:42 | INFO     | 🔎 [1040/1258] 🇩🇪 DE: 'Frontend Entwickler' in Leipzig
+2026-02-07 00:11:59 | INFO     |    ✓ Found 5 jobs
+2026-02-07 00:11:59 | INFO     | 🔎 [1041/1258] 🇩🇪 DE: 'Frontend Entwickler' in Nürnberg
+2026-02-07 00:12:17 | INFO     |    ✓ Found 10 jobs
+2026-02-07 00:12:17 | INFO     | 🔎 [1042/1258] 🇩🇪 DE: 'Frontend Entwickler' in Karlsruhe
+2026-02-07 00:12:35 | INFO     |    ✓ Found 7 jobs
+2026-02-07 00:12:35 | INFO     | 🔎 [1043/1258] 🇩🇪 DE: 'Frontend Entwickler' in Mannheim
+2026-02-07 00:12:52 | INFO     |    ✓ Found 10 jobs
+2026-02-07 00:12:52 | INFO     | 🔎 [1044/1258] 🇩🇪 DE: 'Frontend Entwickler' in Augsburg
+2026-02-07 00:13:11 | INFO     |    ✓ Found 9 jobs
+2026-02-07 00:13:11 | INFO     | 🔎 [1045/1258] 🇩🇪 DE: 'Frontend Entwickler' in Wiesbaden
+2026-02-07 00:13:45 | INFO     |    ✓ Found 16 jobs
+2026-02-07 00:13:45 | INFO     | 🔎 [1046/1258] 🇩🇪 DE: 'Frontend Entwickler' in Münster
+2026-02-07 00:14:03 | INFO     |    ✓ Found 8 jobs
+2026-02-07 00:14:03 | INFO     | 🔎 [1047/1258] 🇩🇪 DE: 'Frontend Entwickler' in Bonn
+2026-02-07 00:14:37 | INFO     |    ✓ Found 19 jobs
+2026-02-07 00:14:37 | INFO     | 🔎 [1048/1258] 🇩🇪 DE: 'Frontend Entwickler' in Freiburg
+2026-02-07 00:14:46 | INFO     |    ✓ Found 4 jobs
+2026-02-07 00:14:46 | INFO     | 🔎 [1049/1258] 🇩🇪 DE: 'Frontend Entwickler' in Aachen
+2026-02-07 00:15:04 | INFO     |    ✓ Found 10 jobs
+2026-02-07 00:15:04 | INFO     | 🔎 [1050/1258] 🇩🇪 DE: 'Frontend Entwickler' in Heidelberg
+2026-02-07 00:15:22 | INFO     |    ✓ Found 10 jobs
+2026-02-07 00:15:22 | INFO     | 🔎 [1051/1258] 🇩🇪 DE: 'Frontend Entwickler' in Ulm
+2026-02-07 00:15:34 | INFO     |    ✓ Found 6 jobs
+2026-02-07 00:15:34 | INFO     | 🔎 [1052/1258] 🇩🇪 DE: 'Frontend Entwickler' in Darmstadt
+2026-02-07 00:16:07 | INFO     |    ✓ Found 15 jobs
+2026-02-07 00:16:07 | INFO     | 🔎 [1053/1258] 🇩🇪 DE: 'Frontend Entwickler' in Regensburg
+2026-02-07 00:16:21 | INFO     |    ✓ Found 5 jobs
+2026-02-07 00:16:21 | INFO     | 🔎 [1054/1258] 🇩🇪 DE: 'Frontend Entwickler' in Bielefeld
+2026-02-07 00:16:39 | INFO     |    ✓ Found 9 jobs
+2026-02-07 00:16:39 | INFO     | 🔎 [1055/1258] 🇩🇪 DE: 'FullStack Entwickler' in Stuttgart
+2026-02-07 00:17:15 | INFO     |    ✓ Found 18 jobs
+2026-02-07 00:17:15 | INFO     | 🔎 [1056/1258] 🇩🇪 DE: 'FullStack Entwickler' in Munich
+2026-02-07 00:17:49 | INFO     |    ✓ Found 17 jobs
+2026-02-07 00:17:49 | INFO     | 🔎 [1057/1258] 🇩🇪 DE: 'FullStack Entwickler' in Berlin
+2026-02-07 00:18:24 | INFO     |    ✓ Found 17 jobs
+2026-02-07 00:18:24 | INFO     | 🔎 [1058/1258] 🇩🇪 DE: 'FullStack Entwickler' in Potsdam
+2026-02-07 00:18:59 | INFO     |    ✓ Found 17 jobs
+2026-02-07 00:18:59 | INFO     | 🔎 [1059/1258] 🇩🇪 DE: 'FullStack Entwickler' in Bremen
+2026-02-07 00:19:25 | INFO     |    ✓ Found 13 jobs
+2026-02-07 00:19:25 | INFO     | 🔎 [1060/1258] 🇩🇪 DE: 'FullStack Entwickler' in Hamburg
+2026-02-07 00:19:59 | INFO     |    ✓ Found 17 jobs
+2026-02-07 00:19:59 | INFO     | 🔎 [1061/1258] 🇩🇪 DE: 'FullStack Entwickler' in Frankfurt
+2026-02-07 00:20:33 | INFO     |    ✓ Found 10 jobs
+2026-02-07 00:20:33 | INFO     | 🔎 [1062/1258] 🇩🇪 DE: 'FullStack Entwickler' in Hanover
+2026-02-07 00:21:08 | INFO     |    ✓ Found 17 jobs
+2026-02-07 00:21:08 | INFO     | 🔎 [1063/1258] 🇩🇪 DE: 'FullStack Entwickler' in Rostock
+2026-02-07 00:21:24 | INFO     |    ✓ Found 9 jobs
+2026-02-07 00:21:24 | INFO     | 🔎 [1064/1258] 🇩🇪 DE: 'FullStack Entwickler' in Cologne
+2026-02-07 00:21:58 | INFO     |    ✓ Found 20 jobs
+2026-02-07 00:21:58 | INFO     | 🔎 [1065/1258] 🇩🇪 DE: 'FullStack Entwickler' in Mainz
+2026-02-07 00:22:31 | INFO     |    ✓ Found 12 jobs
+2026-02-07 00:22:31 | INFO     | 🔎 [1066/1258] 🇩🇪 DE: 'FullStack Entwickler' in Saarbrücken
+2026-02-07 00:22:49 | INFO     |    ✓ Found 9 jobs
+2026-02-07 00:22:49 | INFO     | 🔎 [1067/1258] 🇩🇪 DE: 'FullStack Entwickler' in Dresden
+2026-02-07 00:23:23 | INFO     |    ✓ Found 17 jobs
+2026-02-07 00:23:23 | INFO     | 🔎 [1068/1258] 🇩🇪 DE: 'FullStack Entwickler' in Magdeburg
+2026-02-07 00:23:36 | INFO     |    ✓ Found 5 jobs
+2026-02-07 00:23:36 | INFO     | 🔎 [1069/1258] 🇩🇪 DE: 'FullStack Entwickler' in Kiel
+2026-02-07 00:23:54 | INFO     |    ✓ Found 9 jobs
+2026-02-07 00:23:54 | INFO     | 🔎 [1070/1258] 🇩🇪 DE: 'FullStack Entwickler' in Erfurt
+2026-02-07 00:24:11 | INFO     |    ✓ Found 10 jobs
+2026-02-07 00:24:11 | INFO     | 🔎 [1071/1258] 🇩🇪 DE: 'FullStack Entwickler' in Düsseldorf
+2026-02-07 00:24:45 | INFO     |    ✓ Found 17 jobs
+2026-02-07 00:24:45 | INFO     | 🔎 [1072/1258] 🇩🇪 DE: 'FullStack Entwickler' in Dortmund
+2026-02-07 00:25:21 | INFO     |    ✓ Found 17 jobs
+2026-02-07 00:25:21 | INFO     | 🔎 [1073/1258] 🇩🇪 DE: 'FullStack Entwickler' in Essen
+2026-02-07 00:25:55 | INFO     |    ✓ Found 16 jobs
+2026-02-07 00:25:55 | INFO     | 🔎 [1074/1258] 🇩🇪 DE: 'FullStack Entwickler' in Leipzig
+2026-02-07 00:26:28 | INFO     |    ✓ Found 17 jobs
+2026-02-07 00:26:28 | INFO     | 🔎 [1075/1258] 🇩🇪 DE: 'FullStack Entwickler' in Nürnberg
+2026-02-07 00:27:02 | INFO     |    ✓ Found 19 jobs
+2026-02-07 00:27:02 | INFO     | 🔎 [1076/1258] 🇩🇪 DE: 'FullStack Entwickler' in Karlsruhe
+2026-02-07 00:27:36 | INFO     |    ✓ Found 18 jobs
+2026-02-07 00:27:36 | INFO     | 🔎 [1077/1258] 🇩🇪 DE: 'FullStack Entwickler' in Mannheim
+2026-02-07 00:28:10 | INFO     |    ✓ Found 20 jobs
+2026-02-07 00:28:10 | INFO     | 🔎 [1078/1258] 🇩🇪 DE: 'FullStack Entwickler' in Augsburg
+2026-02-07 00:28:28 | INFO     |    ✓ Found 9 jobs
+2026-02-07 00:28:28 | INFO     | 🔎 [1079/1258] 🇩🇪 DE: 'FullStack Entwickler' in Wiesbaden
+2026-02-07 00:29:02 | INFO     |    ✓ Found 12 jobs
+2026-02-07 00:29:02 | INFO     | 🔎 [1080/1258] 🇩🇪 DE: 'FullStack Entwickler' in Münster
+2026-02-07 00:29:36 | INFO     |    ✓ Found 19 jobs
+2026-02-07 00:29:36 | INFO     | 🔎 [1081/1258] 🇩🇪 DE: 'FullStack Entwickler' in Bonn
+2026-02-07 00:30:11 | INFO     |    ✓ Found 19 jobs
+2026-02-07 00:30:11 | INFO     | 🔎 [1082/1258] 🇩🇪 DE: 'FullStack Entwickler' in Freiburg
+2026-02-07 00:30:28 | INFO     |    ✓ Found 10 jobs
+2026-02-07 00:30:28 | INFO     | 🔎 [1083/1258] 🇩🇪 DE: 'FullStack Entwickler' in Aachen
+2026-02-07 00:31:02 | INFO     |    ✓ Found 19 jobs
+2026-02-07 00:31:02 | INFO     | 🔎 [1084/1258] 🇩🇪 DE: 'FullStack Entwickler' in Heidelberg
+2026-02-07 00:31:35 | INFO     |    ✓ Found 20 jobs
+2026-02-07 00:31:35 | INFO     | 🔎 [1085/1258] 🇩🇪 DE: 'FullStack Entwickler' in Ulm
+2026-02-07 00:31:53 | INFO     |    ✓ Found 10 jobs
+2026-02-07 00:31:53 | INFO     | 🔎 [1086/1258] 🇩🇪 DE: 'FullStack Entwickler' in Darmstadt
+2026-02-07 00:32:28 | INFO     |    ✓ Found 11 jobs
+2026-02-07 00:32:28 | INFO     | 🔎 [1087/1258] 🇩🇪 DE: 'FullStack Entwickler' in Regensburg
+2026-02-07 00:32:45 | INFO     |    ✓ Found 8 jobs
+2026-02-07 00:32:45 | INFO     | 🔎 [1088/1258] 🇩🇪 DE: 'FullStack Entwickler' in Bielefeld
+2026-02-07 00:33:07 | INFO     |    ✓ Found 12 jobs
+2026-02-07 00:33:07 | INFO     | 🔎 [1089/1258] 🇩🇪 DE: 'Apps Entwickler' in Stuttgart
+2026-02-07 00:33:43 | INFO     |    ✓ Found 19 jobs
+2026-02-07 00:33:43 | INFO     | 🔎 [1090/1258] 🇩🇪 DE: 'Apps Entwickler' in Munich
+2026-02-07 00:34:18 | INFO     |    ✓ Found 18 jobs
+2026-02-07 00:34:18 | INFO     | 🔎 [1091/1258] 🇩🇪 DE: 'Apps Entwickler' in Berlin
+2026-02-07 00:34:52 | INFO     |    ✓ Found 18 jobs
+2026-02-07 00:34:52 | INFO     | 🔎 [1092/1258] 🇩🇪 DE: 'Apps Entwickler' in Potsdam
+2026-02-07 00:35:27 | INFO     |    ✓ Found 18 jobs
+2026-02-07 00:35:27 | INFO     | 🔎 [1093/1258] 🇩🇪 DE: 'Apps Entwickler' in Bremen
+2026-02-07 00:36:01 | INFO     |    ✓ Found 17 jobs
+2026-02-07 00:36:01 | INFO     | 🔎 [1094/1258] 🇩🇪 DE: 'Apps Entwickler' in Hamburg
+2026-02-07 00:36:35 | INFO     |    ✓ Found 19 jobs
+2026-02-07 00:36:35 | INFO     | 🔎 [1095/1258] 🇩🇪 DE: 'Apps Entwickler' in Frankfurt
+2026-02-07 00:37:09 | INFO     |    ✓ Found 16 jobs
+2026-02-07 00:37:09 | INFO     | 🔎 [1096/1258] 🇩🇪 DE: 'Apps Entwickler' in Hanover
+2026-02-07 00:37:44 | INFO     |    ✓ Found 18 jobs
+2026-02-07 00:37:44 | INFO     | 🔎 [1097/1258] 🇩🇪 DE: 'Apps Entwickler' in Rostock
+2026-02-07 00:38:02 | INFO     |    ✓ Found 10 jobs
+2026-02-07 00:38:02 | INFO     | 🔎 [1098/1258] 🇩🇪 DE: 'Apps Entwickler' in Cologne
+2026-02-07 00:38:36 | INFO     |    ✓ Found 18 jobs
+2026-02-07 00:38:36 | INFO     | 🔎 [1099/1258] 🇩🇪 DE: 'Apps Entwickler' in Mainz
+2026-02-07 00:39:10 | INFO     |    ✓ Found 17 jobs
+2026-02-07 00:39:10 | INFO     | 🔎 [1100/1258] 🇩🇪 DE: 'Apps Entwickler' in Saarbrücken
+2026-02-07 00:39:28 | INFO     |    ✓ Found 9 jobs
+2026-02-07 00:39:28 | INFO     | 
+💾 CHECKPOINT: Saving progress at 1100/1258...
+2026-02-07 00:39:28 | INFO     |    ✓ Checkpoint saved: 7132 unique jobs so far
+
+2026-02-07 00:39:28 | INFO     | 🔎 [1101/1258] 🇩🇪 DE: 'Apps Entwickler' in Dresden
+2026-02-07 00:40:02 | INFO     |    ✓ Found 18 jobs
+2026-02-07 00:40:02 | INFO     | 🔎 [1102/1258] 🇩🇪 DE: 'Apps Entwickler' in Magdeburg
+2026-02-07 00:40:17 | INFO     |    ✓ Found 6 jobs
+2026-02-07 00:40:17 | INFO     | 🔎 [1103/1258] 🇩🇪 DE: 'Apps Entwickler' in Kiel
+2026-02-07 00:40:35 | INFO     |    ✓ Found 9 jobs
+2026-02-07 00:40:35 | INFO     | 🔎 [1104/1258] 🇩🇪 DE: 'Apps Entwickler' in Erfurt
+2026-02-07 00:40:52 | INFO     |    ✓ Found 8 jobs
+2026-02-07 00:40:52 | INFO     | 🔎 [1105/1258] 🇩🇪 DE: 'Apps Entwickler' in Düsseldorf
+2026-02-07 00:41:28 | INFO     |    ✓ Found 20 jobs
+2026-02-07 00:41:28 | INFO     | 🔎 [1106/1258] 🇩🇪 DE: 'Apps Entwickler' in Dortmund
+2026-02-07 00:42:02 | INFO     |    ✓ Found 17 jobs
+2026-02-07 00:42:02 | INFO     | 🔎 [1107/1258] 🇩🇪 DE: 'Apps Entwickler' in Essen
+2026-02-07 00:42:36 | INFO     |    ✓ Found 17 jobs
+2026-02-07 00:42:36 | INFO     | 🔎 [1108/1258] 🇩🇪 DE: 'Apps Entwickler' in Leipzig
+2026-02-07 00:43:10 | INFO     |    ✓ Found 18 jobs
+2026-02-07 00:43:10 | INFO     | 🔎 [1109/1258] 🇩🇪 DE: 'Apps Entwickler' in Nürnberg
+2026-02-07 00:43:44 | INFO     |    ✓ Found 16 jobs
+2026-02-07 00:43:44 | INFO     | 🔎 [1110/1258] 🇩🇪 DE: 'Apps Entwickler' in Karlsruhe
+2026-02-07 00:44:18 | INFO     |    ✓ Found 19 jobs
+2026-02-07 00:44:18 | INFO     | 🔎 [1111/1258] 🇩🇪 DE: 'Apps Entwickler' in Mannheim
+2026-02-07 00:44:51 | INFO     |    ✓ Found 18 jobs
+2026-02-07 00:44:51 | INFO     | 🔎 [1112/1258] 🇩🇪 DE: 'Apps Entwickler' in Augsburg
+2026-02-07 00:45:10 | INFO     |    ✓ Found 10 jobs
+2026-02-07 00:45:10 | INFO     | 🔎 [1113/1258] 🇩🇪 DE: 'Apps Entwickler' in Wiesbaden
+2026-02-07 00:45:45 | INFO     |    ✓ Found 17 jobs
+2026-02-07 00:45:45 | INFO     | 🔎 [1114/1258] 🇩🇪 DE: 'Apps Entwickler' in Münster
+2026-02-07 00:46:19 | INFO     |    ✓ Found 20 jobs
+2026-02-07 00:46:19 | INFO     | 🔎 [1115/1258] 🇩🇪 DE: 'Apps Entwickler' in Bonn
+2026-02-07 00:46:53 | INFO     |    ✓ Found 18 jobs
+2026-02-07 00:46:53 | INFO     | 🔎 [1116/1258] 🇩🇪 DE: 'Apps Entwickler' in Freiburg
+2026-02-07 00:47:27 | INFO     |    ✓ Found 20 jobs
+2026-02-07 00:47:27 | INFO     | 🔎 [1117/1258] 🇩🇪 DE: 'Apps Entwickler' in Aachen
+2026-02-07 00:48:03 | INFO     |    ✓ Found 19 jobs
+2026-02-07 00:48:03 | INFO     | 🔎 [1118/1258] 🇩🇪 DE: 'Apps Entwickler' in Heidelberg
+2026-02-07 00:48:37 | INFO     |    ✓ Found 17 jobs
+2026-02-07 00:48:37 | INFO     | 🔎 [1119/1258] 🇩🇪 DE: 'Apps Entwickler' in Ulm
+2026-02-07 00:48:59 | INFO     |    ✓ Found 11 jobs
+2026-02-07 00:48:59 | INFO     | 🔎 [1120/1258] 🇩🇪 DE: 'Apps Entwickler' in Darmstadt
+2026-02-07 00:49:35 | INFO     |    ✓ Found 16 jobs
+2026-02-07 00:49:35 | INFO     | 🔎 [1121/1258] 🇩🇪 DE: 'Apps Entwickler' in Regensburg
+2026-02-07 00:49:50 | INFO     |    ✓ Found 8 jobs
+2026-02-07 00:49:50 | INFO     | 🔎 [1122/1258] 🇩🇪 DE: 'Apps Entwickler' in Bielefeld
+2026-02-07 00:50:24 | INFO     |    ✓ Found 19 jobs
+2026-02-07 00:50:24 | INFO     | 🔎 [1123/1258] 🇩🇪 DE: 'SAP Entwickler' in Stuttgart
+2026-02-07 00:50:58 | INFO     |    ✓ Found 19 jobs
+2026-02-07 00:50:58 | INFO     | 🔎 [1124/1258] 🇩🇪 DE: 'SAP Entwickler' in Munich
+2026-02-07 00:51:33 | INFO     |    ✓ Found 16 jobs
+2026-02-07 00:51:33 | INFO     | 🔎 [1125/1258] 🇩🇪 DE: 'SAP Entwickler' in Berlin
+2026-02-07 00:52:07 | INFO     |    ✓ Found 17 jobs
+2026-02-07 00:52:07 | INFO     | 🔎 [1126/1258] 🇩🇪 DE: 'SAP Entwickler' in Potsdam
+2026-02-07 00:52:42 | INFO     |    ✓ Found 19 jobs
+2026-02-07 00:52:42 | INFO     | 🔎 [1127/1258] 🇩🇪 DE: 'SAP Entwickler' in Bremen
+2026-02-07 00:53:15 | INFO     |    ✓ Found 19 jobs
+2026-02-07 00:53:15 | INFO     | 🔎 [1128/1258] 🇩🇪 DE: 'SAP Entwickler' in Hamburg
+2026-02-07 00:53:49 | INFO     |    ✓ Found 19 jobs
+2026-02-07 00:53:49 | INFO     | 🔎 [1129/1258] 🇩🇪 DE: 'SAP Entwickler' in Frankfurt
+2026-02-07 00:54:24 | INFO     |    ✓ Found 19 jobs
+2026-02-07 00:54:24 | INFO     | 🔎 [1130/1258] 🇩🇪 DE: 'SAP Entwickler' in Hanover
+2026-02-07 00:54:57 | INFO     |    ✓ Found 20 jobs
+2026-02-07 00:54:57 | INFO     | 🔎 [1131/1258] 🇩🇪 DE: 'SAP Entwickler' in Rostock
+2026-02-07 00:55:29 | INFO     |    ✓ Found 20 jobs
+2026-02-07 00:55:29 | INFO     | 🔎 [1132/1258] 🇩🇪 DE: 'SAP Entwickler' in Cologne
+2026-02-07 00:56:03 | INFO     |    ✓ Found 16 jobs
+2026-02-07 00:56:03 | INFO     | 🔎 [1133/1258] 🇩🇪 DE: 'SAP Entwickler' in Mainz
+2026-02-07 00:56:37 | INFO     |    ✓ Found 18 jobs
+2026-02-07 00:56:37 | INFO     | 🔎 [1134/1258] 🇩🇪 DE: 'SAP Entwickler' in Saarbrücken
+2026-02-07 00:57:10 | INFO     |    ✓ Found 20 jobs
+2026-02-07 00:57:10 | INFO     | 🔎 [1135/1258] 🇩🇪 DE: 'SAP Entwickler' in Dresden
+2026-02-07 00:57:44 | INFO     |    ✓ Found 20 jobs
+2026-02-07 00:57:44 | INFO     | 🔎 [1136/1258] 🇩🇪 DE: 'SAP Entwickler' in Magdeburg
+2026-02-07 00:58:02 | INFO     |    ✓ Found 9 jobs
+2026-02-07 00:58:02 | INFO     | 🔎 [1137/1258] 🇩🇪 DE: 'SAP Entwickler' in Kiel
+2026-02-07 00:58:35 | INFO     |    ✓ Found 19 jobs
+2026-02-07 00:58:35 | INFO     | 🔎 [1138/1258] 🇩🇪 DE: 'SAP Entwickler' in Erfurt
+2026-02-07 00:59:07 | INFO     |    ✓ Found 19 jobs
+2026-02-07 00:59:07 | INFO     | 🔎 [1139/1258] 🇩🇪 DE: 'SAP Entwickler' in Düsseldorf
+2026-02-07 00:59:41 | INFO     |    ✓ Found 19 jobs
+2026-02-07 00:59:41 | INFO     | 🔎 [1140/1258] 🇩🇪 DE: 'SAP Entwickler' in Dortmund
+2026-02-07 01:00:15 | INFO     |    ✓ Found 20 jobs
+2026-02-07 01:00:15 | INFO     | 🔎 [1141/1258] 🇩🇪 DE: 'SAP Entwickler' in Essen
+2026-02-07 01:00:50 | INFO     |    ✓ Found 18 jobs
+2026-02-07 01:00:50 | INFO     | 🔎 [1142/1258] 🇩🇪 DE: 'SAP Entwickler' in Leipzig
+2026-02-07 01:01:23 | INFO     |    ✓ Found 18 jobs
+2026-02-07 01:01:23 | INFO     | 🔎 [1143/1258] 🇩🇪 DE: 'SAP Entwickler' in Nürnberg
+2026-02-07 01:01:58 | INFO     |    ✓ Found 17 jobs
+2026-02-07 01:01:58 | INFO     | 🔎 [1144/1258] 🇩🇪 DE: 'SAP Entwickler' in Karlsruhe
+2026-02-07 01:02:54 | INFO     |    ✓ Found 10 jobs
+2026-02-07 01:02:54 | INFO     | 🔎 [1145/1258] 🇩🇪 DE: 'SAP Entwickler' in Mannheim
+2026-02-07 01:02:54 | WARNING  |    ✗ No jobs found
+2026-02-07 01:02:54 | INFO     | 🔎 [1146/1258] 🇩🇪 DE: 'SAP Entwickler' in Augsburg
+2026-02-07 01:02:54 | WARNING  |    ✗ No jobs found
+2026-02-07 01:02:54 | INFO     | 🔎 [1147/1258] 🇩🇪 DE: 'SAP Entwickler' in Wiesbaden
+2026-02-07 01:02:55 | WARNING  |    ✗ No jobs found
+2026-02-07 01:02:55 | INFO     | 🔎 [1148/1258] 🇩🇪 DE: 'SAP Entwickler' in Münster
+2026-02-07 01:03:16 | INFO     |    ✓ Found 6 jobs
+2026-02-07 01:03:16 | INFO     | 🔎 [1149/1258] 🇩🇪 DE: 'SAP Entwickler' in Bonn
+2026-02-07 01:03:16 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:16 | INFO     | 🔎 [1150/1258] 🇩🇪 DE: 'SAP Entwickler' in Freiburg
+2026-02-07 01:03:16 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:16 | INFO     | 🔎 [1151/1258] 🇩🇪 DE: 'SAP Entwickler' in Aachen
+2026-02-07 01:03:16 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:16 | INFO     | 🔎 [1152/1258] 🇩🇪 DE: 'SAP Entwickler' in Heidelberg
+2026-02-07 01:03:17 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:17 | INFO     | 🔎 [1153/1258] 🇩🇪 DE: 'SAP Entwickler' in Ulm
+2026-02-07 01:03:17 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:17 | INFO     | 🔎 [1154/1258] 🇩🇪 DE: 'SAP Entwickler' in Darmstadt
+2026-02-07 01:03:17 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:17 | INFO     | 🔎 [1155/1258] 🇩🇪 DE: 'SAP Entwickler' in Regensburg
+2026-02-07 01:03:17 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:17 | INFO     | 🔎 [1156/1258] 🇩🇪 DE: 'SAP Entwickler' in Bielefeld
+2026-02-07 01:03:17 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:17 | INFO     | 🔎 [1157/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Stuttgart
+2026-02-07 01:03:18 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:18 | INFO     | 🔎 [1158/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Munich
+2026-02-07 01:03:18 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:18 | INFO     | 🔎 [1159/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Berlin
+2026-02-07 01:03:30 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:30 | INFO     | 🔎 [1160/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Potsdam
+2026-02-07 01:03:30 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:30 | INFO     | 🔎 [1161/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Bremen
+2026-02-07 01:03:30 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:30 | INFO     | 🔎 [1162/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Hamburg
+2026-02-07 01:03:31 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:31 | INFO     | 🔎 [1163/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Frankfurt
+2026-02-07 01:03:31 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:31 | INFO     | 🔎 [1164/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Hanover
+2026-02-07 01:03:31 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:31 | INFO     | 🔎 [1165/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Rostock
+2026-02-07 01:03:31 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:31 | INFO     | 🔎 [1166/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Cologne
+2026-02-07 01:03:31 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:31 | INFO     | 🔎 [1167/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Mainz
+2026-02-07 01:03:32 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:32 | INFO     | 🔎 [1168/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Saarbrücken
+2026-02-07 01:03:32 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:32 | INFO     | 🔎 [1169/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Dresden
+2026-02-07 01:03:32 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:32 | INFO     | 🔎 [1170/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Magdeburg
+2026-02-07 01:03:32 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:32 | INFO     | 🔎 [1171/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Kiel
+2026-02-07 01:03:32 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:32 | INFO     | 🔎 [1172/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Erfurt
+2026-02-07 01:03:33 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:33 | INFO     | 🔎 [1173/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Düsseldorf
+2026-02-07 01:03:33 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:33 | INFO     | 🔎 [1174/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Dortmund
+2026-02-07 01:03:33 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:33 | INFO     | 🔎 [1175/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Essen
+2026-02-07 01:03:33 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:33 | INFO     | 🔎 [1176/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Leipzig
+2026-02-07 01:03:33 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:33 | INFO     | 🔎 [1177/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Nürnberg
+2026-02-07 01:03:34 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:34 | INFO     | 🔎 [1178/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Karlsruhe
+2026-02-07 01:03:34 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:34 | INFO     | 🔎 [1179/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Mannheim
+2026-02-07 01:03:34 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:34 | INFO     | 🔎 [1180/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Augsburg
+2026-02-07 01:03:34 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:34 | INFO     | 🔎 [1181/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Wiesbaden
+2026-02-07 01:03:34 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:34 | INFO     | 🔎 [1182/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Münster
+2026-02-07 01:03:35 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:35 | INFO     | 🔎 [1183/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Bonn
+2026-02-07 01:03:35 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:35 | INFO     | 🔎 [1184/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Freiburg
+2026-02-07 01:03:35 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:35 | INFO     | 🔎 [1185/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Aachen
+2026-02-07 01:03:35 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:35 | INFO     | 🔎 [1186/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Heidelberg
+2026-02-07 01:03:35 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:35 | INFO     | 🔎 [1187/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Ulm
+2026-02-07 01:03:36 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:36 | INFO     | 🔎 [1188/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Darmstadt
+2026-02-07 01:03:36 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:36 | INFO     | 🔎 [1189/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Regensburg
+2026-02-07 01:03:36 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:36 | INFO     | 🔎 [1190/1258] 🇬🇧 EN: 'Machine Learning Engineer' in Bielefeld
+2026-02-07 01:03:36 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:36 | INFO     | 🔎 [1191/1258] 🇩🇪 DE: 'KI-Ingenieur' in Stuttgart
+2026-02-07 01:03:37 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:37 | INFO     | 🔎 [1192/1258] 🇩🇪 DE: 'KI-Ingenieur' in Munich
+2026-02-07 01:03:37 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:37 | INFO     | 🔎 [1193/1258] 🇩🇪 DE: 'KI-Ingenieur' in Berlin
+2026-02-07 01:03:37 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:37 | INFO     | 🔎 [1194/1258] 🇩🇪 DE: 'KI-Ingenieur' in Potsdam
+2026-02-07 01:03:37 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:37 | INFO     | 🔎 [1195/1258] 🇩🇪 DE: 'KI-Ingenieur' in Bremen
+2026-02-07 01:03:37 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:37 | INFO     | 🔎 [1196/1258] 🇩🇪 DE: 'KI-Ingenieur' in Hamburg
+2026-02-07 01:03:38 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:38 | INFO     | 🔎 [1197/1258] 🇩🇪 DE: 'KI-Ingenieur' in Frankfurt
+2026-02-07 01:03:38 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:38 | INFO     | 🔎 [1198/1258] 🇩🇪 DE: 'KI-Ingenieur' in Hanover
+2026-02-07 01:03:38 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:38 | INFO     | 🔎 [1199/1258] 🇩🇪 DE: 'KI-Ingenieur' in Rostock
+2026-02-07 01:03:38 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:38 | INFO     | 🔎 [1200/1258] 🇩🇪 DE: 'KI-Ingenieur' in Cologne
+2026-02-07 01:03:38 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:38 | INFO     | 
+💾 CHECKPOINT: Saving progress at 1200/1258...
+2026-02-07 01:03:39 | INFO     |    ✓ Checkpoint saved: 7403 unique jobs so far
+
+2026-02-07 01:03:39 | INFO     | 🔎 [1201/1258] 🇩🇪 DE: 'KI-Ingenieur' in Mainz
+2026-02-07 01:03:39 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:39 | INFO     | 🔎 [1202/1258] 🇩🇪 DE: 'KI-Ingenieur' in Saarbrücken
+2026-02-07 01:03:39 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:39 | INFO     | 🔎 [1203/1258] 🇩🇪 DE: 'KI-Ingenieur' in Dresden
+2026-02-07 01:03:39 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:39 | INFO     | 🔎 [1204/1258] 🇩🇪 DE: 'KI-Ingenieur' in Magdeburg
+2026-02-07 01:03:40 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:40 | INFO     | 🔎 [1205/1258] 🇩🇪 DE: 'KI-Ingenieur' in Kiel
+2026-02-07 01:03:40 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:40 | INFO     | 🔎 [1206/1258] 🇩🇪 DE: 'KI-Ingenieur' in Erfurt
+2026-02-07 01:03:40 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:40 | INFO     | 🔎 [1207/1258] 🇩🇪 DE: 'KI-Ingenieur' in Düsseldorf
+2026-02-07 01:03:40 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:40 | INFO     | 🔎 [1208/1258] 🇩🇪 DE: 'KI-Ingenieur' in Dortmund
+2026-02-07 01:03:40 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:41 | INFO     | 🔎 [1209/1258] 🇩🇪 DE: 'KI-Ingenieur' in Essen
+2026-02-07 01:03:41 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:41 | INFO     | 🔎 [1210/1258] 🇩🇪 DE: 'KI-Ingenieur' in Leipzig
+2026-02-07 01:03:41 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:41 | INFO     | 🔎 [1211/1258] 🇩🇪 DE: 'KI-Ingenieur' in Nürnberg
+2026-02-07 01:03:41 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:41 | INFO     | 🔎 [1212/1258] 🇩🇪 DE: 'KI-Ingenieur' in Karlsruhe
+2026-02-07 01:03:41 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:41 | INFO     | 🔎 [1213/1258] 🇩🇪 DE: 'KI-Ingenieur' in Mannheim
+2026-02-07 01:03:42 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:42 | INFO     | 🔎 [1214/1258] 🇩🇪 DE: 'KI-Ingenieur' in Augsburg
+2026-02-07 01:03:42 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:42 | INFO     | 🔎 [1215/1258] 🇩🇪 DE: 'KI-Ingenieur' in Wiesbaden
+2026-02-07 01:03:42 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:42 | INFO     | 🔎 [1216/1258] 🇩🇪 DE: 'KI-Ingenieur' in Münster
+2026-02-07 01:03:42 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:42 | INFO     | 🔎 [1217/1258] 🇩🇪 DE: 'KI-Ingenieur' in Bonn
+2026-02-07 01:03:42 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:42 | INFO     | 🔎 [1218/1258] 🇩🇪 DE: 'KI-Ingenieur' in Freiburg
+2026-02-07 01:03:43 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:43 | INFO     | 🔎 [1219/1258] 🇩🇪 DE: 'KI-Ingenieur' in Aachen
+2026-02-07 01:03:43 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:43 | INFO     | 🔎 [1220/1258] 🇩🇪 DE: 'KI-Ingenieur' in Heidelberg
+2026-02-07 01:03:43 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:43 | INFO     | 🔎 [1221/1258] 🇩🇪 DE: 'KI-Ingenieur' in Ulm
+2026-02-07 01:03:43 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:43 | INFO     | 🔎 [1222/1258] 🇩🇪 DE: 'KI-Ingenieur' in Darmstadt
+2026-02-07 01:03:43 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:43 | INFO     | 🔎 [1223/1258] 🇩🇪 DE: 'KI-Ingenieur' in Regensburg
+2026-02-07 01:03:44 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:44 | INFO     | 🔎 [1224/1258] 🇩🇪 DE: 'KI-Ingenieur' in Bielefeld
+2026-02-07 01:03:44 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:44 | INFO     | 🔎 [1225/1258] 🇬🇧 EN: 'IT-Security Engineer' in Stuttgart
+2026-02-07 01:03:44 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:44 | INFO     | 🔎 [1226/1258] 🇬🇧 EN: 'IT-Security Engineer' in Munich
+2026-02-07 01:03:44 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:44 | INFO     | 🔎 [1227/1258] 🇬🇧 EN: 'IT-Security Engineer' in Berlin
+2026-02-07 01:03:44 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:44 | INFO     | 🔎 [1228/1258] 🇬🇧 EN: 'IT-Security Engineer' in Potsdam
+2026-02-07 01:03:45 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:45 | INFO     | 🔎 [1229/1258] 🇬🇧 EN: 'IT-Security Engineer' in Bremen
+2026-02-07 01:03:45 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:45 | INFO     | 🔎 [1230/1258] 🇬🇧 EN: 'IT-Security Engineer' in Hamburg
+2026-02-07 01:03:45 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:45 | INFO     | 🔎 [1231/1258] 🇬🇧 EN: 'IT-Security Engineer' in Frankfurt
+2026-02-07 01:03:45 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:45 | INFO     | 🔎 [1232/1258] 🇬🇧 EN: 'IT-Security Engineer' in Hanover
+2026-02-07 01:03:45 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:45 | INFO     | 🔎 [1233/1258] 🇬🇧 EN: 'IT-Security Engineer' in Rostock
+2026-02-07 01:03:46 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:46 | INFO     | 🔎 [1234/1258] 🇬🇧 EN: 'IT-Security Engineer' in Cologne
+2026-02-07 01:03:46 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:46 | INFO     | 🔎 [1235/1258] 🇬🇧 EN: 'IT-Security Engineer' in Mainz
+2026-02-07 01:03:46 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:46 | INFO     | 🔎 [1236/1258] 🇬🇧 EN: 'IT-Security Engineer' in Saarbrücken
+2026-02-07 01:03:46 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:46 | INFO     | 🔎 [1237/1258] 🇬🇧 EN: 'IT-Security Engineer' in Dresden
+2026-02-07 01:03:46 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:46 | INFO     | 🔎 [1238/1258] 🇬🇧 EN: 'IT-Security Engineer' in Magdeburg
+2026-02-07 01:03:47 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:47 | INFO     | 🔎 [1239/1258] 🇬🇧 EN: 'IT-Security Engineer' in Kiel
+2026-02-07 01:03:47 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:47 | INFO     | 🔎 [1240/1258] 🇬🇧 EN: 'IT-Security Engineer' in Erfurt
+2026-02-07 01:03:47 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:47 | INFO     | 🔎 [1241/1258] 🇬🇧 EN: 'IT-Security Engineer' in Düsseldorf
+2026-02-07 01:03:47 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:47 | INFO     | 🔎 [1242/1258] 🇬🇧 EN: 'IT-Security Engineer' in Dortmund
+2026-02-07 01:03:47 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:47 | INFO     | 🔎 [1243/1258] 🇬🇧 EN: 'IT-Security Engineer' in Essen
+2026-02-07 01:03:48 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:48 | INFO     | 🔎 [1244/1258] 🇬🇧 EN: 'IT-Security Engineer' in Leipzig
+2026-02-07 01:03:48 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:48 | INFO     | 🔎 [1245/1258] 🇬🇧 EN: 'IT-Security Engineer' in Nürnberg
+2026-02-07 01:03:48 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:48 | INFO     | 🔎 [1246/1258] 🇬🇧 EN: 'IT-Security Engineer' in Karlsruhe
+2026-02-07 01:03:48 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:48 | INFO     | 🔎 [1247/1258] 🇬🇧 EN: 'IT-Security Engineer' in Mannheim
+2026-02-07 01:03:48 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:48 | INFO     | 🔎 [1248/1258] 🇬🇧 EN: 'IT-Security Engineer' in Augsburg
+2026-02-07 01:03:49 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:49 | INFO     | 🔎 [1249/1258] 🇬🇧 EN: 'IT-Security Engineer' in Wiesbaden
+2026-02-07 01:03:49 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:49 | INFO     | 🔎 [1250/1258] 🇬🇧 EN: 'IT-Security Engineer' in Münster
+2026-02-07 01:03:49 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:49 | INFO     | 🔎 [1251/1258] 🇬🇧 EN: 'IT-Security Engineer' in Bonn
+2026-02-07 01:03:49 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:49 | INFO     | 🔎 [1252/1258] 🇬🇧 EN: 'IT-Security Engineer' in Freiburg
+2026-02-07 01:03:49 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:49 | INFO     | 🔎 [1253/1258] 🇬🇧 EN: 'IT-Security Engineer' in Aachen
+2026-02-07 01:03:50 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:50 | INFO     | 🔎 [1254/1258] 🇬🇧 EN: 'IT-Security Engineer' in Heidelberg
+2026-02-07 01:03:50 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:50 | INFO     | 🔎 [1255/1258] 🇬🇧 EN: 'IT-Security Engineer' in Ulm
+2026-02-07 01:03:50 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:50 | INFO     | 🔎 [1256/1258] 🇬🇧 EN: 'IT-Security Engineer' in Darmstadt
+2026-02-07 01:03:50 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:50 | INFO     | 🔎 [1257/1258] 🇬🇧 EN: 'IT-Security Engineer' in Regensburg
+2026-02-07 01:03:50 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:50 | INFO     | 🔎 [1258/1258] 🇬🇧 EN: 'IT-Security Engineer' in Bielefeld
+2026-02-07 01:03:51 | WARNING  |    ✗ No jobs found
+2026-02-07 01:03:51 | INFO     | 
+🧹 Removing duplicate jobs...
+2026-02-07 01:03:51 | INFO     | 
+================================================================================
+2026-02-07 01:03:51 | INFO     | ✅ SCRAPING COMPLETE!
+2026-02-07 01:03:51 | INFO     | ================================================================================
+2026-02-07 01:03:51 | INFO     | ⏱️  Duration: 9.7h
+2026-02-07 01:03:51 | INFO     | 
+📊 STATISTICS:
+2026-02-07 01:03:51 | INFO     |    ✓ Successful searches: 1134
+2026-02-07 01:03:51 | INFO     |    ✗ Failed searches: 0
+2026-02-07 01:03:51 | INFO     |    - No jobs found: 124
+2026-02-07 01:03:51 | INFO     | 
+📦 JOBS COLLECTED (within 120 days):
+2026-02-07 01:03:51 | INFO     |    Raw total: 17679
+2026-02-07 01:03:51 | INFO     |    Unique jobs: 7403
+2026-02-07 01:03:51 | INFO     |    📅 All jobs are within last 120 days (older jobs were skipped)
+2026-02-07 01:03:51 | INFO     |    🧹 Removed duplicates: 10276
+2026-02-07 01:03:51 | INFO     | 
+💾 SAVING ALL DATA TO SINGLE FILES...
+2026-02-07 01:03:51 | INFO     |    ✓ JSON saved: e:\DS\Project-Group-1\Techlabs_WS2526_Team1\JobMiner\Raw_Jobs_LINKEDIN_2026-02-07_01-03-51.json (7403 jobs)
+2026-02-07 01:03:57 | INFO     |    ✓ CSV saved: Raw_Jobs_LINKEDIN_2026-02-07_01-03-51.csv
+2026-02-07 01:03:57 | INFO     | 
+📁 FINAL OUTPUT FILES (4 files total):
+2026-02-07 01:03:57 | INFO     |    📄 Raw_Jobs_LINKEDIN_2026-02-07_01-03-51.csv
+2026-02-07 01:03:57 | INFO     |    📄 Raw_Jobs_LINKEDIN_2026-02-07_01-03-51.json
+2026-02-07 01:03:57 | INFO     |    📄 Log_LinkedIn_2026-02-06_15-23-09.log
+2026-02-07 01:03:57 | INFO     |    📋 Metadata saved: Metadata_2026-02-07_01-03-51.json
+2026-02-07 01:03:57 | INFO     | 
+📂 Output Location: e:\DS\Project-Group-1\Techlabs_WS2526_Team1\JobMiner
+2026-02-07 01:03:57 | INFO     | ================================================================================
