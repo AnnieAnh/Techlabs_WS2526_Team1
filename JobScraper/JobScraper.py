@@ -1,9 +1,9 @@
-
-# ===========================
-# IMPORT LIBRARIES
-# ===========================
+# =======================
+# IMPORTS
+# =======================
 import math
 import requests
+import ratelimit
 import random
 import logging
 from bs4 import BeautifulSoup
@@ -13,220 +13,288 @@ import pandas as pd
 from datetime import datetime
 from time import sleep
 import os
+import json
+import csv
+from pathlib import Path
 
-# ===========================
-# LOGGING SETUP
-# ===========================
+# =======================
+# OUTPUT DIR
+# =======================
+OUTPUT_DIR = Path("job_data")
+OUTPUT_DIR.mkdir(exist_ok=True)
 
+# =======================
+# LOGGING
+# =======================
 class ColoredFormatter(logging.Formatter):
     COLORS = {
-        "INFO": "\033[32m",
-        "WARNING": "\033[33m",
-        "ERROR": "\033[31m",
-        "RESET": "\033[0m"
+        'INFO': '\033[32m',
+        'WARNING': '\033[33m',
+        'ERROR': '\033[31m'
     }
+    RESET = '\033[0m'
 
-    EMOJIS = {
-        "INFO": "✅",
-        "WARNING": "⚠️",
-        "ERROR": "❌"
+    EMOJI = {
+        'INFO': '✅',
+        'WARNING': '⚠️',
+        'ERROR': '❌'
     }
 
     def format(self, record):
-        color = self.COLORS.get(record.levelname, self.COLORS["RESET"])
-        emoji = self.EMOJIS.get(record.levelname, "")
+        emoji = self.EMOJI.get(record.levelname, '')
+        color = self.COLORS.get(record.levelname, '')
         record.levelname = f"{emoji} {record.levelname}"
-        return f"{color}{super().format(record)}{self.COLORS['RESET']}"
+        msg = super().format(record)
+        return f"{color}{msg}{self.RESET}"
 
-logger = logging.getLogger("LinkedInScraper")
-logger.setLevel(logging.INFO)
 
-formatter = ColoredFormatter("%(asctime)s | %(levelname)s | %(message)s")
+def setup_logging():
+    logger = logging.getLogger("linkedin_scraper")
+    logger.setLevel(logging.DEBUG)
 
-file_handler = logging.FileHandler("linkedin_scraper.log", encoding="utf-8")
-file_handler.setFormatter(formatter)
+    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    log_file = OUTPUT_DIR / f"Log_{timestamp}.log"
 
-console_handler = logging.StreamHandler()
-console_handler.setFormatter(formatter)
-
-logger.addHandler(file_handler)
-logger.addHandler(console_handler)
-
-# ===========================
-# BASE URLs
-# ===========================
-INIT_URL = "https://www.linkedin.com/jobs/search"
-PAGE_URL = "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search"
-POST_URL = "https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/"
-
-# ===========================
-# SESSION & HEADERS
-# ===========================
-session = requests.Session()
-
-HEADERS_POOL = [
-    {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:116.0) Gecko/20100101 Firefox/116.0",
-        "Accept-Language": "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7",
-    },
-    {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0",
-        "Accept-Language": "en-US,en;q=0.9,de;q=0.8",
-    }
-]
-
-# ===========================
-# SEARCH FILTERS
-# ===========================
-KEYWORDS = [
-    "software engineer", "software architect"
-]
-
-CITIES = ["Stuttgart", "Munich"]
-
-TIME_RANGE = "r86400"   # last 24h
-DISTANCE = "50"
-JOB_TYPE = ["F"]
-PLACE = ["2"]
-
-# ===========================
-# GLOBAL RETRY CONFIG
-# ===========================
-MAX_RETRIES = 3
-BACKOFF_BASE = 5
-
-# ===========================
-# HELPER FUNCTIONS
-# ===========================
-def random_delay(min_s=2.5, max_s=6.5):
-    sleep(random.uniform(min_s, max_s))
-
-def params(start=0, keyword="", location=""):
-    return (
-        f"?keywords={encode(keyword)}"
-        f"&f_TPR={TIME_RANGE}"
-        f"&location={encode(location)}"
-        f"&distance={DISTANCE}"
-        f"&f_JT={encode(','.join(JOB_TYPE))}"
-        f"&f_WT={encode(','.join(PLACE))}"
-        f"&start={start}"
-        f"&sortBy=DD"
+    file_handler = logging.FileHandler(log_file, encoding="utf-8")
+    file_handler.setLevel(logging.DEBUG)
+    file_handler.setFormatter(
+        logging.Formatter("%(asctime)s [%(levelname)s] %(message)s")
     )
 
-def request_with_retry(url, retries=MAX_RETRIES):
-    for attempt in range(1, retries + 1):
-        try:
-            headers = random.choice(HEADERS_POOL)
-            res = session.get(url, headers=headers, timeout=15)
+    console_handler = logging.StreamHandler()
+    console_handler.setLevel(logging.INFO)
+    console_handler.setFormatter(
+        ColoredFormatter("%(levelname)s %(message)s")
+    )
 
-            if res.status_code == 429:
-                logger.warning(f"429 Rate limit hit (attempt {attempt}/{retries}) – sleeping...")
-                sleep(60)
-                continue
+    logger.addHandler(file_handler)
+    logger.addHandler(console_handler)
 
-            if "captcha" in res.text.lower() or "sign in" in res.text.lower():
-                logger.error("LinkedIn block detected (captcha/sign-in)")
-                sleep(120)
-                continue
+    return logger
 
-            res.raise_for_status()
-            return res
 
-        except Exception as e:
-            logger.warning(f"Request failed (attempt {attempt}/{retries}): {e}")
-            sleep(BACKOFF_BASE * attempt)
+logger = setup_logging()
 
-    logger.error("Max retries exceeded")
-    return None
+# =======================
+# CONSTANTS
+# =======================
+INIT_URL = 'https://www.linkedin.com/jobs/search'
+PAGE_URL = 'https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search'
+POST_URL = 'https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/'
 
-# ===========================
-# SCRAPER FUNCTIONS
-# ===========================
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+}
+
+# =======================
+# SEARCH LISTS
+# =======================
+#TEST
+#keywords_list = ["backend","software engineer"]
+#locations_list = ["Berlin","Stuttgart"]
+
+keywords_list = [
+    "backend","software engineer","software architect","software developer","data engineer",
+    "data analyst","data scientist","BI developer","Cloud Engineer","Cloud architect",
+    "DevOps engineer","IT administrator","backend developer","frontend developer",
+    "full stack developer","Apps developer","SAP developer","machine learning engineer",
+    "AI engineer","cybersecurity engineer",
+    "Softwareentwickler","Softwarearchitekt","Data Engineer","Datenanalyst","Data Scientist",
+    "BI-Entwickler","Cloud Engineer","Cloud-Architekt","DevOps Engineer","IT-Administrator",
+    "Backend Entwickler","Frontend Entwickler","FullStack Entwickler","Apps Entwickler",
+    "SAP Entwickler","Machine Learning Engineer","KI-Ingenieur","IT-Security Engineer"
+]
+
+locations_list = [
+    "Berlin","Stuttgart","Munich","Potsdam","Bremen","Hamburg","Frankfurt","Hanover",
+    "Rostock","Cologne","Mainz","Saarbrücken","Dresden","Magdeburg","Kiel","Erfurt",
+    "Düsseldorf","Dortmund","Essen","Leipzig","Nürnberg","Karlsruhe","Mannheim",
+    "Augsburg","Wiesbaden","Münster","Bonn","Freiburg","Aachen","Heidelberg","Ulm",
+    "Darmstadt","Regensburg","Bielefeld"
+]
+
+# =======================
+# FILTERS
+# =======================
+time_range = 'r2592000'
+distance = '100'
+job_type = ['F']
+place = ['2']
+limit_jobs = 150
+
+# =======================
+# URL PARAMS
+# =======================
+def params(keyword, location, start=0):
+    return (
+        f"?keywords={encode(keyword)}"
+        f"&f_TPR={time_range}"
+        f"&location={encode(location)}"
+        f"&distance={distance}"
+        f"&f_JT={encode(','.join(job_type))}"
+        f"&f_WT={encode(','.join(place))}"
+        f"&position=1&pageNum=0"
+        f"&start={start}&sortBy=DD"
+    )
+
+# =======================
+# JOB COUNT
+# =======================
 def job_result(keyword, location):
-    url = INIT_URL + params(keyword=keyword, location=location)
-    res = request_with_retry(url)
-    if not res:
+    if limit_jobs > 0:
+        return limit_jobs
+
+    uri = INIT_URL + params(keyword, location)
+    res = requests.get(uri, headers=HEADERS)
+    soup = BeautifulSoup(res.text, 'html.parser')
+
+    try:
+        job_count = soup.find('span', {'class': 'results-context-header__job-count'}).text
+        return int(job_count.strip().replace(",", "").replace("+", ""))
+    except:
         return 0
 
-    soup = BeautifulSoup(res.text, "html.parser")
-    span = soup.find("span", class_="results-context-header__job-count")
-    if not span:
-        return 0
+# =======================
+# JOB IDS
+# =======================
+def job_id_list_per_page(keyword, location, start):
+    uri = PAGE_URL + params(keyword, location, start)
+    res = requests.get(uri, headers=HEADERS)
 
-    return int(span.text.replace(",", "").replace("+", "").strip())
-
-def job_id_list_per_page(start, keyword, location):
-    url = PAGE_URL + params(start, keyword, location)
-    res = request_with_retry(url)
-    if not res:
+    if not res.ok or len(res.history) > 0:
+        sleep(1)
         return []
 
-    soup = BeautifulSoup(res.text, "html.parser")
+    soup = BeautifulSoup(res.text, 'html.parser')
     job_ids = []
 
-    for li in soup.find_all("li"):
+    for li in soup.find_all('li'):
         try:
-            urn = li.get("data-entity-urn") or li.find("a")["data-entity-urn"]
-            job_ids.append(urn.split(":")[-1])
-        except Exception:
-            continue
+            job_id = li.find('div', {'class': 'base-card'}).get('data-entity-urn').split(':')[3]
+            job_ids.append(job_id)
+        except:
+            pass
 
     return job_ids
 
-def job_detail(job_id):
-    url = POST_URL + job_id
-    res = request_with_retry(url)
-    if not res:
+# =======================
+# JOB DETAILS
+# =======================
+def job_detail(job_id, keyword, location):
+    try:
+        uri = POST_URL + job_id
+        res = requests.get(uri, headers=HEADERS)
+        if not res.ok:
+            return None
+
+        soup = BeautifulSoup(res.text, 'html.parser')
+
+        detail = {
+            'search_keyword': keyword,
+            'search_location': location,
+            'id': job_id,
+            'link': uri,
+            'title': None,
+            'company': None,
+            'location_job': None,
+            'time': None,
+            'description': None,
+            'level': None,
+            'industry': None,
+            'type': None,
+            'function': None
+        }
+
+        try:
+            anchor = soup.find("div", {"class": "top-card-layout__entity-info"}).find("a")
+            detail['link'] = anchor.get('href')
+            detail['title'] = anchor.text.strip()
+        except:
+            pass
+
+        try:
+            detail['company'] = soup.select_one('.topcard__org-name-link').text.strip()
+        except:
+            pass
+
+        try:
+            detail['location_job'] = soup.select_one('span.topcard__flavor--bullet').text.strip()
+        except:
+            pass
+
+        try:
+            detail['time'] = soup.select_one('.posted-time-ago__text').text.strip()
+        except:
+            pass
+
+        try:
+            detail['description'] = soup.select_one('.show-more-less-html__markup').text.strip()
+        except:
+            pass
+
+        return detail
+    except Exception as e:
+        logger.error(e)
         return None
 
-    soup = BeautifulSoup(res.text, "html.parser")
-
-    return {
-        "id": job_id,
-        "link": url,
-        "title": soup.select_one("h1").text.strip() if soup.select_one("h1") else None,
-        "company": soup.select_one(".topcard__org-name-link").text.strip() if soup.select_one(".topcard__org-name-link") else None,
-        "location": soup.select_one(".topcard__flavor--bullet").text.strip() if soup.select_one(".topcard__flavor--bullet") else None,
-        "time": soup.select_one(".posted-time-ago__text").text.strip() if soup.select_one(".posted-time-ago__text") else None,
-        "description": soup.select_one(".show-more-less-html__markup").text.strip() if soup.select_one(".show-more-less-html__markup") else None,
-    }
-
-# ===========================
+# =======================
 # MAIN
-# ===========================
+# =======================
 def main():
     all_jobs = []
+    seen_job_ids = set()
 
-    for city in CITIES:
-        for keyword in KEYWORDS:
-            total = job_result(keyword, city)
+    for keyword in keywords_list:
+        for location in locations_list:
+            logger.info(f"🔍 Searching: '{keyword}' in '{location}'")
+
+            total = job_result(keyword, location)
             if total == 0:
-                logger.info(f"No jobs for '{keyword}' in {city}")
                 continue
 
-            pages = math.ceil(total / 25)
-            logger.info(f"🔎 {keyword} | {city} → {total} jobs")
+            num_page = math.ceil(total / 25)
 
             job_ids = []
-            for p in tqdm(range(pages), desc="Pages"):
-                job_ids.extend(job_id_list_per_page(p * 25, keyword, city))
-                random_delay()
+            for i in range(num_page):
+                start = i * 25
+                job_ids += job_id_list_per_page(keyword, location, start)
 
-            for jid in tqdm(job_ids, desc="Jobs"):
-                detail = job_detail(jid)
+            for job_id in job_ids:
+                if job_id in seen_job_ids:
+                    continue
+
+                seen_job_ids.add(job_id)
+
+                detail = job_detail(job_id, keyword, location)
                 if detail:
                     all_jobs.append(detail)
-                random_delay(2, 4)
 
-            random_delay(10, 15)
+                sleep(0.5)
 
     if all_jobs:
         df = pd.DataFrame(all_jobs)
-        path = os.path.join(os.getcwd(), "linkedin_jobs.csv")
-        df.to_csv(path, index=False, encoding="utf-8")
-        logger.info(f"Exported {len(df)} jobs → {path}")
-    else:
-        logger.warning("No jobs collected")
+        timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
+        csv_path = OUTPUT_DIR / f"dataset_{timestamp}.csv"
+        json_path = OUTPUT_DIR / f"dataset_{timestamp}.json"
+
+        df.to_csv(csv_path, index=False, encoding='utf-8',
+                  quoting=csv.QUOTE_NONNUMERIC, escapechar="\\")
+        df.to_json(json_path, orient="records", indent=2, force_ascii=False)
+
+        metadata = {
+            "created_at": timestamp,
+            "total_jobs": len(df),
+            "unique_jobs": len(seen_job_ids)
+        }
+
+        with open(OUTPUT_DIR / f"Metadata_{timestamp}.json", "w", encoding="utf-8") as f:
+            json.dump(metadata, f, indent=2, ensure_ascii=False)
+
+        logger.info(f"📦 Exported {len(all_jobs)} unique jobs")
+    else:
+        logger.warning("No jobs found")
+
+# =======================
 if __name__ == "__main__":
     main()
