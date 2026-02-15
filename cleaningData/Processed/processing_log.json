@@ -1,0 +1,43 @@
+{
+  "run_timestamp": "2026-02-15T15:06:33.707179",
+  "processing_log": [
+    {
+      "source": "Indeed",
+      "rows_before": 10851,
+      "rows_after": 10851,
+      "duplicates_removed": 0,
+      "removal_percentage": 0.0,
+      "file": "Raw_Jobs_INDEED.csv"
+    },
+    {
+      "source": "LinkedIn #1",
+      "rows_before": 7075,
+      "rows_after": 7075,
+      "duplicates_removed": 0,
+      "removal_percentage": 0.0,
+      "file": "Raw_Jobs_LINKEDIN_1.csv"
+    },
+    {
+      "source": "LinkedIn #2",
+      "rows_before": 4600,
+      "rows_after": 4600,
+      "duplicates_removed": 0,
+      "removal_percentage": 0.0,
+      "file": "Raw_Jobs_LINKEDIN_2.csv"
+    },
+    {
+      "source": "LinkedIn Combined",
+      "rows_before": 11675,
+      "rows_after": 11675,
+      "duplicates_removed": 0,
+      "removal_percentage": 0.0,
+      "file": "merged (LinkedIn #1 + LinkedIn #2)"
+    }
+  ],
+  "summary": {
+    "total_deduplication_steps": 4,
+    "total_duplicates_removed_across_all_steps": 0,
+    "final_output_rows": 22526,
+    "output_file": "combined_jobs.csv"
+  }
+}
