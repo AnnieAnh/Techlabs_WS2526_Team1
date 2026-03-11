@@ -315,9 +315,9 @@ Typical added columns include:
 - `skill_spans_soft` — soft-related spans
 
 Count columns may also be added, such as:
--`soft_skills_count_dict`
+- `soft_skills_count_dict`
 - `soft_skills_count_final`
--`span_soft_count`
+- `span_soft_count`
 - `span_tech_count`
 
 ## What Results This Script Produces
