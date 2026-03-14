@@ -1,0 +1,266 @@
+# German geography reference data for location parsing.
+# All English state names match exactly what appears on LinkedIn.
+
+# -----------------------------------------------------------------------
+# 16 German federal states — canonical English names
+# -----------------------------------------------------------------------
+states:
+  - Baden-Württemberg
+  - Bavaria
+  - Berlin
+  - Brandenburg
+  - Bremen
+  - Hamburg
+  - Hesse
+  - Lower Saxony
+  - Mecklenburg-West Pomerania
+  - North Rhine-Westphalia
+  - Rhineland-Palatinate
+  - Saarland
+  - Saxony
+  - Saxony-Anhalt
+  - Schleswig-Holstein
+  - Thuringia
+
+# -----------------------------------------------------------------------
+# German-language state names → English canonical name
+# Used when the data contains German state names instead of English.
+# -----------------------------------------------------------------------
+german_to_english_states:
+  Bayern: Bavaria
+  Baden-Württemberg: Baden-Württemberg   # unchanged
+  Hessen: Hesse
+  Niedersachsen: Lower Saxony
+  Nordrhein-Westfalen: North Rhine-Westphalia
+  "Mecklenburg-Vorpommern": Mecklenburg-West Pomerania
+  Rheinland-Pfalz: Rhineland-Palatinate
+  Sachsen: Saxony
+  Sachsen-Anhalt: Saxony-Anhalt
+  Thüringen: Thuringia
+  Brandenburg: Brandenburg               # unchanged
+  Berlin: Berlin                         # unchanged
+  Hamburg: Hamburg                       # unchanged
+  Bremen: Bremen                         # unchanged
+  Saarland: Saarland                     # unchanged
+  Schleswig-Holstein: Schleswig-Holstein # unchanged
+
+# -----------------------------------------------------------------------
+# 2-letter state codes → English canonical name
+# Used in "City, CODE, DE" format (e.g. "München, BY, DE")
+# -----------------------------------------------------------------------
+state_codes:
+  BE: Berlin
+  BY: Bavaria
+  BW: Baden-Württemberg
+  HH: Hamburg
+  HE: Hesse
+  NW: North Rhine-Westphalia
+  SN: Saxony
+  HB: Bremen
+  NI: Lower Saxony
+  RP: Rhineland-Palatinate
+  SL: Saarland
+  ST: Saxony-Anhalt
+  SH: Schleswig-Holstein
+  MV: Mecklenburg-West Pomerania
+  BB: Brandenburg
+  TH: Thuringia
+
+# -----------------------------------------------------------------------
+# Cities where city name == state name (Stadtstaaten / city-states)
+# "Berlin, Germany" → city=Berlin, state=Berlin
+# -----------------------------------------------------------------------
+city_is_state:
+  - Berlin
+  - Hamburg
+  - Bremen
+
+# -----------------------------------------------------------------------
+# Region patterns → state (and optional city)
+# These appear as single-part location strings (no commas).
+# Matched case-insensitively by exact string.
+# -----------------------------------------------------------------------
+regions:
+  "Stuttgart Region":
+    state: Baden-Württemberg
+    city: Stuttgart
+  "Greater Munich Metropolitan Area":
+    state: Bavaria
+    city: Munich
+  "Munich Metropolitan Area":
+    state: Bavaria
+    city: Munich
+  "Berlin Metropolitan Area":
+    state: Berlin
+    city: Berlin
+  "Greater Berlin Area":
+    state: Berlin
+    city: Berlin
+  "Ruhr Region":
+    state: North Rhine-Westphalia
+    city: null
+  "Ruhr Area":
+    state: North Rhine-Westphalia
+    city: null
+  "Frankfurt Rhine-Main Metropolitan Area":
+    state: Hesse
+    city: Frankfurt
+  "Rhine-Main Area":
+    state: Hesse
+    city: Frankfurt
+  "Hannover-Braunschweig-Göttingen-Wolfsburg Region":
+    state: Lower Saxony
+    city: null
+  "Cologne Bonn Region":
+    state: North Rhine-Westphalia
+    city: null
+  "Greater Hamburg Area":
+    state: Hamburg
+    city: Hamburg
+  "Greater Nuremberg Metropolitan Area":
+    state: Bavaria
+    city: Nuremberg
+  "Greater Leipzig Area":
+    state: Saxony
+    city: Leipzig
+  "Greater Dusseldorf Area":
+    state: North Rhine-Westphalia
+    city: Düsseldorf
+  "Greater Dresden Area":
+    state: Saxony
+    city: Dresden
+  "Greater Karlsruhe Area":
+    state: Baden-Württemberg
+    city: Karlsruhe
+  "Greater Aschaffenburg Area":
+    state: Bavaria
+    city: Aschaffenburg
+  "Greater Bremen Area":
+    state: Bremen
+    city: Bremen
+  "Greater Kiel Area":
+    state: Schleswig-Holstein
+    city: Kiel
+  "Greater Erfurt Area":
+    state: Thuringia
+    city: Erfurt
+  "Greater Magdeburg Area":
+    state: Saxony-Anhalt
+    city: Magdeburg
+  "Greater Bielefeld Area":
+    state: North Rhine-Westphalia
+    city: Bielefeld
+  "Greater Oldenburg Area":
+    state: Lower Saxony
+    city: Oldenburg
+  "Greater Freiburg Area":
+    state: Baden-Württemberg
+    city: Freiburg
+  "Greater Heilbronn Region":
+    state: Baden-Württemberg
+    city: Heilbronn
+  "Greater Kempten Area":
+    state: Bavaria
+    city: Kempten
+  "Greater Rostock Region":
+    state: Mecklenburg-West Pomerania
+    city: Rostock
+  "Rhein-Neckar Metropolitan Region":
+    state: Baden-Württemberg
+    city: null
+  "Rhine-Neckar Metropolitan Region":
+    state: Baden-Württemberg
+    city: null
+  "Hannover-Braunschweig-G\u00f6ttingen-Wolfsburg Region":
+    state: Lower Saxony
+    city: null
+  # German region with Umlaut (already above as unicode escape; keep both for safety)
+  "Osnabrück Land":
+    state: Lower Saxony
+    city: Osnabrück
+
+# -----------------------------------------------------------------------
+# Non-German metro regions (country field required — parser uses it instead of "Germany")
+# -----------------------------------------------------------------------
+  "Zürich Metropolitan Area":
+    city: Zürich
+    state: "NA"
+    country: Switzerland
+  "Greater Zürich Area":
+    city: Zürich
+    state: "NA"
+    country: Switzerland
+  "Sankt Gallen Metropolitan Area":
+    city: St. Gallen
+    state: "NA"
+    country: Switzerland
+  "Prague Metropolitan Area":
+    city: Prague
+    state: "NA"
+    country: Czech Republic
+  "Greater Prague Area":
+    city: Prague
+    state: "NA"
+    country: Czech Republic
+  "Johannesburg Metropolitan Area":
+    city: Johannesburg
+    state: "NA"
+    country: South Africa
+  "Greater Philadelphia":
+    city: Philadelphia
+    state: Pennsylvania
+    country: United States
+  "Greater Philadelphia Area":
+    city: Philadelphia
+    state: Pennsylvania
+    country: United States
+
+# -----------------------------------------------------------------------
+# Super-regions: non-geographic or supra-national groupings
+# Return NA/NA/{name}
+# -----------------------------------------------------------------------
+super_regions:
+  - DACH
+  - European Union
+  - European Economic Area
+  - Benelux
+  - Brabantine City Row
+
+# -----------------------------------------------------------------------
+# Known non-German countries (bare country name in location string)
+# Return NA/NA/{country}
+# -----------------------------------------------------------------------
+known_countries:
+  - Germany
+  - Netherlands
+  - France
+  - Austria
+  - Switzerland
+  - Poland
+  - Belgium
+  - Luxembourg
+  - Czech Republic
+  - Czech
+  - United States
+  - South Africa
+  - Liechtenstein
+  - India
+  - Singapore
+  - Spain
+  - Portugal
+  - Romania
+  - Ukraine
+  - Canada
+  - Australia
+  - United Kingdom
+  - Sweden
+  - Denmark
+  - Norway
+  - Finland
+  - Italy
+  - Hungary
+  - Slovakia
+  - Serbia
+  - Croatia
+  - Israel
+  - Egypt

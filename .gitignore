@@ -1,0 +1,40 @@
+# Python
+*.py[cod]
+*.pyo
+__pycache__/
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.env
+.env.*
+.venv/
+venv/
+env/
+
+# Logs
+logs/
+
+# Data outputs (large, generated — do not track)
+data/extraction/
+data/ingestion/
+
+
+# Tools & caches
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+
+# IDEs
+.vscode/
+.idea/
+.idea
+*.sublime-workspace
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db

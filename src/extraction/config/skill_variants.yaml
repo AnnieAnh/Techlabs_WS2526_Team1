@@ -1,0 +1,62 @@
+# Canonical skill variant spellings shared across the extraction and cleaning pipelines.
+# Key = canonical skill name (as stored in technical_skills / nice_to_have_skills).
+# Value = list of lowercase plain-substring alternatives that count as a match.
+# Both skill_verifier.py and post_clean.py load from this file.
+
+variants:
+  REST APIs:
+    - rest api
+    - rest apis
+    - restful api
+    - restful apis
+    - rest-api
+    - restful
+  scikit-learn:
+    - scikit-learn
+    - scikit learn
+    - sklearn
+    - scikit
+  C++:
+    - c++
+    - c/c++
+    - cpp
+  C#:
+    - c#
+    - c sharp
+    - csharp
+  Node.js:
+    - node.js
+    - nodejs
+    - node js
+    - node
+  Vue.js:
+    - vue.js
+    - vuejs
+    - vue js
+    - vue
+  React.js:
+    - react.js
+    - reactjs
+    - react js
+    - react
+  Windows Server:
+    - windows server
+    - windows-server
+  Power BI:
+    - power bi
+    - powerbi
+    - power-bi
+  SAP S/4HANA:
+    - sap s/4hana
+    - s/4hana
+    - s4hana
+  .NET:
+    - .net
+    - dotnet
+    - dot net
+  CI/CD:
+    - ci/cd
+    - ci cd
+    - cicd
+    - ci-cd
+    - continuous integration

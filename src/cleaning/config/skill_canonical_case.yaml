@@ -1,0 +1,7 @@
+# Skill canonical case map: lowercase_key → canonical_form.
+# Auto-generated at runtime by normalize_skill_casing() in cleaning/skill_normalizer.py.
+# Do not edit manually — changes will be overwritten on the next pipeline run.
+# Format:
+#   python: Python
+#   javascript: JavaScript
+#   ...

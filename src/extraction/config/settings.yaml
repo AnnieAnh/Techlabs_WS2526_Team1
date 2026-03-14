@@ -1,0 +1,47 @@
+paths:
+  raw_dir: data/ingestion
+  ingestion_output: data/ingestion/combined_jobs.csv
+  deduped_dir: data/extraction/deduped
+  batches_dir: data/extraction/batches
+  extracted_dir: data/extraction/extracted
+  failed_dir: data/extraction/failed
+  review_dir: data/extraction/review
+  validation_dir: data/extraction/validation
+  reports_dir: data/extraction/reports
+  checkpoint_db: data/extraction/pipeline_state.db
+
+input_files:
+  - combined_jobs.csv
+
+extraction:
+  model: deepseek-chat
+  max_tokens: 3000            # ~400-600 needed; headroom for longer outputs
+  temperature: 0
+  max_description_tokens: 8000
+  batch_size: 1000
+  poll_interval_seconds: 60
+  max_retries_per_row: 3
+  max_tasks: 10               # truncate LLM task lists beyond this
+
+llm:
+  provider: deepseek          
+  deepseek_max_workers: 10
+
+title_classification:
+  model: deepseek-chat        
+  max_tokens: 2000
+  batch_size: 50
+  temperature: 0
+
+validation:
+  salary_min_floor: 15000
+  salary_max_ceiling: 300000
+  salary_monthly_threshold: 5000
+  min_description_length: 250
+  date_anomaly_cutoff: "2024-01-01"
+  max_skills_per_row: 35
+  skill_hallucination_threshold: 0.3
+
+review:
+  sample_size: 200
+  golden_set_size: 100
