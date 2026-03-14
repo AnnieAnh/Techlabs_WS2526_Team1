@@ -1,0 +1,18 @@
+{
+  "model": "deepseek-chat",
+  "pricing": {
+    "input_cost_per_m_tokens": 0.27,
+    "output_cost_per_m_tokens": 1.1,
+    "note": "DeepSeek V3 standard pricing"
+  },
+  "extraction": {
+    "calls": 10439,
+    "input_tokens": 32539622,
+    "output_tokens": 9602235,
+    "cost_usd": 19.3482,
+    "retries": 0,
+    "failed": 0
+  },
+  "title_classification": null,
+  "total_cost_usd": 19.3482
+}

@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "JobExtractionOutput",
+  "description": "Schema for LLM extraction output (Tier 2 fields only). Tier 1 fields are extracted by regex_extractor.py.",
+  "type": "object",
+  "definitions": {
+    "evidence_item": {
+      "description": "An extracted item with a source quote from the description for grounding.",
+      "type": "object",
+      "properties": {
+        "name": {"type": "string", "minLength": 1},
+        "source": {"type": "string"}
+      },
+      "required": ["name", "source"],
+      "additionalProperties": false
+    }
+  },
+  "properties": {
+    "technical_skills": {
+      "description": "Named technologies, frameworks, languages required — each with a source quote from the description.",
+      "type": "array",
+      "items": {"$ref": "#/definitions/evidence_item"}
+    },
+    "soft_skills": {
+      "description": "Interpersonal and professional soft skills explicitly mentioned.",
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    },
+    "nice_to_have_skills": {
+      "description": "Named technologies mentioned as optional/preferred (not required) — each with a source quote.",
+      "type": "array",
+      "items": {"$ref": "#/definitions/evidence_item"}
+    },
+    "benefits": {
+      "description": "Specific tangible benefits — each with a source quote from the description.",
+      "type": "array",
+      "items": {"$ref": "#/definitions/evidence_item"}
+    },
+    "tasks": {
+      "description": "Main responsibilities of the role — each with a source quote from the description.",
+      "type": "array",
+      "items": {"$ref": "#/definitions/evidence_item"}
+    },
+    "job_family": {
+      "description": "Best-matching job family from the canonical taxonomy (validated by remap, not by enum).",
+      "type": "string",
+      "minLength": 1
+    },
+    "job_summary": {
+      "description": "One-sentence summary of the role (optional).",
+      "oneOf": [
+        {"type": "string", "minLength": 1},
+        {"type": "null"}
+      ]
+    }
+  },
+  "required": [
+    "technical_skills",
+    "soft_skills",
+    "nice_to_have_skills",
+    "benefits",
+    "tasks",
+    "job_family"
+  ],
+  "additionalProperties": false
+}

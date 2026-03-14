@@ -1,0 +1,157 @@
+# Benefit category → list of matching keywords (case-insensitive substring match).
+# Used by cleaning/benefit_categorizer.py to classify extracted benefit strings.
+
+categories:
+  time_off:
+    - urlaub
+    - vacation
+    - holiday
+    - pto
+    - days off
+    - paid time
+    - sabbatical
+    - sonderurlaub
+    - freistellung
+    - freizeitausgleich
+  flexible_hours:
+    - flexible
+    - gleitzeit
+    - flexitime
+    - arbeitszeitmodell
+    - vertrauensarbeitszeit
+    - flexible arbeitszeit
+    - teilzeit
+    - work-life
+    - worklife
+    - 4-tage
+    - four-day
+    - 4 day week
+  remote_work:
+    - remote
+    - homeoffice
+    - home office
+    - telearbeit
+    - mobiles arbeiten
+    - work from home
+    - hybrid
+    - ortsunabhängig
+  retirement:
+    - rente
+    - pension
+    - altersvorsorge
+    - betriebliche altersvorsorge
+    - bav
+    - vermögenswirksam
+    - vwl
+    - zukunftssicherung
+  health:
+    - health
+    - kranken
+    - wellness
+    - gym
+    - sport
+    - gesundheit
+    - fitness
+    - mental health
+    - ergonomie
+    - massage
+    - betriebsarzt
+    - yoga
+    - meditation
+  mobility:
+    - bahncard
+    - jobticket
+    - dienstwagen
+    - company car
+    - bike
+    - fahrrad
+    - mvv
+    - öpnv
+    - jobrad
+    - deutschlandticket
+    - firmenwagen
+    - fahrkostenzuschuss
+    - fahrtkostenzuschuss
+    - mobility budget
+    - leasing
+  education:
+    - weiterbildung
+    - schulung
+    - training
+    - certification
+    - konferenz
+    - conference
+    - learning
+    - fortbildung
+    - mentoring
+    - coaching
+    - development budget
+    - udemy
+    - coursera
+    - bildungsurlaub
+    - personal development
+  compensation:
+    - bonus
+    - prämie
+    - provision
+    - gewinnbeteiligung
+    - aktien
+    - stock
+    - esop
+    - mitarbeiterbeteiligung
+    - weihnachtsgeld
+    - urlaubsgeld
+    - 13. gehalt
+    - 13. monatsgehalt
+    - sonderzahlung
+    - equity
+    - rsus
+    - profit sharing
+  food:
+    - kantine
+    - canteen
+    - lunch
+    - mittagessen
+    - verpflegung
+    - essenszuschuss
+    - meal
+    - obstkorb
+    - getränke
+    - kaffee
+    - snack
+    - catering
+  social:
+    - team event
+    - teamevent
+    - offsite
+    - firmenfeier
+    - team building
+    - teambuilding
+    - sommerfest
+    - weihnachtsfeier
+    - firmenevent
+    - betriebsausflug
+    - after-work
+    - afterwork
+  perks:
+    - laptop
+    - equipment
+    - ausstattung
+    - handy
+    - phone
+    - stellplatz
+    - parkplatz
+    - parking
+    - rabatt
+    - discount
+    - corporate benefits
+    - mitarbeiterrabatt
+    - zuschuss
+    - kindergarten
+    - kinderbetreuung
+    - kita
+    - relocation
+    - umzug
+    - hund
+    - dog-friendly
+    - hundefreundlich

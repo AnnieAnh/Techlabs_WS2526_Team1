@@ -1,0 +1,119 @@
+# Canonical job family taxonomy for title classification.
+# ~38 families covering the German IT job market.
+# LLM must return EXACTLY one of these strings (or "Other").
+
+families:
+  # -----------------------------------------------------------------------
+  # Software Development
+  # -----------------------------------------------------------------------
+  - Frontend Developer
+  - Backend Developer
+  - Fullstack Developer
+  - Software Developer
+  - Mobile Developer
+  - Embedded Developer
+  - Game Developer
+  - Blockchain Developer
+
+  # -----------------------------------------------------------------------
+  # Infrastructure & Cloud
+  # -----------------------------------------------------------------------
+  - DevOps Engineer
+  - Cloud Engineer
+  - Site Reliability Engineer
+  - Platform Engineer
+  - Network Engineer
+  - System Administrator
+  - Database Administrator
+
+  # -----------------------------------------------------------------------
+  # Data & AI
+  # -----------------------------------------------------------------------
+  - Data Engineer
+  - Data Scientist
+  - Data Analyst
+  - ML Engineer
+  - MLOps Engineer
+  - AI Engineer
+  - Business Intelligence Developer
+
+  # -----------------------------------------------------------------------
+  # Architecture & Senior IC
+  # -----------------------------------------------------------------------
+  - Software Architect
+  - Solution Architect
+  - Technical Lead
+
+  # -----------------------------------------------------------------------
+  # Security & Quality
+  # -----------------------------------------------------------------------
+  - IT Security Engineer
+  - QA Engineer
+
+  # -----------------------------------------------------------------------
+  # Design
+  # -----------------------------------------------------------------------
+  - UI/UX Designer
+  - Web Designer
+
+  # -----------------------------------------------------------------------
+  # Product & Management
+  # -----------------------------------------------------------------------
+  - Product Manager
+  - Project Manager
+  - Engineering Manager
+  - Scrum Master / Agile Coach
+
+  # -----------------------------------------------------------------------
+  # Consulting
+  # -----------------------------------------------------------------------
+  - IT Consultant
+  - SAP Consultant
+  - ERP Consultant
+  - Business Analyst
+
+  # -----------------------------------------------------------------------
+  # Support & Operations
+  # -----------------------------------------------------------------------
+  - IT Support / Helpdesk
+  - Technical Writer
+
+  # -----------------------------------------------------------------------
+  # Early career
+  # -----------------------------------------------------------------------
+  - Working Student
+  - Intern
+
+  # -----------------------------------------------------------------------
+  # Catch-all
+  # -----------------------------------------------------------------------
+  - Other
+
+# -----------------------------------------------------------------------
+# Classification guidance (used in prompt construction)
+# -----------------------------------------------------------------------
+notes:
+  - "Use 'Other' for roles that don't fit any family (e.g. non-IT roles, unclear titles)."
+  - "Werkstudent / Working Student → family=Working Student, seniority=Intern."
+  - "Praktikant / Intern / Praktikum → family=Intern, seniority=Intern."
+  - "If title contains SAP, use SAP Consultant unless it's clearly a developer role."
+  - "Architecture roles (Architect, Architekt) → Software Architect or Solution Architect."
+  - "Lead or Principal in title → seniority=Lead or seniority=Principal."
+  - "(Senior) prefix counts: seniority=Senior."
+  - "(Junior) prefix counts: seniority=Junior."
+  - "Mobile = Android/iOS/Flutter/React Native/Kotlin/Swift roles."
+  - "Embedded = firmware, C/C++, RTOS, hardware-adjacent roles."
+  - "Security Engineer and Cyber Security → IT Security Engineer."
+  - "Test / QA / Testautomatisierung → QA Engineer."
+  - "BI Developer / BI Engineer → Business Intelligence Developer."
+  - "Scrum Master and Agile Coach map to Scrum Master / Agile Coach."
+  - "'Software Engineer' → Software Developer."
+  - "'Web Developer' → Frontend Developer (if clearly frontend) or Fullstack Developer."
+  - "'Enterprise Architect', 'IT Architect', 'Technical Architect' → Solution Architect."
+  - "'Systems Engineer' → Platform Engineer (cloud/infra) or System Administrator (ops)."
+  - "'Apprenticeship' → Intern."
+  - "'Product Analyst' → Business Analyst."
+  - "'BI Consultant' → Business Intelligence Developer."
+  - "'Analytics Engineer' → Data Engineer."
+  - "'Data Science' (noun form) → Data Scientist."
+  - "'Principal', 'Staff' are seniority levels, not job families — use the role family and set seniority accordingly."

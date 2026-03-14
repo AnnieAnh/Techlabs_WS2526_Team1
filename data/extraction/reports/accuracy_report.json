@@ -1,0 +1,146 @@
+{
+  "matched_rows": 241,
+  "total_pipeline_rows": 13187,
+  "total_golden_rows": 464,
+  "fields": {
+    "contract_type": {
+      "exact_match_pct": 100.0,
+      "correct": 241,
+      "total": 241,
+      "confusion_matrix": {
+        "Working Student": {
+          "Working Student": 4
+        },
+        "Full-time": {
+          "Full-time": 78
+        },
+        "Part-time": {
+          "Part-time": 10
+        },
+        "null": {
+          "null": 132
+        },
+        "Permanent": {
+          "Permanent": 14
+        },
+        "Internship": {
+          "Internship": 2
+        },
+        "Contract": {
+          "Contract": 1
+        }
+      },
+      "top_mismatches": []
+    },
+    "work_modality": {
+      "exact_match_pct": 98.3,
+      "correct": 237,
+      "total": 241,
+      "confusion_matrix": {
+        "Hybrid": {
+          "Hybrid": 97
+        },
+        "Remote": {
+          "Remote": 46,
+          "Hybrid": 2
+        },
+        "null": {
+          "null": 84,
+          "Hybrid": 2
+        },
+        "On-site": {
+          "On-site": 10
+        }
+      },
+      "top_mismatches": [
+        {
+          "true": "Remote",
+          "predicted": "Hybrid",
+          "count": 2
+        },
+        {
+          "true": "null",
+          "predicted": "Hybrid",
+          "count": 2
+        }
+      ]
+    },
+    "seniority": {
+      "exact_match_pct": 100.0,
+      "correct": 241,
+      "total": 241,
+      "confusion_matrix": {
+        "null": {
+          "null": 146
+        },
+        "Senior": {
+          "Senior": 67
+        },
+        "Lead": {
+          "Lead": 12
+        },
+        "Director": {
+          "Director": 1
+        },
+        "Junior": {
+          "Junior": 12
+        },
+        "C-Level": {
+          "C-Level": 3
+        }
+      },
+      "top_mismatches": []
+    },
+    "salary_min": {
+      "exact_match_pct": 100.0,
+      "within_10pct_pct": 100.0,
+      "both_null": 230,
+      "correct": 241,
+      "total": 241
+    },
+    "salary_max": {
+      "exact_match_pct": 100.0,
+      "within_10pct_pct": 100.0,
+      "both_null": 232,
+      "correct": 241,
+      "total": 241
+    },
+    "experience_years": {
+      "exact_match_pct": 100.0,
+      "within_10pct_pct": 100.0,
+      "both_null": 166,
+      "correct": 241,
+      "total": 241
+    },
+    "technical_skills": {
+      "avg_jaccard_pct": 78.9,
+      "avg_precision_pct": 87.0,
+      "avg_recall_pct": 88.5,
+      "total": 241
+    },
+    "soft_skills": {
+      "avg_jaccard_pct": 80.2,
+      "avg_precision_pct": 86.5,
+      "avg_recall_pct": 86.6,
+      "total": 241
+    },
+    "nice_to_have_skills": {
+      "avg_jaccard_pct": 78.4,
+      "avg_precision_pct": 81.2,
+      "avg_recall_pct": 81.8,
+      "total": 241
+    },
+    "benefits": {
+      "avg_jaccard_pct": 73.4,
+      "avg_precision_pct": 80.5,
+      "avg_recall_pct": 80.7,
+      "total": 241
+    },
+    "tasks": {
+      "avg_jaccard_pct": 48.8,
+      "avg_precision_pct": 59.7,
+      "avg_recall_pct": 59.7,
+      "total": 241
+    }
+  }
+}

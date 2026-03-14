@@ -1,0 +1,61 @@
+# German → English title term mappings.
+# Applied with word-boundary awareness, longest match first.
+# Keys are German terms; values are English replacements.
+
+# -----------------------------------------------------------------------
+# Compound terms (must come before their components)
+# -----------------------------------------------------------------------
+Softwareentwickler: Software Developer
+Softwareentwicklerin: Software Developer
+Webentwickler: Web Developer
+Webentwicklerin: Web Developer
+Fachinformatiker: IT Specialist
+Fachinformatikerin: IT Specialist
+Systemadministrator: System Administrator
+Systemadministratorin: System Administrator
+Netzwerkadministrator: Network Administrator
+Netzwerkadministratorin: Network Administrator
+Datenbankadministrator: Database Administrator
+Datenbankadministratorin: Database Administrator
+Projektingenieur: Project Engineer
+Projektingenieurin: Project Engineer
+Projektleiter: Project Manager
+Projektleiterin: Project Manager
+Abteilungsleiter: Department Manager
+Abteilungsleiterin: Department Manager
+Teamleiter: Team Lead
+Teamleiterin: Team Lead
+Gruppenleiter: Group Lead
+Gruppenleiterin: Group Lead
+Auszubildende: Apprentice
+Auszubildender: Apprentice
+
+# -----------------------------------------------------------------------
+# Single terms
+# -----------------------------------------------------------------------
+Entwickler: Developer
+Entwicklerin: Developer
+Ingenieur: Engineer
+Ingenieurin: Engineer
+Architekt: Architect
+Architektin: Architect
+Berater: Consultant
+Beraterin: Consultant
+Leiter: Lead
+Leiterin: Lead
+Werkstudent: Working Student
+Werkstudentin: Working Student
+Praktikant: Intern
+Praktikantin: Intern
+Informatiker: Computer Scientist
+Informatikerin: Computer Scientist
+Analytiker: Analyst
+Analytikerin: Analyst
+Wissenschaftler: Scientist
+Wissenschaftlerin: Scientist
+Forscher: Researcher
+Forscherin: Researcher
+Tester: Tester
+Testerin: Tester
+Designer: Designer
+Designerin: Designer

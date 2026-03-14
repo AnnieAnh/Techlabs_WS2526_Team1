@@ -1,0 +1,32 @@
+[
+  {
+    "row_id": "658b3ab9b7f1",
+    "error": "[658b3ab9b7f1] All parse strategies failed",
+    "raw_text": "```json\n{\n    \"technical_skills\": [\n        {\"name\": \"C#\", \"source\": \"C / .NET\"},\n        {\".NET\", \"source\": \"C / .NET\"},\n        {\"name\": \"ASP.NET Core\", \"source\": \"ASP.NET Core\"},\n        {\"name\": \"WPF\", \"source\": \"WPF\"},\n        {\"name\": \"MVVM Pattern\", \"source\": \"MVVM -Pattern\"},\n        {\"name\": \"REST APIs\", \"source\": \"REST APIs\"},\n        {\"name\": \"OData\", \"source\": \"OData\"},\n        {\"name\": \".NET MAUI\", \"source\": \".NET MAUI\"},\n        {\"name\": \"Microsoft SQL Server\", \"source\": \"Microsoft",
+    "failure_type": "parse_failed"
+  },
+  {
+    "row_id": "4139e08f92f3",
+    "error": "[4139e08f92f3] All parse strategies failed",
+    "raw_text": "```json\n{\n    \"technical_skills\": [\n        {\"name\": \"C#\", \"source\": \"C /.NET\"},\n        {\".NET\", \"source\": \"C /.NET\"},\n        {\"name\": \"JavaScript\", \"source\": \"JavaScript/TypeScript\"},\n        {\"name\": \"TypeScript\", \"source\": \"JavaScript/TypeScript\"},\n        {\"name\": \"React\", \"source\": \"React\"},\n        {\"name\": \"Web Applications\", \"source\": \"Entwicklung von Webanwendungen\"},\n        {\"name\": \"API Integration\", \"source\": \"API -Integrationen\"},\n        {\"name\": \"OpenAI API\", \"source\": \"OpenAI\"",
+    "failure_type": "parse_failed"
+  },
+  {
+    "row_id": "a9d47b1ce28b",
+    "error": "[a9d47b1ce28b] All parse strategies failed",
+    "raw_text": "```json\n{\n    \"technical_skills\": [\n        {\"name\": \"Product Lifecycle Management (PLM)\", \"source\": \"Product Lifecycle Management (PLM)\"},\n        {\"name\": \"System Life Cycle Management (SLCM)\", \"source\": \"System Life Cyle Management (SLCM)\"},\n        {\"name\": \"Cloud\", \"source\": \"Cloud\"},\n        {\"name\": \"Scientific Computing\", \"source\": \"Scientific Computing\"},\n        {\"name\": \"Java\", \"source\": \"Java\"},\n        {\"name\": \"JavaScript\", \"source\": \"Javascript\"},\n        {\"name\": \"C++\", \"source\":",
+    "failure_type": "parse_failed"
+  },
+  {
+    "row_id": "e49ac21048b8",
+    "error": "[e49ac21048b8] All parse strategies failed",
+    "raw_text": "```json\n{\n    \"technical_skills\": [\n        {\"name\": \"C#\", \"source\": \"C / .NET\"},\n        {\".NET\", \"source\": \"C / .NET\"},\n        {\"name\": \"SQL\", \"source\": \"SQL und relationalen Datenbanksystemen\"},\n        {\"name\": \"SQL Server\", \"source\": \"SQL Server\"},\n        {\"name\": \"Relational Databases\", \"source\": \"relationalen Datenbanken\"},\n        {\"name\": \"ORM\", \"source\": \"ORM -Technologien\"},\n        {\"name\": \"Entity Framework\", \"source\": \"Entity Framework\"},\n        {\"name\": \"Dapper\", \"source\": \"Dap",
+    "failure_type": "parse_failed"
+  },
+  {
+    "row_id": "b7a1f311dd10",
+    "error": "[b7a1f311dd10] All parse strategies failed",
+    "raw_text": "```json\n{\n    \"technical_skills\": [\n        {\"name\": \"C#\", \"source\": \"C / .NET\"},\n        {\".NET\", \"source\": \"C / .NET\"},\n        {\"name\": \"ASP.NET Core\", \"source\": \"ASP.NET Core\"},\n        {\"name\": \"WPF\", \"source\": \"WPF\"},\n        {\"name\": \"MVVM Pattern\", \"source\": \"MVVM -Pattern\"},\n        {\"name\": \"REST APIs\", \"source\": \"REST APIs\"},\n        {\"name\": \"OData\", \"source\": \"OData\"},\n        {\"name\": \".NET MAUI\", \"source\": \".NET MAUI\"},\n        {\"name\": \"Microsoft SQL Server\", \"source\": \"Microsoft",
+    "failure_type": "parse_failed"
+  }
+]

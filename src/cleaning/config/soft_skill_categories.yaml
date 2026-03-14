@@ -1,0 +1,46 @@
+# Soft skill category → list of matching keywords (case-insensitive substring match).
+# Used by: cleaning/soft_skill_normalizer.py
+
+categories:
+  Communication:
+    - kommunikation
+    - communication
+    - präsentation
+    - presentation
+    - verhandlung
+  Teamwork:
+    - team
+    - zusammenarbeit
+    - collaboration
+    - kooperation
+  Problem Solving:
+    - problemlösung
+    - problem solving
+    - analytisch
+    - analytical
+  Initiative:
+    - initiative
+    - eigenverantwortlich
+    - selbständig
+    - proaktiv
+    - proactive
+  Structured Work:
+    - strukturiert
+    - structured
+    - organisiert
+    - organized
+    - sorgfältig
+  Leadership:
+    - führung
+    - leadership
+    - mentoring
+    - coaching
+  Adaptability:
+    - flexibel
+    - flexible
+    - anpassungsfähig
+    - adaptable
+  Customer Focus:
+    - kundenorientiert
+    - customer
+    - service

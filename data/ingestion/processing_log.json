@@ -1,0 +1,8 @@
+{
+  "run_timestamp": "2026-03-13T18:04:57.851662",
+  "summary": {
+    "final_output_rows": 22526,
+    "reference_date": "2026-02-15T00:00:00",
+    "output_file": "combined_jobs.csv"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "total_rows": 22526,
+  "valid_rows": 22461,
+  "flagged_counts": {
+    "privacy_wall": 9,
+    "date_anomaly": 46,
+    "short_description": 10
+  },
+  "excluded_privacy_wall": 9,
+  "description_length_stats": {
+    "min": 78,
+    "max": 17347,
+    "mean": 3834.7,
+    "median": 3562.0
+  },
+  "company_count": 7206
+}

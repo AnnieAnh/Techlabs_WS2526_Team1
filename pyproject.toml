@@ -1,0 +1,71 @@
+[tool.poetry]
+name = "german-it-jobs"
+version = "0.1.0"
+description = "End-to-end German IT job market analysis pipeline"
+packages = [
+    { include = "ingestion", from = "src" },
+    { include = "extraction", from = "src" },
+    { include = "cleaning", from = "src" },
+    { include = "analysis", from = "src" },
+    { include = "shared", from = "src" },
+    { include = "steps", from = "src" },
+    { include = "pipeline_state.py", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.14"
+# shared across all components
+pandas = "^3.0.1"
+pyyaml = "^6.0"
+# extractors
+tqdm = "^4.67"
+openai = "^2.21"
+jsonschema = "^4.26"
+openpyxl = "^3.1"
+python-dotenv = "^1.2"
+datasketch = "^1.9"
+# analysis
+matplotlib = "^3.10"
+seaborn = "^0.13"
+jupyter = "^1.1"
+notebook = "^7.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^9.0"
+ruff = "^0.15"
+mypy = ">=1.0"
+pandera = "^0.23"
+pandas-stubs = ">=2.0"
+types-pyyaml = ">=6.0"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true
+disable_error_code = ["import-untyped"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 100
+src = ["src"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/extraction/test_location_parser.py" = ["E501"]
+"tests/extraction/test_title_normalizer.py" = ["E501"]
+"tests/extraction/test_smoke.py"           = ["E501"]
+"tests/integration/test_steps_smoke.py"    = ["E501"]
+"src/ingestion/*.py"                       = ["E402"]
+"tests/cleaning/*.py"                      = ["E402"]
+# Notebooks: cross-cell imports appear unused to ruff (F401); import order
+# differs from .py convention (I001); long analysis lines acceptable (E501);
+# mid-cell imports are common notebook style (E402)
+"notebooks/*.ipynb"                        = ["F401", "I001", "E501", "E402"]

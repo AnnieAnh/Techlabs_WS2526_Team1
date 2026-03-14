@@ -1,0 +1,45 @@
+# Ingestion pipeline settings
+
+# Reference date for parsing relative dates ("2 days ago", "Yesterday", etc.)
+# Pin this to the scrape date so re-runs are deterministic.
+scrape_date: "2026-02-15"
+
+# Paths (relative to the repository root)
+paths:
+  raw_data_dir: "data/raw"
+  output_dir: "data/ingestion"
+
+# Source file configurations
+sources:
+  - name: "Indeed"
+    file: "Raw_Jobs_INDEED.csv"
+    site_label: "indeed"
+    column_mapping:
+      title: "title"
+      job_url: "job_url"
+      company_name: "company"
+      location: "location"
+      date_posted: "date_posted"
+      description: "description"
+
+  - name: "LinkedIn #1"
+    file: "Raw_Jobs_LINKEDIN_1.csv"
+    site_label: "linkedin"
+    column_mapping:
+      title: "title"
+      job_url: "job_url"
+      company_name: "company"
+      location: "location"
+      date_posted: "posted_date"
+      description: "description"
+
+  - name: "LinkedIn #2"
+    file: "Raw_Jobs_LINKEDIN_2.csv"
+    site_label: "linkedin"
+    column_mapping:
+      title: "title"
+      job_url: "link"
+      company_name: "company"
+      location: "location_job"
+      date_posted: "time"
+      description: "description"

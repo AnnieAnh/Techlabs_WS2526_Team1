@@ -1,0 +1,191 @@
+# Skill alias map: alias -> canonical name
+# Usage: any alias found in extracted skills is replaced with the canonical form.
+# Load with load_skill_aliases() in extraction/validators/skills.py.
+# Keys: alias (lowercased when loaded). Values: canonical form.
+
+# Programming languages
+Golang: Go
+golang: Go
+Typescript: TypeScript
+typescript: TypeScript
+TS: TypeScript
+Python3: Python
+python3: Python
+"Python 3": Python
+Cpp: C++
+cpp: C++
+"C plus plus": C++
+
+# JavaScript ecosystem
+JS: JavaScript
+Javascript: JavaScript
+javascript: JavaScript
+ECMAScript: JavaScript
+React.js: React
+ReactJS: React
+"React JS": React
+react: React
+Next.js: Next.js
+NextJS: Next.js
+"Next JS": Next.js
+Node: Node.js
+NodeJS: Node.js
+"Node JS": Node.js
+node: Node.js
+Express: Express.js
+ExpressJS: Express.js
+Vue: Vue.js
+VueJS: Vue.js
+"Vue JS": Vue.js
+AngularJS: Angular
+"Angular JS": Angular
+NestJS: NestJS
+NuxtJS: Nuxt.js
+"Nuxt JS": Nuxt.js
+
+# Container / orchestration
+K8s: Kubernetes
+k8s: Kubernetes
+kubernetes: Kubernetes
+Docker Compose: Docker
+docker: Docker
+
+# Databases
+Postgres: PostgreSQL
+postgres: PostgreSQL
+postgresql: PostgreSQL
+PSQL: PostgreSQL
+MySQL: MySQL
+mysql: MySQL
+Mongo: MongoDB
+mongo: MongoDB
+mongodb: MongoDB
+MSSQL: SQL Server
+"MS SQL": SQL Server
+"SQL Server": SQL Server
+MariaDb: MariaDB
+mariadb: MariaDB
+Redis: Redis
+redis: Redis
+DynamoDB: DynamoDB
+dynamodb: DynamoDB
+Cassandra: Cassandra
+cassandra: Cassandra
+Neo4J: Neo4j
+neo4j: Neo4j
+
+# Cloud platforms
+"Amazon Web Services": AWS
+"Amazon AWS": AWS
+aws: AWS
+"Microsoft Azure": Azure
+azure: Azure
+"Google Cloud": GCP
+"Google Cloud Platform": GCP
+gcp: GCP
+
+# DevOps / process
+"CI CD": CI/CD
+"CI/CD": CI/CD
+"Continuous Integration": CI/CD
+"Continuous Deployment": CI/CD
+"Continuous Delivery": CI/CD
+Gitlab CI: GitLab CI
+Github Actions: GitHub Actions
+"github actions": GitHub Actions
+Terraform: Terraform
+terraform: Terraform
+Ansible: Ansible
+ansible: Ansible
+
+# APIs
+"REST API": REST
+RESTful: REST
+"RESTful API": REST
+GraphQl: GraphQL
+graphql: GraphQL
+GRPC: gRPC
+grpc: gRPC
+"g RPC": gRPC
+
+# .NET / C#
+DotNet: .NET
+dotnet: .NET
+"dot net": .NET
+".NET Core": .NET
+"ASP.NET": .NET
+CSharp: C#
+"C Sharp": C#
+"c#": C#
+
+# Data / ML
+"Apache Kafka": Kafka
+kafka: Kafka
+"Apache Spark": Spark
+spark: Spark
+"Apache Airflow": Airflow
+airflow: Airflow
+Tensorflow: TensorFlow
+tensorflow: TensorFlow
+TF: TensorFlow
+Pytorch: PyTorch
+pytorch: PyTorch
+sklearn: scikit-learn
+"Scikit-learn": scikit-learn
+"Scikit Learn": scikit-learn
+"scikit learn": scikit-learn
+Pandas: pandas
+Numpy: NumPy
+numpy: NumPy
+Scipy: SciPy
+scipy: SciPy
+Matplotlib: matplotlib
+matplotlib: matplotlib
+"Apache Flink": Flink
+Hadoop: Hadoop
+hadoop: Hadoop
+"Apache Hadoop": Hadoop
+
+# Search / messaging
+"Elastic Search": Elasticsearch
+elasticsearch: Elasticsearch
+"Rabbit MQ": RabbitMQ
+rabbitmq: RabbitMQ
+
+# IaC / config management
+"Cloud Formation": CloudFormation
+cloudformation: CloudFormation
+Pulumi: Pulumi
+pulumi: Pulumi
+
+# Monitoring / observability
+Grafana: Grafana
+grafana: Grafana
+Prometheus: Prometheus
+prometheus: Prometheus
+Datadog: Datadog
+datadog: Datadog
+Splunk: Splunk
+splunk: Splunk
+ELK: ELK Stack
+"ELK Stack": ELK Stack
+
+# Version control
+Git: Git
+git: Git
+Github: GitHub
+github: GitHub
+Gitlab: GitLab
+gitlab: GitLab
+Bitbucket: Bitbucket
+bitbucket: Bitbucket
+
+# Project management / methodology
+Jira: Jira
+jira: Jira
+Confluence: Confluence
+confluence: Confluence
+Scrum: Scrum
+scrum: Scrum
+Kanban: Kanban
+kanban: Kanban

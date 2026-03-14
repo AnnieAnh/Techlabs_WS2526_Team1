@@ -1,0 +1,443 @@
+{
+  "summary": {
+    "total_rows": 13187,
+    "extraction_coverage_pct": 100.0,
+    "truncation_rate": 0.0,
+    "truncated_descriptions": 0
+  },
+  "data_fingerprint": {
+    "input_files": {
+      "combined_jobs.csv": "db764461a62b9c90"
+    },
+    "config_hash": "c05eb825cdbbead8",
+    "timestamp": "2026-03-14T07:08:09.142148+00:00"
+  },
+  "field_coverage": {
+    "benefits": 90.1,
+    "benefits_evidence": 90.1,
+    "job_family": 100.0,
+    "job_summary": 99.9,
+    "nice_to_h_have_skills": 0.0,
+    "nice_to_have_skills": 46.9,
+    "nice_to_have_skills_evidence": 46.9,
+    "soft_skills": 93.7,
+    "tasks": 99.7,
+    "tasks_evidence": 99.7,
+    "technical_skills": 99.6,
+    "technical_skills_evidence": 99.6
+  },
+  "list_truncation_summary": {
+    "tasks": 263
+  },
+  "distributions": {
+    "contract_type": {
+      "null": 12954,
+      "Full-time": 3957,
+      "Permanent": 1059,
+      "Part-time": 822,
+      "Working Student": 115,
+      "Contract": 98,
+      "Internship": 84,
+      "Freelance": 59
+    },
+    "work_modality": {
+      "null": 7651,
+      "Hybrid": 5978,
+      "Remote": 4660,
+      "On-site": 859
+    },
+    "seniority": {
+      "null": 13214,
+      "Senior": 4220,
+      "Lead": 896,
+      "Junior": 751,
+      "Director": 42,
+      "C-Level": 25
+    }
+  },
+  "top_skills": [
+    {
+      "skill": "Python",
+      "count": 2886
+    },
+    {
+      "skill": "CI/CD",
+      "count": 2499
+    },
+    {
+      "skill": "Azure",
+      "count": 2028
+    },
+    {
+      "skill": "AWS",
+      "count": 1902
+    },
+    {
+      "skill": "Java",
+      "count": 1861
+    },
+    {
+      "skill": "Kubernetes",
+      "count": 1853
+    },
+    {
+      "skill": "SQL",
+      "count": 1772
+    },
+    {
+      "skill": "Docker",
+      "count": 1678
+    },
+    {
+      "skill": "JavaScript",
+      "count": 1383
+    },
+    {
+      "skill": "Linux",
+      "count": 1368
+    },
+    {
+      "skill": "Git",
+      "count": 1309
+    },
+    {
+      "skill": "TypeScript",
+      "count": 1285
+    },
+    {
+      "skill": "GCP",
+      "count": 1195
+    },
+    {
+      "skill": "Software Development",
+      "count": 1123
+    },
+    {
+      "skill": "React",
+      "count": 1117
+    },
+    {
+      "skill": "Monitoring",
+      "count": 1040
+    },
+    {
+      "skill": "Terraform",
+      "count": 1003
+    },
+    {
+      "skill": "Software Architecture",
+      "count": 963
+    },
+    {
+      "skill": "DevOps",
+      "count": 962
+    },
+    {
+      "skill": "Microservices",
+      "count": 929
+    },
+    {
+      "skill": "Infrastructure as Code",
+      "count": 826
+    },
+    {
+      "skill": "Machine Learning",
+      "count": 817
+    },
+    {
+      "skill": "Automation",
+      "count": 804
+    },
+    {
+      "skill": "Angular",
+      "count": 793
+    },
+    {
+      "skill": "PostgreSQL",
+      "count": 771
+    },
+    {
+      "skill": "Data Modeling",
+      "count": 736
+    },
+    {
+      "skill": "IT Security",
+      "count": 676
+    },
+    {
+      "skill": "SAP S/4HANA",
+      "count": 651
+    },
+    {
+      "skill": "C++",
+      "count": 628
+    },
+    {
+      "skill": "Virtualization",
+      "count": 612
+    },
+    {
+      "skill": "CSS",
+      "count": 599
+    },
+    {
+      "skill": "Cloud",
+      "count": 599
+    },
+    {
+      "skill": "Spring Boot",
+      "count": 585
+    },
+    {
+      "skill": "C",
+      "count": 579
+    },
+    {
+      "skill": "C#",
+      "count": 578
+    },
+    {
+      "skill": "REST APIs",
+      "count": 572
+    },
+    {
+      "skill": ".NET",
+      "count": 571
+    },
+    {
+      "skill": "APIs",
+      "count": 567
+    },
+    {
+      "skill": "Node.js",
+      "count": 562
+    },
+    {
+      "skill": "SAP",
+      "count": 557
+    },
+    {
+      "skill": "Networking",
+      "count": 549
+    },
+    {
+      "skill": "Security",
+      "count": 548
+    },
+    {
+      "skill": "HTML",
+      "count": 541
+    },
+    {
+      "skill": "Scrum",
+      "count": 539
+    },
+    {
+      "skill": "Go",
+      "count": 536
+    },
+    {
+      "skill": "Data Analysis",
+      "count": 532
+    },
+    {
+      "skill": "AI",
+      "count": 526
+    },
+    {
+      "skill": "Windows Server",
+      "count": 506
+    },
+    {
+      "skill": "Vue.js",
+      "count": 502
+    },
+    {
+      "skill": "Testing",
+      "count": 497
+    }
+  ],
+  "top_soft_skills": [
+    {
+      "skill": "communication",
+      "count": 5487
+    },
+    {
+      "skill": "teamwork",
+      "count": 4373
+    },
+    {
+      "skill": "collaboration",
+      "count": 3100
+    },
+    {
+      "skill": "self-reliance",
+      "count": 2649
+    },
+    {
+      "skill": "analytical thinking",
+      "count": 2288
+    },
+    {
+      "skill": "problem-solving",
+      "count": 1626
+    },
+    {
+      "skill": "communication skills",
+      "count": 1325
+    },
+    {
+      "skill": "team spirit",
+      "count": 1321
+    },
+    {
+      "skill": "responsibility",
+      "count": 1240
+    },
+    {
+      "skill": "structured work approach",
+      "count": 952
+    },
+    {
+      "skill": "initiative",
+      "count": 949
+    },
+    {
+      "skill": "solution-oriented",
+      "count": 910
+    },
+    {
+      "skill": "leadership",
+      "count": 872
+    },
+    {
+      "skill": "curiosity",
+      "count": 801
+    },
+    {
+      "skill": "customer orientation",
+      "count": 786
+    },
+    {
+      "skill": "mentoring",
+      "count": 756
+    },
+    {
+      "skill": "willingness to learn",
+      "count": 717
+    },
+    {
+      "skill": "respectful interaction",
+      "count": 686
+    },
+    {
+      "skill": "creativity",
+      "count": 659
+    },
+    {
+      "skill": "independence",
+      "count": 654
+    }
+  ],
+  "hallucination_summary": {
+    "total_skill_flags": 756,
+    "high_hallucination_rows": 29,
+    "top_falsely_flagged": {
+      "Network Administration": 61,
+      "AWS": 27,
+      "C#": 19,
+      "ABSL": 17,
+      "Software Development": 11,
+      "Software Architecture": 11,
+      "Data Management": 11,
+      "Data Analysis": 10,
+      "GCP": 10,
+      "Data Quality": 10
+    }
+  },
+  "benefit_coverage": {
+    "rows_with_benefits_pct": 90.1,
+    "rows_with_benefit_categories_pct": 0.0
+  },
+  "salary_stats": {
+    "salary_min": {
+      "count": 0
+    },
+    "salary_max": {
+      "count": 0
+    },
+    "rows_with_salary": 0,
+    "coverage_pct": 0.0
+  },
+  "location_stats": {
+    "top_cities": {
+      "Berlin": 1947,
+      "Hamburg": 1076,
+      "München": 946,
+      "Frankfurt am Main": 659,
+      "Stuttgart": 547,
+      "Düsseldorf": 476,
+      "Dresden": 446,
+      "Munich": 436,
+      "Leipzig": 410,
+      "Köln": 354,
+      "Karlsruhe": 353,
+      "Bremen": 347,
+      "Hannover": 346,
+      "Cologne": 300,
+      "Frankfurt": 287,
+      "Münster": 263,
+      "Dortmund": 262,
+      "Ulm": 250,
+      "Augsburg": 233,
+      "Aachen": 230
+    },
+    "na_city_pct": 6.1,
+    "top_states": {
+      "North Rhine-Westphalia": 3568,
+      "Bavaria": 3126,
+      "Baden-Württemberg": 2788,
+      "Berlin": 1995,
+      "Hesse": 1552,
+      "Hamburg": 1082,
+      "Saxony": 994,
+      "Lower Saxony": 758,
+      "Schleswig-Holstein": 415,
+      "Rhineland-Palatinate": 371,
+      "Bremen": 352,
+      "Thuringia": 324,
+      "Saarland": 244,
+      "Mecklenburg-West Pomerania": 235,
+      "Saxony-Anhalt": 201,
+      "Brandenburg": 93
+    },
+    "country_distribution": {
+      "Germany": 19148
+    }
+  },
+  "validation_summary": {
+    "rows_with_flags": 1596,
+    "rows_clean": 11591,
+    "clean_pct": 87.9,
+    "flags_by_rule": {
+      "skill_not_in_description": 756,
+      "remote_but_onsite_text": 567,
+      "list_truncated": 263,
+      "intern_contract_mismatch": 126,
+      "no_skills_long_description": 39,
+      "high_hallucination_rate": 29,
+      "experience_unrealistic": 25,
+      "below_floor": 6
+    },
+    "flags_by_severity": {
+      "info": 302,
+      "warning": 1480,
+      "error": 29
+    }
+  },
+  "quality_concerns": [
+    "nice_to_h_have_skills: 0.0% coverage (below 50% threshold)",
+    "nice_to_have_skills: 46.9% coverage (below 50% threshold)",
+    "nice_to_have_skills_evidence: 46.9% coverage (below 50% threshold)"
+  ]
+}

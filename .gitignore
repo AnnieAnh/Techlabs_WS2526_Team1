@@ -1,0 +1,48 @@
+# Python
+*.py[cod]
+*.pyo
+__pycache__/
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.env
+.env.*
+.venv/
+venv/
+env/
+
+# Data outputs (large, generated — do not track)
+# Use specific path patterns, NOT a blanket *.csv (fixture/config CSVs must be trackable)
+data/extraction/deduped/
+data/extraction/extracted/*.csv
+data/extraction/batches/
+data/extraction/review/
+data/extraction/validation/golden_set.csv
+data/extraction/pipeline_state.db
+
+# Pipeline state
+
+
+# DO NOT add poetry.lock to .gitignore — it must be committed
+
+# Logs
+
+# Tools & caches
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+
+# IDEs
+.vscode/
+.idea/
+.idea
+*.sublime-workspace
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db

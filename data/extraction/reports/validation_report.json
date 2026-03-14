@@ -1,0 +1,26 @@
+{
+  "total_validated": 13187,
+  "rows_with_flags": 1596,
+  "rows_clean": 11591,
+  "clean_pct": 87.9,
+  "flags_by_rule": {
+    "skill_not_in_description": 756,
+    "high_hallucination_rate": 29,
+    "remote_but_onsite_text": 567,
+    "intern_contract_mismatch": 126,
+    "no_skills_long_description": 39,
+    "experience_unrealistic": 25,
+    "below_floor": 6,
+    "list_truncated": 263
+  },
+  "flags_by_severity": {
+    "warning": 1480,
+    "error": 29,
+    "info": 302
+  },
+  "skill_normalisation": {
+    "aliases_resolved": 3630,
+    "deduped": 390,
+    "contradictions_resolved": 5295
+  }
+}

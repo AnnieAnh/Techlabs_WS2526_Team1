@@ -1,0 +1,11 @@
+# City name aliases: English/variant form → German canonical form.
+# Frankfurt is handled separately (state-aware) in cleaning/location_cleaner.py.
+
+aliases:
+  Munich: München
+  Cologne: Köln
+  Nuremberg: Nürnberg
+  Hanover: Hannover
+  Brunswick: Braunschweig
+  Aix-la-Chapelle: Aachen
+  Garching bei München: Garching b. München
