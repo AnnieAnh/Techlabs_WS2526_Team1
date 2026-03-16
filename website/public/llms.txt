@@ -1,0 +1,38 @@
+# IT in DE — German IT Job Market Dashboard
+
+> Interactive dashboard analyzing 19,000+ German IT job postings from LinkedIn and Indeed.
+
+## About
+
+This site provides data-driven analysis of the German IT job market. All data comes from ~19,000 real job postings scraped from LinkedIn and Indeed in late 2025, covering 42 IT job families across all 16 German federal states.
+
+## Key Facts
+
+- **19,000+** job postings analyzed
+- **42** IT job families (Frontend, Backend, Fullstack, Data Scientist, Data Engineer, DevOps, etc.)
+- **1,100+** cities covered
+- **16** German federal states mapped
+- **Top skills**: Python, CI/CD, Azure, Docker, Kubernetes, JavaScript, SQL, AWS, Java, TypeScript
+- **~24%** of postings offer remote work
+- **~2%** of postings include salary data (salary transparency is low in Germany)
+- **Data sources**: LinkedIn and Indeed
+
+## Pages
+
+- `/` — Market overview: total jobs, job family distribution, monthly trends, top cities
+- `/skills` — Skills demand: top 25 skills, skills-by-role heatmap, co-occurrence matrix, required vs nice-to-have
+- `/salary` — Salary analysis by role, seniority, and city (limited to 2% of postings with salary data)
+- `/location` — Geographic distribution: interactive Germany map, jobs per state, modality by region
+- `/remote` — Remote work analysis: modality split by role and seniority
+- `/seniority` — Seniority levels and experience distribution by role
+- `/benefits` — Benefit categories by role (time off, flexible hours, retirement, health, etc.)
+- `/languages` — Language requirements: German necessity by role, CEFR levels, English-only roles
+- `/education` — Education levels and soft skill categories by role
+- `/companies` — Top hiring companies and their role diversity
+- `/roles` — Deep dives into 6 target roles with skill progression
+- `/personas` — Job seeker guide with 4 persona profiles
+- `/explore` — Advanced tools: salary estimator, no-German job finder, skill combos, role comparison
+
+## Contact
+
+GitHub: https://github.com/iebo13/extractors
