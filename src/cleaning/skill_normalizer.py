@@ -30,7 +30,8 @@ def _load_skill_variants() -> dict[str, list[str]]:
 
 SKILL_VARIANTS: dict[str, list[str]] = _load_skill_variants()
 
-# Bare-C regex — matches uppercase 'C' NOT followed/preceded by alphanumeric, '+', '#', '/'
+# Bare-C regex — matches uppercase 'C' NOT preceded by alphanumeric,
+# and NOT followed by alphanumeric, '+', '#', '/'
 # Case-sensitive: only uppercase C indicates the C programming language.
 _CPP_WORD_RE = re.compile(r"(?<![a-zA-Z0-9])C(?![a-zA-Z0-9+#/])")
 
@@ -151,6 +152,15 @@ def fix_cpp_inference(row: pd.Series) -> pd.Series:
                     replacement if (isinstance(s, str) and s.lower() == "c++") else s
                     for s in skills
                 ]
+                # deduplicate preserving order (replacement may collide with existing entry)
+                seen: set[str] = set()
+                deduped = []
+                for s in skills:
+                    key = s.lower() if isinstance(s, str) else s
+                    if key not in seen:
+                        seen.add(key)
+                        deduped.append(s)
+                skills = deduped
             return json.dumps(skills, ensure_ascii=False)
         except (json.JSONDecodeError, TypeError):
             return str(json_str)

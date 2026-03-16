@@ -19,6 +19,7 @@ logs/
 # Data outputs (large, generated — do not track)
 data/extraction/
 data/ingestion/
+data/cleaning/cleaned_jobs.csv
 
 
 # Tools & caches

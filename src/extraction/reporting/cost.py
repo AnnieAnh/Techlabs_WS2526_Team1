@@ -29,7 +29,7 @@ def build_cost_report(
 
     Args:
         extraction_stats: Dict with keys: calls (int), input_tokens (int),
-            output_tokens (int), retries (int), failed (int).
+            output_tokens (int).
         title_stats: Optional dict with keys: calls (int), input_tokens (int),
             output_tokens (int). Pass None if title classification was not run.
         cfg: Pipeline config (reads extraction model name for reference).

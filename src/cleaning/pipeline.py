@@ -17,6 +17,7 @@ Dual correction pipeline note:
 """
 
 import logging
+import shutil
 from pathlib import Path
 
 import pandas as pd
@@ -38,7 +39,6 @@ from cleaning.output_formatter import (
     assert_invariants,
     drop_columns_and_rows,
     reorder_columns,
-    to_analysis_ready,
 )
 from cleaning.quality_flagger import (
     compute_skill_frequencies,
@@ -86,7 +86,7 @@ def clean(df: pd.DataFrame, standalone: bool = False) -> pd.DataFrame:
     df = standardize_missing_values(df)
     logger.info("Missing values standardized")
 
-    # Numeric columns to int-or-None; salary outlier nulling
+    # Numeric columns to int-or-None; salary outlier nulling; experience capping
     df = fix_numeric_columns(df)
     logger.info("Numeric columns fixed")
 
@@ -133,7 +133,7 @@ def enrich(
     """Apply feature engineering / derived columns.
 
     Covers: benefit categorization, soft skill normalization, description quality
-    flagging, post-clean skill re-verification, and skill frequency labeling.
+    flagging, post-clean skill re-verification, and skill frequency computation.
 
     Args:
         df: Cleaned DataFrame (output of clean()).
@@ -201,7 +201,7 @@ def clean_enriched(
 
     # Standalone mode: run all normalization steps as safety net
     df = clean(df, standalone=True)
-    df = enrich(df, freq_path=output_path.parent / "skill_frequencies.csv", standalone=True)
+    df = enrich(df, freq_path=None, standalone=True)
 
     # Drop unneeded columns and parse-failure rows
     df = drop_columns_and_rows(df, valid_families)
@@ -232,19 +232,9 @@ def clean_enriched(
         raise
 
     # Promote debug file to final output (full QA version)
-    debug_path.rename(output_path)
+    # Use shutil.move instead of Path.rename to handle cross-device moves
+    shutil.move(str(debug_path), str(output_path))
     logger.info("Stage clean_enriched complete: %d rows written to %s", len(df), output_path)
-
-    # Write lean analysis-ready version (no validation_flags, description_quality, description)
-    analysis_df = to_analysis_ready(df)
-    analysis_path = output_path.with_name("analysis_ready.csv")
-    write_csv_safe(analysis_df, analysis_path)
-    logger.info(
-        "Analysis-ready output: %d rows × %d columns written to %s",
-        len(analysis_df),
-        len(analysis_df.columns),
-        analysis_path,
-    )
 
     return df
 

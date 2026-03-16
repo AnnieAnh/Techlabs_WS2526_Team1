@@ -1,6 +1,6 @@
 # Skill alias map: alias -> canonical name
 # Usage: any alias found in extracted skills is replaced with the canonical form.
-# Load with load_skill_aliases() in extraction/validators/skills.py.
+# Loaded by load_skill_aliases() in extraction/validators/skills.py (called from runner.py).
 # Keys: alias (lowercased when loaded). Values: canonical form.
 
 # Programming languages

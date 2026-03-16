@@ -220,8 +220,7 @@ def validate_step_output(
         The validated DataFrame (may be a copy if pandera modifies it).
 
     Raises:
-        pa.errors.SchemaError: If any constraint is violated.
-        pa.errors.SchemaErrors: If lazy=True and multiple errors were found.
+        pa.errors.SchemaErrors: If any constraint is violated (uses lazy validation).
     """
     try:
         return schema.validate(df, lazy=True)

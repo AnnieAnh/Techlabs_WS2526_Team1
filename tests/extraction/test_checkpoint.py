@@ -1,4 +1,4 @@
-"""Tests for extraction/checkpoint.py — covers all 4 critical scenarios from BACKLOG.md."""
+"""Tests for extraction/checkpoint.py — covers all 4 critical scenarios."""
 
 import pytest
 

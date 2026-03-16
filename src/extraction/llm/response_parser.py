@@ -7,10 +7,12 @@ Tries 4 strategies in order (first success wins):
   4. Extract between first { and last } → json.loads
 
 Post-parse:
+  - Fix known key typos (e.g. ``nice_to_h_have_skills`` → ``nice_to_have_skills``)
   - Validate against output_schema.json via jsonschema
   - Coerce fixable type errors:
       skills string → single-item array
-      tasks > 7 → truncated to 7
+      evidence arrays normalised to [{name, source}] dicts
+      tasks > max_tasks → truncated to max_tasks (default 7)
 """
 
 import json
@@ -27,9 +29,26 @@ logger = logging.getLogger("pipeline.response_parser")
 # Fields whose schema violations cause a hard parse failure (data=None, success=False).
 # Other schema errors are demoted to warnings so minor LLM formatting issues don't
 # discard otherwise-valid extractions.
-# NOTE: job_family was removed — unknown families are now handled by the remap in
-# cleaning/config/job_family_remap.yaml instead of causing a hard parse failure.
-_CRITICAL_FIELDS: frozenset[str] = frozenset()
+# Unknown families are handled by the remap in cleaning/config/job_family_remap.yaml
+# instead of causing a hard parse failure.
+_CRITICAL_FIELDS: frozenset[str] = frozenset({"technical_skills"})
+
+# Common LLM key typos → correct key. Applied before schema validation so that
+# otherwise-valid data isn't rejected due to a misspelled field name.
+_KEY_TYPOS: dict[str, str] = {
+    "nice_to_h_have_skills": "nice_to_have_skills",
+    "requred_skills": "required_skills",
+    "requried_skills": "required_skills",
+    "benifits": "benefits",
+    "seniority_leve": "seniority_level",
+    "techincal_skills": "technical_skills",
+    "tehnical_skills": "technical_skills",
+}
+
+
+def _fix_known_typos(data: dict) -> dict:
+    """Correct known LLM key typos in the parsed dict."""
+    return {_KEY_TYPOS.get(k, k): v for k, v in data.items()}
 
 STRATEGY_DIRECT = "direct"
 STRATEGY_STRIP_FENCES = "strip_fences"
@@ -315,7 +334,7 @@ def parse_response(
             strategy = STRATEGY_EXTRACT_BRACES
             logger.warning("%sNon-direct parse: extract_braces", prefix)
 
-    # Strategy 5: fail
+    # All strategies exhausted — fail
     if data is None:
         logger.error("%sParse failed — all strategies exhausted. Raw: %s...", prefix, text[:200])
         return ParseResult(
@@ -326,6 +345,9 @@ def parse_response(
         )
 
     logger.debug("%sParsed via %s", prefix, strategy)
+
+    # Fix known LLM key typos before validation
+    data = _fix_known_typos(data)
 
     # Coerce types
     warnings: list[str] = []

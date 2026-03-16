@@ -45,7 +45,7 @@ def validate_cross_fields(row: dict[str, Any]) -> list[ValidationFlag]:
         - 'data': dict with LLM-extracted fields
         - 'description': str (original job description)
         - 'title_cleaned': str (cleaned title)
-        - 'seniority_from_title': str (from title normalizer)
+        - 'seniority_from_title': str (from title normalizer, may be absent)
 
     Args:
         row: Combined row dict with extraction data and original metadata.
@@ -61,6 +61,10 @@ def validate_cross_fields(row: dict[str, Any]) -> list[ValidationFlag]:
     description = _to_str(row.get("description")).lower()
     seniority_from_title = _to_str(row.get("seniority_from_title")).lower()
 
+    # NOTE: the LLM schema does not include a "seniority" field (seniority
+    # is Tier 1, regex-extracted).  data.get("seniority") will return None,
+    # so Rules 1 and 3 below are currently inert.  Kept for forward-compat
+    # if the LLM prompt ever adds a seniority field.
     extracted_seniority = _to_str(data.get("seniority")).lower()
     contract_type = _to_str(row.get("regex_contract_type"))
     modality = _to_str(row.get("regex_work_modality")).lower()
@@ -109,21 +113,22 @@ def validate_cross_fields(row: dict[str, Any]) -> list[ValidationFlag]:
             ),
         ))
 
-    # Rule 4: experience_years > 20 is unrealistic
+    # Rule 4: experience_years > 10 is unrealistic — flag and set to None
     if exp_years is not None:
         try:
-            if float(exp_years) > 20:
+            if float(exp_years) > 10:
                 flags.append(ValidationFlag(
                     row_id=row_id,
                     field="experience_years",
                     rule="experience_unrealistic",
                     severity="warning",
-                    message=f"experience_years={exp_years} exceeds 20 years",
+                    message=f"experience_years={exp_years} exceeds 10 — set to None",
                 ))
+                row["regex_experience_years"] = None
         except (TypeError, ValueError):
             pass
 
-    # Rule 5: No technical skills extracted but description is long (likely hallucination miss)
+    # Rule 5: No technical skills extracted but description is long (likely extraction miss)
     if not technical_skills and len(description) > 500:
         flags.append(ValidationFlag(
             row_id=row_id,

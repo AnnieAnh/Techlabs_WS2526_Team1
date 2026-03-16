@@ -1,6 +1,6 @@
 # German IT Job Market Analysis Pipeline
 
-An end-to-end data pipeline for analysing **~22,500 German IT job postings** scraped from LinkedIn and Indeed. Raw postings flow through five components — ingestion, extraction, cleaning, and analysis — producing structured, analysis-ready data with 24 enriched fields per job.
+An end-to-end data pipeline for analysing **~22,500 German IT job postings** scraped from LinkedIn and Indeed. Raw postings flow through five components — ingestion, extraction, cleaning, and analysis — producing structured, analysis-ready data with 29 enriched fields per job.
 
 ---
 
@@ -13,7 +13,7 @@ An end-to-end data pipeline for analysing **~22,500 German IT job postings** scr
 
    ┌─────────────┐      ┌─────────────┐      ┌──────────────────────────────────┐
    │  RAW DATA    │      │  INGESTION   │      │         EXTRACTION               │
-   │             │      │             │      │  (8 sequential steps)            │
+   │             │      │             │      │  (9 sequential steps)            │
    │ Indeed CSV   │─────>│ Normalize    │─────>│                                  │
    │ LinkedIn CSV │      │ schema,      │      │  Step 1: Ingest                  │
    │ LinkedIn CSV │      │ parse dates, │      │  Step 2: Prepare (validate,      │
@@ -30,8 +30,11 @@ An end-to-end data pipeline for analysing **~22,500 German IT job postings** scr
                                               │    categorize, quality flags)    │
                                               │  Step 8: Export (invariants,     │
                                               │    column ordering, cost report) │
+                                              │  Step 9: Export Light (drop      │
+                                              │    description/flags for         │
+                                              │    lightweight analysis CSV)     │
                                               │                                  │
-                                              │  ~18,500 rows · 24 columns       │
+                                              │  ~18,500 rows · 29 columns       │
                                               └────────────────┬─────────────────┘
                                                                │
                                               ┌────────────────▼─────────────────┐
@@ -42,12 +45,13 @@ An end-to-end data pipeline for analysing **~22,500 German IT job postings** scr
                                               │  9 invariant checks              │
                                               │                                  │
                                               │  Output: cleaned_jobs.csv        │
+│  Output: cleaned_jobs_light.csv  │
                                               └────────────────┬─────────────────┘
                                                                │
                                               ┌────────────────▼─────────────────┐
                                               │          ANALYSIS                 │
                                               │                                  │
-                                              │  9 Jupyter notebooks             │
+                                              │  11 Jupyter notebooks             │
                                               │  35 charts + visualizations      │
                                               │  Market overview, skills,        │
                                               │  salary, location, remote,       │
@@ -65,7 +69,7 @@ Developer / Analyst
         │
         ▼
 ┌─────────────────────────────────────────┐
-│     poetry run python orchestrate.py     │
+│         poetry run python orchestrate.py            │
 │   (single entry point for everything)    │
 └───────────────────┬─────────────────────┘
                     │
@@ -99,16 +103,16 @@ Developer / Analyst
                     │
                     ▼
         ┌───────────────────────┐
-        │  Steps 6-8             │
+        │  Steps 6-9             │
         │  Validate + Clean +    │
-        │  Export final CSV       │
+        │  Export full + light    │
         └───────────┬───────────┘
                     │
                     ▼
         ┌───────────────────────┐
         │  cd notebooks          │
-        │  poetry run jupyter notebook  │
-        │  (9 interactive        │
+        │  poetry run jupyter notebook      │
+        │  (11 interactive        │
         │   analysis notebooks)  │
         └───────────────────────┘
 ```
@@ -161,7 +165,7 @@ make pipeline
 ```bash
 cd notebooks/
 poetry run jupyter notebook
-# Open any notebook (01–09) and run all cells
+# Open any notebook (01–11) and run all cells
 ```
 
 ---
@@ -177,14 +181,15 @@ poetry run jupyter notebook
 | `poetry run python orchestrate.py --only extract` | Run only the extract step (LLM) |
 | `poetry run python orchestrate.py --from validate` | Resume from validate onwards |
 | `poetry run python orchestrate.py --dry-run` | Show what would run (no changes) |
-| `poetry run python orchestrate.py --list` | List all 8 steps with descriptions |
+| `poetry run python orchestrate.py --only export_light` | Run only the light export step |
+| `poetry run python orchestrate.py --list` | List all 9 steps with descriptions |
 | `poetry run python orchestrate.py --reset` | Clear progress and start fresh |
 
 ### Make Targets
 
 | Target | Description |
 |--------|-------------|
-| `make pipeline` | Run all 8 steps |
+| `make pipeline` | Run all 9 steps |
 | `make ingest` | Run only ingest |
 | `make extract` | Run only extract |
 | `make clean-enrich` | Run only clean+enrich |
@@ -224,7 +229,7 @@ poetry run python orchestrate.py --dry-run
 ```
 extractors/                              ← git root
 │
-├── orchestrate.py                       ← MAIN ENTRY POINT (8-step pipeline)
+├── orchestrate.py                       ← MAIN ENTRY POINT (9-step pipeline)
 ├── pyproject.toml                       ← Single Poetry config + all dependencies
 ├── Makefile                             ← Make targets for all operations
 │
@@ -245,9 +250,9 @@ extractors/                              ← git root
 │   │   ├── pipeline.py, skill_normalizer.py, benefit_categorizer.py, ...
 │   │   └── config/                      ← Category mappings (benefits, skills, cities)
 │   ├── analysis/                        ← Chart helpers + notebook utilities
-│   │   └── utils.py, style.py, charts.py, filters.py
-│   ├── steps/                           ← Thin orchestrator wrappers (8 step modules)
-│   │   └── ingest.py, prepare.py, ..., export.py
+│   │   └── utils.py, style.py, charts.py, filters.py, compute.py
+│   ├── steps/                           ← Thin orchestrator wrappers (9 step modules)
+│   │   └── ingest.py, prepare.py, ..., export.py, export_light.py
 │   └── shared/                          ← Cross-component utilities
 │       └── io.py, config.py, schemas.py, constants.py, logging.py, ...
 │
@@ -262,10 +267,10 @@ extractors/                              ← git root
 │   ├── raw/                             ← 3 source CSVs (read-only)
 │   ├── ingestion/                       ← combined_jobs.csv
 │   ├── extraction/                      ← batches/, deduped/, extracted/, reports/
-│   ├── cleaning/                        ← cleaned_jobs.csv (final output)
+│   ├── cleaning/                        ← cleaned_jobs.csv + cleaned_jobs_light.csv
 │   └── analysis/                        ← figures/
 │
-├── notebooks/                           ← 9 Jupyter analysis notebooks (01–09)
+├── notebooks/                           ← 11 Jupyter analysis notebooks (01–11)
 └── backlog/                             ← Planning docs + archive
 
 Each component has its own README.md under src/ with full documentation.
@@ -319,16 +324,21 @@ data/ingestion/combined_jobs.csv             22,526 rows · 7 columns
         │  City normalization, benefit/soft skill categorization
         │  Description quality flagging
         ▼
-                                             ~18,500 rows · 24+ columns
+                                             ~18,500 rows · 29 columns
         │
         │  [Step 8: Export]
         │  9 invariant checks, column ordering, cost report
         ▼
-data/cleaning/cleaned_jobs.csv               ~18,500 rows · 24 columns (final)
+data/cleaning/cleaned_jobs.csv               ~18,500 rows · 29 columns (full)
+        │
+        │  [Step 9: Export Light]
+        │  Drop description, validation_flags, description_quality, title
+        ▼
+data/cleaning/cleaned_jobs_light.csv        ~18,500 rows · 25 columns (lightweight)
         │
         │  [Analysis Notebooks]
         ▼
-data/analysis/figures/*.png                  35 charts across 9 notebooks
+data/analysis/figures/*.png                  35 charts across 11 notebooks
 ```
 
 ---
@@ -340,7 +350,7 @@ data/analysis/figures/*.png                  35 charts across 9 notebooks
 | Ingestion | [src/ingestion/README.md](src/ingestion/README.md) | Schema normalization, date parsing, configuration |
 | Extraction | [src/extraction/README.md](src/extraction/README.md) | Full LLM pipeline (8 steps), two-tier extraction, DeepSeek API |
 | Cleaning | [src/cleaning/README.md](src/cleaning/README.md) | 11 cleaning + 5 enrichment steps, invariant checks |
-| Analysis | [src/analysis/README.md](src/analysis/README.md) | 9 notebooks, chart types, visualization gallery |
+| Analysis | [src/analysis/README.md](src/analysis/README.md) | 11 notebooks, chart types, visualization gallery |
 | Shared | [src/shared/README.md](src/shared/README.md) | IO utilities, constants, schemas, logging |
 | Raw Data | [data/raw/README.md](data/raw/README.md) | Raw data sources, CSV schemas, column mapping |
 
@@ -373,7 +383,7 @@ data/analysis/figures/*.png                  35 charts across 9 notebooks
 | Technology | Purpose |
 |------------|---------|
 | **Jupyter** | Interactive analysis notebooks |
-| **matplotlib** | Chart rendering (35 charts across 9 notebooks) |
+| **matplotlib** | Chart rendering (35 charts across 11 notebooks) |
 | **seaborn** | Statistical visualization theming |
 
 ### Development
@@ -424,7 +434,7 @@ data/analysis/figures/*.png                  35 charts across 9 notebooks
 
 ---
 
-## Output Schema (24 Columns)
+## Output Schema (29 Columns)
 
 The final `data/cleaning/cleaned_jobs.csv` contains:
 
@@ -438,7 +448,8 @@ The final `data/cleaning/cleaned_jobs.csv` contains:
 | `state` | string | German federal state |
 | `title` | string | Original job title |
 | `title_cleaned` | string | Normalized title (gender suffixes removed, EN translation) |
-| `job_family` | enum | One of 52 canonical IT role categories |
+| `job_family` | enum | One of 42 canonical IT role categories |
+| `job_summary` | string | LLM-generated role summary |
 | `seniority_from_title` | string | Junior / Mid / Senior / Lead |
 | `contract_type` | string | Full-time / Part-time / Contract / Freelance |
 | `work_modality` | string | Remote / Hybrid / On-site |
@@ -474,8 +485,10 @@ The final `data/cleaning/cleaned_jobs.csv` contains:
 | 07 | Benefits Landscape | Top categories, benefits×role heatmap, vacation prevalence, size correlation | 4 |
 | 08 | Language Requirements | German % by role, CEFR levels, English-only roles, language×modality | 4 |
 | 09 | Job Seeker Guide | 4 personas (Junior/Senior/Remote/Career-Changer), skills roadmap, cities, salary | 2 + tables |
+| 10 | Role Deep Dives | 6 target roles: skills, salary, progression, benefits | charts + tables |
+| 11 | Education & Soft Skills | Education by family/seniority/salary, soft skill heatmaps | charts + tables |
 
-**Total:** 35 charts across 9 notebooks.
+**Total:** 35+ charts across 11 notebooks.
 
 ---
 

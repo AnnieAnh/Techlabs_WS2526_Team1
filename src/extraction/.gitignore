@@ -13,14 +13,6 @@ build/
 venv/
 env/
 
-# Data — CSV files are too large / contain raw data; everything else is tracked
-*.csv
-data/pipeline_state.db
-*.db
-*.sqlite3
-data/extracted/extraction_results.json
-data/deduped/description_groups.json
-
 # Logs
 logs/
 
@@ -28,6 +20,7 @@ logs/
 .ruff_cache/
 .pytest_cache/
 .mypy_cache/
+.claude/
 
 # IDEs
 .vscode/

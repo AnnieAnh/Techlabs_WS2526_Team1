@@ -47,5 +47,16 @@ def benefit_category_set(benefits_json: object) -> str:
             return "[]"
     except (json.JSONDecodeError, TypeError):
         return "[]"
-    categories = sorted({categorize_benefit(b) for b in benefits if isinstance(b, str)})
+    categories = sorted({
+        categorize_benefit(_benefit_name(b))
+        for b in benefits
+        if _benefit_name(b)
+    })
     return json.dumps(categories, ensure_ascii=False)
+
+
+def _benefit_name(b: object) -> str:
+    """Extract benefit name from either a plain string or an evidence dict."""
+    if isinstance(b, dict):
+        return b.get("name", "")
+    return b if isinstance(b, str) else ""

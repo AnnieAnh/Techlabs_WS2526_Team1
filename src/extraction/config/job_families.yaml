@@ -1,5 +1,5 @@
 # Canonical job family taxonomy for title classification.
-# ~38 families covering the German IT job market.
+# 42 families (including "Other") covering the German IT job market.
 # LLM must return EXACTLY one of these strings (or "Other").
 
 families:

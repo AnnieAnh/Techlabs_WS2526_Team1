@@ -1,6 +1,6 @@
 # Analysis Component
 
-> **Status:** Complete (9 notebooks + 4 helper modules)
+> **Status:** Complete (11 notebooks + 5 helper modules)
 > **Location:** `src/analysis/`
 > **Input:** `data/cleaning/cleaned_jobs.csv` (analysis-ready)
 > **Output:** `data/analysis/figures/*.png` (charts and visualizations)
@@ -9,7 +9,7 @@
 
 ## Purpose
 
-The analysis component provides **9 Jupyter notebooks** that explore the cleaned German IT job market dataset from different angles — market overview, skills demand, salary distribution, geographic insights, remote work trends, seniority patterns, benefits landscape, language requirements, and a job seeker guide. All core logic lives in reusable helper modules under `src/analysis/`.
+The analysis component provides **11 Jupyter notebooks** that explore the cleaned German IT job market dataset from different angles — market overview, skills demand, salary distribution, geographic insights, remote work trends, seniority patterns, benefits landscape, language requirements, and a job seeker guide. All core logic lives in reusable helper modules under `src/analysis/`.
 
 ---
 
@@ -21,7 +21,8 @@ src/analysis/
 ├── utils.py              # Data loading + notebook_init() entry point
 ├── style.py              # Matplotlib/seaborn theming
 ├── charts.py             # 6 reusable chart functions
-└── filters.py            # 6 data filtering helpers
+├── filters.py            # 14 data filtering helpers
+└── compute.py            # 11 analytical computation functions
 
 tests/analysis/
 ├── __init__.py
@@ -37,7 +38,9 @@ notebooks/                # At repo root
 ├── 06_seniority_experience.ipynb
 ├── 07_benefits_landscape.ipynb
 ├── 08_language_requirements.ipynb
-└── 09_job_seeker_guide.ipynb
+├── 09_job_seeker_guide.ipynb
+├── 10_role_deep_dives.ipynb
+└── 11_education_soft_skills.ipynb
 
 data/analysis/
 └── figures/              # Auto-generated PNG exports
@@ -75,16 +78,24 @@ data/analysis/
 
 All functions accept `save_as` parameter for auto-saving to `data/analysis/figures/`.
 
-### `filters.py` — 6 Data Filtering Helpers
+### `filters.py` — 14 Data Filtering Helpers
 
 | Function | Filter |
 |----------|--------|
+| `exclude_future_dates(df)` | Drops sentinel future-dated rows (2027-01-01) |
+| `exclude_other_family(df)` | Drops rows where job_family is 'Other' |
 | `filter_by_job_family(df, family)` | Rows matching job family (case-insensitive) |
 | `filter_by_seniority(df, seniority)` | Rows matching seniority level |
 | `filter_remote(df)` | Rows where `work_modality == "Remote"` |
 | `filter_salary_known(df)` | Rows with both salary_min and salary_max populated |
 | `salary_df(df)` | Salary subset with int columns + `salary_mid` derived field |
 | `explode_json_col(df, col)` | Explodes JSON-list column into one row per element |
+| `filter_by_modality(df, modality)` | Rows matching work modality |
+| `filter_by_city(df, city)` | Rows matching city |
+| `filter_by_state(df, state)` | Rows matching German federal state |
+| `filter_description_quality(df, quality)` | Rows matching description quality label |
+| `rows_with_skill(df, skill, col)` | Rows mentioning a specific skill |
+| `parse_list_col(df, col)` | Parse JSON-list column to Python lists |
 
 ---
 
@@ -285,7 +296,7 @@ cleaned_jobs.csv  →  4 persona subsets
 ### Launch Notebooks
 ```bash
 cd notebooks/
-jupyter notebook
+poetry run jupyter notebook
 ```
 **Important:** Notebooks MUST be run from `notebooks/` directory so that `Path().resolve()` in `notebook_init()` resolves correctly.
 
@@ -317,13 +328,13 @@ poetry run pytest tests/analysis/ -v
 ## Data Flow
 
 ```
-data/cleaning/cleaned_jobs.csv  (~18,500 rows · 24 columns)
+data/cleaning/cleaned_jobs.csv  (~18,500 rows · 29 columns)
         |
         v
-notebooks/01–09  (Jupyter notebooks)
+notebooks/01–11  (Jupyter notebooks)
         |
         v
-data/analysis/figures/*.png  (35 charts across 9 notebooks)
+data/analysis/figures/*.png  (35+ charts across 11 notebooks)
 ```
 
 This is the final stage of the pipeline. See [Cleaning Documentation](../cleaning/README.md) for the upstream component.

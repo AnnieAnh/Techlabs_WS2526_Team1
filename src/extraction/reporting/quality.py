@@ -61,7 +61,7 @@ def _distribution(results: list[dict[str, Any]], field: str) -> dict[str, int]:
 def _distribution_from_df(df: Any, column: str) -> dict[str, int]:
     """Count value frequency for a Tier-1 field from the DataFrame.
 
-    Tier-1 fields (contract_type, work_modality, seniority_from_title) are
+    Tier-1 fields (e.g. regex_contract_type, regex_work_modality) are
     stored in the DataFrame, not in LLM results. Returns empty dict if df
     is None or lacks the column.
     """
@@ -96,10 +96,10 @@ def _top_soft_skills(results: list[dict[str, Any]], n: int = 20) -> list[dict[st
 
 
 def _hallucination_summary(results: list[dict[str, Any]]) -> dict[str, Any]:
-    """Summarise skill hallucination flags from validation_flags across all rows."""
+    """Summarise skill verification flags from validation_flags across all rows."""
     skill_flag_count = 0
     high_hallucination_rows = 0
-    falsely_flagged: Counter[str] = Counter()
+    most_flagged: Counter[str] = Counter()
 
     for row in results:
         flags = row.get("validation_flags") or []
@@ -113,12 +113,12 @@ def _hallucination_summary(results: list[dict[str, Any]]) -> dict[str, Any]:
             # Message format: "'SkillName' not grounded in description"
             m = re.search(r"'([^']+)'\s+not grounded", msg)
             if m:
-                falsely_flagged[m.group(1)] += 1
+                most_flagged[m.group(1)] += 1
 
     return {
         "total_skill_flags": skill_flag_count,
         "high_hallucination_rows": high_hallucination_rows,
-        "top_falsely_flagged": dict(falsely_flagged.most_common(10)),
+        "top_flagged_skills": dict(most_flagged.most_common(10)),
     }
 
 
@@ -144,7 +144,13 @@ def _benefit_coverage(results: list[dict[str, Any]]) -> dict[str, Any]:
 
 
 def _salary_stats(results: list[dict[str, Any]]) -> dict[str, Any]:
-    """Compute salary statistics (min, max, mean, median) across rows that have salary data."""
+    """Compute salary statistics from LLM ``data`` dict (Tier 2 salary, if present).
+
+    Note: salary is Tier 1 (regex-extracted) so ``data`` typically lacks these
+    fields.  This function will return count=0 unless the LLM also returned
+    salary values.  Post-cleaning salary stats should be computed from the
+    final DataFrame instead.
+    """
 
     def _extract(field: str) -> list[float]:
         values = []
@@ -325,9 +331,9 @@ def _to_markdown(report: dict[str, Any]) -> str:
             f"- Total skill-not-in-description flags: {hal.get('total_skill_flags', 0)}",
             f"- High-hallucination rows: {hal.get('high_hallucination_rows', 0)}",
         ]
-        if hal.get("top_falsely_flagged"):
+        if hal.get("top_flagged_skills"):
             lines.append("")
-            for skill, count in list(hal["top_falsely_flagged"].items())[:10]:
+            for skill, count in list(hal["top_flagged_skills"].items())[:10]:
                 lines.append(f"- '{skill}': {count}")
 
     bc = report.get("benefit_coverage", {})

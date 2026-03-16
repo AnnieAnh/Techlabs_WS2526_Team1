@@ -1,6 +1,7 @@
-"""Coarse non-German location filter — shared across ingestion and extraction.
+"""Coarse non-German location filter.
 
-Used by the extraction pipeline's prepare step to drop clearly non-German rows.
+Provides a regex-based heuristic for detecting clearly non-German job locations.
+Currently unused — available for future pipeline integration.
 """
 
 import re

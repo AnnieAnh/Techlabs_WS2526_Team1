@@ -36,7 +36,7 @@ src/shared/
 
 | Function | Purpose |
 |----------|---------|
-| `read_csv_safe(path, fallback_encoding='latin-1', **kwargs)` | Read CSV with `keep_default_na=False`; converts `"NA"` strings → Python `None` |
+| `read_csv_safe(path, fallback_encoding='latin-1', **kwargs)` | Read CSV with `keep_default_na=False`; converts all MISSING_SENTINELS (including `"NA"`) → Python `None` |
 | `write_csv_safe(df, path, **kwargs)` | Converts all `None`/`NaN` → `"NA"` strings; writes UTF-8 CSV |
 
 **NA Convention:**
@@ -222,7 +222,7 @@ logger.info("Step %s complete", name, extra={"event": "step_complete", "step": n
 ### `orchestrate.py`
 - **The unified entry point** for the entire pipeline
 - Runs 8 sequential steps with resume capability
-- CLI: `--only`, `--from`, `--step`, `--dry-run`, `--reset`, `--list`
+- CLI: `--only`, `--from`, `--dry-run`, `--reset`, `--list`, `--clean`, `--limit`
 - Progress tracked in `data/pipeline_progress.json`
 
 See [Extraction Documentation](../extraction/README.md) for full orchestrator details.

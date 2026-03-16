@@ -22,6 +22,12 @@ Usage::
 
     # Clear progress and start fresh
     python orchestrate.py --reset
+
+    # Remove all intermediate/cached data
+    python orchestrate.py --clean
+
+    # Limit pipeline to first N rows (for test runs)
+    python orchestrate.py --limit 100
 """
 
 import argparse
@@ -46,6 +52,7 @@ from pipeline_state import PipelineState  # noqa: E402
 from steps.clean_enrich import run_clean_enrich  # noqa: E402
 from steps.deduplicate import run_deduplicate  # noqa: E402
 from steps.export import run_export  # noqa: E402
+from steps.export_light import run_export_light  # noqa: E402
 from steps.extract import run_extract  # noqa: E402
 from steps.ingest import run_ingest  # noqa: E402
 from steps.prepare import run_prepare  # noqa: E402
@@ -67,6 +74,7 @@ _STEPS: list[tuple[str, str, object]] = [
     ("validate", "Post-extraction validation, corrections, quality report", run_validate),
     ("clean_enrich", "Clean data + add enrichment columns", run_clean_enrich),
     ("export", "Column order, invariant checks, write final CSV", run_export),
+    ("export_light", "Write lightweight CSV without description/flags columns", run_export_light),
 ]
 _STEP_NAMES = [s[0] for s in _STEPS]
 
@@ -151,7 +159,9 @@ def _rehydrate_state(state: PipelineState, cfg: dict, steps: list[tuple[str, str
     step requires re-reading from the most recent disk artifact.
 
     Priority:
-    1. ``deduplicate`` skipped → load the most-recent deduped CSV + description_groups.json.
+    1. ``deduplicate`` skipped:
+       a. ``clean_enrich`` also skipped → load enriched_cleaned.csv (post-clean artifact).
+       b. ``clean_enrich`` will run → load the most-recent deduped CSV + description_groups.json.
     2. ``prepare`` skipped but ``deduplicate`` will run → no prepare artifact exists; raise.
     3. Only ``ingest`` skipped → load combined_jobs.csv and re-assign row IDs.
 
@@ -175,8 +185,8 @@ def _rehydrate_state(state: PipelineState, cfg: dict, steps: list[tuple[str, str
     #                description_groups.json                              #
     # ------------------------------------------------------------------ #
     if "deduplicate" not in step_names:
-        # If clean_enrich is also being skipped, try loading its disk artifact
-        # (enriched_cleaned.csv) written by the clean_enrich step. Fall back to error if missing.
+        # If clean_enrich is also being skipped, load its disk artifact
+        # (enriched_cleaned.csv) written by the clean_enrich step. Raises if missing.
         if "clean_enrich" not in step_names:
             enriched_path = Path(cfg["paths"]["extracted_dir"]) / "enriched_cleaned.csv"
             if enriched_path.exists():
@@ -515,6 +525,12 @@ def main(argv: list[str] | None = None) -> None:
         return
 
     _rehydrate_state(state, cfg, steps)
+
+    # Apply row_limit after rehydration (mirrors --limit CLI flag)
+    row_limit = state.row_limit or cfg.get("extraction", {}).get("row_limit")
+    if row_limit and state.df is not None and len(state.df) > row_limit:
+        state.df = state.df.head(row_limit)
+        logger.info("Applied row_limit=%d after rehydration (%d rows)", row_limit, len(state.df))
 
     # Fingerprint inputs for reproducibility / cache-invalidation
     from shared.fingerprint import fingerprint_inputs

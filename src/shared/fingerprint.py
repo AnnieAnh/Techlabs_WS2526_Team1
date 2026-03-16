@@ -35,7 +35,8 @@ def _file_hash(path: Path) -> str:
 def _config_hash(cfg: dict) -> str:
     """Compute SHA-256[:16] of the serialized config dict.
 
-    Excludes "paths" and "extraction_config" keys from the hash.
+    Excludes "paths" and "extraction_config" keys, as well as any
+    remaining values that are Path objects (not JSON-serializable).
     """
     # Exclude Path objects (not JSON-serializable) and runtime-only keys
     serializable = {

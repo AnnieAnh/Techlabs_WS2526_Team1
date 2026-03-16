@@ -1,7 +1,7 @@
-"""Smoke tests for all 7 step modules (steps/*.py).
+"""Smoke tests for 7 of 8 step modules (steps/*.py — regex_extract tested separately).
 
 One test per step: exercises the step function end-to-end with a synthetic
-10-row DataFrame. LLM calls (step 4: extract) are mocked to avoid API
+10-row DataFrame. LLM calls (step 5: extract) are mocked to avoid API
 dependencies. Schema validation and invariant checks are mocked for steps
 where synthetic data would fail strict column constraints.
 """
@@ -87,7 +87,7 @@ def _make_minimal_df(n: int = 10) -> pd.DataFrame:
 
 
 def _make_prepared_df(n: int = 10) -> pd.DataFrame:
-    """DataFrame that has been through the prepare step."""
+    """DataFrame that has been through the prepare and regex_extract steps."""
     df = _make_minimal_df(n)
     df["title_cleaned"] = [f"Senior Software Engineer #{i}" for i in range(n)]
     df["title_original"] = df["title"]

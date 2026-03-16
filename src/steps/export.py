@@ -9,6 +9,7 @@ On invariant failure, the debug CSV remains for forensic inspection.
 """
 
 import logging
+import shutil
 from pathlib import Path
 
 from cleaning.output_formatter import (
@@ -75,7 +76,8 @@ def run_export(state: PipelineState, cfg: dict) -> None:
 
     # — 5. Validate final schema, then rename debug to final output
     validate_step_output(df, export_output_schema, "export")
-    debug_path.rename(output_path)
+    # Use shutil.move instead of Path.rename to handle cross-device moves
+    shutil.move(str(debug_path), str(output_path))
     logger.info("Final CSV written to %s", output_path)
 
     # — 6. Cost report

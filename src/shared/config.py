@@ -53,7 +53,11 @@ class ExtractionConfig:
 
 
 def _create_directories(cfg: dict) -> None:
-    """Create all data directories defined in config paths (except checkpoint_db)."""
+    """Create data directories for config paths.
+
+    File-type paths (checkpoint_db, ingestion_output) get their parent
+    directory created instead.
+    """
     _file_paths = {"checkpoint_db", "ingestion_output"}
     for name, path in cfg["paths"].items():
         if name in _file_paths:
@@ -66,7 +70,7 @@ def _load_extraction_config(config_path: Path = _DEFAULT_CONFIG_PATH) -> dict:
     """Load settings.yaml, convert path strings to Path objects, and create directories.
 
     Args:
-        config_path: Path to the YAML settings file. Defaults to config/settings.yaml.
+        config_path: Path to the YAML settings file. Defaults to src/extraction/config/settings.yaml.
 
     Returns:
         Config dict with all path strings under 'paths' converted to pathlib.Path objects.

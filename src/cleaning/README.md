@@ -86,7 +86,7 @@ Input: enriched CSV from extraction pipeline
 │                                                                      │
 │  1. Drop internal columns (country, location, source_file)           │
 │  2. Drop rows with empty job_family (parse failures)                 │
-│  3. Reorder columns → COLUMN_ORDER (24 columns)                     │
+│  3. Reorder columns → COLUMN_ORDER (29 columns)                     │
 │  4. Save .debug.csv                                                  │
 │  5. Assert 9 invariants                                              │
 │  6. On success: rename .debug.csv → final output                     │
@@ -280,10 +280,10 @@ categories:
 
 ### Via Orchestrator (Recommended)
 ```bash
-python orchestrate.py --only clean_enrich
+poetry run python orchestrate.py --only clean_enrich
 # Runs Step 7 (clean+enrich) only
 # Or run Step 7 + Step 8 together:
-python orchestrate.py --from clean_enrich
+poetry run python orchestrate.py --from clean_enrich
 ```
 
 ### Standalone
@@ -316,7 +316,7 @@ Several cleaning steps duplicate corrections already applied in the extraction p
 
 ---
 
-## Output Schema (24 columns)
+## Output Schema (29 columns)
 
 | Column | Type | Description |
 |--------|------|-------------|
@@ -328,7 +328,7 @@ Several cleaning steps duplicate corrections already applied in the extraction p
 | `state` | string | German state |
 | `title` | string | Original job title |
 | `title_cleaned` | string | Normalized title |
-| `job_family` | enum | One of 52 canonical roles |
+| `job_family` | enum | One of 42 canonical roles |
 | `seniority_from_title` | string | Junior/Mid/Senior/Lead |
 | `contract_type` | string | Full-time/Part-time/Contract/Freelance |
 | `work_modality` | string | Remote/Hybrid/On-site |
@@ -354,10 +354,10 @@ Several cleaning steps duplicate corrections already applied in the extraction p
 ## Data Flow (Next Step)
 
 ```
-data/cleaning/cleaned_jobs.csv  (~18,500 rows · 24 columns)
+data/cleaning/cleaned_jobs.csv  (~18,500 rows · 29 columns)
         |
         v
-notebooks/01–09  (Jupyter notebooks for charts and insights)
+notebooks/01–11  (Jupyter notebooks for charts and insights)
 ```
 
 See [Analysis Documentation](../analysis/README.md) for the next stage.

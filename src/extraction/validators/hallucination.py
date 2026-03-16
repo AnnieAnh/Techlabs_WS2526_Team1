@@ -77,6 +77,23 @@ def _word_match_v2(term: str, text_lower: str, variants: dict[str, list[str]]) -
     return False
 
 
+def _strip_markdown_escaping(text: str) -> str:
+    """Remove markdown backslash escaping (``\\-``, ``\\+``, ``\\_``, ``\\.`` → bare char).
+
+    Many scraped descriptions contain markdown-escaped hyphens and other
+    characters which break substring matching against German compound words
+    like ``it-sicherheit`` (stored as ``it\\-sicherheit`` in the CSV).
+    """
+    # The CSV data contains literal backslash+char sequences (chr(92)+chr(45)
+    # for \\-).  A simple character-level replace handles the dominant case
+    # (backslash-hyphen) and the generic regex covers the rest.
+    text = text.replace("\\-", "-")
+    text = text.replace("\\+", "+")
+    text = text.replace("\\_", "_")
+    text = text.replace("\\.", ".")
+    return text
+
+
 def verify_skill_in_description(
     skill: str,
     description: str,
@@ -95,7 +112,7 @@ def verify_skill_in_description(
     Returns:
         True if skill is verifiable in the description.
     """
-    text_lower = description.lower()
+    text_lower = _strip_markdown_escaping(description).lower()
 
     # Check the canonical name itself (with variants)
     if _word_match_v2(skill, text_lower, SKILL_VARIANTS):

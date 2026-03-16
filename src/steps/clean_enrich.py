@@ -41,7 +41,7 @@ def run_clean_enrich(state: PipelineState, cfg: dict) -> None:
        normalize_company_casing — categorical cleaning
     5. fix_validation_flags — resolve/relabel validation flags
     6. benefit_category_set, normalize_soft_skills — enrichment columns
-    7. flag_description_quality — short/boilerplate/truncated/privacy-wall tags
+    7. flag_description_quality — tags descriptions as 'concatenated' (HTML-strip artefacts) or 'clean'
 
     Args:
         state: Mutable pipeline state — reads df + extraction_results, modifies df.

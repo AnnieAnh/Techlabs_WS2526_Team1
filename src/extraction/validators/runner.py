@@ -30,11 +30,11 @@ def run_validators(
       1. Skills normalisation — alias resolution, dedup, contradiction removal
       2. Skill verification — flag skills absent from the description
       3. Hallucination removal — drop flagged skills from data in-place
-      3.5. Evidence flattening — preserve full evidence objects, then flatten names
-      4. Cross-field consistency — 7 rules across title, seniority, modality, etc.
-      5. Salary validation — range and floor/ceiling checks on Tier 1 salary fields
-      6. Truncation flags — mark rows with truncated descriptions
-      7. List truncation flags — mark rows where task lists were truncated during parsing
+      4. Evidence flattening — preserve full evidence objects, then flatten names
+      5. Cross-field consistency — 7 rules across title, seniority, modality, etc.
+      6. Salary validation — range and floor/ceiling checks on Tier 1 salary fields
+      7. Truncation flags — mark rows with truncated descriptions
+      8. List truncation flags — mark rows where task lists were truncated during parsing
 
     Args:
         results: Extraction result dicts, each with 'row_id' and 'data'.
@@ -119,7 +119,7 @@ def run_validators(
     if removed_skills_total:
         logger.info("Removed %d hallucinated skill(s) across all rows.", removed_skills_total)
 
-    # 3.5. Preserve full evidence objects, then flatten names for downstream compatibility
+    # 4. Preserve full evidence objects, then flatten names for downstream compatibility
     _EVIDENCE_FIELDS = ("technical_skills", "nice_to_have_skills", "benefits", "tasks")
     for r in results:
         data = r.get("data") or {}
@@ -137,7 +137,7 @@ def run_validators(
                     if isinstance(item, dict) and item.get("name")
                 ]
 
-    # 4. Cross-field validation — enrich results with metadata for context checks
+    # 5. Cross-field validation — enrich results with metadata for context checks
     enriched: list[dict[str, Any]] = []
     for r in results:
         rid = r["row_id"]
@@ -149,13 +149,13 @@ def run_validators(
         })
     cross_flags = validate_all_cross_fields(enriched)
 
-    # 5. Salary validation — reads regex_salary_min/max from enriched row (Tier 1 fields)
+    # 6. Salary validation — reads regex_salary_min/max from enriched row (Tier 1 fields)
     salary_flags = validate_salaries(enriched, cfg)
 
     # Aggregate all flags by row
     from extraction.validators import ValidationFlag
 
-    # 6. Truncation flags — mark rows where the description was truncated before LLM call
+    # 7. Truncation flags — mark rows where the description was truncated before LLM call
     truncation_flags: list[ValidationFlag] = []
     for r in results:
         if r.get("was_truncated"):
@@ -172,7 +172,7 @@ def run_validators(
     if truncation_flags:
         logger.info("Truncation flags: %d rows had truncated descriptions", len(truncation_flags))
 
-    # 7. List truncation flags — mark rows where task lists were truncated during parsing
+    # 8. List truncation flags — mark rows where task lists were truncated during parsing
     list_truncation_flags: list[ValidationFlag] = []
     for r in results:
         for trunc in r.get("list_truncations", []):

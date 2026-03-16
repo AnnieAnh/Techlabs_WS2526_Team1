@@ -446,10 +446,10 @@ def test_hallucination_summary_populated(tmp_path):
     hal = report["hallucination_summary"]
     assert "total_skill_flags" in hal
     assert "high_hallucination_rows" in hal
-    assert "top_falsely_flagged" in hal
+    assert "top_flagged_skills" in hal
     assert hal["total_skill_flags"] == 1
     assert hal["high_hallucination_rows"] == 0
-    assert "Python" in hal["top_falsely_flagged"]
+    assert "Python" in hal["top_flagged_skills"]
 
 
 def test_hallucination_summary_empty_no_flags(tmp_path):

@@ -41,7 +41,8 @@ def drop_columns_and_rows(df: pd.DataFrame, valid_families: set[str]) -> pd.Data
 
     Args:
         df: Cleaned DataFrame.
-        valid_families: Set of canonical job family names (unused here, kept for API compat).
+        valid_families: Set of canonical job family names (accepted but not used
+            in this function; validation against this set happens in assert_invariants).
 
     Returns:
         DataFrame with unneeded columns and parse-failure rows removed.
@@ -111,8 +112,11 @@ def assert_invariants(df: pd.DataFrame, valid_families: set[str]) -> None:
     # 2. All job_family values must be in the valid enum (or None for unknowns)
     if "job_family" in df.columns and valid_families:
         valid_mask = df["job_family"].isin(valid_families) | df["job_family"].isna()
-        invalid = df[~valid_mask]["job_family"].unique()
-        assert len(invalid) == 0, f"Invalid job_family values: {list(invalid)[:10]}"
+        invalid = sorted(set(df[~valid_mask]["job_family"].dropna()))
+        msg = f"{len(invalid)} unmapped job_family values: {invalid[:50]}"
+        if len(invalid) > 50:
+            msg += f" ... and {len(invalid) - 50} more"
+        assert len(invalid) == 0, msg
 
     # 3. All list columns must contain valid JSON arrays
     for col in _LIST_COLUMNS:
@@ -133,8 +137,8 @@ def assert_invariants(df: pd.DataFrame, valid_families: set[str]) -> None:
         has_both = df["salary_min"].notna() & df["salary_max"].notna()
         if has_both.any():
             sub = df[has_both].copy()
-            mins = sub["salary_min"].astype(int)
-            maxs = sub["salary_max"].astype(int)
+            mins = pd.to_numeric(sub["salary_min"], errors="coerce")
+            maxs = pd.to_numeric(sub["salary_max"], errors="coerce")
             inversions = (mins > maxs).sum()
             assert inversions == 0, f"{inversions} rows where salary_min > salary_max"
 

@@ -55,7 +55,8 @@ def ensure_string_type(df: pd.DataFrame, columns: list[str]) -> pd.DataFrame:
         columns: Column names to coerce.
 
     Returns:
-        DataFrame with specified columns as string dtype.
+        DataFrame with specified columns coerced to string,
+        with 'nan'/'None' artifacts replaced by NaN.
     """
     df = df.copy()
     for col in columns:

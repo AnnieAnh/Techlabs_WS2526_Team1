@@ -13,7 +13,7 @@ Import from here rather than defining locally in each module.
 SALARY_MIN_FLOOR: int = 10_000
 SALARY_MAX_CEILING: int = 300_000
 
-# Values below this are treated as monthly rather than annual salaries.
+# Values below this are flagged as possible monthly (rather than annual) salaries.
 SALARY_MONTHLY_THRESHOLD: int = 5_000
 
 # ---------------------------------------------------------------------------

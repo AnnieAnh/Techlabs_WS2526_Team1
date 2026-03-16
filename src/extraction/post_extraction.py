@@ -12,6 +12,7 @@ correctly without re-running extraction.  Under normal pipeline operation,
 this module runs first and the cleaning equivalents are redundant but harmless.
 """
 
+import functools
 import logging
 import re
 from collections import Counter
@@ -32,10 +33,28 @@ _REMAP_CONFIG_PATH = (
 _CPP_WORD_RE = re.compile(r"(?<![a-zA-Z0-9])C(?![a-zA-Z0-9+#/])")
 
 
+@functools.lru_cache(maxsize=1)
 def _load_remap_config() -> dict:
-    """Load categorical remap config from cleaning/config/job_family_remap.yaml."""
+    """Load categorical remap config from cleaning/config/job_family_remap.yaml.
+
+    Cached after first call — the YAML file doesn't change during a pipeline run.
+    """
     with open(_REMAP_CONFIG_PATH, encoding="utf-8") as f:
         return yaml.safe_load(f)
+
+
+def _skill_name(s: object) -> str:
+    """Extract skill name from either a plain string or an evidence dict."""
+    if isinstance(s, dict):
+        return s.get("name", "")
+    return s if isinstance(s, str) else ""
+
+
+def _replace_skill_name(s: object, new_name: str) -> object:
+    """Return a copy of the skill with its name replaced."""
+    if isinstance(s, dict):
+        return {**s, "name": new_name}
+    return new_name
 
 
 def apply_remap_categoricals(results: list[dict]) -> list[dict]:
@@ -105,13 +124,13 @@ def apply_fix_cpp_inference(results: list[dict], desc_by_id: dict[str, str]) -> 
 
         for field in ("technical_skills", "nice_to_have_skills"):
             raw: list = list(data.get(field) or [])
-            if not any(isinstance(s, str) and s.lower() == "c++" for s in raw):
+            if not any(_skill_name(s).lower() == "c++" for s in raw):
                 continue
             if replacement is None:
-                data[field] = [s for s in raw if not (isinstance(s, str) and s.lower() == "c++")]
+                data[field] = [s for s in raw if _skill_name(s).lower() != "c++"]
             else:
                 data[field] = [
-                    replacement if (isinstance(s, str) and s.lower() == "c++") else s
+                    _replace_skill_name(s, replacement) if _skill_name(s).lower() == "c++" else s
                     for s in raw
                 ]
             n_fixed += 1
@@ -138,8 +157,9 @@ def apply_normalize_skill_casing(results: list[dict]) -> list[dict]:
         data = r.get("data") or {}
         for col in skill_cols:
             for skill in (data.get(col) or []):
-                if isinstance(skill, str):
-                    skill_counter[skill] += 1
+                name = _skill_name(skill)
+                if name:
+                    skill_counter[name] += 1
 
     # Build canonical map: lowercase → most-frequent casing
     canonical_map: dict[str, str] = {}
@@ -153,10 +173,14 @@ def apply_normalize_skill_casing(results: list[dict]) -> list[dict]:
         data = r.get("data") or {}
         for col in skill_cols:
             raw = list(data.get(col) or [])
-            normalized = [
-                canonical_map.get(s.lower(), s) if isinstance(s, str) else s
-                for s in raw
-            ]
+            normalized = []
+            for s in raw:
+                name = _skill_name(s)
+                canonical = canonical_map.get(name.lower(), name) if name else name
+                if canonical != name and name:
+                    normalized.append(_replace_skill_name(s, canonical))
+                else:
+                    normalized.append(s)
             changed = sum(1 for a, b in zip(raw, normalized) if a != b)
             if changed:
                 data[col] = normalized

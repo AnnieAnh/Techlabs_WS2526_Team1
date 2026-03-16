@@ -18,8 +18,11 @@ _ORIGINAL_COLS = [
     "company_name", "location", "date_posted",
 ]
 _PARSED_COLS = ["city", "state", "country"]
+# job_family (Tier 2) and seniority_from_title (Tier 1) are intentionally
+# duplicated here for output column ordering — _column_order() deduplicates,
+# so listing them here places them early in the CSV next to title_cleaned.
 _NORMALIZED_COLS = ["title_cleaned", "job_family", "seniority_from_title"]
-# Tier 1: sourced from regex_extractor.py (regex_* prefix dropped at export time)
+# Tier 1: sourced from regex_extractor.py (regex_* prefix dropped at merge time)
 _TIER1_COLS = [
     "contract_type", "work_modality",
     "salary_min", "salary_max",

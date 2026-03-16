@@ -1,84 +1,139 @@
 # LLM output → canonical job_family from config/job_families.yaml.
 # Used by: cleaning/categorical_remapper.py
+# Organised by domain to match job_families.yaml taxonomy.
 
 remap:
-  # Lead/Senior/Principal prefixed variants → base family
-  Lead Backend Developer: Backend Developer
+  # -----------------------------------------------------------------------
+  # Software Development
+  # → Frontend / Backend / Fullstack / Software / Mobile / Embedded Developer
+  # -----------------------------------------------------------------------
+
+  # Web & general
+  Web Developer: Fullstack Developer
+  Java Developer: Backend Developer
   Lead Frontend Developer: Frontend Developer
+  Lead Backend Developer: Backend Developer
   Lead Fullstack Developer: Fullstack Developer
+  SAP Developer: SAP Consultant
   Lead Software Developer: Software Developer
-  Lead Data Engineer: Data Engineer
-  Lead DevOps Engineer: DevOps Engineer
-  Lead Cloud Engineer: Cloud Engineer
   Senior Software Engineer: Software Developer
   Staff Software Engineer: Software Developer
   Principal Software Engineer: Software Developer
   Staff Engineer: Software Developer
   Principal Engineer: Software Developer
-
-  # LLM variants caught by export invariant (2026-03-14)
-  Application Manager: System Administrator
-  Marketing Manager: Other
-  IT Manager: Engineering Manager
-  IT Project Manager: Project Manager
-  Test Engineer: QA Engineer
-  Cloud Platform Engineer: Cloud Engineer
-  SAP Developer: Software Developer
-  Data Analytics: Data Analyst
-  Product Analyst: Business Analyst
-  Data Science: Data Scientist
-  Credit Analyst: Other
-  Research Scientist: Data Scientist
-  Field Applications Engineer: Other
-  IT Auditor: IT Security Engineer
-  Business Development: Other
-  IT Trainer: Other
-  Technical Service Engineer: Other
-  QA Architect: QA Engineer
-  Data Science Manager: Engineering Manager
-  Reliability Engineer: Site Reliability Engineer
-  IT Service Manager: Other
-  Applications Engineer: Software Developer
-  Data Center Engineer: System Administrator
-  Data Center Technician: System Administrator
-  Developer Advocate: Other
-  Test Automation Engineer: QA Engineer
-  Performance Engineer: QA Engineer
-  "Technical Support / Helpdesk": "IT Support / Helpdesk"
-
-  # Original remaps
-  Web Developer: Fullstack Developer
-  Integration Engineer: Software Developer
-  Data Architect: Data Engineer
-  Analytics Engineer: Data Engineer
-  Systems Engineer: Platform Engineer
-  Infrastructure Engineer: Cloud Engineer
-  IoT Developer: Embedded Developer
+  Software Engineer: Software Developer
+  Low-Code Developer: Software Developer
   Application Engineer: Software Developer
-  Test Architect: QA Engineer
-  Data Consultant: IT Consultant
-  Java Developer: Backend Developer
-  DevSecOps Engineer: DevOps Engineer
-  Database Developer: Database Administrator
-  Machine Learning Engineer: ML Engineer
-  Robotics Engineer: Embedded Developer
-  System Architect: Solution Architect
-  Solutions Architect: Solution Architect
-  Automation Engineer: DevOps Engineer
-  Hardware Engineer: Embedded Developer
-  Data Platform Engineer: Data Engineer
-  Data Quality Manager: Data Engineer
-  Storage Engineer: System Administrator
-  Control System Engineer: Embedded Developer
+  Applications Engineer: Software Developer
+  Integration Engineer: Software Developer
+  Integration Developer: Software Developer
   Compiler Engineer: Software Developer
   Compiler Tooling Engineer: Software Developer
-  Developer Relations Engineer: Other
-  Developer Experience Engineer: Other
-  Technical Solutions Engineer: Solution Architect
-  Integration Developer: Software Developer
-  Financial Analyst: Other
-  Business Development Representative: Other
+
+  # Embedded / hardware
+  IoT Developer: Embedded Developer
+  Signal Processing Engineer: Embedded Developer
+  Robotics Engineer: Embedded Developer
+  Hardware Engineer: Embedded Developer
+  Control System Engineer: Embedded Developer
+
+  # -----------------------------------------------------------------------
+  # Infrastructure & Cloud
+  # → DevOps / Cloud / SRE / Platform / SysAdmin / DBA
+  # -----------------------------------------------------------------------
+  Lead DevOps Engineer: DevOps Engineer
+  Lead Cloud Engineer: Cloud Engineer
+  Cloud Platform Engineer: Cloud Engineer
+  Infrastructure Engineer: Cloud Engineer
+  DevSecOps Engineer: DevOps Engineer
+  Automation Engineer: DevOps Engineer
+  Systems Engineer: Platform Engineer
+  Reliability Engineer: Site Reliability Engineer
+  Application Manager: System Administrator
+  Storage Engineer: System Administrator
+  Data Center Engineer: System Administrator
+  Data Center Technician: System Administrator
+  Database Developer: Database Administrator
+
+  # -----------------------------------------------------------------------
+  # Data & AI
+  # → Data Engineer / Scientist / Analyst / ML Engineer / AI Engineer / BI Developer
+  # -----------------------------------------------------------------------
+  Lead Data Engineer: Data Engineer
+  Data Engineering: Data Engineer
+  Data Architect: Data Engineer
+  Analytics Engineer: Data Engineer
+  Data Platform Engineer: Data Engineer
+  Data Quality Manager: Data Engineer
+  Data Science: Data Scientist
+  Research Scientist: Data Scientist
   Quantitative Researcher: Data Scientist
+  Data Analytics: Data Analyst
+  Machine Learning Engineer: ML Engineer
+  Lead Data & AI Engineer: AI Engineer
+
+  # -----------------------------------------------------------------------
+  # Architecture & Senior IC
+  # → Software Architect / Solution Architect / Technical Lead
+  # -----------------------------------------------------------------------
+  System Architect: Solution Architect
+  Solutions Architect: Solution Architect
+  Technical Solutions Engineer: Solution Architect
+
+  # -----------------------------------------------------------------------
+  # Security & Quality
+  # → IT Security Engineer / QA Engineer
+  # -----------------------------------------------------------------------
+  IT Auditor: IT Security Engineer
+  Test Engineer: QA Engineer
+  Test Systems Engineer: QA Engineer
+  Test Automation Engineer: QA Engineer
+  Performance Engineer: QA Engineer
+  QA Architect: QA Engineer
+  Validation Engineer: QA Engineer
+  Test Architect: QA Engineer
+
+  # -----------------------------------------------------------------------
+  # Product & Management
+  # → Product Manager / Project Manager / Engineering Manager / Scrum Master
+  # -----------------------------------------------------------------------
+  Release Manager: Project Manager
+  IT Project Manager: Project Manager
+  IT Manager: Engineering Manager
+  Data Analytics Manager: Engineering Manager
+  Data Science Manager: Engineering Manager
+
+  # -----------------------------------------------------------------------
+  # Consulting
+  # → IT Consultant / SAP Consultant / ERP Consultant / Business Analyst
+  # -----------------------------------------------------------------------
+  Technical Account Manager: IT Consultant
+  Data Consultant: IT Consultant
+  Product Analyst: Business Analyst
+
+  # -----------------------------------------------------------------------
+  # Support & Operations
+  # → IT Support / Helpdesk / Technical Writer
+  # -----------------------------------------------------------------------
+  "Technical Support / Helpdesk": "IT Support / Helpdesk"
+
+  # -----------------------------------------------------------------------
+  # Other — non-IT roles or roles that don't fit any family
+  # -----------------------------------------------------------------------
+  Business Developer: Other
+  Business Development: Other
+  Business Development Representative: Other
+  Sales: Other
+  Marketing Manager: Other
+  Credit Analyst: Other
+  Financial Analyst: Other
+  Field Applications Engineer: Other
+  Technical Service Engineer: Other
+  IT Trainer: Other
+  IT Service Manager: Other
+  Developer Advocate: Other
+  Developer Experience Engineer: Other
+  Developer Relations Engineer: Other
   Technical Artist: Other
   Field Service Engineer: Other
 

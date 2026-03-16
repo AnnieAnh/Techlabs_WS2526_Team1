@@ -4,12 +4,13 @@ Extracts 8 fields using German-aware patterns before the LLM call.
 This reduces token usage and adds reproducibility for high-confidence fields.
 
 Fields extracted:
-  - contract_type:        Vollzeit / Teilzeit / Freelance / Contract
+  - contract_type:        Full-time / Part-time / Freelance / Permanent / Contract /
+                          Working Student / Internship
   - work_modality:        Remote / Hybrid / On-site
   - salary_min:           Parsed from German number format (50.000 = 50,000)
   - salary_max:           Parsed from German number format
   - experience_years:     Integer from "X Jahre Berufserfahrung" etc.
-  - seniority_from_title: Senior / Junior / Lead from title keywords
+  - seniority_from_title: Senior / Junior / Lead / Director / C-Level from title keywords
   - languages:            List of {language, level} dicts from description
   - education_level:      Highest education level found, or None
 """
@@ -32,7 +33,7 @@ _CONTRACT_TYPE_PATTERNS: list[tuple[re.Pattern, str]] = [
     (re.compile(r"\bVollzeit\b|\bfull[- ]?time\b|\bFestanstellung\b", re.IGNORECASE), "Full-time"),
     (re.compile(r"\bTeilzeit\b|\bpart[- ]?time\b", re.IGNORECASE), "Part-time"),
     (re.compile(r"\bFreelance\b|\bfreelancer\b|\bFreiberufler\b", re.IGNORECASE), "Freelance"),
-    # "unbefristet" must be checked BEFORE "befristet" to avoid false matches
+    # "unbefristet" maps to Permanent; "befristet" uses negative lookbehind to exclude it
     (re.compile(r"\bunbefristet(?:e[rsnm]?)?\b", re.IGNORECASE), "Permanent"),
     (re.compile(
         r"\bContractor\b|\bAuftragnehmer\b|(?<!un)\bbefristet(?:e[rsnm]?)?\b",

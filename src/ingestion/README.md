@@ -120,7 +120,7 @@ The `parse_date_to_exact()` function handles multiple date formats:
 | Relative string | `"yesterday"` | Reference date − 1 day |
 | Relative string | `"today"` / `"just posted"` | Reference date |
 | Unix timestamp | `1708041600` | Converted to ISO |
-| Missing/invalid | `""`, `None`, `"NA"` | `None` |
+| Missing/invalid | `""`, `None`, `"NA"` | `None` (then filled with sentinel `"2027-01-01"`) |
 
 **Determinism:** All relative dates are calculated from a **pinned reference date** (`2026-02-15`, from `settings.yaml`), not the current system time. Re-running ingestion always produces identical ISO dates.
 
@@ -194,9 +194,9 @@ sources:
 
 ### Via Orchestrator (Recommended)
 ```bash
-python orchestrate.py --only ingest
+poetry run python orchestrate.py --only ingest
 # or as part of full pipeline:
-python orchestrate.py
+poetry run python orchestrate.py
 ```
 
 ### Via Make

@@ -5,7 +5,7 @@ normalizes dates, fills missing values, and writes combined_jobs.csv.
 
 Deduplication and location filtering are handled in the extraction pipeline.
 
-Entry point: run_pipeline(settings_path=None)
+Entry point: run_pipeline(settings_path=None, cfg=None)
 """
 
 import json

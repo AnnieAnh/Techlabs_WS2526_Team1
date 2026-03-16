@@ -67,9 +67,9 @@ src/
     │
     └── config/                          # Configuration files
         ├── settings.yaml                #   Paths, model config, thresholds
-        ├── extraction_prompt.yaml       #   LLM system prompt + few-shot examples (v1.5)
+        ├── extraction_prompt.yaml       #   LLM system prompt + few-shot examples (v2.0)
         ├── output_schema.json           #   JSON Schema for LLM output validation
-        ├── job_families.yaml            #   52 canonical job family categories
+        ├── job_families.yaml            #   42 canonical job family categories
         ├── skill_aliases.yaml           #   Skill name normalization map
         ├── skill_variants.yaml          #   Variant spellings for fuzzy matching
         ├── title_translations.yaml      #   German job title → English translations
@@ -94,7 +94,7 @@ data/extraction/                         # Pipeline outputs (not in git)
 ```
                     ┌─────────────────────────────────────────┐
                     │           orchestrate.py                 │
-                    │  Entry point: python orchestrate.py      │
+                    │  Entry point: poetry run python orchestrate.py      │
                     │  Resume-capable via progress.json        │
                     └──────────────┬──────────────────────────┘
                                    │
@@ -263,7 +263,7 @@ Filter to representative rows only (~10k unique descriptions)
     ▼
 ┌─────────────────────────────────────────────────────────────┐
 │  src/extraction/llm/prompt_builder.py                       │
-│  • Loads extraction_prompt.yaml (v1.5)                      │
+│  • Loads extraction_prompt.yaml (v2.0)                      │
 │  • Builds per-row API message: system prompt + user data    │
 │  • Truncates descriptions to 8,000 tokens (~28,000 chars)   │
 │  • Adds [TRUNCATED] marker for truncated descriptions       │
@@ -292,13 +292,12 @@ Filter to representative rows only (~10k unique descriptions)
     ▼
 ┌─────────────────────────────────────────────────────────────┐
 │  src/extraction/llm/response_parser.py                      │
-│  • 5-strategy JSON extraction:                              │
+│  • 4-strategy JSON extraction:                              │
 │    1. Direct json.loads                                     │
 │    2. Strip markdown fences (```json...```)                  │
 │    3. Fix trailing commas                                   │
 │    4. Extract between first { and last }                    │
-│    5. Fail (returns error ParseResult)                      │
-│  • Schema validation: critical (job_family) vs non-critical │
+│  • Schema validation: critical (technical_skills) vs non-critical │
 │  • Coercions: skills string→array, tasks truncated to max   │
 │  • Emits list_truncated validation_flag on truncation       │
 └─────────────────────────────────────────────────────────────┘
@@ -319,7 +318,7 @@ Save: data/extraction/extracted/extraction_results.json
 | `nice_to_have_skills` | string[] | Optional technologies |
 | `benefits` | string[] | Tangible perks offered |
 | `tasks` | string[] | Main responsibilities (max configurable, default 7 via `settings.yaml`) |
-| `job_family` | enum | One of 52 canonical role categories |
+| `job_family` | enum | One of 42 canonical role categories |
 | `job_summary` | string | One-sentence role summary |
 
 **Critical extraction rule:** *"ONLY extract a skill if its name appears literally in the description"* — prevents hallucination.
@@ -388,7 +387,7 @@ Save: data/extraction/extracted/extraction_results.json
 
 1. **Drop internal columns** (`country`, `location`, `source_file`, `title_original`)
 2. **Drop rows** with empty `job_family` (parse failures)
-3. **Reorder columns** to `COLUMN_ORDER` (24 canonical columns)
+3. **Reorder columns** to `COLUMN_ORDER` (29 canonical columns)
 4. **Save `.debug.csv`** (preserved on failure for forensics)
 5. **Assert 9 invariants:**
    - No empty strings in categoricals
@@ -473,14 +472,14 @@ validation:
   skill_hallucination_threshold: 0.3
 ```
 
-### `src/extraction/config/extraction_prompt.yaml` (v1.5)
+### `src/extraction/config/extraction_prompt.yaml` (v2.0)
 - ~3KB system prompt + 2 few-shot examples (German + English)
 - Critical constraint: *"Extract skill ONLY if name appears literally"*
 - Max items: 25 technical, 10 soft, 7 tasks
 
 ### `src/extraction/config/output_schema.json`
 - JSON Schema Draft 7 for LLM output validation
-- `job_family` is an enum of 52 values (critical — hard fail if invalid)
+- `job_family` is an enum of 42 values (critical — hard fail if invalid)
 - Other fields demoted to warnings on validation failure
 
 ---
@@ -489,38 +488,38 @@ validation:
 
 ### Full Pipeline
 ```bash
-python orchestrate.py
+poetry run python orchestrate.py
 # or
 make pipeline
 ```
 
 ### Single Step
 ```bash
-python orchestrate.py --only extract
+poetry run python orchestrate.py --only extract
 # or
 make extract
 ```
 
 ### Resume from a Step
 ```bash
-python orchestrate.py --from validate
+poetry run python orchestrate.py --from validate
 ```
 
 ### Dry Run (show what would run)
 ```bash
-python orchestrate.py --dry-run
+poetry run python orchestrate.py --dry-run
 # or
 make dry-run
 ```
 
 ### List All Steps
 ```bash
-python orchestrate.py --list
+poetry run python orchestrate.py --list
 ```
 
 ### Reset Progress
 ```bash
-python orchestrate.py --reset
+poetry run python orchestrate.py --reset
 ```
 
 ### Tests
@@ -583,8 +582,8 @@ data/ingestion/combined_jobs.csv       22,526 rows  ·  7 columns
    + description_quality flags
         │
         ▼  [Step 8: Export]
-   24 columns, 9 invariant checks
-   data/cleaning/cleaned_jobs.csv    ~18,500 rows · 24 columns
+   29 columns, 9 invariant checks
+   data/cleaning/cleaned_jobs.csv    ~18,500 rows · 29 columns
 ```
 
 See [Cleaning Documentation](../cleaning/README.md) for the cleaning step details, or [Analysis Documentation](../analysis/README.md) for downstream analysis.

@@ -1,9 +1,14 @@
 # Canonical skill variant spellings shared across the extraction and cleaning pipelines.
 # Key = canonical skill name (as stored in technical_skills / nice_to_have_skills).
 # Value = list of lowercase plain-substring alternatives that count as a match.
-# Both skill_verifier.py and post_clean.py load from this file.
+# Both extraction/validators/hallucination.py and cleaning/skill_normalizer.py load from this file.
+#
+# Includes German compound words and translations for German-language job descriptions.
+# Substring matching is used — "softwareentwicklung" will match "softwareentwicklungsprozesse".
 
 variants:
+  # --- Existing English variants ---
+
   REST APIs:
     - rest api
     - rest apis
@@ -60,3 +65,252 @@ variants:
     - cicd
     - ci-cd
     - continuous integration
+    - kontinuierliche integration
+
+  # --- German compound words & translations (Software & Development) ---
+
+  Software Development:
+    - softwareentwicklung
+    - software-entwicklung
+    - sw-entwicklung
+    - softwarelösung
+    - entwicklung von software
+  Software Architecture:
+    - softwarearchitektur
+    - software-architektur
+    - sw-architektur
+  Web Development:
+    - webentwicklung
+    - web-entwicklung
+    - webanwendung
+    - web-anwendung
+  Web Applications:
+    - webanwendung
+    - web-anwendung
+    - webapplikation
+    - web-applikation
+  Backend Development:
+    - backend
+    - back-end
+    - backendentwicklung
+    - backend-entwicklung
+  Frontend Development:
+    - frontend
+    - front-end
+    - frontendentwicklung
+    - frontend-entwicklung
+  Agile Development:
+    - agile entwicklung
+    - agile softwareentwicklung
+    - agil
+  Agile Methodologies:
+    - agile methoden
+    - agile methodologie
+    - agile methodik
+    - agile vorgehensweise
+    - agil
+  Object-Oriented Programming:
+    - objektorientiert
+    - objekt-orientiert
+    - oop
+    - objektorientierte programmierung
+
+  # --- German translations (Infrastructure & Operations) ---
+
+  IT Infrastructure:
+    - it-infrastruktur
+    - it infrastruktur
+    - infrastruktur
+  Cloud Infrastructure:
+    - cloud-infrastruktur
+    - cloud infrastruktur
+    - cloudbasiert
+    - hybride it infrastruktur
+  Cloud Architecture:
+    - cloud-architektur
+    - cloud architektur
+    - cloudbasierte architektur
+  Cloud Technologies:
+    - cloud-technologie
+    - cloud technologie
+    - cloudtechnolog
+  Cloud Platforms:
+    - cloud-plattform
+    - cloud plattform
+    - cloudplattform
+  System Administration:
+    - systemadministration
+    - system-administration
+    - systemverwaltung
+    - systemadministrator
+  Server Administration:
+    - serveradministration
+    - server-administration
+    - serververwaltung
+    - administration von server
+    - administration der server
+  Network Administration:
+    - netzwerkadministration
+    - netzwerk-administration
+    - netzwerkverwaltung
+    - netzwerk-administrator
+  Networking:
+    - netzwerk
+    - netzwerke
+  Virtualization:
+    - virtualisierung
+    - virtualisi
+  Containerization:
+    - containerisierung
+    - container
+  System Integration:
+    - systemintegration
+    - system-integration
+    - systemanbindung
+  System Architecture:
+    - systemarchitektur
+    - system-architektur
+  Solution Architecture:
+    - lösungsarchitektur
+    - solution architect
+  Infrastructure as Code:
+    - infrastructure as code
+    - iac
+
+  # --- German translations (Data & Analytics) ---
+
+  Data Analysis:
+    - datenanalyse
+    - daten-analyse
+    - datenauswertung
+    - data analy
+  Data Modeling:
+    - datenmodellierung
+    - daten-modellierung
+    - datenmodell
+    - data model
+  Data Visualization:
+    - datenvisualisierung
+    - daten-visualisierung
+    - visualisierung
+  Data Protection:
+    - datenschutz
+    - data protection
+    - dsgvo
+    - gdpr
+  Data Quality:
+    - datenqualität
+    - data quality
+  Data Pipelines:
+    - datenpipeline
+    - data pipeline
+    - daten-pipeline
+    - etl
+  Data Architecture:
+    - datenarchitektur
+    - daten-architektur
+  Data Integration:
+    - datenintegration
+    - daten-integration
+  Databases:
+    - datenbank
+    - datenbanken
+  Database:
+    - datenbank
+    - datenbanken
+  Relational Databases:
+    - relationale datenbank
+    - relationalen datenbank
+    - rdbms
+  Machine Learning:
+    - maschinelles lernen
+    - machine learning
+    - deep learning
+
+  # --- German translations (Testing & QA) ---
+
+  Unit Testing:
+    - unit-test
+    - unit\-test
+    - unittest
+    - unit test
+    - unittests
+  Integration Testing:
+    - integrationstest
+    - integrationstests
+    - integration test
+  Test Automation:
+    - testautomatisierung
+    - test-automatisierung
+    - automatisierte tests
+    - testautomation
+  Automated Testing:
+    - automatisierte tests
+    - automatisiertes testen
+    - automated test
+    - automatisierter test
+  Testing:
+    - testen
+    - testung
+    - tests durch
+    - testfälle
+    - testumgebung
+  Quality Assurance:
+    - qualitätssicherung
+    - qualitätsmanagement
+    - quality assurance
+
+  # --- German translations (Security) ---
+
+  IT Security:
+    - it-sicherheit
+    - it sicherheit
+    - informationssicherheit
+    - cybersecurity
+    - cyber-security
+    - itsicherheit
+
+  # --- German translations (Management & Process) ---
+
+  Project Management:
+    - projektmanagement
+    - projekt-management
+    - projektleitung
+    - projektsteuerung
+  Documentation:
+    - dokumentation
+  Technical Documentation:
+    - technische dokumentation
+    - technische system
+    - systemdokumentation
+  Performance Optimization:
+    - performanceoptimierung
+    - performance-optimierung
+    - performance tuning
+    - performancetuning
+    - optimierung der performance
+  Automation:
+    - automatisierung
+    - automatisiert
+  Distributed Systems:
+    - verteilte systeme
+    - distributed system
+  Event-Driven Architecture:
+    - ereignisgesteuert
+    - event-driven
+    - eventgesteuert
+    - event driven
+  Embedded Systems:
+    - embedded
+    - eingebettete systeme
+  Generative AI:
+    - generative ai
+    - generative ki
+    - gen ai
+    - genai
+  API Design:
+    - api-design
+    - api design
+    - api-entwicklung
+    - schnittstellen
+    - schnittstellenentwicklung

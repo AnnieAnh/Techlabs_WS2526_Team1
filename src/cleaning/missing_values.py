@@ -16,6 +16,8 @@ from cleaning.constants import (
 from shared.constants import MISSING_SENTINELS as _MISSING_SENTINELS
 from shared.json_utils import parse_json_list
 
+_EXPERIENCE_MAX = 10  # Cap experience_years — values above this are likely extraction errors
+
 logger = logging.getLogger("pipeline.missing_values")
 
 # Regex: German thousands format — digits separated by dots in groups of 3
@@ -75,14 +77,15 @@ def standardize_missing_values(df: pd.DataFrame) -> pd.DataFrame:
 def fix_numeric_columns(df: pd.DataFrame) -> pd.DataFrame:
     """Convert salary/experience to numeric; null salary outliers.
 
-    Handles German number format (50.000 = 50,000) by stripping dots in salary
-    fields before parsing. Salary values outside [10k, 300k] are set to None.
+    Handles German number format (50.000 = 50,000) by stripping dots before
+    parsing. Salary values outside [10k, 300k] are set to None.
 
     Args:
         df: Input DataFrame.
 
     Returns:
-        DataFrame with numeric columns normalized (int or None).
+        DataFrame with numeric columns normalized (int or None);
+        experience_years values above 10 are capped to None.
     """
     df = df.copy()
 
@@ -108,4 +111,15 @@ def fix_numeric_columns(df: pd.DataFrame) -> pd.DataFrame:
     for col in _SALARY_COLUMNS + ["experience_years"]:
         if col in df.columns:
             df[col] = df[col].apply(lambda v, c=col: _to_int_or_none(v, c))
+
+    # Safety-net ceiling for experience_years (mirrors salary ceiling logic)
+    if "experience_years" in df.columns:
+        over = df["experience_years"].notna() & (df["experience_years"] > _EXPERIENCE_MAX)
+        n_capped = over.sum()
+        if n_capped:
+            logger.info(
+                "Capped %d experience_years values exceeding %d to None", n_capped, _EXPERIENCE_MAX
+            )
+            df.loc[over, "experience_years"] = None
+
     return df

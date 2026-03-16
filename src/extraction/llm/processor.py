@@ -129,8 +129,14 @@ async def _run_async(
     cfg: dict,
     checkpoint: Checkpoint,
     schema: dict,
-) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
-    """Inner coroutine: dispatch all rows concurrently under a semaphore."""
+    successes: list[dict[str, Any]],
+    failures: list[dict[str, Any]],
+) -> None:
+    """Inner coroutine: dispatch all rows concurrently under a semaphore.
+
+    Results are appended to the caller-owned ``successes`` and ``failures``
+    lists so that partial progress survives KeyboardInterrupt.
+    """
     model = cfg["extraction"]["model"]
     max_tokens = cfg["extraction"].get("max_tokens", 2000)
     max_desc_tokens = cfg["extraction"]["max_description_tokens"]
@@ -141,8 +147,6 @@ async def _run_async(
     _prompt_ver = prompt_version(system)
 
     sem = asyncio.Semaphore(concurrency)
-    successes: list[dict[str, Any]] = []
-    failures: list[dict[str, Any]] = []
     parse_results: list[ParseResult] = []
 
     tasks = [
@@ -156,7 +160,6 @@ async def _run_async(
 
     await atqdm.gather(*tasks, desc="Extraction", unit="row", ncols=80)
     log_parse_summary(parse_results)
-    return successes, failures
 
 
 def run_extraction(
@@ -210,13 +213,22 @@ def run_extraction(
     schema = load_output_schema()
     prompt_config = load_extraction_prompt()
 
+    # Lists are owned here (not inside _run_async) so partial results
+    # survive KeyboardInterrupt — _process_one appends by reference.
+    successes: list[dict[str, Any]] = []
+    failures: list[dict[str, Any]] = []
+    interrupted = False
     try:
-        successes, failures = asyncio.run(
-            _run_async(pending_rows, prompt_config, cfg, checkpoint, schema)
+        asyncio.run(
+            _run_async(pending_rows, prompt_config, cfg, checkpoint, schema,
+                       successes, failures)
         )
     except KeyboardInterrupt:
-        logger.warning("Extraction interrupted by user — progress saved in checkpoint.")
-        raise
+        logger.warning(
+            "Extraction interrupted — saving %d completed results to disk before exit.",
+            len(successes),
+        )
+        interrupted = True
 
     # Persist results — merge with existing to preserve data across resumed runs
     extracted_dir.mkdir(parents=True, exist_ok=True)
@@ -299,6 +311,15 @@ def run_extraction(
         "success_rate": len(successes) / max(1, n_new),
         "elapsed_seconds": round(elapsed, 1),
     }
+
+    if interrupted:
+        logger.info(
+            "Partial save complete: %d results persisted to disk. "
+            "Resume with: python orchestrate.py --from extract",
+            len(merged),
+        )
+        raise KeyboardInterrupt
+
     logger.info(
         "Stage extraction complete: %d/%d extracted this run, %d total in %.1fs",
         len(successes),

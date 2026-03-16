@@ -1,8 +1,9 @@
 """Step 6: Validate — post-extraction validation, corrections, evaluation, quality report.
 
 Separate from extraction so validation rules can be iterated without re-running
-the expensive LLM step. Reads from ``state.extraction_results`` — no redundant
-file re-reads across the five sub-tasks.
+the expensive LLM step. Reads from ``state.extraction_results`` when available,
+falling back to disk on resume — avoids redundant file re-reads during normal
+sequential execution.
 
 Sub-tasks in order:
 1. run_validators — skill normalization, skill verification, cross-field checks, salary sanity

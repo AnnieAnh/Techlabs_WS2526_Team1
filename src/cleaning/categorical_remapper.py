@@ -25,6 +25,15 @@ _JOB_FAMILY_REMAP: dict[str, str] = _JOB_FAMILY_REMAP_CFG["remap"]
 _CONTRACT_TYPE_REMAP: dict[str, str] = _JOB_FAMILY_REMAP_CFG["contract_type_remap"]
 _SENIORITY_REMAP: dict[str, str] = _JOB_FAMILY_REMAP_CFG["seniority_remap"]
 
+def _load_valid_job_families() -> frozenset[str]:
+    path = Path(__file__).parent.parent / "extraction" / "config" / "job_families.yaml"
+    with open(path, encoding="utf-8") as f:
+        data = yaml.safe_load(f)
+    return frozenset(data.get("families", []) + ["Other"])
+
+
+_VALID_JOB_FAMILIES: frozenset[str] = _load_valid_job_families()
+
 # Residual gender marker pattern for title_cleaned
 _RESIDUAL_GENDER_RE = re.compile(
     r"\s*\((?:gn|m,w,d|m,f,d|all\s+genders?)\)\s*",
@@ -45,6 +54,16 @@ def remap_categoricals(df: pd.DataFrame) -> pd.DataFrame:
 
     if "job_family" in df.columns:
         df["job_family"] = df["job_family"].replace(_JOB_FAMILY_REMAP)
+        # Fall back to "Other" for any value still not in the canonical set
+        unknown_mask = df["job_family"].notna() & ~df["job_family"].isin(_VALID_JOB_FAMILIES)
+        unknown_vals = sorted(set(df.loc[unknown_mask, "job_family"].dropna()))
+        if unknown_vals:
+            logger.warning(
+                "Auto-mapped %d unknown job_family value(s) to 'Other': %s",
+                len(unknown_vals),
+                unknown_vals,
+            )
+            df.loc[unknown_mask, "job_family"] = "Other"
 
     if "contract_type" in df.columns:
         df["contract_type"] = df["contract_type"].replace(_CONTRACT_TYPE_REMAP)

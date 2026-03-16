@@ -35,6 +35,18 @@ def _normalize_skill(skill: str, aliases: dict[str, str]) -> str:
     return aliases.get(skill.strip().lower(), skill.strip())
 
 
+def _coerce_skill_item(item: str | dict) -> dict[str, str]:
+    """Coerce a skill item (plain string or evidence dict) to evidence dict format.
+
+    Some extraction results were saved with skills as plain strings (older checkpoint
+    data) rather than the current evidence dict format {"name": ..., "source": ...}.
+    This normalises both formats so downstream validators always see dicts.
+    """
+    if isinstance(item, str):
+        return {"name": item.strip(), "source": ""}
+    return item
+
+
 def normalize_skills_evidence(
     items: list[dict[str, str]],
     aliases: dict[str, str],
@@ -54,6 +66,7 @@ def normalize_skills_evidence(
     seen: set[str] = set()
     result: list[dict[str, str]] = []
     for item in items:
+        item = _coerce_skill_item(item)
         normalized = _normalize_skill(item["name"], aliases)
         key = normalized.lower()
         if key not in seen:
@@ -114,8 +127,8 @@ def normalize_all_skills(
 
     for row in results:
         data = row.get("data", {})
-        technical = list(data.get("technical_skills") or [])
-        nice = list(data.get("nice_to_have_skills") or [])
+        technical = [_coerce_skill_item(x) for x in (data.get("technical_skills") or [])]
+        nice = [_coerce_skill_item(x) for x in (data.get("nice_to_have_skills") or [])]
 
         before_total = len(technical) + len(nice)
 

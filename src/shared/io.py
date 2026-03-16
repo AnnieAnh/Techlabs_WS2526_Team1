@@ -19,8 +19,9 @@ def read_csv_safe(
 ) -> pd.DataFrame:
     """Read a CSV with safe NA handling and optional encoding fallback.
 
-    Never silently converts 'NA' strings to NaN. Tries UTF-8 first; falls back
-    to ``fallback_encoding`` on UnicodeDecodeError (handles latin-1 encoded files).
+    Disables pandas' default NA inference (keep_default_na=False), then explicitly
+    converts MISSING_SENTINELS strings (including 'NA') to Python None.
+    Tries UTF-8 first; falls back to ``fallback_encoding`` on UnicodeDecodeError.
 
     Args:
         path: Path to the CSV file.
@@ -64,6 +65,6 @@ def write_csv_safe(df: pd.DataFrame, path: Path | str, **kwargs) -> None:
         path: Destination path for the CSV file.
         **kwargs: Additional keyword arguments forwarded to DataFrame.to_csv.
     """
-    defaults: dict[str, Any] = dict(index=False, encoding="utf-8")
+    defaults: dict[str, Any] = dict(index=False, encoding="utf-8", na_rep="NA")
     defaults.update(kwargs)
-    df.fillna("NA").to_csv(path, **defaults)
+    df.to_csv(path, **defaults)

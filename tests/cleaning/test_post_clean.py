@@ -334,7 +334,7 @@ def test_assert_invariants_fails_empty_categorical():
 def test_assert_invariants_fails_invalid_job_family():
     """Job family not in valid set raises AssertionError."""
     df = _enriched_row(job_family="Wizard Developer")
-    with pytest.raises(AssertionError, match="Invalid job_family"):
+    with pytest.raises(AssertionError, match="unmapped job_family"):
         assert_invariants(df, _VALID_FAMILIES)
 
 

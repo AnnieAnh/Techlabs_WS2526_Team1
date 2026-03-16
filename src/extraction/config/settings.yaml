@@ -15,7 +15,7 @@ input_files:
 
 extraction:
   model: deepseek-chat
-  max_tokens: 3000            # ~400-600 needed; headroom for longer outputs
+  max_tokens: 3000            # evidence-based responses typically use 800-1500 tokens
   temperature: 0
   max_description_tokens: 8000
   batch_size: 1000

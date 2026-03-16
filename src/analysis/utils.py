@@ -31,8 +31,10 @@ def load_enriched(path: str | None = None) -> pd.DataFrame:
     if path is not None:
         p = Path(path)
     else:
-        # src/analysis/ → src/ → repo root → data/cleaning/cleaned_jobs.csv
-        p = Path(__file__).parent.parent.parent / "data" / "cleaning" / "cleaned_jobs.csv"
+        repo_root = Path(__file__).parent.parent.parent
+        light = repo_root / "data" / "cleaning" / "cleaned_jobs_light.csv"
+        full = repo_root / "data" / "cleaning" / "cleaned_jobs.csv"
+        p = light if light.exists() else full
     return read_csv_safe(p)
 
 

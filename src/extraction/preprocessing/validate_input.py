@@ -62,7 +62,7 @@ def validate_input(
       - A quality report JSON is written to config['paths']['reports_dir'].
 
     Args:
-        df: Loaded DataFrame (output of load_all_csvs).
+        df: Loaded DataFrame (from pipeline state, output of ingestion step).
         config: Pipeline config dict.
         checkpoint: Checkpoint instance for state tracking.
 

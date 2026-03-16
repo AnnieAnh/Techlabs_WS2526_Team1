@@ -2,6 +2,7 @@
 from pathlib import Path
 
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 
 # Set by notebooks: import charts as _charts; _charts.FIGURES_DIR = Path(...)
@@ -28,7 +29,7 @@ def horizontal_bar(
     """
     data = series.value_counts().head(top_n).sort_values()
     fig, ax = plt.subplots(figsize=figsize)
-    ax.barh(data.index, data.values)
+    ax.barh(list(data.index), data.values.tolist())
     ax.set_title(title)
     ax.set_xlabel(xlabel)
     plt.tight_layout()
@@ -124,7 +125,7 @@ def box_plot(
     groups = [df[df[x] == k][y].dropna().values for k in order]
     labels = [str(k) for k in order]
     fig, ax = plt.subplots(figsize=figsize)
-    ax.boxplot(groups, labels=labels)
+    ax.boxplot(groups, tick_labels=labels)
     ax.set_title(title)
     ax.set_xlabel(x)
     ax.set_ylabel(y)
@@ -195,5 +196,112 @@ def value_bar(
     plt.tight_layout()
     if save_as and FIGURES_DIR:
         fig.savefig(FIGURES_DIR / save_as, dpi=150)
+    plt.show()
+    plt.close(fig)
+
+
+def histogram(
+    series: pd.Series,
+    title: str,
+    xlabel: str = "",
+    bins: int = 30,
+    figsize: tuple = (10, 5),
+    save_as: str | None = None,
+) -> None:
+    """Histogram of a numeric Series.
+
+    Args:
+        series: Numeric values to plot.
+        title: Chart title.
+        xlabel: X-axis label.
+        bins: Number of histogram bins.
+        figsize: Figure size in inches.
+        save_as: Filename to save under FIGURES_DIR.
+    """
+    fig, ax = plt.subplots(figsize=figsize)
+    ax.hist(series.dropna(), bins=bins, edgecolor="white", alpha=0.8)
+    ax.set_title(title)
+    ax.set_xlabel(xlabel)
+    ax.set_ylabel("Count")
+    plt.tight_layout()
+    if save_as and FIGURES_DIR:
+        fig.savefig(FIGURES_DIR / save_as, dpi=150)
+    plt.show()
+    plt.close(fig)
+
+
+def dual_histogram(
+    series_a: pd.Series,
+    series_b: pd.Series,
+    label_a: str,
+    label_b: str,
+    title: str,
+    xlabel: str = "",
+    bins: int = 30,
+    figsize: tuple = (10, 5),
+    save_as: str | None = None,
+) -> None:
+    """Overlaid histogram of two numeric Series.
+
+    Args:
+        series_a: First numeric Series.
+        series_b: Second numeric Series.
+        label_a: Legend label for series_a.
+        label_b: Legend label for series_b.
+        title: Chart title.
+        xlabel: X-axis label.
+        bins: Number of histogram bins.
+        figsize: Figure size in inches.
+        save_as: Filename to save under FIGURES_DIR.
+    """
+    fig, ax = plt.subplots(figsize=figsize)
+    ax.hist(series_a.dropna(), bins=bins, alpha=0.6, label=label_a, edgecolor="white")
+    ax.hist(series_b.dropna(), bins=bins, alpha=0.6, label=label_b, edgecolor="white")
+    ax.set_title(title)
+    ax.set_xlabel(xlabel)
+    ax.set_ylabel("Count")
+    ax.legend()
+    plt.tight_layout()
+    if save_as and FIGURES_DIR:
+        fig.savefig(FIGURES_DIR / save_as, dpi=150)
+    plt.show()
+    plt.close(fig)
+
+
+def radar_chart(
+    data: pd.DataFrame,
+    title: str,
+    figsize: tuple = (8, 8),
+    save_as: str | None = None,
+) -> None:
+    """Radar (spider) chart comparing multiple categories across shared axes.
+
+    Args:
+        data: DataFrame with categories as index, axes as columns.
+            Values should be normalised to 0–100 for best visual results.
+        title: Chart title.
+        figsize: Figure size in inches.
+        save_as: Filename to save under FIGURES_DIR.
+    """
+    categories = list(data.columns)
+    n_axes = len(categories)
+    angles = np.linspace(0, 2 * np.pi, n_axes, endpoint=False).tolist()
+    angles += angles[:1]  # close the polygon
+
+    fig, ax = plt.subplots(figsize=figsize, subplot_kw={"polar": True})
+    ax.set_title(title, y=1.08, fontsize=14)
+    ax.set_xticks(angles[:-1])
+    ax.set_xticklabels(categories, fontsize=9)
+
+    colors = plt.cm.Set2(np.linspace(0, 1, len(data.index)))
+    for (label, row), color in zip(data.iterrows(), colors):
+        values = row.tolist() + row.tolist()[:1]
+        ax.plot(angles, values, "o-", linewidth=1.5, label=label, color=color)
+        ax.fill(angles, values, alpha=0.1, color=color)
+
+    ax.legend(loc="upper right", bbox_to_anchor=(1.3, 1.1), fontsize=9)
+    plt.tight_layout()
+    if save_as and FIGURES_DIR:
+        fig.savefig(FIGURES_DIR / save_as, dpi=150, bbox_inches="tight")
     plt.show()
     plt.close(fig)

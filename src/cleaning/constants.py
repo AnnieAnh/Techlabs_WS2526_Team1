@@ -44,7 +44,7 @@ COLUMN_ORDER = [
     "description",
 ]
 
-# Columns excluded from the analysis-ready output (diagnostic/QA only)
+# Columns excluded from the analysis-ready output (not needed for aggregation/charting)
 _QA_ONLY_COLUMNS = {"validation_flags", "description_quality", "description"}
 
 ANALYSIS_COLUMN_ORDER = [c for c in COLUMN_ORDER if c not in _QA_ONLY_COLUMNS]

@@ -300,7 +300,7 @@ def _parse_single(
 
 
 def parse_all_locations(
-    df,  # pd.DataFrame — avoid import at top level to keep module importable without pandas
+    df,  # pd.DataFrame
     geo_config: dict,
     checkpoint,
     reports_dir: Path,
@@ -308,7 +308,7 @@ def parse_all_locations(
     """Apply parse_location to every row and add city/state/country columns.
 
     Args:
-        df: Deduped DataFrame.
+        df: Validated DataFrame (output of validate_input).
         geo_config: Loaded geography config.
         checkpoint: Checkpoint instance.
         reports_dir: Directory to write location_report.json.

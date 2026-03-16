@@ -6,40 +6,40 @@
 # -----------------------------------------------------------------------
 
 pipeline:
-	python orchestrate.py
+	poetry run python orchestrate.py
 
 ingest:
-	python orchestrate.py --only ingest
+	poetry run python orchestrate.py --only ingest
 
 prepare:
-	python orchestrate.py --only prepare
+	poetry run python orchestrate.py --only prepare
 
 deduplicate:
-	python orchestrate.py --only deduplicate
+	poetry run python orchestrate.py --only deduplicate
 
 regex-extract:
-	python orchestrate.py --only regex_extract
+	poetry run python orchestrate.py --only regex_extract
 
 extract:
-	python orchestrate.py --only extract
+	poetry run python orchestrate.py --only extract
 
 validate:
-	python orchestrate.py --only validate
+	poetry run python orchestrate.py --only validate
 
 clean-enrich:
-	python orchestrate.py --only clean_enrich
+	poetry run python orchestrate.py --only clean_enrich
 
 export:
-	python orchestrate.py --only export
+	poetry run python orchestrate.py --only export
 
 resume-from-%:
-	python orchestrate.py --from $*
+	poetry run python orchestrate.py --from $*
 
 dry-run:
-	python orchestrate.py --dry-run
+	poetry run python orchestrate.py --dry-run
 
 list-steps:
-	python orchestrate.py --list
+	poetry run python orchestrate.py --list
 
 # -----------------------------------------------------------------------
 # Legacy / convenience targets
@@ -50,10 +50,10 @@ all: pipeline
 
 # Legacy: re-run only the clean+export steps
 clean-data:
-	python orchestrate.py --from clean_enrich
+	poetry run python orchestrate.py --from clean_enrich
 
 analyze:
-	cd notebooks && jupyter notebook
+	cd notebooks && poetry run jupyter notebook
 
 # -----------------------------------------------------------------------
 # Dev targets
@@ -66,4 +66,4 @@ lint:
 	poetry run ruff check . --fix
 
 type-check:
-	poetry run mypy src/extraction/ src/shared/ --ignore-missing-imports
+	poetry run mypy src/extraction/ src/shared/ src/ingestion/ src/cleaning/ src/analysis/ src/steps/ --ignore-missing-imports
