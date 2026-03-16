@@ -23,6 +23,10 @@ data/ingestion/
 data/cleaning/cleaned_jobs.csv
 
 
+# Website
+website/node_modules/
+website/dist/
+
 # Tools & caches
 .ruff_cache/
 .pytest_cache/
