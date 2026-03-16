@@ -515,10 +515,10 @@ def categorical_distribution(
     Returns:
         DataFrame with roles as index, categories as columns, values as percentages.
     """
-    rows = []
+    rows: list[dict[str, str | float]] = []
     for name, rdf in role_dfs.items():
         total = max(1, len(rdf))
-        row = {"Role": name}
+        row: dict[str, str | float] = {"Role": name}
         for cat in categories:
             row[cat] = (rdf[col] == cat).sum() / total * 100
         if include_unspecified:

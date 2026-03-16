@@ -124,6 +124,8 @@ def assert_invariants(df: pd.DataFrame, valid_families: set[str]) -> None:
             continue
         bad_count = 0
         for val in df[col]:
+            if val is None or (isinstance(val, float) and pd.isna(val)):
+                continue  # None means "not extracted" — valid
             try:
                 parsed = json.loads(val)
                 if not isinstance(parsed, list):

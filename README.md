@@ -271,9 +271,21 @@ extractors/                              ← git root
 │   └── analysis/                        ← figures/
 │
 ├── notebooks/                           ← 11 Jupyter analysis notebooks (01–11)
+│
+├── website/                             ← INTERACTIVE WEB DASHBOARD (React 19 + TS)
+│   ├── src/pages/                       ← 14 page components
+│   ├── src/components/                  ← Layout, charts, shared UI
+│   ├── src/hooks/                       ← Data fetching, filters, theme
+│   ├── src/lib/                         ← Aggregation engine, explore, colors
+│   ├── src/types/                       ← TypeScript interfaces + enums
+│   └── public/data/                     ← Pre-aggregated JSON + jobs-slim.json
+│
+├── scripts/
+│   └── generate_dashboard_data.py       ← Pipeline → dashboard JSON exporter
+│
 └── backlog/                             ← Planning docs + archive
 
-Each component has its own README.md under src/ with full documentation.
+Each component has its own documentation file (e.g. EXTRACTION.md, CLEANING.md).
 ```
 
 ---
@@ -340,19 +352,6 @@ data/cleaning/cleaned_jobs_light.csv        ~18,500 rows · 25 columns (lightwei
         ▼
 data/analysis/figures/*.png                  35 charts across 11 notebooks
 ```
-
----
-
-## Component Documentation
-
-| Component | Documentation | Description |
-|-----------|--------------|-------------|
-| Ingestion | [src/ingestion/README.md](src/ingestion/README.md) | Schema normalization, date parsing, configuration |
-| Extraction | [src/extraction/README.md](src/extraction/README.md) | Full LLM pipeline (8 steps), two-tier extraction, DeepSeek API |
-| Cleaning | [src/cleaning/README.md](src/cleaning/README.md) | 11 cleaning + 5 enrichment steps, invariant checks |
-| Analysis | [src/analysis/README.md](src/analysis/README.md) | 11 notebooks, chart types, visualization gallery |
-| Shared | [src/shared/README.md](src/shared/README.md) | IO utilities, constants, schemas, logging |
-| Raw Data | [data/raw/README.md](data/raw/README.md) | Raw data sources, CSV schemas, column mapping |
 
 ---
 
@@ -489,6 +488,117 @@ The final `data/cleaning/cleaned_jobs.csv` contains:
 | 11 | Education & Soft Skills | Education by family/seniority/salary, soft skill heatmaps | charts + tables |
 
 **Total:** 35+ charts across 11 notebooks.
+
+---
+
+## Interactive Web Dashboard
+
+**Live:** [it-in-de.iebo-testt.workers.dev](https://it-in-de.iebo-testt.workers.dev/)
+
+In addition to the Jupyter notebooks, the project includes a **full-featured web dashboard** built with React 19 and TypeScript. It provides an interactive, filterable interface for exploring the same dataset in a browser.
+
+### Dashboard Architecture
+
+```
+Pipeline Output                         Web Dashboard
+───────────────                         ─────────────
+cleaned_jobs.csv ──> generate_dashboard_data.py ──> public/data/*.json
+  (~19K rows)            (pre-aggregate)              (static + slim)
+                                                          │
+                                                          ▼
+                                                    React SPA (14 pages)
+                                                    ├── 10 analytics pages
+                                                    ├── 2 deep dive pages
+                                                    └── 2 advanced exploration
+```
+
+**Zero backend** — Python generates static JSON files; React fetches and computes everything client-side. Deployed on Cloudflare Workers.
+
+### Dashboard Pages (14 Routes)
+
+| Route | Page | Description |
+|-------|------|-------------|
+| `/` | **Overview** | Market snapshot — jobs, companies, remote %, salary coverage, trends |
+| `/skills` | **Skills** | Top 25 skills, required vs optional, salary premium, skill×family heatmap |
+| `/salary` | **Salary** | P25/median/P75 ranges by role, seniority, and city |
+| `/location` | **Location** | Interactive Germany choropleth map, top cities, modality by state |
+| `/remote` | **Remote Work** | Remote/hybrid/on-site breakdown by role and seniority |
+| `/seniority` | **Seniority** | Seniority distribution with by-family heatmap |
+| `/benefits` | **Benefits** | 11 benefit categories, by-family heatmap |
+| `/languages` | **Languages** | German/English % by role, CEFR level distribution |
+| `/education` | **Education** | Education levels by family/seniority, soft skill heatmaps |
+| `/companies` | **Companies** | Top 20 hiring companies, job family diversity |
+| `/roles` | **Role Deep Dives** | 6 target roles — skills, salary progression, seniority, top cities |
+| `/personas` | **Personas** | 4 job seeker profiles with tailored recommendations |
+| `/explore` | **Advanced Info** | 7 interactive tabs (salary estimator, skill matcher, role comparison, etc.) |
+| `/egg` | **Easter Egg** | Advanced Info without paywall gate |
+
+### Advanced Information — 7 Interactive Tabs
+
+The Advanced Information page provides real-time interactive analysis computed client-side on the full ~19K job dataset:
+
+| Tab | What It Does |
+|-----|--------------|
+| **By Role** | Select a role → full market profile (skills, salary, cities, companies, seniority) |
+| **By City** | Select a city → local IT market breakdown |
+| **By Skills** | Select your skills → personalized role recommendations with match % and skills to learn |
+| **Salary Estimator** | Filter by role + city + seniority → salary percentiles from real data |
+| **No-German Finder** | Jobs without German requirement — ideal for international professionals |
+| **Skill Combos** | Most common skill pairs with salary correlation |
+| **Role vs Role** | Side-by-side comparison of any two job families |
+
+### Hybrid Data Pattern
+
+All analytics pages support **6 filter dimensions** (role, city, state, seniority, modality, contract type) encoded in the URL:
+
+- **No filters active** → Displays pre-aggregated static JSON (instant page loads)
+- **Filters active** → Loads full dataset (`jobs-slim.json`, ~12MB) and computes aggregations in real-time on the client
+
+### Dashboard Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| React 19 + TypeScript 5.9 | UI framework |
+| TanStack Router + Query | Client-side routing + data caching |
+| Tailwind CSS 4.2 + shadcn/ui | Styling + component library |
+| Recharts 3.8 | Bar, pie, and line charts |
+| react-simple-maps | Interactive Germany choropleth |
+| Vite 6.4 | Build tooling |
+| Cloudflare Workers | Deployment |
+
+### Dashboard Commands
+
+```bash
+cd website/
+
+# Install dependencies
+npm install
+
+# Development server
+npm run dev
+
+# Production build
+npm run build
+
+# Generate dashboard data (from repo root)
+python scripts/generate_dashboard_data.py
+```
+
+**Full documentation:** [website/DASHBOARD.md](website/DASHBOARD.md)
+
+---
+
+## Component Documentation
+
+| Component | Documentation | Description |
+|-----------|--------------|-------------|
+| Ingestion | [src/ingestion/INGESTION.md](src/ingestion/INGESTION.md) | Schema normalization, date parsing, configuration |
+| Extraction | [src/extraction/EXTRACTION.md](src/extraction/EXTRACTION.md) | Full LLM pipeline (8 steps), two-tier extraction, DeepSeek API |
+| Cleaning | [src/cleaning/CLEANING.md](src/cleaning/CLEANING.md) | 11 cleaning + 5 enrichment steps, invariant checks |
+| Analysis | [src/analysis/ANALYSIS.md](src/analysis/ANALYSIS.md) | 11 notebooks, chart types, visualization gallery |
+| Shared | [src/shared/SHARED.md](src/shared/SHARED.md) | IO utilities, constants, schemas, logging |
+| **Dashboard** | [website/DASHBOARD.md](website/DASHBOARD.md) | **React web app — 14 pages, 7 advanced tabs, interactive filters** |
+| Raw Data | [data/raw/RAW_DATA.md](data/raw/RAW_DATA.md) | Raw data sources, CSV schemas, column mapping |
 
 ---
 

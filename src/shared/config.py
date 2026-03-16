@@ -70,7 +70,8 @@ def _load_extraction_config(config_path: Path = _DEFAULT_CONFIG_PATH) -> dict:
     """Load settings.yaml, convert path strings to Path objects, and create directories.
 
     Args:
-        config_path: Path to the YAML settings file. Defaults to src/extraction/config/settings.yaml.
+        config_path: Path to the YAML settings file.
+            Defaults to src/extraction/config/settings.yaml.
 
     Returns:
         Config dict with all path strings under 'paths' converted to pathlib.Path objects.

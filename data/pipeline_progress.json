@@ -4,7 +4,7 @@
       "combined_jobs.csv": "db764461a62b9c90"
     },
     "config_hash": "c05eb825cdbbead8",
-    "timestamp": "2026-03-16T10:10:55.960710+00:00"
+    "timestamp": "2026-03-16T14:07:07.006703+00:00"
   },
   "ingest": {
     "status": "complete",
@@ -43,12 +43,12 @@
   },
   "export": {
     "status": "complete",
-    "elapsed_s": 1.1,
-    "timestamp": "2026-03-16T10:10:57.095120+00:00"
+    "elapsed_s": 1.0,
+    "timestamp": "2026-03-16T14:07:08.049159+00:00"
   },
   "export_light": {
     "status": "complete",
-    "elapsed_s": 0.2,
-    "timestamp": "2026-03-16T10:10:57.256753+00:00"
+    "elapsed_s": 0.1,
+    "timestamp": "2026-03-16T14:07:08.191015+00:00"
   }
 }

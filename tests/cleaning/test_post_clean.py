@@ -360,6 +360,29 @@ def test_assert_invariants_fails_duplicate_row_ids():
         assert_invariants(df, _VALID_FAMILIES)
 
 
+def test_assert_invariants_none_list_columns():
+    """Invariant 3 skips None values in list columns (--no-llm path)."""
+    df = _enriched_row(technical_skills=None, soft_skills=None)
+    df = standardize_missing_values(df)
+    df = fix_numeric_columns(df)
+    df = fix_validation_flags(df)
+    df = drop_columns_and_rows(df, _VALID_FAMILIES)
+    df = reorder_columns(df)
+    # Should not raise — None list columns are valid (not extracted)
+    assert_invariants(df, _VALID_FAMILIES)
+
+
+def test_assert_invariants_tolerates_raw_none_in_list_column():
+    """Invariant 3 tolerates raw None without upstream standardization."""
+    df = _enriched_row()
+    df = drop_columns_and_rows(df, _VALID_FAMILIES)
+    df = reorder_columns(df)
+    # Inject raw None directly (bypasses standardize_missing_values)
+    df["technical_skills"] = None
+    # Should not raise — the None guard in assert_invariants handles this
+    assert_invariants(df, _VALID_FAMILIES)
+
+
 # ---------------------------------------------------------------------------
 # Round-trip: full clean_enriched pipeline
 # ---------------------------------------------------------------------------

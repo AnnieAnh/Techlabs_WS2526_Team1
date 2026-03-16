@@ -12,6 +12,8 @@ import logging
 import shutil
 from pathlib import Path
 
+import pandas as pd
+
 from cleaning.output_formatter import (
     _load_valid_job_families,
     assert_invariants,
@@ -51,6 +53,15 @@ def run_export(state: PipelineState, cfg: dict) -> None:
     )
     output_path.parent.mkdir(parents=True, exist_ok=True)
     debug_path = output_path.with_suffix(".debug.csv")
+
+    # — 0. Drop postings before October 1, 2025
+    if "date_posted" in df.columns:
+        dates = pd.to_datetime(df["date_posted"], errors="coerce")
+        before_cutoff = dates < pd.Timestamp("2025-10-01")
+        n_old = before_cutoff.sum()
+        if n_old:
+            logger.info("Dropping %d rows with date_posted before 2025-10-01", n_old)
+            df = df[~before_cutoff].copy()
 
     # — 1. Drop unneeded columns and parse-failure rows
     valid_families = _load_valid_job_families()

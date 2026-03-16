@@ -34,6 +34,7 @@ class PipelineState:
         extraction_results: List of per-row extraction dicts produced by ``extract``.
         extraction_stats: Summary stats from the extraction step (cost, success rate, …).
         row_limit: Optional cap on rows to process (for testing/debugging).
+        no_llm: If True, skip LLM extraction and populate LLM columns with None.
     """
 
     df: pd.DataFrame = field(default_factory=pd.DataFrame)
@@ -42,6 +43,7 @@ class PipelineState:
     extraction_results: list[dict[str, Any]] | None = None
     extraction_stats: dict[str, Any] | None = None
     row_limit: int | None = None
+    no_llm: bool = False
 
     def require_df(self, step_name: str) -> pd.DataFrame:
         """Return ``self.df`` or raise a clear error if it is empty.

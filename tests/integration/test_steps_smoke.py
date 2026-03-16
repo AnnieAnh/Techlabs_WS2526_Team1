@@ -520,3 +520,65 @@ def test_export_preserves_row_count(cfg):
         run_export(state, cfg)
 
     assert not state.df.empty
+
+
+# ---------------------------------------------------------------------------
+# --no-llm flag
+# ---------------------------------------------------------------------------
+
+def test_parse_args_no_llm():
+    """--no-llm flag is parsed and composes with --from."""
+    from orchestrate import _parse_args
+
+    args = _parse_args(["--no-llm", "--from", "clean_enrich"])
+    assert args.no_llm is True
+    assert args.from_step == "clean_enrich"
+
+
+def test_parse_args_no_llm_composes_with_only():
+    """--no-llm composes with --only (not in mutually exclusive group)."""
+    from orchestrate import _parse_args
+
+    args = _parse_args(["--no-llm", "--only", "export"])
+    assert args.no_llm is True
+    assert args.only == "export"
+
+
+def test_no_llm_filters_extract_and_validate():
+    """--no-llm removes extract and validate from step list."""
+    from orchestrate import _NO_LLM_SKIP, _steps_to_run
+
+    steps = _steps_to_run({}, None, None, None)
+    all_names = {s[0] for s in steps}
+    assert "extract" in all_names
+    assert "validate" in all_names
+
+    filtered = [(n, d, f) for n, d, f in steps if n not in _NO_LLM_SKIP]
+    filtered_names = {s[0] for s in filtered}
+    assert "extract" not in filtered_names
+    assert "validate" not in filtered_names
+    assert "clean_enrich" in filtered_names
+    assert "export" in filtered_names
+
+
+def test_clean_enrich_no_llm_ignores_disk_results(cfg):
+    """--no-llm forces results=[] even when extraction_results.json exists on disk."""
+    state = PipelineState()
+    df = _make_prepared_df(3)
+    state.df = df
+    state.no_llm = True
+
+    # Write stale extraction results to disk — should be ignored
+    extracted_dir = cfg["paths"]["extracted_dir"]
+    stale_results = _make_extraction_results(df)
+    results_path = extracted_dir / "extraction_results.json"
+    with open(results_path, "w", encoding="utf-8") as f:
+        json.dump(stale_results, f)
+
+    with patch("steps.clean_enrich.validate_step_output"):
+        run_clean_enrich(state, cfg)
+
+    # LLM columns should be empty/None — merge_results was called with []
+    assert not state.df.empty
+    # job_family comes from LLM — should be None (not from stale results)
+    assert state.df["job_family"].isna().all()

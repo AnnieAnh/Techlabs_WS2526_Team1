@@ -18,6 +18,7 @@ logs/
 
 # Data outputs (large, generated — do not track)
 data/extraction/
+data/analysis/
 data/ingestion/
 data/cleaning/cleaned_jobs.csv
 

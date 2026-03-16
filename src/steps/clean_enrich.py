@@ -41,7 +41,8 @@ def run_clean_enrich(state: PipelineState, cfg: dict) -> None:
        normalize_company_casing — categorical cleaning
     5. fix_validation_flags — resolve/relabel validation flags
     6. benefit_category_set, normalize_soft_skills — enrichment columns
-    7. flag_description_quality — tags descriptions as 'concatenated' (HTML-strip artefacts) or 'clean'
+    7. flag_description_quality — tags descriptions as 'concatenated'
+       (HTML-strip artefacts) or 'clean'
 
     Args:
         state: Mutable pipeline state — reads df + extraction_results, modifies df.
@@ -58,7 +59,10 @@ def run_clean_enrich(state: PipelineState, cfg: dict) -> None:
 
     # Load extraction results from state or disk
     results = state.extraction_results
-    if results is None:
+    if state.no_llm:
+        results = []
+        logger.info("--no-llm: skipping extraction results, LLM columns will be None")
+    elif results is None:
         results_path = Path(cfg["paths"]["extracted_dir"]) / "extraction_results.json"
         if not results_path.exists():
             logger.warning(

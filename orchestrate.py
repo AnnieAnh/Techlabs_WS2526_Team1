@@ -28,6 +28,12 @@ Usage::
 
     # Limit pipeline to first N rows (for test runs)
     python orchestrate.py --limit 100
+
+    # Run without LLM (regex-only fields, no API cost)
+    python orchestrate.py --no-llm
+
+    # Combine with other flags
+    python orchestrate.py --no-llm --from clean_enrich
 """
 
 import argparse
@@ -77,6 +83,7 @@ _STEPS: list[tuple[str, str, object]] = [
     ("export_light", "Write lightweight CSV without description/flags columns", run_export_light),
 ]
 _STEP_NAMES = [s[0] for s in _STEPS]
+_NO_LLM_SKIP = frozenset({"extract", "validate"})
 
 _PROGRESS_FILE = Path("data/pipeline_progress.json")
 
@@ -419,9 +426,14 @@ def _cmd_dry_run(
     step_filter: str | None,
     from_step: str | None,
     only_step: str | None,
+    *,
+    no_llm: bool = False,
 ) -> None:
     """Print which steps would run without executing them."""
-    steps_to_run_names = {s[0] for s in _steps_to_run(progress, step_filter, from_step, only_step)}
+    steps_to_run = _steps_to_run(progress, step_filter, from_step, only_step)
+    if no_llm:
+        steps_to_run = [(n, d, f) for n, d, f in steps_to_run if n not in _NO_LLM_SKIP]
+    steps_to_run_names = {s[0] for s in steps_to_run}
     print("\nDRY RUN -- no steps will be executed:\n")
     for name, desc, _ in _STEPS:
         status = progress.get(name, {}).get("status", "pending")
@@ -487,6 +499,12 @@ def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         metavar="N",
         help="Limit pipeline to the first N rows after ingest (for test runs)",
     )
+    parser.add_argument(
+        "--no-llm",
+        action="store_true",
+        dest="no_llm",
+        help="Skip LLM extraction; populate LLM columns with None",
+    )
     return parser.parse_args(argv)
 
 
@@ -511,14 +529,22 @@ def main(argv: list[str] | None = None) -> None:
         _save_progress(progress)
 
     if args.dry_run:
-        _cmd_dry_run(progress, args.step, args.from_step, args.only)
+        _cmd_dry_run(progress, args.step, args.from_step, args.only, no_llm=args.no_llm)
         return
 
     cfg = _load_cfg()
     state = PipelineState()
     state.row_limit = args.limit
+    state.no_llm = args.no_llm
 
     steps = _steps_to_run(progress, args.step, args.from_step, args.only)
+
+    # --no-llm: skip extract and validate steps
+    if args.no_llm:
+        if args.only and args.only in _NO_LLM_SKIP:
+            logger.info("Step '%s' is skipped with --no-llm — nothing to run.", args.only)
+            return
+        steps = [(n, d, f) for n, d, f in steps if n not in _NO_LLM_SKIP]
 
     if not steps:
         logger.info("All steps already complete. Use --reset to start fresh or --from STEP.")

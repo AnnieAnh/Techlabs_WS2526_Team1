@@ -293,7 +293,8 @@ def radar_chart(
     ax.set_xticks(angles[:-1])
     ax.set_xticklabels(categories, fontsize=9)
 
-    colors = plt.cm.Set2(np.linspace(0, 1, len(data.index)))
+    cmap = plt.colormaps["Set2"]
+    colors = cmap(np.linspace(0, 1, len(data.index)))
     for (label, row), color in zip(data.iterrows(), colors):
         values = row.tolist() + row.tolist()[:1]
         ax.plot(angles, values, "o-", linewidth=1.5, label=label, color=color)
