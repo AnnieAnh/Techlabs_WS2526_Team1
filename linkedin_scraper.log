@@ -1,0 +1,498 @@
+[31m2026-02-06 01:00:56,983 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 01:02:57,744 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 01:04:58,332 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 03:40:50,187 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 03:40:50,293 | ✅ INFO | No jobs for 'software engineer' in Stuttgart[0m
+[33m2026-02-06 07:25:50,508 | ⚠️ WARNING | Request failed (attempt 1/3): HTTPSConnectionPool(host='www.linkedin.com', port=443): Read timed out. (read timeout=15)[0m
+[31m2026-02-06 07:25:58,199 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 07:27:59,278 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 07:29:59,279 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 07:29:59,280 | ✅ INFO | No jobs for 'software architect' in Stuttgart[0m
+[31m2026-02-06 07:30:00,393 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[33m2026-02-06 07:47:22,661 | ⚠️ WARNING | Request failed (attempt 2/3): HTTPSConnectionPool(host='www.linkedin.com', port=443): Read timed out. (read timeout=15)[0m
+[31m2026-02-06 07:47:34,244 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 07:49:34,245 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 07:49:34,245 | ✅ INFO | No jobs for 'software developer' in Stuttgart[0m
+[31m2026-02-06 07:49:35,056 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 07:51:35,945 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 07:53:36,669 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 07:55:36,670 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 07:55:36,671 | ✅ INFO | No jobs for 'data engineer' in Stuttgart[0m
+[31m2026-02-06 07:55:37,448 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 07:57:38,178 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 07:59:38,988 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 08:01:38,989 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 08:01:38,990 | ✅ INFO | No jobs for 'data analyst' in Stuttgart[0m
+[31m2026-02-06 08:01:39,786 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 08:03:40,589 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 08:05:41,426 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 08:07:41,427 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 08:07:41,428 | ✅ INFO | No jobs for 'data scientist' in Stuttgart[0m
+[31m2026-02-06 08:07:42,473 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 08:09:43,151 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 08:11:44,044 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 08:13:44,045 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 08:13:44,046 | ✅ INFO | No jobs for 'BI developer' in Stuttgart[0m
+[31m2026-02-06 08:13:45,125 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[33m2026-02-06 14:44:10,476 | ⚠️ WARNING | Request failed (attempt 2/3): HTTPSConnectionPool(host='www.linkedin.com', port=443): Read timed out. (read timeout=15)[0m
+[31m2026-02-06 14:44:22,001 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 15:03:34,779 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 15:03:34,821 | ✅ INFO | No jobs for 'Cloud Engineer' in Stuttgart[0m
+[33m2026-02-06 15:03:49,862 | ⚠️ WARNING | Request failed (attempt 1/3): HTTPSConnectionPool(host='www.linkedin.com', port=443): Read timed out. (read timeout=15)[0m
+[31m2026-02-06 15:03:58,069 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 15:05:58,879 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 15:07:58,880 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 15:07:58,881 | ✅ INFO | No jobs for 'Cloud architect' in Stuttgart[0m
+[31m2026-02-06 15:07:59,591 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[33m2026-02-06 15:25:13,049 | ⚠️ WARNING | Request failed (attempt 2/3): HTTPSConnectionPool(host='www.linkedin.com', port=443): Read timed out. (read timeout=15)[0m
+[31m2026-02-06 15:25:24,621 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 15:27:24,622 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 15:27:24,623 | ✅ INFO | No jobs for 'DevOps engineer' in Stuttgart[0m
+[31m2026-02-06 15:27:28,229 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 15:29:29,965 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 15:31:31,031 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 15:33:31,032 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 15:33:31,032 | ✅ INFO | No jobs for 'IT administrator' in Stuttgart[0m
+[31m2026-02-06 15:33:32,382 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 15:35:33,750 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 15:37:34,864 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 15:39:34,866 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 15:39:34,866 | ✅ INFO | No jobs for 'backend developer' in Stuttgart[0m
+[31m2026-02-06 15:39:36,134 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 15:41:37,104 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 15:43:38,438 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 15:45:38,438 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 15:45:38,439 | ✅ INFO | No jobs for 'frontend developer' in Stuttgart[0m
+[31m2026-02-06 15:45:39,652 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 15:47:40,815 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 15:49:41,560 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 15:51:41,561 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 15:51:41,562 | ✅ INFO | No jobs for 'full stack developer' in Stuttgart[0m
+[31m2026-02-06 15:51:42,641 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 15:53:44,269 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 15:55:45,089 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 15:57:45,090 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 15:57:45,090 | ✅ INFO | No jobs for 'Apps developer' in Stuttgart[0m
+[31m2026-02-06 15:57:45,843 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 15:59:46,521 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:01:47,316 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:03:47,316 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 16:03:47,317 | ✅ INFO | No jobs for 'SAP developer' in Stuttgart[0m
+[31m2026-02-06 16:03:48,605 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:05:49,724 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:07:51,600 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:09:51,600 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 16:09:51,601 | ✅ INFO | No jobs for 'machine learning engineer' in Stuttgart[0m
+[31m2026-02-06 16:09:52,165 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:11:52,779 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:13:53,362 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:15:53,363 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 16:15:53,363 | ✅ INFO | No jobs for 'AI engineer' in Stuttgart[0m
+[31m2026-02-06 16:15:54,073 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:17:54,789 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:19:55,465 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:21:55,466 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 16:21:55,466 | ✅ INFO | No jobs for 'cybersecurity engineer' in Stuttgart[0m
+[31m2026-02-06 16:21:56,135 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:23:56,824 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:25:57,477 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:27:57,477 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 16:27:57,478 | ✅ INFO | No jobs for 'Softwareentwickler' in Stuttgart[0m
+[31m2026-02-06 16:27:58,108 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:29:58,765 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:31:59,379 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:33:59,380 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 16:33:59,380 | ✅ INFO | No jobs for 'Softwarearchitekt' in Stuttgart[0m
+[31m2026-02-06 16:34:00,082 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:36:00,955 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:38:01,704 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:40:01,705 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 16:40:01,706 | ✅ INFO | No jobs for 'Data Engineer' in Stuttgart[0m
+[31m2026-02-06 16:40:02,384 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:42:03,002 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:44:03,672 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:46:03,673 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 16:46:03,674 | ✅ INFO | No jobs for 'Datenanalyst' in Stuttgart[0m
+[31m2026-02-06 16:46:04,320 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:48:04,979 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:50:05,766 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:52:05,767 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 16:52:05,768 | ✅ INFO | No jobs for 'Data Scientist' in Stuttgart[0m
+[31m2026-02-06 16:52:06,368 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:54:06,999 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:56:07,614 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 16:58:07,615 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 16:58:07,616 | ✅ INFO | No jobs for 'BI-Entwickler' in Stuttgart[0m
+[31m2026-02-06 16:58:08,216 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 17:00:08,810 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 17:02:09,424 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 17:04:09,425 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 17:04:09,426 | ✅ INFO | No jobs for 'Cloud Engineer' in Stuttgart[0m
+[31m2026-02-06 17:04:10,139 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 17:06:10,855 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 17:08:11,605 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 17:10:11,606 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 17:10:11,607 | ✅ INFO | No jobs for 'Cloud-Architekt' in Stuttgart[0m
+[31m2026-02-06 17:10:12,161 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 17:12:12,930 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 17:14:13,642 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 17:16:13,643 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 17:16:13,643 | ✅ INFO | No jobs for 'DevOps Engineer' in Stuttgart[0m
+[31m2026-02-06 17:16:14,283 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[33m2026-02-06 18:10:28,674 | ⚠️ WARNING | Request failed (attempt 2/3): HTTPSConnectionPool(host='www.linkedin.com', port=443): Read timed out. (read timeout=15)[0m
+[31m2026-02-06 18:10:40,628 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 18:12:40,628 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 18:12:40,629 | ✅ INFO | No jobs for 'IT-Administrator' in Stuttgart[0m
+[31m2026-02-06 18:12:41,449 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 18:14:42,577 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 18:16:43,532 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 20:30:51,273 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 20:30:51,329 | ✅ INFO | No jobs for 'Backend Entwickler' in Stuttgart[0m
+[33m2026-02-06 20:31:06,401 | ⚠️ WARNING | Request failed (attempt 1/3): HTTPSConnectionPool(host='www.linkedin.com', port=443): Read timed out. (read timeout=15)[0m
+[31m2026-02-06 20:31:12,804 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 20:33:13,372 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 20:35:13,373 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 20:35:13,373 | ✅ INFO | No jobs for 'Frontend Entwickler' in Stuttgart[0m
+[31m2026-02-06 20:35:14,045 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 20:37:14,666 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 20:39:15,401 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 20:41:15,403 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 20:41:15,403 | ✅ INFO | No jobs for 'FullStack Entwickler' in Stuttgart[0m
+[31m2026-02-06 20:41:16,016 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 20:43:16,656 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 20:45:17,309 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 20:47:17,310 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 20:47:17,311 | ✅ INFO | No jobs for 'Apps Entwickler' in Stuttgart[0m
+[31m2026-02-06 20:47:17,920 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 20:49:18,520 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 20:51:19,300 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 20:53:19,300 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 20:53:19,301 | ✅ INFO | No jobs for 'SAP Entwickler' in Stuttgart[0m
+[31m2026-02-06 20:53:19,936 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 20:55:20,558 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 20:57:21,193 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 20:59:21,193 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 20:59:21,194 | ✅ INFO | No jobs for 'Machine Learning Engineer' in Stuttgart[0m
+[31m2026-02-06 20:59:21,681 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 21:01:22,127 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 21:03:22,763 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 21:05:22,764 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 21:05:22,765 | ✅ INFO | No jobs for 'KI-Ingenieur' in Stuttgart[0m
+[31m2026-02-06 21:05:23,394 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 21:07:24,010 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 21:09:24,703 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 21:11:24,703 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 21:11:24,704 | ✅ INFO | No jobs for 'IT-Security Engineer' in Stuttgart[0m
+[31m2026-02-06 21:11:25,423 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 21:13:26,146 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 21:15:26,850 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 21:17:26,851 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 21:17:26,852 | ✅ INFO | No jobs for 'software engineer' in Munich[0m
+[31m2026-02-06 21:17:27,449 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 21:19:28,039 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 21:21:28,705 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 21:23:28,706 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 21:23:28,707 | ✅ INFO | No jobs for 'software architect' in Munich[0m
+[31m2026-02-06 21:23:29,405 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 21:25:30,181 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 21:27:31,015 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 21:29:31,016 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 21:29:31,016 | ✅ INFO | No jobs for 'software developer' in Munich[0m
+[31m2026-02-06 21:29:31,657 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 21:31:32,276 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 21:33:32,883 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 21:35:32,883 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 21:35:32,884 | ✅ INFO | No jobs for 'data engineer' in Munich[0m
+[31m2026-02-06 21:35:33,520 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 21:37:34,709 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 21:39:35,477 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 21:41:35,478 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 21:41:35,478 | ✅ INFO | No jobs for 'data analyst' in Munich[0m
+[31m2026-02-06 21:41:36,151 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 21:43:36,949 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 21:45:37,596 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 21:47:37,599 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 21:47:37,599 | ✅ INFO | No jobs for 'data scientist' in Munich[0m
+[31m2026-02-06 21:47:38,344 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[33m2026-02-06 21:56:18,793 | ⚠️ WARNING | Request failed (attempt 2/3): ('Connection aborted.', ConnectionResetError(10054, 'Eine vorhandene Verbindung wurde vom Remotehost geschlossen', None, 10054, None))[0m
+[31m2026-02-06 21:56:29,728 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 21:58:29,729 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 21:58:29,730 | ✅ INFO | No jobs for 'BI developer' in Munich[0m
+[31m2026-02-06 21:58:30,327 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:00:31,000 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:02:31,521 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:04:31,522 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 22:04:31,523 | ✅ INFO | No jobs for 'Cloud Engineer' in Munich[0m
+[31m2026-02-06 22:04:32,159 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:06:32,771 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:08:33,423 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:10:33,424 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 22:10:33,425 | ✅ INFO | No jobs for 'Cloud architect' in Munich[0m
+[31m2026-02-06 22:10:33,939 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:12:34,496 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:14:35,007 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:16:35,008 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 22:16:35,009 | ✅ INFO | No jobs for 'DevOps engineer' in Munich[0m
+[31m2026-02-06 22:16:35,647 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:18:36,231 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:20:36,932 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:22:36,933 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 22:22:36,933 | ✅ INFO | No jobs for 'IT administrator' in Munich[0m
+[31m2026-02-06 22:22:37,530 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:24:38,114 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:26:38,668 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:28:38,669 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 22:28:38,669 | ✅ INFO | No jobs for 'backend developer' in Munich[0m
+[31m2026-02-06 22:28:39,275 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:30:39,977 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:32:40,652 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:34:40,654 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 22:34:40,654 | ✅ INFO | No jobs for 'frontend developer' in Munich[0m
+[31m2026-02-06 22:34:41,552 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:36:42,163 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:38:42,808 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:40:42,809 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 22:40:42,810 | ✅ INFO | No jobs for 'full stack developer' in Munich[0m
+[31m2026-02-06 22:40:43,484 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:42:44,098 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:44:44,774 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:46:44,775 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 22:46:44,776 | ✅ INFO | No jobs for 'Apps developer' in Munich[0m
+[31m2026-02-06 22:46:45,514 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:48:46,295 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:50:47,278 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:52:47,279 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 22:52:47,279 | ✅ INFO | No jobs for 'SAP developer' in Munich[0m
+[31m2026-02-06 22:52:47,888 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:54:48,549 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:56:49,155 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 22:58:49,156 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 22:58:49,156 | ✅ INFO | No jobs for 'machine learning engineer' in Munich[0m
+[31m2026-02-06 22:58:49,633 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:00:50,115 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:02:50,605 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:04:50,606 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 23:04:50,606 | ✅ INFO | No jobs for 'AI engineer' in Munich[0m
+[31m2026-02-06 23:04:51,246 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:06:52,014 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:08:52,618 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:10:52,619 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 23:10:52,619 | ✅ INFO | No jobs for 'cybersecurity engineer' in Munich[0m
+[31m2026-02-06 23:10:53,250 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:12:53,889 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:14:54,540 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:16:54,541 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 23:16:54,542 | ✅ INFO | No jobs for 'Softwareentwickler' in Munich[0m
+[31m2026-02-06 23:16:55,188 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:18:55,871 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:20:56,524 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:22:56,524 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 23:22:56,525 | ✅ INFO | No jobs for 'Softwarearchitekt' in Munich[0m
+[31m2026-02-06 23:22:57,129 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:24:58,015 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:26:58,680 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:28:58,681 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 23:28:58,681 | ✅ INFO | No jobs for 'Data Engineer' in Munich[0m
+[31m2026-02-06 23:28:59,347 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:30:59,941 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:33:00,560 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:35:00,560 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 23:35:00,561 | ✅ INFO | No jobs for 'Datenanalyst' in Munich[0m
+[31m2026-02-06 23:35:01,235 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:37:01,859 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:39:02,467 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:41:02,468 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 23:41:02,468 | ✅ INFO | No jobs for 'Data Scientist' in Munich[0m
+[31m2026-02-06 23:41:03,033 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:43:03,611 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:45:04,186 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:47:04,186 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 23:47:04,187 | ✅ INFO | No jobs for 'BI-Entwickler' in Munich[0m
+[31m2026-02-06 23:47:04,726 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:49:05,246 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:51:05,795 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:53:05,795 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 23:53:05,796 | ✅ INFO | No jobs for 'Cloud Engineer' in Munich[0m
+[31m2026-02-06 23:53:06,459 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:55:07,177 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:57:07,879 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-06 23:59:07,880 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-06 23:59:07,880 | ✅ INFO | No jobs for 'Cloud-Architekt' in Munich[0m
+[31m2026-02-06 23:59:08,519 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:01:09,071 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:03:09,563 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:05:09,563 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-07 00:05:09,564 | ✅ INFO | No jobs for 'DevOps Engineer' in Munich[0m
+[31m2026-02-07 00:05:10,180 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:07:10,783 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:09:11,431 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:11:11,432 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-07 00:11:11,433 | ✅ INFO | No jobs for 'IT-Administrator' in Munich[0m
+[31m2026-02-07 00:11:12,054 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:13:12,643 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:15:13,184 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:17:13,184 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-07 00:17:13,185 | ✅ INFO | No jobs for 'Backend Entwickler' in Munich[0m
+[31m2026-02-07 00:17:13,810 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:19:14,467 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:21:15,115 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:23:15,115 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-07 00:23:15,116 | ✅ INFO | No jobs for 'Frontend Entwickler' in Munich[0m
+[31m2026-02-07 00:23:15,827 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:25:16,476 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:27:17,248 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:29:17,248 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-07 00:29:17,249 | ✅ INFO | No jobs for 'FullStack Entwickler' in Munich[0m
+[31m2026-02-07 00:29:17,872 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:31:18,495 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:33:19,302 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:35:19,302 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-07 00:35:19,303 | ✅ INFO | No jobs for 'Apps Entwickler' in Munich[0m
+[31m2026-02-07 00:35:19,923 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:37:20,506 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:39:21,098 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:41:21,099 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-07 00:41:21,099 | ✅ INFO | No jobs for 'SAP Entwickler' in Munich[0m
+[31m2026-02-07 00:41:21,710 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:43:22,362 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:45:23,006 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:47:23,006 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-07 00:47:23,007 | ✅ INFO | No jobs for 'Machine Learning Engineer' in Munich[0m
+[31m2026-02-07 00:47:23,489 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:49:23,959 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:51:24,424 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:53:24,425 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-07 00:53:24,426 | ✅ INFO | No jobs for 'KI-Ingenieur' in Munich[0m
+[31m2026-02-07 00:53:25,052 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:55:25,684 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:57:26,293 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 00:59:26,293 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-07 00:59:26,294 | ✅ INFO | No jobs for 'IT-Security Engineer' in Munich[0m
+[31m2026-02-07 00:59:27,125 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 01:01:27,790 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 01:03:28,487 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 01:05:28,488 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-07 01:05:28,489 | ✅ INFO | No jobs for 'software engineer' in Berlin[0m
+[31m2026-02-07 01:05:29,085 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 01:07:29,686 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 01:09:30,261 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 01:11:30,261 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-07 01:11:30,262 | ✅ INFO | No jobs for 'software architect' in Berlin[0m
+[31m2026-02-07 01:11:30,955 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 01:13:31,617 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 01:15:32,268 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-07 03:00:50,973 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-07 03:00:51,008 | ✅ INFO | No jobs for 'software developer' in Berlin[0m
+[33m2026-02-07 03:12:50,937 | ⚠️ WARNING | Request failed (attempt 1/3): HTTPSConnectionPool(host='www.linkedin.com', port=443): Read timed out. (read timeout=15)[0m
+[31m2026-02-07 06:03:57,285 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[33m2026-02-07 08:45:21,129 | ⚠️ WARNING | Request failed (attempt 3/3): HTTPSConnectionPool(host='www.linkedin.com', port=443): Max retries exceeded with url: /jobs/search?keywords=data%20engineer&f_TPR=r86400&location=Berlin&distance=50&f_JT=F&f_WT=2&start=0&sortBy=DD (Caused by NameResolutionError("HTTPSConnection(host='www.linkedin.com', port=443): Failed to resolve 'www.linkedin.com' ([Errno 11001] getaddrinfo failed)"))[0m
+[31m2026-02-07 10:04:04,128 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-07 10:04:04,236 | ✅ INFO | No jobs for 'data engineer' in Berlin[0m
+[33m2026-02-07 10:04:04,344 | ⚠️ WARNING | Request failed (attempt 1/3): HTTPSConnectionPool(host='www.linkedin.com', port=443): Max retries exceeded with url: /jobs/search?keywords=data%20analyst&f_TPR=r86400&location=Berlin&distance=50&f_JT=F&f_WT=2&start=0&sortBy=DD (Caused by NameResolutionError("HTTPSConnection(host='www.linkedin.com', port=443): Failed to resolve 'www.linkedin.com' ([Errno 11001] getaddrinfo failed)"))[0m
+[33m2026-02-08 18:20:00,534 | ⚠️ WARNING | Request failed (attempt 2/3): HTTPSConnectionPool(host='www.linkedin.com', port=443): Max retries exceeded with url: /jobs/search?keywords=data%20analyst&f_TPR=r86400&location=Berlin&distance=50&f_JT=F&f_WT=2&start=0&sortBy=DD (Caused by NameResolutionError("HTTPSConnection(host='www.linkedin.com', port=443): Failed to resolve 'www.linkedin.com' ([Errno 11001] getaddrinfo failed)"))[0m
+[31m2026-02-08 18:20:12,739 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 18:22:16,019 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-08 18:22:16,019 | ✅ INFO | No jobs for 'data analyst' in Berlin[0m
+[31m2026-02-08 18:22:16,719 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 18:24:17,662 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 18:26:21,589 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 18:28:21,591 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-08 18:28:21,592 | ✅ INFO | No jobs for 'data scientist' in Berlin[0m
+[31m2026-02-08 18:28:22,692 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 18:30:23,306 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 18:32:23,925 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 18:34:23,926 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-08 18:34:23,927 | ✅ INFO | No jobs for 'BI developer' in Berlin[0m
+[31m2026-02-08 18:34:24,425 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 18:36:24,969 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 18:38:25,557 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 18:40:25,558 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-08 18:40:25,558 | ✅ INFO | No jobs for 'Cloud Engineer' in Berlin[0m
+[31m2026-02-08 18:40:26,141 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 18:42:26,771 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 18:44:27,414 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 18:46:27,415 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-08 18:46:27,415 | ✅ INFO | No jobs for 'Cloud architect' in Berlin[0m
+[31m2026-02-08 18:46:27,950 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 18:48:28,520 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 18:50:29,372 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 18:52:29,373 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-08 18:52:29,374 | ✅ INFO | No jobs for 'DevOps engineer' in Berlin[0m
+[31m2026-02-08 18:52:30,211 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 18:54:31,050 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 18:56:32,023 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 18:58:32,024 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-08 18:58:32,025 | ✅ INFO | No jobs for 'IT administrator' in Berlin[0m
+[31m2026-02-08 18:58:33,258 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:00:34,026 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:02:34,738 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:04:34,739 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-08 19:04:34,740 | ✅ INFO | No jobs for 'backend developer' in Berlin[0m
+[31m2026-02-08 19:04:35,410 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:06:36,065 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:08:36,703 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:10:36,704 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-08 19:10:36,704 | ✅ INFO | No jobs for 'frontend developer' in Berlin[0m
+[31m2026-02-08 19:10:37,376 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:12:38,040 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:14:38,705 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:16:38,706 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-08 19:16:38,706 | ✅ INFO | No jobs for 'full stack developer' in Berlin[0m
+[31m2026-02-08 19:16:39,422 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:18:40,282 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:20:40,990 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:22:40,991 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-08 19:22:40,992 | ✅ INFO | No jobs for 'Apps developer' in Berlin[0m
+[31m2026-02-08 19:22:41,600 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:24:42,214 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:26:42,843 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:28:42,844 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-08 19:28:42,845 | ✅ INFO | No jobs for 'SAP developer' in Berlin[0m
+[31m2026-02-08 19:28:43,513 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:30:44,230 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:32:44,972 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:34:44,973 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-08 19:34:44,974 | ✅ INFO | No jobs for 'machine learning engineer' in Berlin[0m
+[31m2026-02-08 19:34:45,535 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:36:46,770 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:38:47,363 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:40:47,364 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-08 19:40:47,365 | ✅ INFO | No jobs for 'AI engineer' in Berlin[0m
+[31m2026-02-08 19:40:48,001 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:42:48,600 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:44:49,230 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:46:49,231 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-08 19:46:49,232 | ✅ INFO | No jobs for 'cybersecurity engineer' in Berlin[0m
+[31m2026-02-08 19:46:49,858 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:48:50,510 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:50:51,151 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:52:51,152 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-08 19:52:51,153 | ✅ INFO | No jobs for 'Softwareentwickler' in Berlin[0m
+[31m2026-02-08 19:52:51,771 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:54:52,381 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:56:53,028 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 19:58:53,029 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-08 19:58:53,029 | ✅ INFO | No jobs for 'Softwarearchitekt' in Berlin[0m
+[31m2026-02-08 19:58:53,624 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 20:00:54,401 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 20:04:52,487 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 20:06:52,487 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-08 20:06:52,488 | ✅ INFO | No jobs for 'Data Engineer' in Berlin[0m
+[31m2026-02-08 20:06:53,042 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 20:08:53,639 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 20:10:54,225 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 20:12:54,226 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-08 20:12:54,227 | ✅ INFO | No jobs for 'Datenanalyst' in Berlin[0m
+[31m2026-02-08 20:12:54,970 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 20:14:55,571 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 20:16:56,139 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 20:18:56,141 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-08 20:18:56,142 | ✅ INFO | No jobs for 'Data Scientist' in Berlin[0m
+[31m2026-02-08 20:18:56,814 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 20:20:57,446 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 20:22:58,100 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 20:24:58,101 | ❌ ERROR | Max retries exceeded[0m
+[32m2026-02-08 20:24:58,102 | ✅ INFO | No jobs for 'BI-Entwickler' in Berlin[0m
+[31m2026-02-08 20:24:58,671 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 20:26:59,365 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
+[31m2026-02-08 20:28:59,907 | ❌ ERROR | LinkedIn block detected (captcha/sign-in)[0m
